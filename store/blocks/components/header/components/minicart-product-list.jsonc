@@ -1,0 +1,146 @@
+{
+    "minicart-product-list": {
+        "blocks": [
+            "product-list#minicart"
+        ],
+        "props": {
+            "blockClass": [
+                "minicart-product-list"
+            ]
+        }
+    },
+    "product-list#minicart": {
+        "title": "Lista de produtos",
+        "blocks": [
+            "product-list-content-desktop#minicart",
+            "product-list-content-mobile#minicart"
+        ],
+        "props": {
+            "blockClass": [
+                "minicart-product-list"
+            ]
+        }
+    },
+    "product-list-content-desktop#minicart": {
+        "title": "Lista de produtos desktop",
+        "children": [
+            "flex-layout.row#minicart-product-list-item"
+        ],
+        "props": {
+            "blockClass": [
+                "minicart-product-list"
+            ]
+        }
+    },
+    "product-list-content-mobile#minicart": {
+        "title": "Lista de produtos mobile",
+        "children": [
+            "flex-layout.row#minicart-product-list-item"
+        ],
+        "props": {
+            "blockClass": [
+                "minicart-product-list"
+            ]
+        }
+    },
+    "flex-layout.row#minicart-product-list-item": {
+        "title": "Item da lista de produtos",
+        "props": {
+            "fullWidth": true,
+            "preserveLayoutOnMobile": true,
+            "blockClass": [
+                "minicart-product-list-item"
+            ]
+        },
+        "children": [
+            "product-list-image#minicart-product-list-item-content",
+            "flex-layout.col#minicart-product-list-item-content"
+        ]
+    },
+    "product-list-image#minicart-product-list-item-content": {
+        "title": "Imagem do produto",
+        "props": {
+            "width": 80,
+            "blockClass": [
+                "minicart-product-list-item"
+            ]
+        }
+    },
+    "flex-layout.col#minicart-product-list-item-content": {
+        "title": "Área de nome, referência e quantidade",
+        "props": {
+            "fullWidth": true,
+            "preserveLayoutOnMobile": true,
+            "blockClass": [
+                "minicart-product-list-item-content"
+            ]
+        },
+        "children": [
+            "flex-layout.row#minicart-product-list-data-item",
+            "flex-layout.row#minicart-product-list-modify-item"
+        ]
+    },
+    "flex-layout.row#minicart-product-list-data-item": {
+        "title": "Dados do produto",
+        "props": {
+            "blockClass": [
+                "minicart-product-list-data-item"
+            ]
+        },
+        "children": [
+            "vtex.product-list:product-name#minicart-product-list-item-content",
+            "vtex.product-list:price#minicart-product-list-item-content",
+            "product-installments#minicart-product-list-item-content"
+        ]
+    },
+    "vtex.product-list:product-name#minicart-product-list-item-content": {
+        "props": {
+            "blockClass": [
+                "minicart-product-list-item-content"
+            ]
+        }
+    },
+    "vtex.product-list:price#minicart-product-list-item-content": {
+        "props": {
+            "blockClass": [
+                "minicart-product-list-item-content"
+            ]
+        }
+    },
+    "product-installments#minicart-product-list-item-content": {
+        "props": {
+            "message": "ou {installmentsNumber}X de {installmentValue}",
+            "blockClass": [
+                "minicart-product-list-item-content"
+            ]
+        }
+    },
+    "flex-layout.row#minicart-product-list-modify-item": {
+        "title": "Área para modificações do produto",
+        "props": {
+            "blockClass": [
+                "minicart-product-list-modify-item"
+            ]
+        },
+        "children": [
+            "vtex.product-list:quantity-selector#minicart-product-list-item-content",
+            "remove-button#minicart-product-list-item"
+        ]
+    },
+    "vtex.product-list:quantity-selector#minicart-product-list-item-content": {
+        "props": {
+            "mode": "stepper",
+            "blockClass": [
+                "minicart-product-list-item-content"
+            ]
+        }
+    },
+    "remove-button#minicart-product-list-item": {
+        "title": "Botão de remoção",
+        "props": {
+            "blockClass": [
+                "minicart-product-list-item"
+            ]
+        }
+    }
+}

@@ -1,0 +1,75 @@
+{
+    // "sticky-layout#header-desktop": {
+    //     "title": "Sticky layout do header desktop",
+    //     "props": {
+    //         "blockClass": "header-desktop"
+    //     },
+    //     "children": [
+    //         "flex-layout.row#header-desktop-wrapper",
+    //         "two7-menu-dropdown"
+    //     ]
+    // },
+    "flex-layout.row#header-desktop-container": {
+        "title": "Container do header desktop",
+        "props": {
+            "blockClass": "header-desktop-container"
+        },
+        "children": [
+            "flex-layout.row#header-desktop-wrapper"
+            // "two7-menu-dropdown"
+        ]
+    },
+    "flex-layout.row#header-desktop-wrapper": {
+        "title": "Área superior do header desktop",
+        "props": {
+            "blockClass": "header-desktop-wrapper"
+        },
+        "children": [
+            "two7-logo-custom",
+            "flex-layout.row#right-side-header-desktop"
+        ]
+    },
+    "flex-layout.row#right-side-header-desktop": {
+        "title": "Área direita do header",
+        "props": {
+            "blockClass": "right-side-header-desktop"
+        },
+        "children": [
+            "flex-layout.row#redirect-action-btns-desktop"
+        ]
+    },
+    "flex-layout.row#redirect-action-btns-desktop": {
+        "title": "Botões de redirecionamento",
+        "props": {
+            "fullWidth": true,
+            "preserveLayoutOnMobile": true,
+            "blockClass": [
+                "redirect-action-btns"
+            ]
+        },
+        "children": [
+            "two7-login-desktop",
+            "link#my-wishlist-desktop-link",
+            "minicart.v2"
+        ]
+    },
+    "link#my-wishlist-desktop-link": {
+        "title": "Link de conta do header",
+        "props": {
+            "label": "Meus Favoritos",
+            "href": "/my-wishlist",
+            "blockClass": "my-wishlist-desktop-link"
+        },
+        "children": [
+            "image#my-wishlist-desktop-image"
+        ]
+    },
+    "image#my-wishlist-desktop-image": {
+        "title": "Imagem de conta do header",
+        "props": {
+            "blockClass": "my-wishlist-desktop-image",
+            "alt": "Imagem de conta do header",
+            "src": "assets/icons/hart-icon-header.svg"
+        }
+    }
+}

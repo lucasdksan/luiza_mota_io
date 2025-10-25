@@ -1,0 +1,41 @@
+@use "../../../../settings/index" as *;
+
+.summarySmallDisclaimer {
+    display: none;
+}
+
+.summarySmallContent {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: auto;
+    width: 100%;
+}
+
+.summaryItemContainer--minicart-footer {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.summaryItemLabel--minicart-footer,
+.price--minicart-footer,
+.summaryItemPrice--minicart-footer {
+    font-family: $font-lato;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: $color-minicart-subtotal;
+}
+
+
+
+.summaryItemContainer--minicart-footer  {
+    &:last-child {
+        .summaryItemLabel--minicart-footer,
+        .price--minicart-footer,
+        .summaryItemPrice--minicart-footer {
+            color: $color-primary;   
+        }
+    }
+}

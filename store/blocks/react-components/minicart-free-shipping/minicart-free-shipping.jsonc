@@ -1,0 +1,15 @@
+{
+    "two7-minicart-free-shipping": {
+        "title": "Frete Grátis",
+        "props": {
+            "VtexFlexLayout": "flex-layout.row#minicart-free-shipping",
+            "valueDefault": 350
+        }
+    },
+    "flex-layout.row#minicart-free-shipping": {
+        "title": "Área do frete grátis",
+        "props": {
+            "blockClass": "minicart-free-shipping"
+        }
+    }
+}

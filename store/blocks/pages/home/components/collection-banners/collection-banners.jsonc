@@ -1,0 +1,67 @@
+{
+    "responsive-layout.mobile#collection-banners": {
+        "children": [
+            "two7-collection-banners-mobile"
+        ]
+    },
+    "responsive-layout.desktop#collection-banners": {
+        "children": [
+            "flex-layout.row#collection-banners-desktop"
+        ]
+    },
+    "flex-layout.row#collection-banners-desktop": {
+        "title": "Área principal dos banners",
+        "props": {
+            "blockClass": [
+                "collection-banners-desktop"
+            ]
+        },
+        "children": [
+            "image#banner-collection-1",
+            "image#banner-collection-2",
+            "image#banner-collection-3"
+        ]
+    },
+    "image#banner-collection-1": {
+        "title": "Banner da coleção",
+        "props": {
+            "alt": "Banner de coleção 1",
+            "src": "assets/banners/banner-collection-desktop-1.png",
+            "link": {
+                "openNewTab": true,
+                "url": "/"
+            },
+            "blockClass": [
+                "banner-collection-desktop"
+            ]
+        }
+    },
+    "image#banner-collection-2": {
+        "title": "Banner da coleção",
+        "props": {
+            "alt": "Banner de coleção 2",
+            "src": "assets/banners/banner-collection-desktop-2.png",
+            "link": {
+                "openNewTab": true,
+                "url": "/"
+            },
+            "blockClass": [
+                "banner-collection-desktop"
+            ]
+        }
+    },
+    "image#banner-collection-3": {
+        "title": "Banner da coleção",
+        "props": {
+            "alt": "Banner de coleção 3",
+            "src": "assets/banners/banner-collection-desktop-3.png",
+            "link": {
+                "openNewTab": true,
+                "url": "/"
+            },
+            "blockClass": [
+                "banner-collection-desktop"
+            ]
+        }
+    }
+}

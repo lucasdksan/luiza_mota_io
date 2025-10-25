@@ -1,0 +1,12 @@
+@use "../../../../settings/index" as *;
+
+.container--section-heading {
+    align-items: center;
+    justify-content: center;
+}
+
+.paragraph--section-heading {
+    margin: 0px;
+    
+    @include titleHomePage;
+}

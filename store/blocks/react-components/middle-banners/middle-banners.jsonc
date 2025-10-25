@@ -1,0 +1,36 @@
+{
+    "two7-middle-banners": {
+        "title": "Banners",
+        "props": {
+            "VtexFlexLayout": "flex-layout.row#middle-banners",
+            "banners": [
+                {
+                    "image": "assets/banners/banner-middle-1.png",
+                    "alt": "Banner da coleção 1",
+                    "link": "/"
+                },
+                {
+                    "image": "assets/banners/banner-middle-1.png",
+                    "alt": "Banner da coleção 2",
+                    "link": "/"
+                },
+                {
+                    "image": "assets/banners/banner-middle-1.png",
+                    "alt": "Banner da coleção 3",
+                    "link": "/"
+                },
+                {
+                    "image": "assets/banners/banner-middle-1.png",
+                    "alt": "Banner da coleção 4",
+                    "link": "/"
+                }
+            ]
+        }
+    },
+    "flex-layout.row#middle-banners": {
+        "title": "Área da navegação dos departamentos",
+        "props": {
+            "blockClass": "middle-banners"
+        }
+    }
+}

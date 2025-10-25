@@ -1,0 +1,16 @@
+@use "../../../../settings/index" as *;
+
+.paragraph--title-navigation-footer {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: $color-primary;
+    margin: 0px !important;
+
+    @include desktop {
+        font-weight: 600 !important;
+        text-wrap: nowrap !important;
+    }
+}

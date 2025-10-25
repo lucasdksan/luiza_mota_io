@@ -1,0 +1,22 @@
+
+@use "../../settings/index" as *;
+
+.installments--shelf-product-default, 
+.listPrice--shelf-product-default, 
+.sellingPrice--shelf-product-default {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: $color-shelf-default-instalments;
+}
+
+.installmentValue--shelf-product-default {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 600 !important;
+    font-size: 14px;
+    line-height: 150%;
+    color: $color-shelf-default-instalments;
+}

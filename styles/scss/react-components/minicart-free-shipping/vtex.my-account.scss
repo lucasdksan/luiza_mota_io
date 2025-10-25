@@ -1,0 +1,25 @@
+@use "../../settings/index" as *;
+
+:global(.vtex-minicart-free-shipping--text) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px !important;
+    
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    color: $color-free-shipping-text;
+
+    strong {
+        font-weight: 700;
+    }
+}
+
+p {
+    &:global(.vtex-minicart-free-shipping--text) {
+        text-align: center;
+        justify-content: center !important;
+    }
+}

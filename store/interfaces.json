@@ -1,0 +1,59 @@
+{
+    "two7-promotional-tip-bar": {
+        "component": "PromotionalTipBar"
+    },
+    "two7-head-imports": {
+        "component": "HeadImports"
+    },
+    "two7-menu-mobile": {
+        "component": "MenuMobile"
+    },
+    "two7-logo-custom": {
+        "component": "LogoCustom"
+    },
+    "two7-banner-hero": {
+        "component": "BannerHero"
+    },
+    "two7-service-highlights": {
+        "component": "ServiceHighlights"
+    },
+    "two7-department-navigation": {
+        "component": "DepartmentNavigation"
+    },
+    "two7-collection-banners-mobile": {
+        "component": "CollectionBannersMobile"
+    },
+    "two7-middle-banners": {
+        "component": "MiddleBanners"
+    },
+    "two7-read-more-card": {
+        "component": "ReadMoreCard"
+    },
+    "two7-newsletter-wrapper": {
+        "component": "NewsletterWrapper"
+    },
+    "two7-footer-mobile-accordion": {
+        "component": "FooterMobileAccordion"
+    },
+    "two7-modal-product-shop": {
+        "component": "ModalProductShop"
+    },
+    "two7-product-summary-discount-flag": {
+        "component": "ProductSummaryDiscountFlag"
+    },
+    "two7-coupon-minicart": {
+        "component": "CouponMinicart"
+    },
+    "two7-minicart-free-shipping": {
+        "component": "MiniCartFreeShipping"
+    },
+    "two7-navigation-footer-desktop": {
+        "component": "NavigationFooterDesktop"
+    },
+    "two7-menu-dropdown": {
+        "component": "MenuDropdown"
+    },
+    "two7-login-desktop": {
+        "component": "LoginDesktop"
+    }
+}

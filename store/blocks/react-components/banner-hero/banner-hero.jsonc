@@ -1,0 +1,60 @@
+{
+    "two7-banner-hero": {
+        "title": "Banner Hero",
+        "props": {
+            "VtexSliderLayout": "slider-layout#banner-hero",
+            "VtexFlexLayout": "flex-layout.row#banner-hero",
+            "banners": [
+                {
+                    "imageDesktop": "assets/banners/banner-hero-desktop.png",
+                    "imageMobile": "assets/banners/banner-hero-mobile.png",
+                    "alt": "Banner hero custom",
+                    "link": "/",
+                    "videoDesktop": "",
+                    "videoMobile": "",
+                    "activeVideo": false
+                },
+                {
+                    "imageDesktop": "assets/banners/banner-hero-desktop.png",
+                    "imageMobile": "assets/banners/banner-hero-mobile.png",
+                    "alt": "Banner hero custom",
+                    "link": "/",
+                    "videoDesktop": "",
+                    "videoMobile": "",
+                    "activeVideo": false
+                },
+                {
+                    "imageDesktop": "assets/banners/banner-hero-desktop.png",
+                    "imageMobile": "assets/banners/banner-hero-mobile.png",
+                    "alt": "Banner hero custom",
+                    "link": "/",
+                    "videoDesktop": "",
+                    "videoMobile": "",
+                    "activeVideo": false
+                }
+            ]
+        }
+    },
+    "flex-layout.row#banner-hero": {
+        "title": "Flex layout do banner hero custom",
+        "props": {
+            "blockClass": "banner-hero"
+        }
+    },
+    "slider-layout#banner-hero": {
+        "title": "Slider das imagens",
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "showNavigationArrows": "desktopOnly",
+            "showPaginationDots": "always",
+            "infinite": true,
+            "blockClass": [
+                "banner-hero"
+            ]
+        }
+    }
+}

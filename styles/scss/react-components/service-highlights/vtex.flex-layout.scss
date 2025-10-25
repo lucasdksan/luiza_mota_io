@@ -1,0 +1,79 @@
+@use "../../settings/index" as *;
+
+.flexRow--service-highlights {
+    padding: 11px 20px;
+    background-color: $color-primary;
+    overflow: hidden;
+
+    @include desktop {
+        padding: 15px 80px;
+    }
+
+    :global(.vtex-store-components-3-x-container) {
+        padding: 0px !important;
+        margin: 0px;
+
+        @include desktop {
+            @include container-fluid;
+        }
+    }
+}
+
+.flexRowContent--service-highlights {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 20px;
+    overflow-x: scroll;
+
+    @include desktop {
+        overflow-x: visible;
+        justify-content: space-around;
+    }
+
+    .stretchChildrenWidth {
+        min-width: fit-content;
+        flex: 1 1 auto;
+    
+        @include desktop {
+            min-width: auto;
+            flex: none;
+            width: auto !important;
+        }
+    }
+
+    :global(.vtex-service-highlight--element) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        white-space: nowrap;
+    }
+
+    :global(.vtex-service-highlight--element-icon) {
+        width: 40px;
+        height: 40px;
+    }
+
+    :global(.vtex-service-highlight--element-title) {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: $color-white;
+        text-wrap: nowrap;
+
+        @include desktop {
+            font-family: $font-poppins !important;
+            font-weight: 500 !important;
+            font-size: 16px !important;
+        }
+    }
+}

@@ -1,0 +1,69 @@
+{
+    "product-summary.shelf#shelf-product-default": {
+        "props": {
+            "blockClass": [
+                "shelf-product-default"
+            ]
+        },
+        "children": [
+            "product-summary-image#shelf-product-default",
+            "product-summary-name#shelf-product-default",
+            "flex-layout.row#shelf-default-footer",
+            "two7-product-summary-discount-flag"
+        ]
+    },
+    "product-summary-image#shelf-product-default": {
+        "props": {
+            // "height": 290,
+            // "width": 260,
+            "hoverImage": {
+                "criteria": "index",
+                "index": 0
+            },
+            "blockClass": [
+                "shelf-product-default--image"
+            ]
+        }
+    },
+    "flex-layout.row#shelf-default-footer": {
+        "title": "Parte de baixo da prateleira",
+        "props": {
+            "blockClass": [
+                "shelf-default-footer"
+            ]
+        },
+        "children": [
+            "flex-layout.row#shelf-default-footer-price",
+            "two7-modal-product-shop"
+        ]
+    },
+    "flex-layout.row#shelf-default-footer-price": {
+        "title": "Área dos preços",
+        "children": [
+            "product-summary-price#shelf-product-default",
+            "product-installments#shelf-product-default"
+        ]
+    },
+    "product-summary-name#shelf-product-default": {
+        "props": {
+            "blockClass": [
+                "shelf-product-default--name"
+            ]
+        }
+    },
+    "product-summary-price#shelf-product-default": {
+        "props": {
+            "blockClass": [
+                "shelf-product-default--price"
+            ]
+        }
+    },
+    "product-installments#shelf-product-default": {
+        "props": {
+            "message": "ou {installmentsNumber}X de {installmentValue}",
+            "blockClass": [
+                "shelf-product-default"
+            ]
+        }
+    }
+}

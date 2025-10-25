@@ -1,0 +1,108 @@
+@use "../../settings/index" as *;
+
+.flexRow--department-navigation {
+    padding: 30px 20px;
+
+    @include desktop {
+        padding: 60px 80px !important;
+    }
+
+    :global(.vtex-store-components-3-x-container) {
+        padding: 0px;
+        margin: 0px;
+
+        @include desktop {
+            @include container-fluid;
+        }
+    }
+}
+
+.flexRowContent--department-navigation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    @include desktop {
+        gap: 40px !important;
+
+        .stretchChildrenWidth {
+            width: 100% !important;
+        }
+    }
+
+    :global(.vtex-department-navigation--title) {
+        margin: 0px;
+
+        @include titleHomePage;
+    }
+
+    :global(.vtex-department-navigation--options-container) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 24px;
+        row-gap: 16px;
+
+        @include desktop {
+            display: flex !important;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+        }
+    }
+
+    :global(.vtex-department-navigation--element-link) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        text-decoration: none;
+
+        @include desktop {
+            align-items: flex-start !important;
+            transition: transform 0.2s ease, color 0.2s ease;
+
+            :global(.vtex-department-navigation--element-image-container) {
+                width: 190px;
+                height: 190px;
+                border-radius: 8px;
+                overflow: hidden;
+            }
+
+            :global(.vtex-department-navigation--element-image) {
+                width: 100%;
+                height: 100%;
+            }
+
+            &:hover {
+                transition: transform 0.2s ease, color 0.2s ease;
+
+                :global(.vtex-department-navigation--element-image) {
+                    transform: scale(1.2);
+                }
+
+                :global(.vtex-department-navigation--element-name) {
+                    color: $color-primary !important;
+                }
+            }
+        }
+    }
+
+    :global(.vtex-department-navigation--element-name) {
+        font-family: $font-poppins;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        letter-spacing: 0.02em;
+        color: $color-earth;
+
+        @include desktop {
+            font-size: 20px !important;
+        }
+    }
+}

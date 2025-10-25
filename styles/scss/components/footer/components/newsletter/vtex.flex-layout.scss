@@ -1,0 +1,46 @@
+@use "../../../../settings/index" as *;
+
+.flexRow--newsletter-container {
+    padding: 40px 20px;
+    background-color: $color-secondary;
+
+    @include desktop {
+        padding: 40px 80px !important;
+    }
+}
+
+.flexRowContent--newsletter-container {
+    padding: 0px !important;
+
+    @include desktop {
+        @include container-fluid;
+    }
+}
+
+.flexCol--newsletter-header {
+    &:global(.vtex-newsletter-wrapper--close) {
+        display: none;
+    }
+}
+
+.flexRowContent--content-left-side {
+    @include desktop {
+        gap: 50px;
+        padding: 0px 35px 0px 99px;    
+        align-items: flex-end;
+    }
+}
+
+.flexRowContent--success-state {
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+        margin-left: 90px;
+        justify-content: center;
+        align-items: flex-start;
+
+        .stretchChildrenWidth {
+            justify-content: flex-start;
+        }
+    }
+}

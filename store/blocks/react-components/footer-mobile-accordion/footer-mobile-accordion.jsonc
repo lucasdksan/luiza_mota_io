@@ -1,0 +1,136 @@
+{
+    "two7-footer-mobile-accordion": {
+        "title": "Acordeão do Footer Mobile",
+        "props": {
+            "VtexFlexLayout": "flex-layout.row#footer-accordion-container",
+            "accordionItems": [
+                {
+                    "key": "categories",
+                    "title": "Categorias",
+                    "content": [
+                        {
+                            "titulo": "Brincos",
+                            "link": "/"
+                        },
+                        {
+                            "titulo": "Anéis",
+                            "link": "/"
+                        },
+                        {
+                            "titulo": "Colares",
+                            "link": "/"
+                        },
+                        {
+                            "titulo": "Berloques",
+                            "link": "/"
+                        },
+                        {
+                            "titulo": "Pulseiras",
+                            "link": "/"
+                        },
+                        {
+                            "titulo": "Conjuntos",
+                            "link": "/"
+                        },
+                        {
+                            "titulo": "Tornozeleiras",
+                            "link": "/"
+                        },
+                        {
+                            "titulo": "Masculino",
+                            "link": "/"
+                        },
+                        {
+                            "titulo": "Feminino",
+                            "link": "/"
+                        },
+                        {
+                            "titulo": "Relógios",
+                            "link": "/"
+                        },
+                        {
+                            "titulo": "Fortitura",
+                            "link": "/"
+                        },
+                        {
+                            "titulo": "Brasil Off",
+                            "link": "/"
+                        }
+                    ]
+                },
+                {
+                    "key": "logo",
+                    "title": "A marca",
+                    "content": [
+                        {
+                            "titulo": "Sobre nós",
+                            "link": "/"
+                        },
+                        {
+                            "titulo": "Nossas lojas",
+                            "link": "/"
+                        },
+                        {
+                            "titulo": "Política de privacidade",
+                            "link": "/"
+                        },
+                        {
+                            "titulo": "Política de entrega",
+                            "link": "/"
+                        }
+                    ]
+                },
+                {
+                    "key": "help",
+                    "title": "Atendimento",
+                    "content": [
+                        {
+                            "titulo": "Troca e devoluções",
+                            "link": "/"
+                        },
+                        {
+                            "titulo": "Garantia",
+                            "link": "/"
+                        },
+                        {
+                            "titulo": "Minha conta",
+                            "link": "/"
+                        },
+                        {
+                            "titulo": "Meus pedidos",
+                            "link": "/"
+                        },
+                        {
+                            "titulo": "Fale conosco",
+                            "link": "/"
+                        },
+                        {
+                            "titulo": "Forma de pagamentos",
+                            "link": "/"
+                        }
+                    ]
+                },
+                {
+                    "key": "shop",
+                    "title": "Televendas",
+                    "content": [
+                        {
+                            "titulo": "(62) 3999-4217",
+                            "link": "/"
+                        },
+                        {
+                            "titulo": "(62) 98249-0378",
+                            "link": "/"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "flex-layout.row#footer-accordion-container": {
+        "title": "Container do Acordeão",
+        "props": {
+            "blockClass": "footer-accordion-container"
+        }
+    }
+}

@@ -1,0 +1,101 @@
+{
+    "two7-menu-mobile": {
+        "props": {
+            "VtexFlexLayoutContentBTN": "flex-layout.row#container-menu-mobile-btn",
+            "menuItems": [
+                {
+                    "category_name": "Novidades",
+                    "sub_category": [],
+                    "see_all": "/novidades"
+                },
+                {
+                    "category_name": "Roupas",
+                    "sub_category": [
+                        {
+                            "name": "Vestidos",
+                            "link": "/roupas/vestidos"
+                        },
+                        {
+                            "name": "Blusas",
+                            "link": "/roupas/blusas"
+                        },
+                        {
+                            "name": "Calças",
+                            "link": "/roupas/calcas"
+                        },
+                        {
+                            "name": "Saias",
+                            "link": "/roupas/saias"
+                        },
+                        {
+                            "name": "Casacos",
+                            "link": "/roupas/casacos"
+                        }
+                    ],
+                    "see_all": "/roupas"
+                },
+                {
+                    "category_name": "ACESSÓRIOS",
+                    "sub_category": [
+                        {
+                            "name": "Bolsas",
+                            "link": "/acessorios/bolsas"
+                        },
+                        {
+                            "name": "Cintos",
+                            "link": "/acessorios/cintos"
+                        },
+                        {
+                            "name": "Joias",
+                            "link": "/acessorios/joias"
+                        }
+                    ],
+                    "see_all": "/acessorios"
+                },
+                {
+                    "category_name": "A MARCA",
+                    "sub_category": [
+                        {
+                            "name": "Sobre nós",
+                            "link": "/a-marca/nossa-historia"
+                        },
+                        {
+                            "name": "Valores",
+                            "link": "/a-marca/valores"
+                        },
+                        {
+                            "name": "Sustentabilidade",
+                            "link": "/a-marca/sustentabilidade"
+                        }
+                    ],
+                    "see_all": "/a-marca"
+                },
+                {
+                    "category_name": "Campanhas",
+                    "sub_category": [
+                        {
+                            "name": "Promoções",
+                            "link": "/campanhas/promocoes"
+                        },
+                        {
+                            "name": "Outlet",
+                            "link": "/campanhas/outlet"
+                        },
+                        {
+                            "name": "Última Chance",
+                            "link": "/campanhas/ultima-chance"
+                        }
+                    ],
+                    "see_all": "/sale"
+                }
+            ],
+            "myWishListLink": "/myaccount"
+        }
+    },
+    "flex-layout.row#container-menu-mobile-btn": {
+        "title": "Menu Mobile Button Container",
+        "props": {
+            "blockClass": "menu-mobile-btn-container"
+        }
+    }
+}

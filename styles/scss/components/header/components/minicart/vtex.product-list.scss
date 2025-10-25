@@ -1,0 +1,104 @@
+@use "../../../../settings/index" as *;
+
+.productName--minicart-product-list-item-content {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: $color-minicart-name-product;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    text-align: left;
+}
+
+.price--minicart-product-list-item-content {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: $color-minicart-price-product;
+}
+
+.quantitySelectorWrapper--minicart-product-list-item-content {
+    max-width: 98px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    width: 38px;
+    height: 34px;
+    background: $color-white;
+    border: 1px solid $color-minicart-quantity-border;
+}
+
+
+.quantitySelectorButton--minicart-product-list-item-content {
+    border: none !important;
+    outline: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px !important;
+}
+
+.quantitySelectorDecrease--minicart-product-list-item-content {
+    &::before {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQgOEwxMiA4IiBzdHJva2U9IiM0ODQ4NDkiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.quantitySelectorIncrease--minicart-product-list-item-content {
+    &::before {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQgOEgxMk04IDRWMTIiIHN0cm9rZT0iIzQ4NDg0OSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.removeButton--minicart-product-list-item {
+    &::before {
+        content: "";
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDEyTDE0IDE2TTE0IDEyTDEwIDE2TTQgNkgyME0xNiA2TDE1LjcyOTQgNS4xODgwN0MxNS40NjcxIDQuNDAxMjUgMTUuMzM1OSA0LjAwNzg0IDE1LjA5MjcgMy43MTY5OEMxNC44Nzc5IDMuNDYwMTMgMTQuNjAyMSAzLjI2MTMyIDE0LjI5MDUgMy4xMzg3OEMxMy45Mzc2IDMgMTMuNTIzIDMgMTIuNjkzNiAzSDExLjMwNjRDMTAuNDc3IDMgMTAuMDYyNCAzIDkuNzA5NTEgMy4xMzg3OEM5LjM5NzkyIDMuMjYxMzIgOS4xMjIwOCAzLjQ2MDEzIDguOTA3MjkgMy43MTY5OEM4LjY2NDA1IDQuMDA3ODQgOC41MzI5MiA0LjQwMTI1IDguMjcwNjQgNS4xODgwN0w4IDZNMTggNlYxNi4yQzE4IDE3Ljg4MDIgMTggMTguNzIwMiAxNy42NzMgMTkuMzYyQzE3LjM4NTQgMTkuOTI2NSAxNi45MjY1IDIwLjM4NTQgMTYuMzYyIDIwLjY3M0MxNS43MjAyIDIxIDE0Ljg4MDIgMjEgMTMuMiAyMUgxMC44QzkuMTE5ODQgMjEgOC4yNzk3NiAyMSA3LjYzODAzIDIwLjY3M0M3LjA3MzU0IDIwLjM4NTQgNi42MTQ2IDE5LjkyNjUgNi4zMjY5OCAxOS4zNjJDNiAxOC43MjAyIDYgMTcuODgwMiA2IDE2LjJWNiIgc3Ryb2tlPSIjNDg0ODQ5IiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .deleteIcon--minicart-product-list-item {
+        display: none !important;
+    }
+}

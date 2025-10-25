@@ -1,0 +1,90 @@
+{
+    "search-bar#search-bar-mobile": {
+        "blocks": [
+            "autocomplete-result-list.v2#autocomplete-mobile"
+        ],
+        "props": {
+            "openAutocompleteOnFocus": true,
+            "autoFocus": true,
+            "placeholder": "Digite sua busca",
+            "blockClass": "search-bar-mobile"
+        }
+    },
+    "autocomplete-result-list.v2#autocomplete-mobile": {
+        "title": "Resultado da busca",
+		"blocks": [
+			"product-summary.shelf#autocomplete"
+		],
+		"props": {
+			"maxSuggestedProducts": 2   
+		}
+	},
+    "product-summary.shelf#autocomplete": {
+        "props": {
+			"blockClass": "product-autocomplete-shelf"
+		},
+        "children": [
+            "product-summary-image#autocomplete-mobile",
+            "flex-layout.row#container-info"
+        ]
+    },
+    "flex-layout.row#container-info": {
+        "props": {
+            "blockClass": [
+                "autocomplete-mobile--container-info"
+            ]
+        },
+        "children": [
+            "product-summary-name#autocomplete-mobile",
+            "flex-layout.row#product-price-area"
+        ]
+    },
+    "product-summary-image#autocomplete-mobile": {
+        "props": {
+            "blockClass": [
+                "autocomplete-mobile--image"
+            ]
+        }
+    },
+    "product-summary-name#autocomplete-mobile": {
+        "props": {
+            "blockClass": [
+                "autocomplete-mobile--name"
+            ]
+        }
+    },
+    "flex-layout.row#product-price-area": {
+        "title": "Área de preço do produto",
+        "props": {
+            "blockClass": "product-price-area",
+            "fullWidth": true
+        },
+        "children": [
+            "product-list-price#autocomplete-mobile",
+			"product-selling-price#autocomplete-mobile",
+            "product-installments#autocomplete-mobile"
+        ]
+    },
+    "product-list-price#autocomplete-mobile": {
+        "props": {
+            "blockClass": [
+                "autocomplete-mobile"
+            ]
+        }
+    },
+	"product-selling-price#autocomplete-mobile": {
+        "props": {
+            "blockClass": [
+                "autocomplete-mobile"
+            ]
+        }
+    },
+    "product-installments#autocomplete-mobile": {
+        "props": {
+            "message": "ou {installmentsNumber}X de {installmentValue}",
+            "blockClass": [
+                "autocomplete-mobile"
+            ]
+        }
+    }
+}

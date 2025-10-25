@@ -1,0 +1,42 @@
+@use "../../settings/index" as *;
+
+.flexRow--login-desktop-container {
+    width: auto;
+    height: auto;
+
+    .flexRowContent--login-desktop-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        :global(.vtex-login-desktop--login-button) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            
+            @include defaultBtns;
+        }
+
+        :global(.vtex-login-desktop--login-link) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            text-decoration: none;
+        }
+
+        :global(.vtex-login-desktop--login-button-text) {
+            text-align: left;
+            font-family: $font-poppins;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: $color-text-primary;
+            text-wrap: nowrap;
+        }
+    }
+}

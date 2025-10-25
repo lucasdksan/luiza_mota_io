@@ -1,0 +1,32 @@
+{
+    "two7-service-highlights": {
+        "title": "Principais Serviços",
+        "props": {
+            "VtexFlexLayout": "flex-layout.row#service-highlights",
+            "highlights": [
+                {
+                    "icon": "assets/icons/truck.svg",
+                    "name": "retire grátis em loja"
+                },
+                {
+                    "icon": "assets/icons/refresh-cw.svg",
+                    "name": "troca grátis"
+                },
+                {
+                    "icon": "assets/icons/credit-card.svg",
+                    "name": "até 6x sem juros"
+                },
+                {
+                    "icon": "assets/icons/circle-percentage.svg",
+                    "name": "20% off na primeira compra"
+                }
+            ]
+        }
+    },
+    "flex-layout.row#service-highlights": {
+        "title": "Área Principal do Serviços",
+        "props": {
+            "blockClass": "service-highlights"
+        }
+    }
+}

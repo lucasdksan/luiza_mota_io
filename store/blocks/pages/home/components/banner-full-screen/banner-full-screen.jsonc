@@ -1,0 +1,59 @@
+{
+    "responsive-layout.mobile#banner-full-screen": {
+        "children": [
+            "flex-layout.row#banner-full-screen-mobile"
+        ]
+    },
+    "responsive-layout.desktop#banner-full-screen": {
+        "children": [
+            "flex-layout.row#banner-full-screen-desktop"
+        ]
+    },
+    "flex-layout.row#banner-full-screen-mobile": {
+        "title": "Container do Banner tela completa",
+        "props": {
+            "blockClass": "banner-full-screen"
+        },
+        "children": [
+            "image#banner-full-screen"
+        ]
+    },
+    "flex-layout.row#banner-full-screen-desktop": {
+        "title": "Container do Banner tela completa desktop",
+        "props": {
+            "blockClass": "banner-full-screen"
+        },
+        "children": [
+            "image#banner-full-screen-desktop"
+        ]
+    },
+    "image#banner-full-screen": {
+        "title": "Banner Tela Completa mobile",
+        "props": {
+            "src": "assets/banners/banner-full-screen.png",
+            "alt": "Banner para coleção GEORGIA",
+            "link": {
+                "openNewTab": true,
+                "url": "/"
+            },
+            "blockClass": [
+                "banner-full-screen"
+            ]
+        }
+    },
+    "image#banner-full-screen-desktop": {
+        "title": "Banner Tela Completa desktop",
+        "props": {
+            "src": "assets/banners/banner-full-screen-desktop.png",
+            "alt": "Banner para coleção GEORGIA",
+            "link": {
+                "openNewTab": true,
+                "url": "/"
+            },
+            "blockClass": [
+                "banner-full-screen"
+            ]
+        }
+    }
+
+}

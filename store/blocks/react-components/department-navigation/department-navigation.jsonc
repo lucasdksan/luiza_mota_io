@@ -1,0 +1,47 @@
+{
+    "two7-department-navigation": {
+        "title": "Departamentos",
+        "props": {
+            "VtexFlexLayout": "flex-layout.row#department-navigation",
+            "title": "Departamentos",
+            "departments": [
+                {
+                    "image": "assets/banners/banner-departament-1.png",
+                    "name": "Ouro",
+                    "link": "/"
+                },
+                {
+                    "image": "assets/banners/banner-departament-2.png",
+                    "name": "Prata-joias",
+                    "link": "/"
+                },
+                {
+                    "image": "assets/banners/banner-departament-3.png",
+                    "name": "Conjutos",
+                    "link": "/"
+                },
+                {
+                    "image": "assets/banners/banner-departament-4.png",
+                    "name": "Masculino",
+                    "link": "/"
+                },
+                {
+                    "image": "assets/banners/banner-departament-5.png",
+                    "name": "Anéis",
+                    "link": "/"
+                },
+                {
+                    "image": "assets/banners/banner-departament-6.png",
+                    "name": "Berloques",
+                    "link": "/"
+                }
+            ]
+        }
+    },
+    "flex-layout.row#department-navigation": {
+        "title": "Área da navegação dos departamentos",
+        "props": {
+            "blockClass": "department-navigation"
+        }
+    }
+}

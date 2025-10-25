@@ -1,0 +1,42 @@
+@use "../../../../settings/index" as *;
+
+.flexRow--information {
+    padding: 0px 20px;
+
+    :global(.vtex-store-components-3-x-container) {
+        padding: 0px !important;
+    }
+    
+    @include desktop {
+        padding: 0px !important;
+    }
+}
+
+.flexRowContent--information {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include desktop {
+        .stretchChildrenWidth {
+            width: auto !important;
+        }
+    }
+}
+
+.flexRowContent--social-media-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    .stretchChildrenWidth {
+        width: auto !important;
+    }
+}
+
+.flexRowContent--social-media-area,
+.flexRowContent--encrypt-stamp {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

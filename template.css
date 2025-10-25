@@ -1,0 +1,237 @@
+.tib-bar-mobile {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.placeholder-mobile {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #858588;
+}
+
+.show-benefict-bar-mobile {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.title-mobile-home {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: 1px;
+    color: #282828;
+}
+
+.title-card-mobile {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #4E483B;
+}
+
+.title-shelves-mobile {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 110%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #282828;
+}
+
+.flag-shelf-mobile {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FF78B0;
+}
+
+.title-shelf-mobile {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #484849;
+}
+
+.last-price-shelf-mobile {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-decoration-line: line-through;
+    color: #858588;
+}
+
+.new-price-shelf-mobile {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: #484849;
+}
+
+.parcelas-shelf-mobile {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #484849;
+}
+
+.price-parcelas-shelf-mobile {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: #484849;
+}
+
+.footer-description-mobile {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 170%;
+    color: #484849;
+}
+
+.title-newletter-mobile {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 34px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #282828;
+}
+
+.description-newsletter-mobile {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #282828;
+}
+
+.input-newsletter-mobile {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #858588;
+}
+
+.btn-newletter-mobile {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+.title-success-newletter-mobile {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+    color: #282828;
+}
+
+.text-success-newsletter-mobile {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #282828;
+}
+
+.navigation-title-footer-mobile {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #FF78B0;
+}
+
+.navigation-option-footer-mobile {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #858588;
+}
+
+.footer-localization {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    color: #858588;
+}
+
+.tip-bar-object {
+    /* Banner  Tipbar Mobile */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+padding: 7px 10px 7px 20px;
+isolation: isolate;
+
+width: 390px;
+height: 45px;
+
+/* Action/Tertiary */
+background: #282828;
+}

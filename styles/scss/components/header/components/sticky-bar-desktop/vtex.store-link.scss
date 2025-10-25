@@ -1,0 +1,24 @@
+@use "../../../../settings/index" as *;
+
+.link--my-wishlist-desktop-link {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    text-decoration: none;
+    max-width: 100px;
+}
+
+.label--my-wishlist-desktop-link {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-text-primary;
+}
+
+.childrenContainer--my-wishlist-desktop-link {
+    display: flex;
+}

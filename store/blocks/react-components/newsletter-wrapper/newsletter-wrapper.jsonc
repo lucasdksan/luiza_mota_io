@@ -1,0 +1,7 @@
+{
+    "two7-newsletter-wrapper": {
+        "props": {
+            "VtexNewsletter": "flex-layout.row#content-left-side"
+        }
+    }
+}

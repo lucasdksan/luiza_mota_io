@@ -1,0 +1,124 @@
+{
+    "flex-layout.row#information": {
+        "title": "Área de informações",
+        "props": {
+            "blockClass": ["information"]
+        },
+        "children": [
+            "flex-layout.row#social-media-area",
+            "flex-layout.row#encrypt-stamp"
+        ]
+    },
+    "flex-layout.row#social-media-area": {
+        "title": "Área das Redes Sociais",
+        "props": {
+            "blockClass": ["social-media-area"]
+        },
+        "children": [
+            "rich-text#social-media-title",
+            "flex-layout.row#social-media-container"
+        ]
+    },
+    "rich-text#social-media-title": {
+        "title": "Redes Sociais Título",
+        "props": {
+            "text": "Redes sociais",
+            "blockClass": [
+                "social-media-title",
+                "title-navigation-footer"
+            ]
+        }
+    },
+    "flex-layout.row#social-media-container": {
+        "title": "Linha das Redes Sociais",
+        "props": {
+            "blockClass": ["social-media-container"]
+        },
+        "children": [
+            "image#social-media-icon-1",
+            "image#social-media-icon-2",
+            "image#social-media-icon-3",
+            "image#social-media-icon-4"
+        ]
+    },
+    "image#social-media-icon-1": {
+        "title": "Ícone Facebook",
+        "props": {
+            "link": {
+                "url": "/",
+                "openNewTab": true
+            },
+            "alt": "Ícone Facebook",
+            "src": "assets/icons/facebook-footer.svg",
+            "blockClass": ["social-media-icon"]
+        }
+    },
+    "image#social-media-icon-2": {
+        "title": "Ícone Instagram",
+        "props": {
+            "link": {
+                "url": "/",
+                "openNewTab": true
+            },
+            "alt": "Ícone Instagram",
+            "src": "assets/icons/instagram-footer.svg",
+            "blockClass": ["social-media-icon"]
+        }
+    },
+    "image#social-media-icon-3": {
+        "title": "Ícone Youtube",
+        "props": {
+            "link": {
+                "url": "/",
+                "openNewTab": true
+            },
+            "alt": "Ícone Youtube",
+            "src": "assets/icons/youtube-footer.svg",
+            "blockClass": ["social-media-icon"]
+        }
+    },
+    "image#social-media-icon-4": {
+        "title": "Ícone Tiktok",
+        "props": {
+            "link": {
+                "url": "/",
+                "openNewTab": true
+            },
+            "alt": "Ícone Tiktok",
+            "src": "assets/icons/tiktok-footer.svg",
+            "blockClass": ["social-media-icon"]
+        }
+    },
+    "flex-layout.row#encrypt-stamp": {
+        "title": "Área do Selo Encrypt",
+        "props": {
+            "blockClass": ["encrypt-stamp"]
+        },
+        "children": [
+            "rich-text#encrypt-stamp-title",
+            "image#encrypt-icon"
+        ]
+    },
+    "rich-text#encrypt-stamp-title": {
+        "title": "Encrypt Título",
+        "props": {
+            "text": "Selos",
+            "blockClass": [
+                "encrypt-stamp-title",
+                "title-navigation-footer"
+            ]
+        }
+    },
+    "image#encrypt-icon": {
+        "title": "Ícone Encrypt",
+        "props": {
+            "link": {
+                "url": "/",
+                "openNewTab": true
+            },
+            "alt": "Ícone Encrypt",
+            "src": "assets/icons/lets-encrypt.svg",
+            "blockClass": ["encrypt-icon"]
+        }
+    }
+}

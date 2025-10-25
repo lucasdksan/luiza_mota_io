@@ -1,0 +1,15 @@
+@use "../../../../settings/index" as *;
+
+:global(.vtex-flex-layout-0-x-flexRowContent--content-left-side){
+    > :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+        @include desktop {
+            &:first-child {
+                width: auto !important;
+            }
+
+            &:last-child {
+                width: 100% !important;
+            }
+        }
+    }
+}

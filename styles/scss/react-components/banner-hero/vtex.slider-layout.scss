@@ -1,0 +1,137 @@
+@use "../../settings/index" as *;
+
+.paginationDotsContainer--banner-hero {
+    bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+
+    @include desktop {
+        bottom: 5%;
+    }
+}
+
+.paginationDot--banner-hero {
+    background-color: $color-slider-dots;
+    width: 8px !important;
+    height: 8px !important;
+    flex: 1;
+    padding: 0px !important;
+    margin: 0px !important;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 8px !important;
+
+    @include desktop {
+        width: 80px !important;
+        height: 3px !important;
+        opacity: 0.3;
+        max-width: 80px !important;
+        background: $color-slider-dots-desktop;
+        border-radius: 10px;
+    }
+}
+
+.paginationDot--banner-hero--isActive {
+    background-color: $color-slider-dots-active;
+
+    @include desktop {
+        opacity: 1 !important;
+        background-color: $color-slider-dots-active-desktop !important;
+    }
+}
+
+.sliderLeftArrow--banner-hero,
+.sliderRightArrow--banner-hero {
+    background-color: transparent;
+    width: 36px !important;
+    height: 36px !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    border-radius: 0;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+
+    .caretIcon--banner-hero {
+        display: none;
+    }
+}
+
+@include desktop {
+    .sliderLeftArrow--banner-hero {
+        left: 4%;
+
+        &::before {
+            content: '';
+            background-image: url('assets/icons/banner-hero-arrow.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .sliderRightArrow--banner-hero {
+        right: 4%;
+
+        &::before {
+            content: '';
+            background-image: url('assets/icons/banner-hero-arrow.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 30px;
+            height: 30px;
+            transform: rotate(180deg);
+        }
+    }
+}
+
+// .sliderLayoutContainer--banner-hero {
+//     @include desktop {
+//         width: 100%;
+//         height: calc(100vh - 30px);
+//     }
+// }
+
+.sliderLayoutContainer--banner-hero .slideChildrenContainer--banner-hero {
+    :global(.vtex-banner-hero-custom--banner-video) {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        // @include desktop {
+        //     max-height: calc(100vh - 30px);
+        // }
+    }
+}
+
+// .slideChildrenContainer--banner-hero {
+//     @include desktop {
+//         justify-content: flex-start;
+//         align-items: flex-start;
+//     }
+// }
+
+.sliderLayoutContainer--banner-hero .imageElementLink--banner-hero,
+.sliderLayoutContainer--banner-hero .slide--banner-hero,
+.sliderLayoutContainer--banner-hero .slideChildrenContainer--banner-hero,
+.sliderLayoutContainer--banner-hero .sliderTrack--banner-hero,
+.sliderLayoutContainer--banner-hero .sliderTrackContainer--banner-hero {
+    width: 100%;
+    height: 100%;
+}
+
+.imageElement--banner-hero {
+    width: auto;
+    height: 100%;
+    max-height: 100% !important;
+    -o-object-fit: cover;
+    object-fit: cover;
+}

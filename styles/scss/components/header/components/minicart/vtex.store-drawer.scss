@@ -1,0 +1,31 @@
+@use "../../../../settings/index" as *;
+
+.closeIconButton--minicart-close-button-footer {
+    font-family: $font-lato;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $color-primary;
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 11px 30px;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTUgMTAuMDAwMkgxNU01IDEwLjAwMDJMOS4xNjY2NyA1LjgzMzVNNSAxMC4wMDAyTDkuMTY2NjcgMTQuMTY2OCIgc3Ryb2tlPSIjRkY3OEIwIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

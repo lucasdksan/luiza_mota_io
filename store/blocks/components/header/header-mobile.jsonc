@@ -1,0 +1,10 @@
+{
+    "header-layout.mobile": {
+      "title": "Header layout mobile",
+      "children": [
+        "two7-head-imports",
+        "two7-promotional-tip-bar",
+        "flex-layout.row#header-sticky-bar-mobile"
+      ]
+    }
+  }

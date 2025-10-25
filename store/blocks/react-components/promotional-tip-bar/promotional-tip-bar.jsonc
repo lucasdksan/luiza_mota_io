@@ -1,0 +1,41 @@
+{
+    "two7-promotional-tip-bar": {
+        "title": "Tip Bar Promocional",
+        "props": {
+            "VtexFlexLayout": "flex-layout.row#promotional-tip-bar-container",
+            "VtexSliderLayout": "slider-layout#promotional-tip-bar-slider",
+            "texts": [
+                "até zerar o relógio de 16h às 20h",
+                "<strong>60% OFF <span>|</span> na coleção</strong>"
+            ]
+        }
+    },
+    "flex-layout.row#promotional-tip-bar-container": {
+        "title": "Container do Tip Bar Promocional",
+        "props": {
+            "blockClass": "promotional-tip-bar",
+            "preventHorizontalStretch": false,
+            "horizontalAlign": "center",
+            "verticalAlign": "center",
+            "fullWidth": true
+        }
+    },
+    "slider-layout#promotional-tip-bar-slider": {
+        "title": "Slider do Tip Bar Promocional",
+        "props": {
+            "itemsPerPage": {
+                "desktop": 2,
+                "tablet": 1,
+                "phone": 1
+            },
+            "infinite": true,
+            "showNavigationArrows": "never",
+            "showPaginationDots": "never",
+            "autoplay": {
+                "timeout": 4000,
+                "stopOnHover": true
+            },
+            "blockClass": "promotional-tip-bar-slider"
+        }
+    }
+}

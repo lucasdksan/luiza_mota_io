@@ -1,0 +1,135 @@
+{
+  "flex-layout.row#newsletter-container": {
+    "title": "Container Newsletter",
+    "props": {
+      "blockClass": "newsletter-container",
+      "paddingTop": 8,
+      "paddingBottom": 8,
+      "paddingLeft": 5,
+      "paddingRight": 5,
+      "fullWidth": true
+    },
+    "children": [
+      "two7-newsletter-wrapper"
+    ]
+  },
+
+  "flex-layout.row#content-left-side": {
+    "title": "Conteúdo Esquerda",
+    "props": {
+      "blockClass": "content-left-side",
+      "rowGap": 2,
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.col#newsletter-header",
+      "newsletter-form#newsletter-footer"
+    ]
+  },
+
+  "flex-layout.col#newsletter-header": {
+    "title": "Cabeçalho Newsletter",
+    "props": {
+      "blockClass": "newsletter-header",
+      "rowGap": 2,
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#newsletter-title",
+      "rich-text#newsletter-description"
+    ]
+  },
+
+  "rich-text#newsletter-title": {
+    "title": "Título Newsletter",
+    "props": {
+      "blockClass": "newsletter-title",
+      "text": "NEWSLETTER"
+    }
+  },
+
+  "rich-text#newsletter-description": {
+    "title": "Descrição Newsletter",
+    "props": {
+      "blockClass": "newsletter-description",
+      "text": "Cadastre seu e-mail aqui e fique por dentro de todas as novidades!"
+    }
+  },
+
+  "newsletter-form#newsletter-footer": {
+    "title": "Formulário Newsletter",
+    "props": {
+      "SuccessState": "flex-layout.row#success-state",
+      "blockClass": [
+        "newsletter-footer"
+      ]
+    },
+    "children": [
+      "newsletter-input-email#newsletter-email",
+      "newsletter-input-name#newsletter-name",
+      "newsletter-submit#newsletter-submit"
+    ]
+  },
+
+  "newsletter-input-email#newsletter-email": {
+    "title": "Campo E-mail Newsletter",
+    "props": {
+      "placeholderText": "E-mail"
+    }
+  },
+
+  "newsletter-input-name#newsletter-name": {
+    "title": "Campo Nome Newsletter",
+    "props": {
+      "placeholderText": "Nome"
+    }
+  },
+
+  "newsletter-submit#newsletter-submit": {
+    "title": "Botão Submit Newsletter",
+    "props": {
+      "submitButtonLabel": "OK"
+    }
+  },
+  "flex-layout.row#success-state": {
+    "title": "Área de sucesso da newsletter footer",
+    "props": {
+      "blockClass": [
+        "success-state"
+      ]
+    },
+    "children": [
+      "image#success-state-icon",
+      "rich-text#success-state-title",
+      "rich-text#success-state-description"
+    ]
+  },
+  "rich-text#success-state-title": {
+    "title": "Título estado de sucesso",
+    "props": {
+      "text": "Cadastro realizado com sucesso",
+      "blockClass": [
+        "success-state-title"
+      ]
+    }
+  },
+  "rich-text#success-state-description": {
+    "title": "Título estado de sucesso",
+    "props": {
+      "text": "Prepare-se! As melhores novidades e promoções estão a caminho do seu e-mail.",
+      "blockClass": [
+        "success-state-description"
+      ]
+    }
+  },
+  "image#success-state-icon": {
+    "title": "Ícone de sucesso",
+    "props": {
+      "src": "assets/icons/success-state.svg",
+      "alt": "Ícone de sucesso",
+      "blockClass": [
+        "success-state-icon"
+      ]
+    }
+  }
+}

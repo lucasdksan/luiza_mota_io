@@ -1,0 +1,60 @@
+@use "../../../../settings/index" as *;
+
+.flexRow--header-desktop-container {
+    width: 100%;
+    padding: 0px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: $color-white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+    :global(.vtex-store-components-3-x-container) {
+        padding: 0px !important;
+        margin: 0px !important;
+        max-width: none;
+        width: 100% !important;
+    }
+}
+
+.flexRow--header-desktop-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 12px 80px;
+
+    .flexRowContent--header-desktop-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include desktop {
+            @include container-fluid;
+        }
+    }
+}
+
+.flexRow--right-side-header-desktop {
+    width: auto;
+    height: auto;
+
+    .flexRowContent--right-side-header-desktop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+    }
+}
+
+.flexRow--redirect-action-btns {
+    width: auto;
+    height: auto;
+
+    .flexRowContent--redirect-action-btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+    }
+}

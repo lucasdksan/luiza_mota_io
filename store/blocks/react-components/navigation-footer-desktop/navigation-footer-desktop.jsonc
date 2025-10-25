@@ -1,0 +1,137 @@
+{
+  "two7-navigation-footer-desktop": {
+    "title": "Footer de Navegação Desktop",
+    "props": {
+      "VtexFlexLayout": "flex-layout.row#navigation-footer-desktop-container",
+      "VtexFlexLayoutInformation": "flex-layout.row#information",
+      "columns": [
+        {
+            "key": "category",
+            "title": "Categorias",
+            "links": [
+                {
+                    "text": "Brincos",
+                    "href": "/brinco"
+                },
+                {
+                    "text": "Anéis",
+                    "href": "/aneis"
+                },
+                {
+                    "text": "Colares",
+                    "href": "/colares"
+                },
+                {
+                    "text": "Berloques",
+                    "href": "/berloques"
+                },
+                {
+                    "text": "Pulseiras",
+                    "href": "/pulseiras"
+                },
+                {
+                    "text": "Conjuntos",
+                    "href": "/conjuntos"
+                },
+                {
+                    "text": "Tornozeleiras",
+                    "href": "/tornozeleiras"
+                },
+                {
+                    "text": "Masculino",
+                    "href": "/masculino"
+                },
+                {
+                    "text": "Feminino",
+                    "href": "/feminino"
+                },
+                {
+                    "text": "Relógios",
+                    "href": "/relogios"
+                },
+                {
+                    "text": "Fornitura",
+                    "href": "/fornitura"
+                },
+                {
+                    "text": "Brasil off",
+                    "href": "/brasil-off"
+                }
+            ]
+        },
+        {
+            "key": "the-brand",
+            "title": "A marca",
+            "links": [
+                {
+                    "text": "Sobre nós",
+                    "href": "/about-us"
+                },
+                {
+                    "text": "Nossas Lojas",
+                    "href": "/stores"
+                },
+                {
+                    "text": "Política de privacidade",
+                    "href": "/"
+                },
+                {
+                    "text": "Política de entrega",
+                    "href": "/"
+                }
+            ]
+        },
+        {
+            "key": "called",
+            "title": "Atendimento",
+            "links": [
+                {
+                    "text": "Troca e devoluções",
+                    "href": "/"
+                },
+                {
+                    "text": "Garantia",
+                    "href": "/"
+                },
+                {
+                    "text": "Minha conta",
+                    "href": "/"
+                },
+                {
+                    "text": "Meus pedidos",
+                    "href": "/"
+                },
+                {
+                    "text": "Fale conosco",
+                    "href": "/"
+                },
+                {
+                    "text": "Formas de Pagamento",
+                    "href": "/"
+                }
+            ]
+        },
+        {
+            "key": "smart-call",
+            "title": "Televendas",
+            "links": [
+                {
+                    "text": "(62) 3999-4217",
+                    "href": "/"
+                },
+                {
+                    "text": "(62) 98249-0378",
+                    "href": "/"
+                }
+            ]
+        }
+      ]
+    }
+  },
+  "flex-layout.row#navigation-footer-desktop-container": {
+    "title": "Container de Navegação Desktop",
+    "props": {
+      "blockClass": "navigation-footer-desktop"
+    }
+  }
+}

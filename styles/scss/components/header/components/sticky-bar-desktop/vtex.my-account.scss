@@ -1,0 +1,12 @@
+:global(.vtex-flex-layout-0-x-flexRowContent--header-desktop-wrapper),
+:global(.vtex-flex-layout-0-x-flexRowContent--redirect-action-btns) {
+    & > :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+        &:first-child {
+            width: auto !important;
+        }
+
+        &:last-child {
+            width: auto !important;
+        }
+    } 
+}

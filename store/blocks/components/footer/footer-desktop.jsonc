@@ -1,0 +1,16 @@
+{
+    "footer-layout.desktop": {
+        "props": {
+            "blockClass": [
+                "footer-section",
+                "footer-section-desktop"
+            ]
+        },
+        "children": [
+            "two7-read-more-card",
+            "flex-layout.row#newsletter-container",
+            "two7-navigation-footer-desktop",
+            "flex-layout.row#stapm"
+        ]
+    }
+}

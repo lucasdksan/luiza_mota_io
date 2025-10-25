@@ -1,0 +1,566 @@
+@use "../../settings/index" as *;
+
+.content {
+    padding: 0px !important;
+
+    &--loginOptions {
+        .contentForm {
+            .loginOptionsContainer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .options {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .formTitle {
+                    font-family: $font-poppins;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 18px;
+                    text-align: center;
+                    color: $color-text-muted;
+                    padding: 0px;
+                    margin: 10px 0px 20px 0px;
+                    max-width: 200px;
+
+                    @include desktop {
+                        max-width: none !important;
+                    }
+                }
+
+                .optionsList {
+                    margin: 0px !important;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    gap: 10px;
+
+                    @include desktop {
+                        
+                    }
+
+                    .optionsListItem {
+                        width: 100%;
+                        margin: 0px;
+                        padding: 0px;
+
+                        .button {
+                            width: 100%;
+                            height: auto;
+                        }
+
+                        .accessCodeOptionBtn {
+                            :global(.vtex-button) {
+                                background-color: $color-primary;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                align-items: center;
+                                padding: 8px 20px;
+                                gap: 10px;
+                                width: 100%;
+                                height: 38px;
+                                border: 1.2px solid $color-primary;
+
+                                :global(.vtex-button__label) {
+                                    font-family: $font-poppins;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 12px;
+                                    line-height: 140%;
+                                    text-align: center;
+                                    text-transform: capitalize !important;
+                                    color: $color-access-code-option-btn-text;
+                                    padding: 0px;
+                                }
+                            }
+                        }
+
+                        .emailPasswordOptionBtn {
+                            :global(.vtex-button) {
+                                background-color: transparent;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                align-items: center;
+                                padding: 8px 20px;
+                                gap: 10px;
+                                width: 100%;
+                                height: 38px;
+                                border: 1.2px solid $color-primary;
+
+                                :global(.vtex-button__label) {
+                                    font-family: $font-poppins;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 14px;
+                                    line-height: 140%;
+                                    text-align: center;
+                                    letter-spacing: 0.04em;
+                                    text-transform: capitalize !important;
+                                    color: $color-email-password-option-btn-text;
+                                    padding: 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    &--emailAndPassword {
+        margin: 0px !important;
+        width: 100%;
+
+        .contentForm {
+            padding: 0px !important;
+            width: 100%;
+
+            .emailAndPasswordForm {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .formTitle {
+                font-family: $font-poppins;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 18px;
+                text-align: center;
+                color: $color-text-muted;
+                padding: 0px;
+                margin: 10px 0px 20px 0px;
+                max-width: 200px;
+            }
+
+            .inputContainerEmail {
+                :global(.vtex-input-prefix__group),
+                :global(.vtex-input) {
+                    border: none !important;
+                    border-radius: 0px;
+                    height: auto !important;
+                }
+
+                :global(.vtex-styleguide-9-x-input) {
+
+                    @include loginInput;
+                }
+            }
+
+            .inputContainerPassword {
+                padding: 0px;
+                margin: 14px 0px 0px 0px;
+
+                :global(.vtex-input) {
+                    border: none !important;
+                    border-radius: 0px;
+                    height: auto !important;
+                }
+
+                :global(.vtex-input-prefix__group) {
+                    @include loginInputGroup;
+                }
+
+                :global(.vtex-styleguide-9-x-input) {
+                    padding: 0px !important;
+                    margin: 0px !important;
+
+                    @include loginInputGroupText;
+                }
+
+                :global(.vtex-input__suffix) {
+                    padding: 0px;
+                }
+
+                .tooltipContainer {
+                    display: none;
+                }
+            }
+
+            .formLinkContainer {
+                padding: 0px;
+                margin: 0px;
+
+                .forgotPasswordLink {
+                    padding: 10px 0px 0px 0px;
+                    margin: 20px 0px;
+                    border-top: 1px solid $color-gray-700;
+                    width: 100%;
+
+                    font-family: $font-poppins;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 150%;
+                    text-align: right;
+                    text-decoration-line: underline;
+                    color: $color-forgot-password;
+                }
+
+                .dontHaveAccount {
+                    margin-top: 10px;
+                    font-family: $font-poppins;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 150%;
+                    text-align: right;
+                    text-decoration-line: none;
+                    color: $color-forgot-password;
+                }
+            }
+
+            .formFooter {
+                padding: 0px;
+                margin: 0px;
+                border: none !important;
+
+                .backButton {
+                    :global(.vtex-button) {
+                        margin: 0px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 11px 20px;
+                        gap: 16px;
+                        width: 122px;
+                        height: 42px;
+
+
+                        &::before {
+                            content: "";
+                            display: block;
+                            width: 20px;
+                            height: 20px;
+                            background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE3LjUgOS45OTk4NkMxNy41IDEwLjE2NTYgMTcuNDM0MiAxMC4zMjQ2IDE3LjMxNjkgMTAuNDQxOEMxNy4xOTk3IDEwLjU1OSAxNy4wNDA4IDEwLjYyNDkgMTYuODc1IDEwLjYyNDlINC42MzM2TDkuMTkyMTkgMTUuMTgyN0M5LjI1MDI2IDE1LjI0MDcgOS4yOTYzMiAxNS4zMDk3IDkuMzI3NzUgMTUuMzg1NUM5LjM1OTE4IDE1LjQ2MTQgOS4zNzUzNSAxNS41NDI3IDkuMzc1MzUgMTUuNjI0OUM5LjM3NTM1IDE1LjcwNyA5LjM1OTE4IDE1Ljc4ODMgOS4zMjc3NSAxNS44NjQyQzkuMjk2MzIgMTUuOTQgOS4yNTAyNiAxNi4wMDkgOS4xOTIxOSAxNi4wNjdDOS4xMzQxMiAxNi4xMjUxIDkuMDY1MTggMTYuMTcxMiA4Ljk4OTMxIDE2LjIwMjZDOC45MTM0NCAxNi4yMzQgOC44MzIxMyAxNi4yNTAyIDguNzUgMTYuMjUwMkM4LjY2Nzg4IDE2LjI1MDIgOC41ODY1NiAxNi4yMzQgOC41MTA2OSAxNi4yMDI2QzguNDM0ODIgMTYuMTcxMiA4LjM2NTg4IDE2LjEyNTEgOC4zMDc4MiAxNi4wNjdMMi42ODI4MiAxMC40NDJDMi42MjQ3MSAxMC4zODQgMi41Nzg2MSAxMC4zMTUxIDIuNTQ3MTUgMTAuMjM5MkMyLjUxNTcgMTAuMTYzMyAyLjQ5OTUxIDEwLjA4MiAyLjQ5OTUxIDkuOTk5ODZDMi40OTk1MSA5LjkxNzcyIDIuNTE1NyA5LjgzNjQgMi41NDcxNSA5Ljc2MDUyQzIuNTc4NjEgOS42ODQ2NSAyLjYyNDcxIDkuNjE1NzIgMi42ODI4MiA5LjU1NzY3TDguMzA3ODIgMy45MzI2N0M4LjQyNTA5IDMuODE1NCA4LjU4NDE1IDMuNzQ5NTEgOC43NSAzLjc0OTUxQzguOTE1ODYgMy43NDk1MSA5LjA3NDkyIDMuODE1NCA5LjE5MjE5IDMuOTMyNjdDOS4zMDk0NyA0LjA0OTk1IDkuMzc1MzUgNC4yMDkwMSA5LjM3NTM1IDQuMzc0ODZDOS4zNzUzNSA0LjU0MDcxIDkuMzA5NDcgNC42OTk3NyA5LjE5MjE5IDQuODE3MDVMNC42MzM2IDkuMzc0ODZIMTYuODc1QzE3LjA0MDggOS4zNzQ4NiAxNy4xOTk3IDkuNDQwNzEgMTcuMzE2OSA5LjU1NzkyQzE3LjQzNDIgOS42NzUxMyAxNy41IDkuODM0MSAxNy41IDkuOTk5ODZaIiBmaWxsPSIjRkY3OEIwIi8+Cjwvc3ZnPgo=");
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+
+                        :global(.vtex-button__label) {
+                            display: none !important;
+                        }
+
+                        &::after {
+                            content: "Voltar";
+                            font-family: $font-poppins;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 140%;
+                            text-align: center;
+                            letter-spacing: 0.04em;
+                            text-transform: capitalize !important;
+                            color: $color-login-back-button;
+                        }
+                    }
+                }
+
+                .sendButton {
+                    margin-left: 8px !important;
+                    width: 100% !important;
+
+                    :global(.vtex-button) {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 11px 30px;
+                        gap: 10px;
+                        width: 100%;
+                        height: 42px;
+                        background: $color-primary;
+                        border-radius: 8px;
+                        border: none !important;
+
+                        :global(.vtex-button__label) {
+                            padding: 0px !important;
+                            font-family: $font-poppins;
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 140%;
+                            text-align: center;
+                            text-transform: capitalize !important;
+                            letter-spacing: 0.04em;
+                            color: $color-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &--emailVerification,
+    &--beginCreatePass {
+        margin: 0px !important;
+        width: 100%;
+
+        .contentForm {
+            padding: 0px !important;
+            width: 100%;
+
+            .emailVerification{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .formTitle {
+                font-family: $font-poppins;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 18px;
+                text-align: center;
+                color: $color-text-muted;
+                padding: 0px;
+                margin: 10px 0px 20px 0px;
+                max-width: 220px;
+            }
+
+            .inputContainerEmail {
+                margin-bottom: 20px !important;
+
+                :global(.vtex-input-prefix__group),
+                :global(.vtex-input) {
+                    border: none !important;
+                    border-radius: 0px;
+                    height: auto !important;
+                }
+
+                :global(.vtex-styleguide-9-x-input) {
+
+                    @include loginInput;
+                }
+            }
+
+            .formFooter {
+                padding: 0px;
+                margin: 0px;
+                border: none !important;
+
+                .backButton {
+                    :global(.vtex-button) {
+                        margin: 0px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 11px 20px;
+                        gap: 16px;
+                        width: 122px;
+                        height: 42px;
+
+
+                        &::before {
+                            content: "";
+                            display: block;
+                            width: 20px;
+                            height: 20px;
+                            background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE3LjUgOS45OTk4NkMxNy41IDEwLjE2NTYgMTcuNDM0MiAxMC4zMjQ2IDE3LjMxNjkgMTAuNDQxOEMxNy4xOTk3IDEwLjU1OSAxNy4wNDA4IDEwLjYyNDkgMTYuODc1IDEwLjYyNDlINC42MzM2TDkuMTkyMTkgMTUuMTgyN0M5LjI1MDI2IDE1LjI0MDcgOS4yOTYzMiAxNS4zMDk3IDkuMzI3NzUgMTUuMzg1NUM5LjM1OTE4IDE1LjQ2MTQgOS4zNzUzNSAxNS41NDI3IDkuMzc1MzUgMTUuNjI0OUM5LjM3NTM1IDE1LjcwNyA5LjM1OTE4IDE1Ljc4ODMgOS4zMjc3NSAxNS44NjQyQzkuMjk2MzIgMTUuOTQgOS4yNTAyNiAxNi4wMDkgOS4xOTIxOSAxNi4wNjdDOS4xMzQxMiAxNi4xMjUxIDkuMDY1MTggMTYuMTcxMiA4Ljk4OTMxIDE2LjIwMjZDOC45MTM0NCAxNi4yMzQgOC44MzIxMyAxNi4yNTAyIDguNzUgMTYuMjUwMkM4LjY2Nzg4IDE2LjI1MDIgOC41ODY1NiAxNi4yMzQgOC41MTA2OSAxNi4yMDI2QzguNDM0ODIgMTYuMTcxMiA4LjM2NTg4IDE2LjEyNTEgOC4zMDc4MiAxNi4wNjdMMi42ODI4MiAxMC40NDJDMi42MjQ3MSAxMC4zODQgMi41Nzg2MSAxMC4zMTUxIDIuNTQ3MTUgMTAuMjM5MkMyLjUxNTcgMTAuMTYzMyAyLjQ5OTUxIDEwLjA4MiAyLjQ5OTUxIDkuOTk5ODZDMi40OTk1MSA5LjkxNzcyIDIuNTE1NyA5LjgzNjQgMi41NDcxNSA5Ljc2MDUyQzIuNTc4NjEgOS42ODQ2NSAyLjYyNDcxIDkuNjE1NzIgMi42ODI4MiA5LjU1NzY3TDguMzA3ODIgMy45MzI2N0M4LjQyNTA5IDMuODE1NCA4LjU4NDE1IDMuNzQ5NTEgOC43NSAzLjc0OTUxQzguOTE1ODYgMy43NDk1MSA5LjA3NDkyIDMuODE1NCA5LjE5MjE5IDMuOTMyNjdDOS4zMDk0NyA0LjA0OTk1IDkuMzc1MzUgNC4yMDkwMSA5LjM3NTM1IDQuMzc0ODZDOS4zNzUzNSA0LjU0MDcxIDkuMzA5NDcgNC42OTk3NyA5LjE5MjE5IDQuODE3MDVMNC42MzM2IDkuMzc0ODZIMTYuODc1QzE3LjA0MDggOS4zNzQ4NiAxNy4xOTk3IDkuNDQwNzEgMTcuMzE2OSA5LjU1NzkyQzE3LjQzNDIgOS42NzUxMyAxNy41IDkuODM0MSAxNy41IDkuOTk5ODZaIiBmaWxsPSIjRkY3OEIwIi8+Cjwvc3ZnPgo=");
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+
+                        :global(.vtex-button__label) {
+                            display: none !important;
+                        }
+
+                        &::after {
+                            content: "Voltar";
+                            font-family: $font-poppins;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 140%;
+                            text-align: center;
+                            letter-spacing: 0.04em;
+                            text-transform: capitalize !important;
+                            color: $color-login-back-button;
+                        }
+                    }
+                }
+
+                .sendButton {
+                    margin-left: 8px !important;
+                    width: 100% !important;
+
+                    :global(.vtex-button) {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 11px 30px;
+                        gap: 10px;
+                        width: 100%;
+                        height: 42px;
+                        background: $color-primary;
+                        border-radius: 8px;
+                        border: none !important;
+
+                        :global(.vtex-button__label) {
+                            padding: 0px !important;
+                            font-family: $font-poppins;
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 140%;
+                            text-align: center;
+                            text-transform: capitalize !important;
+                            letter-spacing: 0.04em;
+                            color: $color-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &--codeConfirmation {
+        margin: 0px !important;
+        width: 100%;
+
+        .contentForm {
+            padding: 0px !important;
+            width: 100%;
+
+            .codeConfirmation {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .formTitle {
+                font-family: $font-poppins;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 18px;
+                text-align: center;
+                color: $color-text-muted;
+                padding: 0px;
+                margin: 10px 0px 20px 0px;
+                max-width: 240px;
+            }
+
+            .inputContainerAccessCode {
+                padding: 0px !important;
+                margin-bottom: 20px !important;
+
+                :global(.vtex-input-prefix__group),
+                :global(.vtex-input) {
+                    border: none !important;
+                    border-radius: 0px;
+                    height: auto !important;
+                }
+
+                :global(.vtex-styleguide-9-x-input) {
+
+                    @include loginInput;
+                }
+            }
+
+            .formFooter {
+                padding: 0px;
+                margin: 0px;
+                border: none !important;
+
+                .backButton {
+                    :global(.vtex-button) {
+                        margin: 0px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 11px 20px;
+                        gap: 16px;
+                        width: 122px;
+                        height: 42px;
+
+
+                        &::before {
+                            content: "";
+                            display: block;
+                            width: 20px;
+                            height: 20px;
+                            background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE3LjUgOS45OTk4NkMxNy41IDEwLjE2NTYgMTcuNDM0MiAxMC4zMjQ2IDE3LjMxNjkgMTAuNDQxOEMxNy4xOTk3IDEwLjU1OSAxNy4wNDA4IDEwLjYyNDkgMTYuODc1IDEwLjYyNDlINC42MzM2TDkuMTkyMTkgMTUuMTgyN0M5LjI1MDI2IDE1LjI0MDcgOS4yOTYzMiAxNS4zMDk3IDkuMzI3NzUgMTUuMzg1NUM5LjM1OTE4IDE1LjQ2MTQgOS4zNzUzNSAxNS41NDI3IDkuMzc1MzUgMTUuNjI0OUM5LjM3NTM1IDE1LjcwNyA5LjM1OTE4IDE1Ljc4ODMgOS4zMjc3NSAxNS44NjQyQzkuMjk2MzIgMTUuOTQgOS4yNTAyNiAxNi4wMDkgOS4xOTIxOSAxNi4wNjdDOS4xMzQxMiAxNi4xMjUxIDkuMDY1MTggMTYuMTcxMiA4Ljk4OTMxIDE2LjIwMjZDOC45MTM0NCAxNi4yMzQgOC44MzIxMyAxNi4yNTAyIDguNzUgMTYuMjUwMkM4LjY2Nzg4IDE2LjI1MDIgOC41ODY1NiAxNi4yMzQgOC41MTA2OSAxNi4yMDI2QzguNDM0ODIgMTYuMTcxMiA4LjM2NTg4IDE2LjEyNTEgOC4zMDc4MiAxNi4wNjdMMi42ODI4MiAxMC40NDJDMi42MjQ3MSAxMC4zODQgMi41Nzg2MSAxMC4zMTUxIDIuNTQ3MTUgMTAuMjM5MkMyLjUxNTcgMTAuMTYzMyAyLjQ5OTUxIDEwLjA4MiAyLjQ5OTUxIDkuOTk5ODZDMi40OTk1MSA5LjkxNzcyIDIuNTE1NyA5LjgzNjQgMi41NDcxNSA5Ljc2MDUyQzIuNTc4NjEgOS42ODQ2NSAyLjYyNDcxIDkuNjE1NzIgMi42ODI4MiA5LjU1NzY3TDguMzA3ODIgMy45MzI2N0M4LjQyNTA5IDMuODE1NCA4LjU4NDE1IDMuNzQ5NTEgOC43NSAzLjc0OTUxQzguOTE1ODYgMy43NDk1MSA5LjA3NDkyIDMuODE1NCA5LjE5MjE5IDMuOTMyNjdDOS4zMDk0NyA0LjA0OTk1IDkuMzc1MzUgNC4yMDkwMSA5LjM3NTM1IDQuMzc0ODZDOS4zNzUzNSA0LjU0MDcxIDkuMzA5NDcgNC42OTk3NyA5LjE5MjE5IDQuODE3MDVMNC42MzM2IDkuMzc0ODZIMTYuODc1QzE3LjA0MDggOS4zNzQ4NiAxNy4xOTk3IDkuNDQwNzEgMTcuMzE2OSA5LjU1NzkyQzE3LjQzNDIgOS42NzUxMyAxNy41IDkuODM0MSAxNy41IDkuOTk5ODZaIiBmaWxsPSIjRkY3OEIwIi8+Cjwvc3ZnPgo=");
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+
+                        :global(.vtex-button__label) {
+                            display: none !important;
+                        }
+
+                        &::after {
+                            content: "Voltar";
+                            font-family: $font-poppins;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 140%;
+                            text-align: center;
+                            letter-spacing: 0.04em;
+                            text-transform: capitalize !important;
+                            color: $color-login-back-button;
+                        }
+                    }
+                }
+
+                .sendButton {
+                    margin-left: 8px !important;
+                    width: 100% !important;
+
+                    :global(.vtex-button) {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 11px 30px;
+                        gap: 10px;
+                        width: 100%;
+                        height: 42px;
+                        background: $color-primary;
+                        border-radius: 8px;
+                        border: none !important;
+
+                        :global(.vtex-button__label) {
+                            padding: 0px !important;
+                            font-family: $font-poppins;
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 140%;
+                            text-align: center;
+                            text-transform: capitalize !important;
+                            letter-spacing: 0.04em;
+                            color: $color-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

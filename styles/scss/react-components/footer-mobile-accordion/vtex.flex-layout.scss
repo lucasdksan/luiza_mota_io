@@ -1,0 +1,71 @@
+@use "../../settings/index" as *;
+
+.flexRow--footer-accordion-container {
+    width: 100%;
+    padding: 20px;
+
+    :global(.vtex-store-components-3-x-container) {
+        padding: 0px;
+        margin: 0px;
+    }
+}
+
+.flexRowContent--footer-accordion-container {
+    :global(.vtex-footer-mobile-accordion--container) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    :global(.vtex-footer-mobile-accordion--item) {
+        width: 100%;
+    }
+
+    :global(.vtex-footer-mobile-accordion--header) {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 11.5px 0px !important;
+        border-bottom: 1px solid $color-border-btn-footer-accordion !important;
+
+        @include defaultBtns;
+    }
+
+    :global(.vtex-footer-mobile-accordion--title) {
+        margin: 0px;
+        font-family: $font-poppins;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: $color-primary;
+    }
+
+    :global(.vtex-footer-mobile-accordion--content) {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    :global(.vtex-footer-mobile-accordion--list) {
+        padding: 0px;
+        margin: 0px;
+        list-style: none !important;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    :global(.vtex-footer-mobile-accordion--link) {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: $color-text-muted;
+        text-decoration: none !important;
+    }
+}

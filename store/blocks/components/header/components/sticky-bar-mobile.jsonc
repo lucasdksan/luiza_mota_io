@@ -1,0 +1,47 @@
+{
+    "flex-layout.row#header-sticky-bar-mobile": {
+        "title": "Barra de sticky mobile",
+        "props": {
+            "fullWidth": true,
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true,
+            "blockClass": [
+                "header-sticky-bar-mobile"
+            ]
+        },
+        "children": [
+            "flex-layout.row#header-sticky-bar-mobile-first-line",
+            "flex-layout.row#header-sticky-bar-mobile-second-line"
+        ]
+    },
+    "flex-layout.row#header-sticky-bar-mobile-first-line": {
+        "title": "Primeira linha do header",
+        "props": {
+            "fullWidth": true,
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true,
+            "blockClass": [
+                "header-sticky-bar-mobile-first-line"
+            ]
+        },
+        "children": [
+            "two7-menu-mobile",
+            "two7-logo-custom",
+            "minicart.v2"
+        ]
+    },
+    "flex-layout.row#header-sticky-bar-mobile-second-line": {
+        "title": "Segunda linha do header",
+        "props": {
+            "fullWidth": true,
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true,
+            "blockClass": [
+                "header-sticky-bar-mobile-second-line"
+            ]
+        },
+        "children": [
+            "search-bar#search-bar-mobile"
+        ]
+    }
+}

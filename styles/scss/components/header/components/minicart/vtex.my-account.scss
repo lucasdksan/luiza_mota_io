@@ -1,0 +1,57 @@
+@use "../../../../settings/index" as *;
+
+:global(.vtex-minicart-2-x-minicartProductListContainer--minicart-product-list) {
+    scrollbar-width: thin;
+    scrollbar-color: $color-primary #F7F7F8;
+
+    &::-webkit-scrollbar {
+       width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $color-primary;
+        border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #F7F7F8;
+    }
+
+    > div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        justify-content: flex-start;
+    }
+}
+
+:global(.vtex-product-list-0-x-quantitySelectorButton--minicart-product-list-item-content) {
+    svg {
+        display: none !important;
+    }
+}
+
+:global(.vtex-product-list-0-x-inputContainer ){
+    input {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 150%;
+        text-align: center;
+        color: $color-minicart-quantity-value;
+    }
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--minicart-product-list-item) {
+    & > :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+        &:first-child {
+            width: auto !important;
+        }
+
+        &:last-child {
+            width: 100% !important;
+        }
+    } 
+}

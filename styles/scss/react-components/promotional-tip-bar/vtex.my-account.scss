@@ -1,0 +1,11 @@
+:global(.vtex-flex-layout-0-x-flexRowContent--promotional-tip-bar) {
+    & > :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+        &:first-child {
+            width: auto !important;
+        }
+
+        &:last-child {
+            width: auto !important;
+        }
+    } 
+}

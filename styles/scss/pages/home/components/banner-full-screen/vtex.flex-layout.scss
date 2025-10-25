@@ -1,0 +1,19 @@
+@use "../../../../settings/index" as *;
+
+.flexRow--banner-full-screen {
+    padding: 0 20px;
+    margin-bottom: 30px;
+
+    @include desktop {
+        padding: 60px 80px !important;
+        margin-bottom: 0px !important;
+    }
+
+    :global(.vtex-store-components-3-x-container) {
+        padding: 0px !important;
+
+        @include desktop {
+            @include container-fluid;
+        }
+    }
+}

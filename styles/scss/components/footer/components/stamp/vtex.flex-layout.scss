@@ -1,0 +1,48 @@
+@use "../../../../settings/index" as *;
+
+.flexRow--stapm {
+    margin-top: 20px;
+    padding: 0px 20px;
+
+    @include desktop {
+        margin-top: 25px !important;
+        padding: 0px 180px !important;
+    }
+
+    :global(.vtex-store-components-3-x-container) {
+        padding: 0px !important;
+
+        @include desktop {
+            @include container-fluid;
+        }
+    }
+}
+
+.flexRowContent--stapm {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px 0px;
+    border-top: 1px solid $color-gray-700;
+
+    @include desktop {
+        padding: 25px 0px 50px 0px !important;
+        flex-direction: row !important;
+        justify-content: space-between;
+    }
+}
+
+.flexRowContent--stamp-icons-area {
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+
+    @include desktop {
+        justify-content: flex-end !important;
+    }
+
+    .stretchChildrenWidth {
+        width: auto !important;
+    }
+}

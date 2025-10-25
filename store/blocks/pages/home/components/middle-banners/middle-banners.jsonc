@@ -1,0 +1,82 @@
+{
+    "responsive-layout.mobile#middle-banners": {
+        "children": [
+            "two7-middle-banners"
+        ]
+    },
+    "responsive-layout.desktop#middle-banners": {
+        "children": [
+            "flex-layout.row#middle-banners-desktop"
+        ]
+    },
+    "flex-layout.row#middle-banners-desktop": {
+        "title": "Área dos banners middle",
+        "props": {
+            "blockClass": [
+                "middle-banners-desktop"
+            ]
+        },
+        "children": [
+            "image#middle-banners-desktop-1",
+            "image#middle-banners-desktop-2",
+            "image#middle-banners-desktop-3",
+            "image#middle-banners-desktop-4"
+        ]
+    },
+    "image#middle-banners-desktop-1": {
+        "title": "Banner da coleção",
+        "props": {
+            "alt": "Banner de coleção 1",
+            "src": "assets/banners/banner-middle-desktop-1.png",
+            "link": {
+                "openNewTab": true,
+                "url": "/"
+            },
+            "blockClass": [
+                "middle-banners-desktop"
+            ]
+        }
+    },
+    "image#middle-banners-desktop-2": {
+        "title": "Banner da coleção",
+        "props": {
+            "alt": "Banner de coleção 2",
+            "src": "assets/banners/banner-middle-desktop-2.png",
+            "link": {
+                "openNewTab": true,
+                "url": "/"
+            },
+            "blockClass": [
+                "middle-banners-desktop"
+            ]
+        }
+    },
+    "image#middle-banners-desktop-3": {
+        "title": "Banner da coleção",
+        "props": {
+            "alt": "Banner de coleção 3",
+            "src": "assets/banners/banner-middle-desktop-3.png",
+            "link": {
+                "openNewTab": true,
+                "url": "/"
+            },
+            "blockClass": [
+                "middle-banners-desktop"
+            ]
+        }
+    },
+    "image#middle-banners-desktop-4": {
+        "title": "Banner da coleção",
+        "props": {
+            "alt": "Banner de coleção 4",
+            "src": "assets/banners/banner-middle-desktop-4.png",
+            "link": {
+                "openNewTab": true,
+                "url": "/"
+            },
+            "blockClass": [
+                "middle-banners-desktop"
+            ]
+        }
+    }
+}

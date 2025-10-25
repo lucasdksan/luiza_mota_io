@@ -1,0 +1,16 @@
+@use "../../settings/index" as *;
+
+.flexRow--shelf-default-footer {
+    width: 100%;
+    margin-top: 8px;
+
+    .flexRowContent--shelf-default-footer {
+        display: flex;
+        justify-content: space-between;
+
+        .stretchChildrenWidth {
+            padding: 0px !important;
+            width: auto !important;
+        }
+    }
+}

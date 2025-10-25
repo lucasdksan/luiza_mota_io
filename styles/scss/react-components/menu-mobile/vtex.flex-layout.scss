@@ -1,0 +1,13 @@
+@use "../../settings/index" as *;
+
+.flexRowContent--menu-mobile-btn-container {
+    :global(.vtex-menu-mobile--btn) {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include defaultBtns;
+    }
+}

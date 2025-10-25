@@ -1,0 +1,31 @@
+{
+    "two7-collection-banners-mobile": {
+        "title": "Banners das Coleções",
+        "props": {
+            "VtexFlexLayout": "flex-layout.row#collection-banners-mobile",
+            "banners": [
+                {
+                    "image": "assets/banners/banner-collection-mobile-1.png",
+                    "alt": "Banner da coleção 1",
+                    "link": "/"
+                },
+                {
+                    "image": "assets/banners/banner-collection-mobile-2.png",
+                    "alt": "Banner da coleção 2",
+                    "link": "/"
+                },
+                {
+                    "image": "assets/banners/banner-collection-mobile-3.png",
+                    "alt": "Banner da coleção 3",
+                    "link": "/"
+                }
+            ]
+        }
+    },
+    "flex-layout.row#collection-banners-mobile": {
+        "title": "Área da navegação dos departamentos",
+        "props": {
+            "blockClass": "collection-banners-mobile"
+        }
+    }
+}

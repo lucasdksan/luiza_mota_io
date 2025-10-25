@@ -1,0 +1,55 @@
+{
+    "flex-layout.row#stapm": {
+        "title": "Linha do carimbo",
+        "props": {
+            "blockClass": [
+                "stapm"
+            ]
+        },
+        "children": [
+            "rich-text#stamp-location",
+            "flex-layout.row#stamp-icons-area"
+        ]
+    },
+    "rich-text#stamp-location": {
+        "title": "Localização",
+        "props": {
+            "text": "R J F COMERCIO E SERVICOS EIRELI | CNPJ: 10.487.045/0001-96 - Endereço: Av. Alberto Miguel, 412, ST. Campinas - Goiânia - GO",
+            "blockClass": [
+                "stamp-location"
+            ]
+        }
+    },
+    "flex-layout.row#stamp-icons-area": {
+        "title": "Área dos Ícones",
+        "props": {
+            "blockClass": "stamp-icons-area"
+        },
+        "children": [
+            "image#icon-created-by",
+            "image#icon-powered-by"
+        ]
+    },
+    "image#icon-created-by": {
+        "title": "Ícone criado por",
+        "props": {
+            "src": "assets/icons/created-by.svg",
+            "alt": "Ícone criado por",
+            "link": {
+                "openNewTab": true,
+                "url": "/"
+            }
+        }
+    },
+    "image#icon-powered-by": {
+        "title": "Ícone alimentado por",
+        "props": {
+            "src": "assets/icons/powered-by-vtex.svg",
+            "alt": "Ícone alimentado por",
+            "link": {
+                "openNewTab": true,
+                "url": "/"
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@use "../../settings/index" as *;
+
+.flexRowContent--modal-product-shop-btn-container {
+    :global(.vtex-modal-product-shop--btn) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 40px;
+        height: 40px;
+        background-color: $color-primary !important;
+        border-radius: 8px !important;
+
+        @include defaultBtns;
+    }
+}

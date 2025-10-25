@@ -1,0 +1,12 @@
+:global(.vtex-flex-layout-0-x-flexRowContent--header-sticky-bar-mobile),
+:global(.vtex-flex-layout-0-x-flexRowContent--header-sticky-bar-mobile-second-line) {
+  > div:first-child {
+    width: 100% !important;
+  }
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--header-sticky-bar-mobile) {
+  > div:last-child {
+    width: 100% !important;
+  }
+}

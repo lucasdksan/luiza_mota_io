@@ -1,0 +1,23 @@
+@use "../../../../settings/index" as *;
+
+.paginationDotsContainer--slider-list-product-mobile {
+    bottom: -27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+
+.paginationDot--slider-list-product-mobile {
+    width: 8px;
+    height: 8px;
+    background: $color-slider-dots;
+    border-radius: 100%;
+    margin: 0px !important;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.paginationDot--slider-list-product--isActive {
+    background: $color-slider-dots-active;
+}

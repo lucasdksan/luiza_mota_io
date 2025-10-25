@@ -1,0 +1,72 @@
+@use "../../settings/index" as *;
+
+.nameContainer--shelf-product-default--name {
+    margin-top: 10px;
+    padding: 0px !important;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+.productNameContainer--shelf-product-default--name {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-shelf-default-name;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    text-align: left;
+}
+
+
+.brandName--shelf-product-default--name {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-shelf-default-name;
+}
+
+.priceContainer--shelf-product-default--price {
+    padding: 0px !important;
+    align-items: flex-start;
+}
+
+.sellingPriceContainer--shelf-product-default--price {
+    padding: 0px;
+}
+
+.currencyContainer--shelf-product-default--price {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: $color-shelf-default-selling-price;
+}
+
+.sellingPrice--shelf-product-default--price {
+    padding: 0px !important;
+}
+
+.element--shelf-product-default {
+    padding: 0px;
+}
+
+
+.container--shelf-product-default {
+    // width: 260px;
+    background: $color-white;
+    border: 1px solid $color-shelf-default-border-element;
+    border-radius: 16px;
+    padding: 16px;
+    height: auto !important;
+    min-height: 360px;
+}

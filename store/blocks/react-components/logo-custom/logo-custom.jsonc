@@ -1,0 +1,18 @@
+{
+    "two7-logo-custom": {
+        "props": {
+            "VtexFlexLayout": "flex-layout.row#logo-custom-container"
+        }
+    },
+    "flex-layout.row#logo-custom-container": {
+        "title": "Container da logo customizada",
+        "props": {
+            "fullWidth": true,
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true,
+            "blockClass": [
+                "logo-custom-container"
+            ]
+        }
+    }
+}

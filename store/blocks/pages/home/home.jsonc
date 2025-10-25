@@ -1,0 +1,19 @@
+{
+    "store.home": {
+        "blocks": [
+            "two7-banner-hero",
+            "two7-service-highlights",
+            "two7-department-navigation",
+            "flex-layout.row#product-list-collection-1",
+            "responsive-layout.mobile#collection-banners",
+            "responsive-layout.desktop#collection-banners",
+            "flex-layout.row#product-list-collection-2",
+            "responsive-layout.mobile#middle-banners",
+            "responsive-layout.desktop#middle-banners",
+            "flex-layout.row#product-list-collection-3",
+            "responsive-layout.mobile#banner-full-screen",
+            "responsive-layout.desktop#banner-full-screen",
+            "flex-layout.row#product-list-collection-4"
+        ]
+    }
+}

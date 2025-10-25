@@ -1,0 +1,51 @@
+@use "../../../../settings/index" as *;
+
+.flexRow--minicart-footer {
+    width: 100%;
+    height: auto;
+    padding: 13px 32px;
+    box-shadow: 0px 15px 20px 10px $color-border-top-minicart !important;
+}
+
+.flexRowContent--minicart-footer {
+    width: 100%;
+    height: auto;
+}
+
+.flexRow--minicart-product-list-item {
+    width: 100%;
+    height: auto;
+    padding-bottom: 14px;
+    border-bottom: 1px solid $color-minicart-element-border;
+    overflow: hidden;
+}
+
+.flexRowContent--minicart-product-list-item {
+    width: 100%;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.flexCol--minicart-product-list-item-content {
+    gap: 10px;
+}
+
+.flexRow--minicart-product-list-data-item {
+    .flexRowContent--minicart-product-list-data-item {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+.flexRowContent--minicart-product-list-modify-item {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    .stretchChildrenWidth {
+        width: auto  !important;
+    }
+}

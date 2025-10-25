@@ -1,0 +1,34 @@
+{
+  "name": "store-theme--luizamota",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:scss--checkout": "yarn sass --watch --quiet --no-source-map --style=compressed checkout/scss:checkout/css",
+    "build:prefix--checkout": "postcss checkout/css/**/*.css --use autoprefixer -r --no-map",
+    "build:scss--store": "node ./custom-builder.js --origin:./styles/scss --target:./styles/css --ignore:./styles/scss/settings"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.x",
+    "chokidar": "^3.5.3",
+    "eslint": "8.x",
+    "eslint-config-airbnb-base": "15.x",
+    "eslint-config-prettier": "8.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-prettier": "4.x",
+    "glob": "^10.3.3",
+    "postcss": "8.x",
+    "postcss-cli": "10.x",
+    "postcss-pxtorem": "^6.0.0",
+    "prettier": "2.x",
+    "sass": "1.x"
+  },
+  "browserslist": [
+    "> 2%",
+    "last 5 versions",
+    "not dead"
+  ],
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

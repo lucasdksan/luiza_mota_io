@@ -1,0 +1,18 @@
+@use "../../../../settings/index" as *;
+
+.flexRow--middle-banners-desktop {
+    padding: 60px 80px;
+
+    :global(.vtex-store-components-3-x-container) {
+        padding: 0px !important;
+
+        @include container-fluid;
+    }
+}
+
+.flexRowContent--middle-banners-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+}

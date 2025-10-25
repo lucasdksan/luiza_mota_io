@@ -1,0 +1,121 @@
+@use "../../settings/index" as *;
+
+.quantitySelectorContainer--modal-product-shop-quantity {
+    margin: 0px;
+    padding: 0px;
+}
+
+.quantitySelectorTitle--modal-product-shop-quantity {
+    display: none !important;
+}
+
+.quantitySelectorStepper--modal-product-shop-quantity {
+    :global(.vtex-numeric-stepper-container) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    :global(.vtex-numeric-stepper__input) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 14px;
+        gap: 10px;
+        width: 45px;
+        height: 40px;
+        background: $color-white;
+        border: 1.5px solid $color-border-quantity-modal;
+        border-radius: 4px;
+        
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 150%;
+        text-align: center;
+        color: $color-quantity-modal;
+    }
+    
+    :global(.vtex-numeric-stepper__minus-button) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 2px;
+        gap: 6px;
+
+        width: 30px !important;
+        height: 30px;
+        background: $color-white;
+        border: 1.5px solid $color-border-quantity-modal;
+        border-radius: 4px !important;
+        transition: background 0.2s ease;
+        cursor: pointer;
+
+        @include desktop {
+            &:hover {
+                transition: background 0.2s ease;
+                background: $color-clean-brown !important;
+                border: 1.5px solid $color-clean-brown !important;
+            }
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            width: 13px;
+            height: 13px;
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMiIgdmlld0JveD0iMCAwIDE1IDIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wLjc1IDAuNzVMMTMuNzUgMC43NSIgc3Ryb2tlPSIjODU4NTg4IiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        :global(.vtex-numeric-stepper__minus-button__text) {
+            display: none !important;
+        }
+    }
+
+    :global(.vtex-numeric-stepper__plus-button) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 2px;
+        gap: 6px;
+
+        width: 30px !important;
+        height: 30px;
+        background: $color-white;
+        border: 1.5px solid $color-border-quantity-modal;
+        border-radius: 4px !important;
+        transition: background 0.2s ease;
+        cursor: pointer;
+
+        @include desktop {
+            &:hover {
+                transition: background 0.2s ease;
+                background: $color-clean-brown !important;
+                border: 1.5px solid $color-clean-brown !important;
+            }
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            width: 13px;
+            height: 13px;
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAxNSAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAuNzUgNy4yNUgxMy43NU03LjI1IDAuNzVWMTMuNzUiIHN0cm9rZT0iIzg1ODU4OCIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        :global(.vtex-numeric-stepper__plus-button__text) {
+            display: none !important;
+        }
+    }
+}

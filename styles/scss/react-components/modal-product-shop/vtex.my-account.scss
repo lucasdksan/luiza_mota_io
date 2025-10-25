@@ -1,0 +1,166 @@
+@use "../../settings/index" as *;
+
+:global(.vtex-modal-product-shop--overlay) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    cursor: pointer;
+
+    @include overlay;
+}
+
+:global(.vtex-modal-product-shop--modal) {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1002;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    padding: 20px 20px 32px;
+    border-radius: 8px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-white;
+
+    @include desktop {
+        max-width: 43%;
+        padding: 32px 56px !important;
+    }
+}
+
+:global(.vtex-modal-product-shop--close-btn) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    @include defaultBtns;
+}
+
+:global(.vtex-modal-product-shop--wrapper) {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+        display: grid;
+        grid-template-columns: 43% 1fr;
+        gap: 16px;
+    }
+}
+
+:global(.vtex-modal-product-shop--image-container) {
+    margin-bottom: 16px;
+
+    @include desktop {
+        margin-bottom: 0px !important;
+    }
+}
+
+:global(.vtex-modal-product-shop--product-info) {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+:global(.vtex-modal-product-shop--first-line) {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+:global(.vtex-modal-product-shop--redirect) {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: $color-primary;
+}
+
+:global(.vtex-modal-product-shop--product-name) {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: $color-title-modal-shop;
+} 
+
+:global(.vtex-modal-product-shop--product-shop-action) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+}
+
+:global(.vtex-modal-product-shop--product-shop-action) {
+    :global(.vtex-button) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+        width: 100%;
+        max-width: 213px;
+        height: 42px;
+        background: $color-primary;
+        border-radius: 8px;
+        outline: none;
+        border: none;
+        transition: background 0.2s ease;
+
+        @include desktop {
+            &:hover {
+                transition: background 0.2s ease;
+                background: $color-clean-brown !important;
+            }
+        }
+
+        :global(.vtex-button__label) {
+            padding: 0px;
+            margin: 0px;
+        }
+    }
+}
+
+:global(.vtex-modal-product-shop--product-price-area) {
+    display: flex;
+    flex-direction: column;
+}
+
+:global(.vtex-modal-product-shop--product-price) {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 1px;
+    color: $color-primary;
+}
+
+:global(.vtex-modal-product-shop--product-installments) {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: $color-instalment-modal;
+}

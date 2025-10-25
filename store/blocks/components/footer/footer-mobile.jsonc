@@ -1,0 +1,17 @@
+{
+    "footer-layout.mobile": {
+        "props": {
+            "blockClass": [
+                "footer-section",
+                "footer-section-mobile"
+            ]
+        },
+        "children": [
+            "two7-read-more-card",
+            "flex-layout.row#newsletter-container",
+            "two7-footer-mobile-accordion",
+            "flex-layout.row#information",
+            "flex-layout.row#stapm"
+        ]
+    }
+}

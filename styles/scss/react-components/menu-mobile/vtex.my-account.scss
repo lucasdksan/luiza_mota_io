@@ -1,0 +1,211 @@
+@use "../../settings/index" as *;
+
+:global(.vtex-menu-mobile--overlay),
+:global(.vtex-menu-mobile--login-modal-overlay) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    cursor: pointer;
+
+    @include overlay;
+}
+
+:global(.vtex-menu-mobile--sidebar) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 85%;
+    height: 100vh;
+    z-index: 1001;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-white;
+}
+
+:global(.vtex-menu-mobile--login-modal) {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1002;
+    width: 95%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 16px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-white;
+}
+
+:global(.vtex-menu-mobile--header) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: $color-header-menu-mobile;
+}
+
+:global(.vtex-menu-mobile--login-button-content) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+:global(.vtex-menu-mobile--login-button) {
+    @include defaultBtns;
+}
+
+:global(.vtex-menu-mobile--login-button-text),
+:global(.vtex-menu-mobile--login-link) {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    text-decoration-line: underline;
+    color: $color-text-primary;
+}
+
+:global(.vtex-menu-mobile--login-link) {
+    text-decoration: none !important;
+}
+
+:global(.vtex-menu-mobile--close-btn) {
+    @include defaultBtns;
+}
+
+:global(.vtex-menu-mobile--content) {
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 34px 20px 40px 20px;
+}
+
+:global(.vtex-menu-mobile--nav-section) {
+    flex: 1;
+    margin: 0px;
+    padding: 0px;
+    list-style: none !important;
+
+    :global(.vtex-menu-mobile--nav-item):last-child {
+        border-bottom: 0px !important;
+    }
+}
+
+
+:global(.vtex-menu-mobile--nav-item) {
+    margin-bottom: 8px;
+    border-bottom: 1px solid $color-gray-700;
+    padding-bottom: 6px;
+}
+
+:global(.vtex-menu-mobile--submenu) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 6px;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+:global(.vtex-menu-mobile--submenu-link),
+:global(.vtex-menu-mobile--see-all) {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: $color-text-primary;
+    text-decoration: none !important;
+}
+
+:global(.vtex-menu-mobile--nav-button) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 42px;
+    padding: 10px 20px;
+
+    @include defaultBtns;
+}
+
+:global(.vtex-menu-mobile--nav-label) {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: $color-text-primary;
+    text-decoration: none !important;
+}
+
+:global(.vtex-menu-mobile--actions) {
+    width: 100%;
+    height: auto;
+}
+
+:global(.vtex-menu-mobile--action-btn) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+    width: 100%;
+    text-decoration: none;
+    padding: 11px 10px;
+    height: 43px;
+    border: 1.4px solid $color-primary;
+    border-radius: 8px;
+
+    span {
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        text-align: center;
+        color: $color-wishlist-btn;
+    }
+}
+
+:global(.vtex-menu-mobile--login-modal-button) {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    @include defaultBtns;
+}
+
+:global(.vtex-menu-mobile--login-modal-title) {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+    color: $color-text-primary;
+}
+
+:global(.vtex-login-2-x-emailAndPasswordForm),
+:global(.vtex-login-2-x-emailVerification),
+:global(.vtex-login-2-x-codeConfirmation) {
+    form {
+        width: 100%;
+        height: auto;
+    }
+}

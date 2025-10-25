@@ -1,0 +1,15 @@
+@use "../../../../settings/index" as *;
+
+.paragraph--stamp-location {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    color: $color-stamp-location;
+    margin: 0px;
+
+    @include desktop {
+        line-height: 150% !important;
+    }
+}

@@ -1,0 +1,227 @@
+@use "../../../../settings/index" as *;
+
+.minicartWrapperContainer--minicart-header {
+    .minicartContainer--minicart-header {
+        .openIconContainer--minicart-header {
+            padding: 0px !important;
+
+            :global(.vtex-button) {
+                width: 32px;
+                height: 32px;
+                min-height: 32px;
+                max-height: 32px;
+                padding: 0px !important;
+                margin: 0px !important;
+
+                @include desktop {
+                    width: auto !important;
+                }
+
+                &:hover {
+                    background-color: transparent;
+                }
+
+                :global(.vtex-button__label) {
+                    padding: 0px;
+
+                    .minicartIconContainer--minicart-header {
+                        &::before {
+                            content: "";
+                            display: block;
+                            width: 24px;
+                            height: 28px;
+                            background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjYiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAyNiAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTguNSAxMy40NDQ0VjUuNjY2NjdDOC41IDMuMDg5MzQgMTAuNTE0NyAxIDEzIDFDMTUuNDg1MyAxIDE3LjUgMy4wODkzNCAxNy41IDUuNjY2NjdWMTAuMzMzM00xMC42IDI5SDE1LjRDMTguNzYwMyAyOSAyMC40NDA1IDI5IDIxLjcyMzkgMjguMzIxOEMyMi44NTI5IDI3LjcyNTMgMjMuNzcwOCAyNi43NzM0IDI0LjM0NiAyNS42MDI2QzI1IDI0LjI3MTYgMjUgMjIuNTI5MiAyNSAxOS4wNDQ0VjE1LjMxMTFDMjUgMTMuNTY4NyAyNSAxMi42OTc1IDI0LjY3MyAxMi4wMzJDMjQuMzg1NCAxMS40NDY2IDIzLjkyNjUgMTAuOTcwNyAyMy4zNjIgMTAuNjcyNEMyMi43MjAyIDEwLjMzMzMgMjEuODgwMiAxMC4zMzMzIDIwLjIgMTAuMzMzM0g1LjhDNC4xMTk4NCAxMC4zMzMzIDMuMjc5NzYgMTAuMzMzMyAyLjYzODAzIDEwLjY3MjRDMi4wNzM1NCAxMC45NzA3IDEuNjE0NiAxMS40NDY2IDEuMzI2OTggMTIuMDMyQzEgMTIuNjk3NSAxIDEzLjU2ODcgMSAxNS4zMTExVjE5LjA0NDRDMSAyMi41MjkyIDEgMjQuMjcxNiAxLjY1Mzk2IDI1LjYwMjZDMi4yMjkyIDI2Ljc3MzQgMy4xNDcwOCAyNy43MjUzIDQuMjc2MDYgMjguMzIxOEM1LjU1OTUzIDI5IDcuMjM5NjggMjkgMTAuNiAyOVoiIHN0cm9rZT0iIzI4MjgyOCIgc3Ryb2tlLXdpZHRoPSIxLjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K");
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            background-position: center;
+
+                            @include desktop {
+                                width: 32px !important;
+                                height: 32px !important;
+                                min-width: 32px !important;
+                            }
+                        }
+
+                        @include desktop {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 4px;
+
+                            &::after {
+                                content: "Minha Sacola";
+                                font-family: $font-poppins;
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 16px;
+                                color: $color-text-primary;
+                                text-align: left;
+                                text-transform: capitalize;
+                            }
+                        }
+
+                        .cartIcon--minicart-sidebar {
+                            display: none !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.drawerContent--minicart-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.closeIcon--minicart-sidebar {
+    display: none !important;
+}
+
+.closeIconButton--minicart-sidebar {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 33px;
+    gap: 7px;
+    background-color: $color-white;
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 1px;
+        display: block;
+        border-top: 1px solid $color-minicart-checkout-button;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        width: 29px;
+        height: 29px;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMjkiIHZpZXdCb3g9IjAgMCAyOSAyOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcuMjUgNy4yNUwyMS43NSAyMS43NU0yMS43NSA3LjI1TDcuMjUgMjEuNzUiIHN0cm9rZT0iIzQ4NDg0OSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-width: 29px;
+        min-height: 29px;
+    }
+}
+
+.closeIconContainer--minicart-sidebar {
+    padding: 20px 32px 0px 32px;
+    align-items: center;
+    justify-content: space-between;
+
+    &::before {
+        content: "Sacola";
+        font-family: $font-poppins;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 130%;
+        color: $color-minicart-title;
+        background-color: $color-white;
+        padding-right: 10px;
+
+        @include desktop {
+            font-size: 28px !important;
+        }
+    }
+}
+
+.minicartTitle--minicart-sidebar {
+    display: none !important;
+}
+
+.minicartEmptyStateContainer--minicart-empty-state {
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 32px;
+}
+
+
+.minicartQuantityBadge--minicart-sidebar {
+    background-color: $color-secondary !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+
+    position: absolute;
+    border-radius: 10px; 
+
+    font-family: $font-lato;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 150%;
+    color: $color-quantity-minicar;
+    left: -9px !important;
+    top: 6px !important
+}
+
+.minicartCheckoutButton--minicart-footer {
+    padding: 14px 0px 10px 0px;
+    margin: 0px;
+    width: 100%;
+    height: auto;
+    width: 100%;
+    border-top: 1px solid $color-minicart-checkout-button;
+
+    :global(.vtex-button) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        gap: 10px;
+        width: 100%;
+        background: $color-primary;
+        border-radius: 8px;
+        border: none !important;
+
+        :global(.vtex-button__label){
+            padding: 0px !important;
+            font-size: 0px !important;
+
+            &::before {
+                content: "Finalizar compra";
+                font-family: $font-poppins;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 140%;
+                text-align: center;
+                color: $color-white;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+.minicartSummary--minicart-summary--minicart-footer {
+    padding: 0px !important;
+    margin-bottom: 14px;
+}
+
+.minicartProductListContainer--minicart-product-list {
+    padding: 0px 32px;
+    height: 100% !important;
+    max-height: 430px;
+    overflow-y: scroll;
+}
+
+.drawer--minicart-sidebar {
+    @include desktop {
+        min-width: 455px !important;
+        max-width: 455px !important;
+    }
+}

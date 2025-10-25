@@ -1,0 +1,36 @@
+{
+    "two7-modal-product-shop": {
+        "title": "Modal de compra rápida",
+        "props": {
+            "VtexFlexLayoutBtn": "flex-layout.row#container-modal-product-shop-btn",
+            "VtexSkuSelector": "sku-selector#modal-product-shop",
+            "VtexAddtoCart": "add-to-cart-button#modal-product-shop",
+            "VtexQuantity": "product-quantity#modal-product-shop"
+        }
+    },
+    "flex-layout.row#container-modal-product-shop-btn": {
+        "title": "Modal Button Container",
+        "props": {
+            "blockClass": "modal-product-shop-btn-container"
+        }
+    },
+    "product-quantity#modal-product-shop": {
+        "title": "Quantidade do produto",
+        "props": {
+            "quantitySelectorStep": "singleUnit",
+            "blockClass": "modal-product-shop-quantity"
+        }
+    },
+    "sku-selector#modal-product-shop": {
+        "title": "Seletor de SKU",
+        "props": {
+            "blockClass": "modal-product-shop-sku-selector"
+        }        
+    },
+    "add-to-cart-button#modal-product-shop": {
+        "props": {
+            "text": "Adicionar à sacola",
+            "blockClass": "modal-product-shop-add-to-cart"
+        }
+    }
+}

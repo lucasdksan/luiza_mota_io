@@ -1,0 +1,15 @@
+{
+    "two7-read-more-card": {
+        "title": "SEO Mobile",
+        "props": {
+            "VtexFlexLayout": "flex-layout.row#read-more-card",
+            "seoText": "Lorem ipsum dolor sit amet consectetur. Purus nibh blandit lectus orci velit maecenas arcu ultrices. Malesuada ornare amet sed ipsum eu nunc lacus elementum. Odio velit eget duis mauris metus pharetra nullam. Cras arcu sollicitudin viverra suspendisse a egestas leo et faucibus. Fames adipiscing justo velit quis non scelerisque fermentum convallis.m\risque venenatis varius. Id fringilla euismod quis velit morbi erat sed dictum facilisis. Feugiat ut aliquet sit orci. Libero curabitur nisl ultrices dolor adipiscing. Ultrices sed bibendum elementum pretium hendrerit ut. In dolor lectus quis ac et convallis viverra in mi. Lorem ipsum dolor sit amet consectetur. Purus nibh blandit lectus orci velit maecenas arcu ultrices. Malesuada ornare amet sed ipsum eu nunc lacus elementum. Odio velit eget duis mauris metus pharetra nullam. Cras arcu sollicitudin viverra suspendisse a egestas leo et faucibus. Fames adipiscing justo velit quis non scelerisque fermentum convallis.m\risque venenatis varius. Id fringilla euismod quis velit morbi erat sed dictum facilisis. Feugiat ut aliquet sit orci. Libero curabitur nisl ultrices dolor adipiscing. Ultrices sed bibendum elementum pretium hendrerit ut. In dolor lectus quis ac et convallis viverra in mi. Lorem ipsum dolor sit amet consectetur. Purus nibh blandit lectus orci velit maecenas arcu ultrices. Malesuada ornare amet sed ipsum eu nunc lacus elementum. Odio velit eget duis mauris metus pharetra nullam. Cras arcu sollicitudin viverra suspendisse a egestas leo et faucibus. Fames adipiscing justo velit quis non scelerisque fermentum convallis.m\risque venenatis varius. Id fringilla euismod quis velit morbi erat sed dictum facilisis. Feugiat ut aliquet sit orci. Libero curabitur nisl ultrices dolor adipiscing. Ultrices sed bibendum elementum pretium hendrerit ut. In dolor lectus quis ac et convallis viverra in mi. Lorem ipsum dolor sit amet consectetur. Purus nibh blandit lectus orci velit maecenas arcu ultrices. Malesuada ornare amet sed ipsum eu nunc lacus elementum. Odio velit eget duis mauris metus pharetra nullam. Cras arcu sollicitudin viverra suspendisse a egestas leo et faucibus. Fames adipiscing justo velit quis non scelerisque fermentum convallis.m\risque venenatis varius. Id fringilla euismod quis velit morbi erat sed dictum facilisis. Feugiat ut aliquet sit orci. Libero curabitur nisl ultrices dolor adipiscing. Ultrices sed bibendum elementum pretium hendrerit ut. In dolor lectus quis ac et convallis viverra in mi."
+        }
+    },
+    "flex-layout.row#read-more-card": {
+        "title": "Container do SEO",
+        "props": {
+            "blockClass": "read-more-card"
+        }
+    }
+}

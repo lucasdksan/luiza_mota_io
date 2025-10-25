@@ -1,0 +1,209 @@
+{
+    "two7-menu-dropdown": {
+        "title": "Menu Dropdown",
+        "props": {
+            "VtexFlexLayout": "flex-layout.row#menu-dropdown-container",
+            "menuItems": [
+                {
+                    "id": "roupas",
+                    "label": "ROUPAS",
+                    "categories": [
+                        {
+                            "title": "Parte de cima",
+                            "title_link": "/roupas",
+                            "items": [
+                                {
+                                    "name": "Blusas e Coletes",
+                                    "link": "/roupas/blusas-coletes"
+                                },
+                                {
+                                    "name": "Tops",
+                                    "link": "/roupas/tops"
+                                },
+                                {
+                                    "name": "Camisas",
+                                    "link": "/roupas/camisas"
+                                },
+                                {
+                                    "name": "Overtops",
+                                    "link": "/roupas/overtops"
+                                }
+                            ],
+                            "actionButton": {
+                                "text": "VER TUDO",
+                                "url": "/roupas"
+                            }
+                        },
+                        {
+                            "title": "Parte de baixo",
+                            "title_link": "/roupas",
+                            "items": [
+                                {
+                                    "name": "Calças",
+                                    "link": "/roupas/calcas"
+                                },
+                                {
+                                    "name": "Shorts",
+                                    "link": "/roupas/shorts"
+                                },
+                                {
+                                    "name": "Saias",
+                                    "link": "/roupas/saias"
+                                }
+                            ],
+                            "actionButton": {
+                                "text": "VER TUDO",
+                                "url": "/roupas"
+                            }
+                        },
+                        {
+                            "title": "Peças Únicas",
+                            "title_link": "/roupas",
+                            "items": [
+                                {
+                                    "name": "Vestidos",
+                                    "link": "/roupas/vestidos"
+                                },
+                                {
+                                    "name": "Macacões Macaquinhos",
+                                    "link": "/roupas/macacao-macaquinho"
+                                }
+                            ],
+                            "actionButton": {
+                                "text": "VER TUDO",
+                                "url": "/roupas"
+                            }
+                        },
+                        {
+                            "title": "Shop By",
+                            "title_link": "/roupas",
+                            "items": [
+                                {
+                                    "name": "Alfaiataria",
+                                    "link": "/roupas/alfaiataria"
+                                },
+                                {
+                                    "name": "Linho",
+                                    "link": "/roupas/linho"
+                                },
+                                {
+                                    "name": "Estampas",
+                                    "link": "/roupas/estampas"
+                                },
+                                {
+                                    "name": "Bordados",
+                                    "link": "/roupas/bordados"
+                                }
+                            ],
+                            "actionButton": {
+                                "text": "VER TUDO",
+                                "url": "/roupas"
+                            }
+                        }
+                    ],
+                    "bannerImages": [
+                        {
+                            "src": "https://artybrand.vtexassets.com/assets/vtex.file-manager-graphql/images/3cc447c5-d2dc-46fe-be44-6ec9ffd07c05___06ff5c883e51ecf24a1ffb001dc295c3.jpg",
+                            "alt": "Banner promocional 1"
+                        }
+                    ]
+                },
+                {
+                    "id": "acessorios",
+                    "label": "ACESSÓRIOS",
+                    "categories": [
+                        {
+                            "title": "Acessórios",
+                            "title_link": "/acessorios",
+                            "items": [
+                                {
+                                    "name": "Cintos",
+                                    "link": "/acessorios/cintos"
+                                },
+                                {
+                                    "name": "Colares",
+                                    "link": "/acessorios/colares"
+                                },
+                                {
+                                    "name": "Lenços",
+                                    "link": "/acessorios/lencos"
+                                }
+                            ],
+                            "actionButton": {
+                                "text": "VER TUDO",
+                                "url": "/acessorios"
+                            }
+                        }
+                    ],
+                    "bannerImages": [
+                        {
+                            "src": "https://artybrand.vtexassets.com/assets/vtex.file-manager-graphql/images/de04d621-9154-403c-bf27-cd83cac5d34e___d4aac9102898c0a52a60436748e12bd7.jpg",
+                            "alt": "Banner acessórios"
+                        }
+                    ]
+                },
+                {
+                    "id": "marca",
+                    "label": "A MARCA",
+                    "categories": [
+                        {
+                            "title": "Sobre a Marca",
+                            "title_link": "/campanha",
+                            "items": [
+                                {
+                                    "name": "Sobre nós",
+                                    "link": "/campanha"
+                                }
+                            ],
+                            "actionButton": {
+                                "text": "VER TUDO",
+                                "url": "/campanha"
+                            }
+                        }
+                    ],
+                    "bannerImages": [
+                        {
+                            "src": "https://artybrand.vtexassets.com/assets/vtex.file-manager-graphql/images/e3143114-773a-4a03-8ce1-87097c292944___6e58275269ee6bacb32087c21b5907cf.jpg",
+                            "alt": "Banner marca"
+                        }
+                    ]
+                },
+                {
+                    "id": "campanhas",
+                    "label": "CAMPANHAS",
+                    "categories": [
+                        {
+                            "title": "Ofertas",
+                            "title_link": "/campanhas-arty",
+                            "items": [
+                                {
+                                    "name": "Summer 26",
+                                    "link": "/campanhas-arty"
+                                }
+                            ],
+                            "actionButton": {
+                                "text": "VER TUDO",
+                                "url": "/campanhas-arty"
+                            }
+                        }
+                    ],
+                    "bannerImages": [
+                        {
+                            "src": "https://artybrand.vtexassets.com/assets/vtex.file-manager-graphql/images/fb6a54de-e93a-4a12-8b75-b30089aefe67___5cf23a2201f848616f68c5a78026e1f3.jpg",
+                            "alt": "Banner campanhas"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "flex-layout.row#menu-dropdown-container": {
+        "title": "Container do Menu Dropdown",
+        "props": {
+            "blockClass": "menu-dropdown-container",
+            "fullWidth": true,
+            "preventHorizontalStretch": true,
+            "horizontalAlign": "center"
+        }
+    }
+}

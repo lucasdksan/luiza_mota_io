@@ -1,0 +1,14 @@
+{
+    "two7-login-desktop": {
+        "title": "Login Desktop",
+        "props": {
+            "VtexFlexLayoutContentBTN": "flex-layout.row#login-desktop-container"
+        }
+    },
+    "flex-layout.row#login-desktop-container": {
+        "title": "Container do login desktop",
+        "props": {
+            "blockClass": "login-desktop-container"
+        }
+    }
+}

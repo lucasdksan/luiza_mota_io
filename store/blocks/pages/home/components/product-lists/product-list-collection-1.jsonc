@@ -1,0 +1,83 @@
+{
+    "flex-layout.row#product-list-collection-1": {
+        "title": "Container da Seção de Produtos Coleção 1",
+        "props": {
+            "blockClass": [
+                "product-list-collection"
+            ],
+            "rowGap": 4,
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "flex-layout.col#section-title-container-1"
+        ]
+    },
+    "flex-layout.col#section-title-container-1": {
+        "title": "Área principal da coleção 1",
+        "props": {
+            "blockClass": [
+                "section-title-container"
+            ],
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "rich-text#section-heading-1",
+            "responsive-layout.mobile#list-products-mobile-1",
+            "responsive-layout.desktop#list-products-desktop-1"
+        ]
+    },
+    "rich-text#section-heading-1": {
+        "title": "Título Principal da Seção 1",
+        "props": {
+            "blockClass": "section-heading",
+            "text": "Belorques que amamos 💖"
+        }
+    },
+    "responsive-layout.mobile#list-products-mobile-1": {
+        "children": [
+            "list-context.product-list#list-products-list-context-mobile-1"
+        ]
+    },
+    "responsive-layout.desktop#list-products-desktop-1": {
+        "children": [
+            "list-context.product-list#list-products-list-context-desktop-1"
+        ]
+    },
+    "list-context.product-list#list-products-list-context-mobile-1": {
+        "title": "Lista de produtos mobile",
+        "props": {
+            "orderBy": "OrderByNameASC",
+            "maxItems": 16,
+            "hideUnavailableItems": false,
+            "collection": "138",
+            "blockClass": [
+                "list-products-list-context"
+            ]
+        },
+        "blocks": [
+            "product-summary.shelf#shelf-product-default"
+        ],
+        "children": [
+            "slider-layout#slider-list-product-mobile"
+        ]
+    },
+    "list-context.product-list#list-products-list-context-desktop-1": {
+        "title": "Lista de produtos desktop",
+        "props": {
+            "orderBy": "OrderByNameASC",
+            "maxItems": 16,
+            "hideUnavailableItems": false,
+            "collection": "138",
+            "blockClass": [
+                "list-products-list-context",
+                "list-products-list-context--desktop"
+            ]
+        },
+        "blocks": [
+            "product-summary.shelf#shelf-product-default"
+        ],
+        "children": [
+            "slider-layout#slider-list-product-desktop"
+        ]
+    }
+}

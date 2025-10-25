@@ -1,0 +1,35 @@
+@use "../../settings/index" as *;
+
+.flexRow--collection-banners-mobile {
+    padding: 0px 0px 30px 20px;
+
+    :global(.vtex-store-components-3-x-container) {
+        padding: 0px;
+        margin: 0px;
+    }
+}
+
+.flexRowContent--collection-banners-mobile {
+    :global(.vtex-collection-banners--custom-dots-list) {
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        list-style: none;
+        gap: 4px;
+    }
+
+    :global(.vtex-collection-banners--custom-dot-item) {
+        width: 8px;
+        height: 8px;
+        background: $color-slider-dots;
+        border-radius: 100%;
+        transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+
+    :global(.vtex-collection-banners--custom-dot-item--active) {
+        background: $color-slider-dots-active;
+    }
+}

@@ -1,0 +1,75 @@
+@use "../../../../settings/index" as *;
+
+.paragraph--newsletter-title {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 34px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: $color-title-newsletter;
+    margin: 0px !important;
+
+    @include desktop {
+        font-size: 54px !important;
+    }
+}
+
+.paragraph--newsletter-description {
+    margin: 0px !important;
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: $color-description-newsletter;
+
+    @include desktop {
+        text-wrap: nowrap;
+    }
+}
+
+.paragraph--success-state-title {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+    color: $color-title-newsletter;
+    margin: 0px !important;
+
+    @include desktop {
+        font-size: 22px !important; 
+        text-wrap: nowrap;
+        text-align: left !important;
+    }
+}
+
+.paragraph--success-state-description {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: $color-description-newsletter;
+    margin: 0px !important;
+
+    @include desktop {
+        text-align: left !important;
+        text-wrap: nowrap;
+    }
+}
+
+.container--newsletter-description {
+    margin: 10px 0px 30px 0px;
+
+    @include desktop {
+        margin: 12px 0px 0px 0px;
+    }
+}
+
+.wrapper--success-state-title {
+    margin-bottom: 8px;
+}

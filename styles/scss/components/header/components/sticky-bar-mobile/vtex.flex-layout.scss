@@ -1,0 +1,36 @@
+@use "../../../../settings/index" as *;
+
+.flexRow--header-sticky-bar-mobile {
+    width: 100%;
+	height: auto;
+	padding: 10px 20px;
+	margin: 0;
+    background-color: $color-white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+
+    :global(.vtex-store-components-3-x-container){
+        padding: 0px !important;
+    }
+}
+
+.flexRowContent--header-sticky-bar-mobile {
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.flexRow--header-sticky-bar-mobile-first-line,
+.flexRow--header-sticky-bar-mobile-second-line,
+.flexRowContent--header-sticky-bar-mobile-second-line {
+    width: 100%;
+}
+
+.flexRowContent--header-sticky-bar-mobile-first-line {
+    justify-content: space-between;
+    align-items: center;
+}

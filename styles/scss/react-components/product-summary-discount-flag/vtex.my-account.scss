@@ -1,0 +1,28 @@
+@use "../../settings/index" as *;
+
+:global(.vtex-product-summary-discount-flag--container) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    gap: 10px;
+    position: absolute;
+    width: 42px;
+    height: 42px;
+
+    background: $color-discount-flag;
+    border: 1px solid $color-primary;
+    border-radius: 100%;
+}
+
+:global(.vtex-product-summary-discount-flag--value) {
+    font-family: $font-lato;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: $color-primary;
+    margin: 0px !important;
+}

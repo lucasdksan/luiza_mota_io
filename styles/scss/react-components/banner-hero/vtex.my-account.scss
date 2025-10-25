@@ -1,0 +1,12 @@
+:global(.vtex-banner-hero--banner-link) {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+:global(.vtex-banner-hero--banner-image) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}

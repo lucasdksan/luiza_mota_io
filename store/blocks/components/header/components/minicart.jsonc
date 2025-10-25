@@ -1,0 +1,94 @@
+{
+    "minicart.v2": {
+        "title": "Carrinho",
+        "props": {
+            "quantityDisplay": "not-empty",
+            "blockClass": [
+                "minicart-header",
+                "minicart-sidebar"
+            ]
+        },
+        "children": [
+            "minicart-base-content"
+        ]
+    },
+    "minicart-base-content": {
+        "blocks": [
+            "minicart-empty-state"
+        ],
+        "children": [
+            "flex-layout.col#content-minicart",
+            "flex-layout.row#minicart-footer"
+        ],
+        "props": {
+            "blockClass": [
+                "minicart-sidebar"
+            ]
+        }
+    },
+    "minicart-empty-state": {
+        "title": "Carrinho vazio",
+        "props": {
+            "blockClass": "minicart-empty-state"
+        },
+        "children": [
+            "rich-text#minicart-empty-state-title",
+            "rich-text#minicart-empty-state-description",
+            "image#minicart-empty-state-link-for-him",
+            "image#minicart-empty-state-link-for-her"
+        ]
+    },
+    "rich-text#minicart-empty-state-title": {
+        "title": "Título de carrinho vazio",
+        "props": {
+            "text": "Sua sacola está vazia",
+            "blockClass": [
+                "minicart-empty-state-title"
+            ]
+        }
+    },
+    "rich-text#minicart-empty-state-description": {
+        "title": "Descrição de carrinho vazio",
+        "props": {
+            "text": "Explore algumas categorias abaixa",
+            "blockClass": "minicart-empty-state-description"
+        }
+    },
+    "image#minicart-empty-state-link-for-him": {
+      "props": {
+        "src": "assets/banners/banner-for-him.png",
+        "link": {
+            "url": "/",
+            "openNewTab": true
+        },
+        "blockClass": [
+            "minicart-empty-state-link"
+        ],
+        "alt": "Banner para eles carrinho vazio"
+      }
+    },
+    "image#minicart-empty-state-link-for-her": {
+      "props": {
+        "src": "assets/banners/banner-for-her.png",
+        "link": {
+            "url": "/",
+            "openNewTab": true
+        },
+        "blockClass": [
+            "minicart-empty-state-link"
+        ],
+        "alt": "Banner para elas carrinho vazio"
+      }
+    },
+    "flex-layout.col#content-minicart": {
+      "title": "Agrupador",
+      "props": {
+        "blockClass": [
+          "content-minicart"
+        ]
+      },
+      "children": [
+        "minicart-product-list"
+      ]
+    }
+}

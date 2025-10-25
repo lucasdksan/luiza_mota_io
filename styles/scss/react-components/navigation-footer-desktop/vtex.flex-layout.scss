@@ -1,0 +1,75 @@
+@use "../../settings/index" as *;
+
+.flexRow--navigation-footer-desktop {
+    width: 100%;
+    padding: 50px 180px 5px 180px;
+
+    :global(.vtex-store-components-3-x-container) {
+        padding: 0px !important;
+
+        @include desktop {
+            @include container-fluid;
+        }
+    }
+}
+
+.flexRowContent--navigation-footer-desktop {
+    :global(.vtex-navigation-footer-desktop--container) {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    :global(.vtex-navigation-footer-desktop--column) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    :global(.vtex-navigation-footer-desktop--title) {
+        font-family: $font-poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 130%;
+        color: $color-primary;
+        margin: 0px;
+    }
+
+    :global(.vtex-navigation-footer-desktop--link-list) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 36px;
+    }
+
+    :global(.vtex-navigation-footer-desktop--link-list__column) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 9px;
+    }
+
+    :global(.vtex-navigation-footer-desktop--link) {
+        text-decoration: none;
+        font-family: $font-poppins;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 150%;
+        color: $color-navigation-footer-desktop-link-text;
+        transition: color 0.2s ease, text-underline-offset 0.2s ease;
+
+        &:hover {
+            color: $color-primary;
+            text-decoration: underline !important;
+            text-decoration-color: $color-primary;
+            text-underline-offset: 6px;
+        }
+    }
+
+}

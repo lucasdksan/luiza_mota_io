@@ -1,0 +1,90 @@
+@use "../../settings/index" as *;
+
+.flexRow--read-more-card {
+    padding: 30px 20px 40px 20px;
+    background-color: $color-background-seo-footer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px 10px 0px 0px;
+
+    @include desktop {
+        background-color: transparent !important;
+        padding: 60px 80px !important;
+    }
+
+    :global(.vtex-store-components-3-x-container) {
+        padding: 0px !important;
+        margin: 0px !important;
+
+        @include desktop {
+            @include container-fluid;
+        }
+    }
+}
+
+.flexRowContent--read-more-card {
+    @include desktop {
+        min-height: 200px;
+    }
+    
+    :global(.vtex-read-more-card--container) {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        @include desktop {
+            padding: 30px 80px;
+            border-radius: 10px;
+            gap: 32px !important;
+            justify-content: center !important;
+            background-color: $color-background-seo-footer;
+            flex-direction: row !important;
+            height: 100%;
+        }
+    }
+
+    :global(.vtex-read-more-card--readmore-text-container) {
+        @include desktop {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 30px;
+        }
+    }
+
+    :global(.vtex-read-more-card--readmore-text) {
+        font-family: $font-poppins;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 170%;
+        color: $color-text-seo-footer;
+        transition: all 0.3s ease;
+        overflow: hidden;
+
+        &:global(.vtex-read-more-card--collapsed) {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    }
+
+    :global(.vtex-read-more-card--readmore-button) {
+        font-family: $font-roboto;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: $color-primary;
+        
+        @include defaultBtns;
+    }
+}
