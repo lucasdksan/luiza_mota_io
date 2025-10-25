@@ -13,6 +13,11 @@
                     "text": "Fale conosco",
                     "link": "/institucional/fale-conosco",
                     "id": "idfale-conosco"
+                },
+                {
+                    "text": "Formas de pagamento",
+                    "link": "/institucional/formas-de-pagamento",
+                    "id": "idformas-de-pagamento"
                 }
             ]
         }

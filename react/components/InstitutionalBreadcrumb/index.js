@@ -42,7 +42,7 @@ function InstitutionalBreadcrumb({
                         <React.Fragment key={index}>
                             <ArrowRightIcon />
                             <a href={`/institucional/${name}`} className={`${classGenerator("vtex-institutional-breadcrumb", "element-link")} ${index === names.length - 1 ? classGenerator("vtex-institutional-breadcrumb", "last-link") : ""}`}>
-                                <span className={classGenerator("vtex-institutional-breadcrumb", "element-text")}>{name}</span>
+                                <span className={classGenerator("vtex-institutional-breadcrumb", "element-text")}>{name.replace(/-/g, " ")}</span>
                             </a>
                         </React.Fragment>
                     );

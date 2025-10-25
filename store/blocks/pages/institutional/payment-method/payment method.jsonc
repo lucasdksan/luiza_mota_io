@@ -1,0 +1,20 @@
+{
+    "store.custom#payment-method": {
+        "blocks": [
+            "responsive-layout.mobile#banner-institucional",
+            "responsive-layout.desktop#banner-institucional",
+            "responsive-layout.mobile#payment-method",
+            "responsive-layout.desktop#payment-method"
+        ]
+    },
+    "responsive-layout.mobile#payment-method": {
+        "children": [
+            "flex-layout.row#main-content-mobile-payment-method"
+        ]
+    },
+    "responsive-layout.desktop#payment-method": {
+        "children": [
+            "flex-layout.row#main-content-desktop-payment-method"
+        ]
+    }
+}

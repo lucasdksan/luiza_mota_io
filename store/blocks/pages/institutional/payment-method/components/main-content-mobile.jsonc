@@ -1,0 +1,18 @@
+{
+    "flex-layout.row#main-content-mobile-payment-method": {
+        "title": "Conteúdo principal mobile",
+        "props": {
+            "blockClass": "main-content-mobile-default"
+        },
+        "children": [
+            "two7-institutional-breadcrumb",
+            "rich-text#the-brand-title-payment-method",
+            "rich-text#payment-method-description-payment-method",
+            "flex-layout.col#payment-method-information-container-1",
+            "flex-layout.col#payment-method-information-container-2",
+            "flex-layout.col#payment-method-information-container-3",
+            "flex-layout.col#payment-method-information-container-4",
+            "flex-layout.col#payment-method-information-container-5"
+        ]
+    }
+}
