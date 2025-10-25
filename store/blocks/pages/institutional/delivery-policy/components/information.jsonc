@@ -1,0 +1,122 @@
+{
+    "flex-layout.col#delivery-policy-information-container-1": {
+        "title": "Container da informação 1",
+        "props": {
+            "blockClass": [
+                "delivery-policy-information-container",
+                "delivery-policy-information-container-1"
+            ]
+        },
+        "children": [
+            "rich-text#delivery-policy-information-description-1"
+        ]
+    },
+    "flex-layout.col#delivery-policy-information-container-2": {
+        "title": "Container da informação 2",
+        "props": {
+            "blockClass": [
+                "delivery-policy-information-container",
+                "delivery-policy-information-container-2"
+            ]
+        },
+        "children": [
+            "rich-text#delivery-policy-information-title-2",
+            "rich-text#delivery-policy-information-description-2"
+        ]
+    },
+    "flex-layout.col#delivery-policy-information-container-3": {
+        "title": "Container da informação 3",
+        "props": {
+            "blockClass": [
+                "delivery-policy-information-container",
+                "delivery-policy-information-container-3"
+            ]
+        },
+        "children": [
+            "rich-text#delivery-policy-information-title-3",
+            "rich-text#delivery-policy-information-description-3"
+        ]
+    },
+    "flex-layout.col#delivery-policy-information-container-4": {
+        "title": "Container da informação 4",
+        "props": {
+            "blockClass": [
+                "delivery-policy-information-container",
+                "delivery-policy-information-container-4"
+            ]
+        },
+        "children": [
+            "rich-text#delivery-policy-information-title-4",
+            "rich-text#delivery-policy-information-description-4"
+        ]
+    },
+    "rich-text#delivery-policy-information-description-1": {
+        "title": "Descrição da informação 1",
+        "props": {
+            "blockClass": [
+                "delivery-policy-information-description"
+            ],
+            "text": "As entregas feitas pelo Rei das Joias são realizadas de segunda-feira a sexta-feira, das 8h às 21h, dependendo da localidade. O prazo de entrega é contado a partir da confirmação do pagamento em dias úteis, ou seja, não inclui sábados, domingos e feriados. Em caso de produtos personalizados o prazo também é informado no ato da compra e é contado a partir da data de entrega pelo departamento de produção.  \n Excepcionalmente entregas podem ocorrer aos sábados, domingos e feriados como nos casos de encomendas de urgência nos serviços de E-sedex e Sedex 10.\n Após a confirmação do pagamento, o prazo para emissão da Nota Fiscal E ENVIO é de até 48 horas. Os entregadores realizam até duas tentativas de entrega no local informado. É indispensável que, no endereço solicitado, tenha uma pessoa autorizada pelo comprador(a), maior de 18 anos, e portando documento de identificação para receber a mercadoria e assinar o protocolo."
+        }
+    },
+
+    "rich-text#delivery-policy-information-title-2": {
+        "title": "Título da informação 2",
+        "props": {
+            "blockClass": [
+                "delivery-policy-information-title"
+            ],
+            "text": "**IMPORTANTE:**"
+        }
+    },
+    "rich-text#delivery-policy-information-description-2": {
+        "title": "Descrição da informação 2",
+        "props": {
+            "blockClass": [
+                "delivery-policy-information-description",
+                "delivery-policy-information-description-2"
+            ],
+            "text": "Após a finalização do pedido não é possível alterar a forma de entrega, solicitar adiantamento ou prioridade. Todos os prazos de entrega levam em consideração o estoque, a região, o processo de emissão da nota fiscal e o tempo de preparo do produto. A cada atualização no status do pedido nosso sistema envia, automaticamente, e-mails de alerta. Por isso, é importante manter seu e-mail atualizado no cadastro."
+        }
+    },
+
+    "rich-text#delivery-policy-information-title-3": {
+        "title": "Título da informação 3",
+        "props": {
+            "blockClass": [
+                "delivery-policy-information-title"
+            ],
+            "text": "**Situações em que pode ocorrer atraso na entrega**"
+        }
+    },
+    "rich-text#delivery-policy-information-description-3": {
+        "title": "Descrição da informação 3",
+        "props": {
+            "blockClass": [
+                "delivery-policy-information-description",
+                "delivery-policy-information-description-3"
+            ],
+            "text": "Se houver duas tentativas de entrega sem sucesso, o pedido retornará para o Centro de Distribuição. Para que seja realizada nova tentativa é preciso confirmar o endereço. O prazo para reenvio do produto será o mesmo que foi informado na finalização do pedido e conta a partir da confirmação do endereço. \n Após a conclusão do pedido, só é possível alterar o endereço de entrega em até 24 horas. Caso tenha fornecido o endereço errado, entre em contato com o setor de atendimento pelo e-mail atendimento02@reidasjoias.com.br e solicite a alteração. \n Caso tenha fornecido o endereço incompleto, entre em contato com o setor de atendimento ao cliente e informe os dados que faltaram. Fatores naturais e adversos: chuvas fortes, acidentes ou greves na região onde o produto deveria ser entregue impossibilitam a chegada do transportador. Mesmo assim o produto fica na agência dos Correios aguardando retirada, por isso é importante acompanhar o número do objeto ou conhecimento de transporte informado pelo e-mail de alerta no ato do envio do pedido."
+        }
+    },
+
+    "rich-text#delivery-policy-information-title-4": {
+        "title": "Título da informação 4",
+        "props": {
+            "blockClass": [
+                "delivery-policy-information-title"
+            ],
+            "text": "**Quando recusar a entrega?**"
+        }
+    },
+    "rich-text#delivery-policy-information-description-4": {
+        "title": "Descrição da informação 4",
+        "props": {
+            "blockClass": [
+                "delivery-policy-information-description",
+                "delivery-policy-information-description-4"
+            ],
+            "text": "Os produtos são enviados ao cliente após duas conferências pelo departamento de expedição. Se ocorrer qualquer das hipóteses abaixo, recuse o recebimento da mercadoria e escreva o motivo da recusa no verso do DANFE: \n - Embalagem aberta ou avariada; - Produto avariado; - Produto em desacordo com o pedido;"
+        }
+    }
+}

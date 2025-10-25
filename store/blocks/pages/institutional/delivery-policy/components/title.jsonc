@@ -1,0 +1,13 @@
+{
+    "rich-text#delivery-policy-title": {
+        "title": "Título do conteúdo principal",
+        "props": {
+            "blockClass": [
+                "delivery-policy-title",
+                "institutional-title",
+                "title-blank"
+            ],
+            "text": "Política de Entrega"
+        }
+    }
+}

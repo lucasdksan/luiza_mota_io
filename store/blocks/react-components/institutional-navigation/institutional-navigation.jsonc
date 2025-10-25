@@ -23,6 +23,11 @@
                     "text": "Política de privacidade",
                     "link": "/institucional/politica-de-privacidade",
                     "id": "idprivacy-policy"
+                },
+                {
+                    "text": "Política de entrega",
+                    "link": "/institucional/politica-de-entrega",
+                    "id": "iddelivery-policy"
                 }
             ]
         }

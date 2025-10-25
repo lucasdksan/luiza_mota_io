@@ -13,5 +13,8 @@
   },
   "store.custom#privacy-policy": {
     "path": "/institucional/politica-de-privacidade"
+  },
+  "store.custom#delivery-policy": {
+    "path": "/institucional/politica-de-entrega"
   }
 }
