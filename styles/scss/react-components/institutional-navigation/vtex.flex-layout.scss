@@ -33,6 +33,30 @@
             padding: 16px 20px;
             text-decoration: none;
             border-bottom: 1px solid $color-gray-300;
+            transition: all .3s ease;
+            border-radius: 8px;
+
+            &:hover {
+                transition: all .3s ease;
+                cursor: pointer;
+                border-bottom: none !important;
+                background-color: $color-primary;
+                border-radius: 8px;
+            
+                :global(.vtex-institutional-navigation--element-text) {
+                    color: $color-white !important;
+                }
+            }
+
+            &:global(.vtex-institutional-navigation--element-link-active) {
+                border-bottom: none !important;
+                background-color: $color-primary;
+                border-radius: 8px;
+            
+                :global(.vtex-institutional-navigation--element-text) {
+                    color: $color-white !important;
+                }
+            }
 
             :global(.vtex-institutional-navigation--element-text) {
                 font-family: $font-poppins;

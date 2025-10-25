@@ -1,0 +1,40 @@
+@use "../../../../settings/index" as *;
+
+.flexRow--main-content-desktop {
+    width: 100%;
+    height: auto;
+    padding: 20px 80px 100px 80px;
+
+    :global(.vtex-store-components-3-x-container) {
+        padding: 0px !important;
+
+        @include container-fluid;
+    }
+    .flexRow--institutional-breadcrumb {
+        margin-bottom: 0px !important;
+    }
+}
+
+.flexRowContent--main-content-desktop {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+    .stretchChildrenWidth {
+        width: 100% !important;
+    }
+}
+
+.flexRowContent--main-content-desktop-body {
+    display: grid;
+    grid-template-columns: 298px 1fr;
+    gap: 30px;
+
+    .flexRow--institutional-navigation {
+        margin-top: 0px !important;
+    }
+}
+
+.flexCol--main-content-desktop-body-column {
+    gap: 40px;
+}
