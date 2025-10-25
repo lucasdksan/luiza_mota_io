@@ -1,0 +1,21 @@
+@use "../../../../settings/index" as *;
+
+.container--institutional-title {
+    padding: 0px 20px 0px 20px;
+}
+
+.paragraph--institutional-title {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 140%;
+    color: $color-primary;
+    margin: 0px !important;
+}
+
+.wrapper--institutional-title {
+    padding-bottom: 10px;
+    border-bottom: 1px solid $color-gray-700;
+    width: 100%;
+}

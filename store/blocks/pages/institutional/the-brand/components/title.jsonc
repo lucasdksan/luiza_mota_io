@@ -1,0 +1,12 @@
+{
+    "rich-text#the-brand-title": {
+        "title": "Título do conteúdo principal",
+        "props": {
+            "blockClass": [
+                "the-brand-title",
+                "institutional-title"
+            ],
+            "text": "A marca"
+        }
+    }
+}

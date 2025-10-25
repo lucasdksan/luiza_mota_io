@@ -1,0 +1,11 @@
+{
+    "flex-layout.row#main-content-desktop": {
+        "title": "Conteúdo principal desktop",
+        "props": {
+            "blockClass": "main-content-desktop"
+        },
+        "children": [
+            "rich-text#the-brand-title"
+        ]
+    }
+}

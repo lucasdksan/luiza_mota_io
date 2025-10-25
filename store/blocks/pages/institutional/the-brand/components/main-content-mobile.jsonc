@@ -1,0 +1,54 @@
+{
+    "flex-layout.row#main-content-mobile": {
+        "title": "Conteúdo principal mobile",
+        "props": {
+            "blockClass": "main-content-mobile"
+        },
+        "children": [
+            "two7-institutional-breadcrumb",
+            "rich-text#the-brand-title",
+            "image#the-brand-main-image-mobile",
+            "rich-text#the-brand-first-text-mobile",
+            "image#the-brand-sub-image-mobile",
+            "rich-text#the-brand-second-text-mobile"
+        ]
+    },
+    "image#the-brand-main-image-mobile": {
+        "title": "Imagem principal da marca mobile",
+        "props": {
+            "src": "assets/banners/A-marca-main-banner.png",
+            "alt": "Imagem principal da marca",
+            "blockClass": [
+                "the-brand-main-image-mobile"
+            ]
+        }
+    },
+    "rich-text#the-brand-first-text-mobile": {
+        "title": "Primeiro texto da marca mobile",
+        "props": {
+            "blockClass": [
+                "the-brand-first-text-mobile"
+            ],
+            "text": "Lorem ipsum dolor sit amet consectetur. Urna nulla gravida diam pharetra. Et viverra volutpat a nulla donec faucibus ut rhoncus sodales. Tortor tellus tempor non mi risus neque eu mi. Vitae pellentesque vestibulum augue semper. Tortor vel cras accumsan aliquam pharetra eget pellentesque neque. Augue enim interdum senectus elementum. Odio et quam mattis iaculis sit arcu eu euismod arcu. Magna orci velit tincidunt justo lacus nisl. Magna sed vel nibh porttitor eget ut. In tortor risus tincidunt arcu nisi mattis elit vestibulum. Elit congue cursus tellus donec lacus cras et. Vitae cursus faucibus sit amet tempus convallis lorem dignissim posuere. Neque ac sed id nunc. Nec sed et malesuada eu. Diam consequat lacus facilisi dignissim nunc pretium at enim. Sed ultricies donec velit egestas purus urna vitae amet amet. Lectus quisque et nam augue aliquam at pretium massa. Malesuada quisque eget pellentesque et dignissim fames odio. Fringilla integer urna cras non orci fringilla."
+        }
+    },
+    "image#the-brand-sub-image-mobile": {
+        "title": "Imagem sub da marca mobile",
+        "props": {
+            "src": "assets/banners/A-marca-banner-mobile.png",
+            "alt": "Imagem sub da marca",
+            "blockClass": [
+                "the-brand-sub-image-mobile"
+            ]
+        }
+    },
+    "rich-text#the-brand-second-text-mobile": {
+        "title": "Segundo texto da marca mobile",
+        "props": {
+            "blockClass": [
+                "the-brand-second-text-mobile"
+            ],
+            "text": "Lorem ipsum dolor sit amet consectetur. Urna nulla gravida diam pharetra. Et viverra volutpat a nulla donec faucibus ut rhoncus sodales. Tortor tellus tempor non mi risus neque eu mi. Vitae pellentesque vestibulum augue semper. Tortor vel cras accumsan aliquam pharetra eget pellentesque neque. Augue enim interdum senectus elementum. Odio et quam mattis iaculis sit arcu eu euismod arcu. Magna orci velit tincidunt justo lacus nisl. Magna sed vel nibh porttitor eget ut. In tortor risus tincidunt arcu nisi mattis elit vestibulum. Elit congue cursus tellus donec lacus cras et. Vitae cursus faucibus sit amet tempus convallis lorem dignissim posuere. Neque ac sed id nunc. Nec sed et malesuada eu. Diam consequat lacus facilisi dignissim nunc pretium at enim. Sed ultricies donec velit egestas purus urna vitae amet amet. Lectus quisque et nam augue aliquam at pretium massa. Malesuada quisque eget pellentesque et dignissim fames odio. Fringilla integer urna cras non orci fringilla. \n \n Lorem ipsum dolor sit amet consectetur. Urna nulla gravida diam pharetra. Et viverra volutpat a nulla donec faucibus ut rhoncus sodales. Tortor tellus tempor non mi risus neque eu mi. Vitae pellentesque v"
+        }
+    }
+}

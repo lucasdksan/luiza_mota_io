@@ -1,0 +1,26 @@
+@use "../../../../../settings/index" as *;
+
+
+.container--the-brand-first-text-mobile,
+.container--the-brand-second-text-mobile {
+    padding: 0px 20px 0px 20px;
+    width: 100%;
+    height: auto;
+}
+
+.wrapper--the-brand-first-text-mobile,
+.wrapper--the-brand-second-text-mobile {
+    width: 100%;
+    height: auto;
+}
+
+.paragraph--the-brand-first-text-mobile,
+.paragraph--the-brand-second-text-mobile {
+    font-family: $font-lato;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $color-gray-300;
+    margin: 0px !important;
+}
