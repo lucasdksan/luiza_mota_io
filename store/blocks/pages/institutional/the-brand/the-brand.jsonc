@@ -1,0 +1,8 @@
+{
+    "store.custom#the-brand": {
+        "blocks": [
+            "responsive-layout.mobile#banner-institucional",
+            "responsive-layout.desktop#banner-institucional"
+        ]
+    }
+}

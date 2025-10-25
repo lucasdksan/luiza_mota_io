@@ -1,0 +1,44 @@
+@use "../../settings/index" as *;
+
+.flexRow--institutional-breadcrumb {
+    margin-bottom: 20px;
+}
+
+.flexRow--institutional-breadcrumb,
+.flexRowContent--institutional-breadcrumb {
+    width: 100%;
+    height: auto;
+}
+
+.flexRowContent--institutional-breadcrumb {
+    :global(.vtex-institutional-breadcrumb--container) {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    :global(.vtex-institutional-breadcrumb--element-link) {
+        font-family: $font-poppins;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        text-transform: capitalize;
+        color: $color-gray-300;
+        text-decoration: none;
+
+        &:global(.vtex-institutional-breadcrumb--last-link) {
+            color: $color-gray-400;
+        }
+    }
+
+    :global(.vtex-institutional-breadcrumb--arrow-right-icon) {
+        display: flex;
+        align-self: center;
+        justify-self: center;
+    }
+}

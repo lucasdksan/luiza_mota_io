@@ -1,0 +1,26 @@
+{
+    "two7-institutional-navigation": {
+        "title": "Navegação Institucional",
+        "props": {
+            "VtexFlexLayout": "flex-layout.row#institutional-navigation",
+            "items": [
+                {
+                    "text": "A marca",
+                    "link": "/institucional/amarca" ,
+                    "id": "idmarca"
+                },
+                {
+                    "text": "Fale conosco",
+                    "link": "/institucional/fale-conosco",
+                    "id": "idfale-conosco"
+                }
+            ]
+        }
+    },
+    "flex-layout.row#institutional-navigation": {
+        "title": "Container da navegação institucional",
+        "props": {
+            "blockClass": "institutional-navigation"
+        }
+    }
+}

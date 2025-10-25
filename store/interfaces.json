@@ -55,5 +55,11 @@
     },
     "two7-login-desktop": {
         "component": "LoginDesktop"
+    },
+    "two7-institutional-navigation": {
+        "component": "InstitutionalNavigation"
+    },
+    "two7-institutional-breadcrumb": {
+        "component": "InstitutionalBreadcrumb"
     }
 }

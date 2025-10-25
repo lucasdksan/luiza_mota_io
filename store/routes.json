@@ -1,5 +1,11 @@
 {
   "store.home": {
     "path": "/"
+  },
+  "store.custom#the-brand": {
+    "path": "/institucional/amarca"
+  },
+  "store.custom#institutional": {
+    "path": "/institucional"
   }
 }
