@@ -7,7 +7,7 @@
                 {
                     "text": "A marca",
                     "link": "/institucional/amarca" ,
-                    "id": "idmarca"
+                    "id": "idthe-brand"
                 },
                 {
                     "text": "Fale conosco",
@@ -17,7 +17,12 @@
                 {
                     "text": "Formas de pagamento",
                     "link": "/institucional/formas-de-pagamento",
-                    "id": "idformas-de-pagamento"
+                    "id": "idpayment-method"
+                },
+                {
+                    "text": "Política de privacidade",
+                    "link": "/institucional/politica-de-privacidade",
+                    "id": "idprivacy-policy"
                 }
             ]
         }

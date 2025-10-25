@@ -10,5 +10,8 @@
   },
   "store.custom#payment-method": {
     "path": "/institucional/formas-de-pagamento"
+  },
+  "store.custom#privacy-policy": {
+    "path": "/institucional/politica-de-privacidade"
   }
 }
