@@ -1,0 +1,132 @@
+{
+    "flex-layout.col#privacy-policy-information-container-1": {
+        "title": "Container da informação 1",
+        "props": {
+            "blockClass": [
+                "privacy-policy-information-container",
+                "privacy-policy-information-container-1"
+            ]
+        },
+        "children": [
+            "rich-text#privacy-policy-information-title-1",
+            "rich-text#privacy-policy-information-description-1"
+        ]
+    },
+    "flex-layout.col#privacy-policy-information-container-2": {
+        "title": "Container da informação 2",
+        "props": {
+            "blockClass": [
+                "privacy-policy-information-container",
+                "privacy-policy-information-container-2"
+            ]
+        },
+        "children": [
+            "rich-text#privacy-policy-information-title-2",
+            "rich-text#privacy-policy-information-description-2"
+        ]
+    },
+    "flex-layout.col#privacy-policy-information-container-3": {
+        "title": "Container da informação 3",
+        "props": {
+            "blockClass": [
+                "privacy-policy-information-container",
+                "privacy-policy-information-container-3"
+            ]
+        },
+        "children": [
+            "rich-text#privacy-policy-information-title-3",
+            "rich-text#privacy-policy-information-description-3"
+        ]
+    },
+    "flex-layout.col#privacy-policy-information-container-4": {
+        "title": "Container da informação 4",
+        "props": {
+            "blockClass": [
+                "privacy-policy-information-container",
+                "privacy-policy-information-container-4"
+            ]
+        },
+        "children": [
+            "rich-text#privacy-policy-information-title-4",
+            "rich-text#privacy-policy-information-description-4"
+        ]
+    },
+    "rich-text#privacy-policy-information-title-1": {
+        "title": "Título da informação 1",
+        "props": {
+            "blockClass": [
+                "privacy-policy-information-title"
+            ],
+            "text": "**Cadastro**"
+        }
+    },
+    "rich-text#privacy-policy-information-description-1": {
+        "title": "Descrição da informação 1",
+        "props": {
+            "blockClass": [
+                "privacy-policy-information-description"
+            ],
+            "text": "Para efetuar seu cadastro como nosso cliente é necessário ter um e-mail válido. Clique no link Cadastro, localizado no menu superior do site. Entre com um e-mail válido e informe uma senha Se você esquecer a sua senha, clique no link esqueceu sua senha que o sistema criará uma nova senha e enviará para o seu e-mail. A segurança de seus dados em nossa empresa é garantida, delegando a você como nosso cliente, cuidar da segurança da caixa postal de e-mail que utilizará para abrir sua conta em nosso sistema."
+        }
+    },
+
+    "rich-text#privacy-policy-information-title-2": {
+        "title": "Título da informação 2",
+        "props": {
+            "blockClass": [
+                "privacy-policy-information-title"
+            ],
+            "text": "**Compra Segura**"
+        }
+    },
+    "rich-text#privacy-policy-information-description-2": {
+        "title": "Descrição da informação 2",
+        "props": {
+            "blockClass": [
+                "privacy-policy-information-description",
+                "privacy-policy-information-description-2"
+            ],
+            "text": "O Rei das Joias tem um especial compromisso com você, quanto a Segurança e a Privacidade de seus dados. O respeito ao cliente e o sigilo de suas informações é muito importante para nós. A Compra Segura consiste em um conjunto de ações desenvolvidas para garantir a segurança de todas as compras feitas em nosso site, independente da forma de pagamento escolhida. Todas as informações que você fornecer no processo de compra serão criptografadas e 100% processadas por computador, sem qualquer intervenção humana."
+        }
+    },
+
+    "rich-text#privacy-policy-information-title-3": {
+        "title": "Título da informação 3",
+        "props": {
+            "blockClass": [
+                "privacy-policy-information-title"
+            ],
+            "text": "**Cripotografia**"
+        }
+    },
+    "rich-text#privacy-policy-information-description-3": {
+        "title": "Descrição da informação 3",
+        "props": {
+            "blockClass": [
+                "privacy-policy-information-description",
+                "privacy-policy-information-description-3"
+            ],
+            "text": "Todas as informações que passam pelo nosso processo de compra são automaticamente codificadas por um sistema tecnológico específico. Assim, seus dados pessoais, a forma de pagamento escolhida e toda e qualquer outra informação fornecida no processo de compra é codificada antes de ser transmitida. O ícone “cadeado fechado” na barra de endereços de seu navegador durante a finalização do pedido é um símbolo da criptografia das informações."
+        }
+    },
+
+    "rich-text#privacy-policy-information-title-4": {
+        "title": "Título da informação 4",
+        "props": {
+            "blockClass": [
+                "privacy-policy-information-title"
+            ],
+            "text": "**Certificação**"
+        }
+    },
+    "rich-text#privacy-policy-information-description-4": {
+        "title": "Descrição da informação 4",
+        "props": {
+            "blockClass": [
+                "privacy-policy-information-description",
+                "privacy-policy-information-description-4"
+            ],
+            "text": "A segurança do site é certificada por uma empresa especializada (Thawte), o que dá garantia a fornecimento de dados no processo de compra."
+        }
+    }
+}

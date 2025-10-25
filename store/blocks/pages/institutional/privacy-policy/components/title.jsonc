@@ -1,0 +1,13 @@
+{
+    "rich-text#privacy-policy-title": {
+        "title": "Título do conteúdo principal",
+        "props": {
+            "blockClass": [
+                "privacy-policy-title",
+                "institutional-title",
+                "title-blank"
+            ],
+            "text": "Política de Privacidade"
+        }
+    }
+}
