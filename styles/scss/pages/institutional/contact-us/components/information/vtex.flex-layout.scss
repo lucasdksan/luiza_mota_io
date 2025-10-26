@@ -1,0 +1,9 @@
+@use "../../../../../settings/index" as *;
+
+.flexCol--contact-us-information-container {
+    gap: 8px;
+}
+
+.flexColChild--main-content-desktop-body-column-contact-us {
+    height: auto !important;
+}
