@@ -33,6 +33,11 @@
                     "text": "Trocas e devoluções",
                     "link": "/institucional/troca-e-devolucoes",
                     "id": "idexchanges-returns"
+                },
+                {
+                    "text": "Garantia",
+                    "link": "/institucional/garantia",
+                    "id": "idguarantee"
                 }
             ]
         }
