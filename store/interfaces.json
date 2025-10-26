@@ -61,5 +61,8 @@
     },
     "two7-institutional-breadcrumb": {
         "component": "InstitutionalBreadcrumb"
+    },
+    "two7-contact-us-form": {
+        "component": "ContactUsForm"
     }
 }
