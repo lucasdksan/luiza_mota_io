@@ -22,5 +22,8 @@
   },
   "store.custom#guarantee": {
     "path": "/institucional/garantia"
+  },
+  "store.custom#contact-us": {
+    "path": "/institucional/fale-conosco"
   }
 }
