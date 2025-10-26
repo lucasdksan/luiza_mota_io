@@ -1,0 +1,14 @@
+{
+    "two7-contact-us-form": {
+        "title": "Formulário de contato",
+        "props": {
+            "VtexFlexLayout": "flex-layout.row#contact-us-form-container"
+        }
+    },
+    "flex-layout.row#contact-us-form-container": {
+        "title": "Container do formulário de contato",
+        "props": {
+            "blockClass": "contact-us-form"
+        }
+    }
+}
