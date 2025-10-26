@@ -1,0 +1,38 @@
+{
+    "flex-layout.row#main-content-desktop-contact-us": {
+        "title": "Conteúdo principal desktop",
+        "props": {
+            "blockClass": "main-content-desktop"
+        },
+        "children": [
+            "two7-institutional-breadcrumb",
+            "flex-layout.row#main-content-desktop-body-contact-us"
+        ]
+    },
+    "flex-layout.row#main-content-desktop-body-contact-us": {
+        "title": "Corpo do conteúdo principal desktop",
+        "props": {
+            "blockClass": [
+                "main-content-desktop-body",
+                "main-content-desktop-body-contact-us"
+            ]
+        },
+        "children": [
+            "two7-institutional-navigation",
+            "flex-layout.col#main-content-desktop-body-column-contact-us"
+        ]
+    },
+    "flex-layout.col#main-content-desktop-body-column-contact-us": {
+        "title": "Coluna do corpo do conteúdo principal desktop",
+        "props": {
+            "blockClass": [
+                "main-content-desktop-body-column",
+                "main-content-desktop-body-column-contact-us"
+            ]
+        },
+        "children": [
+            "rich-text#contact-us-title",
+            "two7-contact-us-form"
+        ]
+    }
+}

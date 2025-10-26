@@ -1,0 +1,13 @@
+{
+    "rich-text#exchanges-returns-title": {
+        "title": "Título do conteúdo principal",
+        "props": {
+            "blockClass": [
+                "exchanges-returns-title",
+                "institutional-title",
+                "title-blank"
+            ],
+            "text": "Trocas e Devoluções"
+        }
+    }
+}

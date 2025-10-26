@@ -1,0 +1,70 @@
+@use "../../../../../settings/index" as *;
+
+
+.container--guarantee-information-title {
+    width: 100%;
+}
+
+.paragraph--guarantee-information-title {
+    margin: 0px !important;
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    color: $color-primary;
+}
+
+.paragraph--guarantee-information-description {
+    margin: 0px !important;
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: $color-gray-300;
+
+    @include desktop {
+        font-size: 16px !important;
+    }
+}
+
+.paragraph--guarantee-information-description-2 {
+    .strong--guarantee-information-description {
+        color: $color-primary !important;
+    }
+}
+
+.link--guarantee-information-description-3,
+.link--guarantee-information-description-5 {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: $color-primary;
+    text-decoration: none !important;
+}
+
+
+.listItem--guarantee-information-description {
+    margin: 0px !important;
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: $color-gray-300;
+}
+
+.strong--guarantee-information-description {
+    color: $color-primary !important;
+}
+
+.list--guarantee-information-description {
+    padding: 0px 0px 0px 17px!important;
+    margin: 0px 0px 0px 0px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}

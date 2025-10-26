@@ -1,0 +1,16 @@
+{
+    "flex-layout.row#main-content-mobile-delivery-policy": {
+        "title": "Conteúdo principal mobile",
+        "props": {
+            "blockClass": "main-content-mobile-default"
+        },
+        "children": [
+            "two7-institutional-breadcrumb",
+            "rich-text#delivery-policy-title",
+            "flex-layout.col#delivery-policy-information-container-1",
+            "flex-layout.col#delivery-policy-information-container-2",
+            "flex-layout.col#delivery-policy-information-container-3",
+            "flex-layout.col#delivery-policy-information-container-4"
+        ]
+    }
+}

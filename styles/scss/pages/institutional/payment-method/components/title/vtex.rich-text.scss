@@ -1,0 +1,15 @@
+@use "../../../../../settings/index" as *;
+
+.paragraph--institutional-description {
+    margin: 0px !important;
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: $color-gray-300;
+
+    @include desktop {
+        font-size: 18px !important;
+    }
+}

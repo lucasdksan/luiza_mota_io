@@ -1,0 +1,20 @@
+{
+    "store.custom#exchanges-returns": {
+        "blocks": [
+            "responsive-layout.mobile#banner-institucional",
+            "responsive-layout.desktop#banner-institucional",
+            "responsive-layout.mobile#exchanges-returns",
+            "responsive-layout.desktop#exchanges-returns"
+        ]
+    },
+    "responsive-layout.mobile#exchanges-returns": {
+        "children": [
+            "flex-layout.row#main-content-mobile-exchanges-returns"
+        ]
+    },
+    "responsive-layout.desktop#exchanges-returns": {
+        "children": [
+            "flex-layout.row#main-content-desktop-exchanges-returns"
+        ]
+    }
+}

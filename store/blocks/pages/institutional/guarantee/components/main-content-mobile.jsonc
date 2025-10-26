@@ -1,0 +1,15 @@
+{
+    "flex-layout.row#main-content-mobile-guarantee": {
+        "title": "Conteúdo principal mobile",
+        "props": {
+            "blockClass": "main-content-mobile-default"
+        },
+        "children": [
+            "two7-institutional-breadcrumb",
+            "rich-text#guarantee-title",
+            "flex-layout.col#guarantee-information-container-1",
+            "flex-layout.col#guarantee-information-container-2",
+            "flex-layout.col#guarantee-information-container-3"
+        ]
+    }
+}

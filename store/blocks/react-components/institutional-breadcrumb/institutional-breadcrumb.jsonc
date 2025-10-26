@@ -1,0 +1,14 @@
+{
+    "two7-institutional-breadcrumb": {	
+        "title": "Breadcrumb Institucional",
+        "props": {
+            "VtexFlexLayout": "flex-layout.row#institutional-breadcrumb"
+        }
+    },
+    "flex-layout.row#institutional-breadcrumb": {
+        "title": "Container do breadcrumb institucional",
+        "props": {
+            "blockClass": "institutional-breadcrumb"
+        }
+    }
+}

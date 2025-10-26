@@ -1,0 +1,100 @@
+{
+    "flex-layout.col#guarantee-information-container-1": {
+        "title": "Container da informação 1",
+        "props": {
+            "blockClass": [
+                "guarantee-information-container",
+                "guarantee-information-container-1"
+            ]
+        },
+        "children": [
+            "rich-text#guarantee-information-title-1",
+            "rich-text#guarantee-information-description-1"
+        ]
+    },
+    "flex-layout.col#guarantee-information-container-2": {
+        "title": "Container da informação 2",
+        "props": {
+            "blockClass": [
+                "guarantee-information-container",
+                "guarantee-information-container-2"
+            ]
+        },
+        "children": [
+            "rich-text#guarantee-information-title-2",
+            "rich-text#guarantee-information-description-2"
+        ]
+    },
+    "flex-layout.col#guarantee-information-container-3": {
+        "title": "Container da informação 3",
+        "props": {
+            "blockClass": [
+                "guarantee-information-container",
+                "guarantee-information-container-3"
+            ]
+        },
+        "children": [
+            "rich-text#guarantee-information-title-3",
+            "rich-text#guarantee-information-description-3"
+        ]
+    },
+    
+    "rich-text#guarantee-information-title-1": {
+        "title": "Título da informação 1",
+        "props": {
+            "blockClass": [
+                "guarantee-information-title"
+            ],
+            "text": "**Política de garantia**"
+        }
+    },
+    "rich-text#guarantee-information-description-1": {
+        "title": "Descrição da informação 1",
+        "props": {
+            "blockClass": [
+                "guarantee-information-description"
+            ],
+            "text": "- A garantia tem prazo de **12 meses** a contar da data da compra, mediante apresentação do produto acompanhado do respectivo certificado de garantia e da etiqueta de código de barras.\n\n- A garantia será válida se o defeito apresentado for de **fabricação do produto**.\n\n- A garantia **não cobre defeitos por mau uso**.\n\n- Comprovado o defeito de fabricação, **O Rei das Joias** poderá consertar o produto ou substituí-lo por outro igual, se o produto já estiver fora de linha.\n\n- Caso não possa ser substituído por outro igual no prazo de **30 (trinta) dias**, o cliente receberá um **crédito no valor da peça**."
+        }
+    },
+
+    "rich-text#guarantee-information-title-2": {
+        "title": "Título da informação 2",
+        "props": {
+            "blockClass": [
+                "guarantee-information-title"
+            ],
+            "text": "**Peças em garantia (prata 925)**"
+        }
+    },
+    "rich-text#guarantee-information-description-2": {
+        "title": "Descrição da informação 2",
+        "props": {
+            "blockClass": [
+                "guarantee-information-description",
+                "guarantee-information-description-2"
+            ],
+            "text": "- O Rei das Joias comercializa joias elaboradas com metais nobres de qualidade.\n\n- Nossas peças são elaboradas com a mais alta tecnologia, porém preservamos o cuidado individual e atenção com cada joia que apresentamos aos nossos clientes.\n\n- As joias em prata têm **garantia ETERNA** para qualquer defeito de fabricação.\n\n- Excluem-se desta garantia desgastes provocados por **batidas, arranhões, choques** e **polimentos feitos com produtos abrasivos**, **perda de pedras** ou **quebra de produto**.\n\n- O custo do serviço de reparo decorrente de **mau uso** é de responsabilidade do cliente.\n\n- Nos casos de envio da joia para verificação e/ou conserto, **as despesas de frete de envio e reenvio** ficarão por conta do cliente, **exceto nos casos de defeito de fabricação**."
+        }
+    },
+
+    "rich-text#guarantee-information-title-3": {
+        "title": "Título da informação 3",
+        "props": {
+            "blockClass": [
+                "guarantee-information-title"
+            ],
+            "text": "**Cuidados com sua joia**"
+        }
+    },
+    "rich-text#guarantee-information-description-3": {
+        "title": "Descrição da informação 3",
+        "props": {
+            "blockClass": [
+                "guarantee-information-description",
+                "guarantee-information-description-3"
+            ],
+            "text": "A prata é um metal mais sensível, maleável e suscetível a choques, atritos e desgastes. Para manter a boa aparência e conservar as características originais da sua joia, é preciso observar alguns procedimentos: Mantenha as joias guardadas em local limpo e seco, sempre protegidas da luz, longe de produtos químicos e das mudanças abruptas de temperatura. \n Ao dormir, retire a sua joia em prata e guarde enrolado no papel toalha, pois, a produção de ácido úrico do nosso corpo pode influenciar na sua coloração. As joias podem naturalmente sofrer oxidação (sua superfície ficará escurecida). Sinais que indicam o constante contato com o enxofre (elemento presente nos gases da Atmosfera), suor, medicamentos, cosméticos etc. Nesses casos utilize uma flanela para retirar os sinais de oxidação. Para Limpeza mais profunda traga sua peça em nossa assistência ou utilize Monzi Azul (limpa prata)."
+        }
+    }
+}

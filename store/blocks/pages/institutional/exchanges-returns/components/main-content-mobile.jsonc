@@ -1,0 +1,17 @@
+{
+    "flex-layout.row#main-content-mobile-exchanges-returns": {
+        "title": "Conteúdo principal mobile",
+        "props": {
+            "blockClass": "main-content-mobile-default"
+        },
+        "children": [
+            "two7-institutional-breadcrumb",
+            "rich-text#exchanges-returns-title",
+            "flex-layout.col#exchanges-returns-information-container-1",
+            "flex-layout.col#exchanges-returns-information-container-2",
+            "flex-layout.col#exchanges-returns-information-container-3",
+            "flex-layout.col#exchanges-returns-information-container-4",
+            "flex-layout.col#exchanges-returns-information-container-5"
+        ]
+    }
+}

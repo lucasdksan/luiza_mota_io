@@ -1,0 +1,19 @@
+{
+    "store.custom#institutional": {
+        "blocks": [
+            "responsive-layout.mobile#banner-institucional",
+            "responsive-layout.desktop#banner-institucional",
+            "flex-layout.row#institutional-navigation-section"
+        ]
+    },
+    "flex-layout.row#institutional-navigation-section": {
+        "title": "Container da navegação institucional",
+        "props": {
+            "blockClass": "institutional-navigation-section"
+        },
+        "children": [
+            "two7-institutional-breadcrumb",
+            "two7-institutional-navigation"
+        ]
+    }
+}

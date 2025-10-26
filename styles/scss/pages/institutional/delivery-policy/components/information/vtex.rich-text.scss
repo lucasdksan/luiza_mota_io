@@ -1,0 +1,73 @@
+@use "../../../../../settings/index" as *;
+
+
+.container--delivery-policy-information-title {
+    width: 100%;
+}
+
+.paragraph--delivery-policy-information-title {
+    margin: 0px !important;
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    color: $color-primary;
+}
+
+.paragraph--delivery-policy-information-description {
+    margin: 0px !important;
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: $color-gray-300;
+
+    @include desktop {
+        font-size: 16px !important;
+    }
+}
+
+.paragraph--delivery-policy-information-description-2 {
+    .strong--delivery-policy-information-description {
+        color: $color-primary !important;
+    }
+}
+
+.link--delivery-policy-information-description-3 {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: $color-primary;
+    text-decoration: none !important;
+}
+
+.list--delivery-policy-information-description-4 {
+    padding: 0px !important;
+    margin: 5px 0px 0px 0px;
+    list-style: none;
+}
+
+.listItem--delivery-policy-information-description-4 {
+    margin: 0px !important;
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: $color-gray-300;
+
+    &::before {
+        content: "-";
+        margin-right: 5px;
+        color: $color-gray-300;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        font-family: $font-poppins;
+        font-style: normal;
+    }
+}

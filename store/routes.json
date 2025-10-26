@@ -1,5 +1,29 @@
 {
   "store.home": {
     "path": "/"
+  },
+  "store.custom#the-brand": {
+    "path": "/institucional/amarca"
+  },
+  "store.custom#institutional": {
+    "path": "/institucional"
+  },
+  "store.custom#payment-method": {
+    "path": "/institucional/formas-de-pagamento"
+  },
+  "store.custom#privacy-policy": {
+    "path": "/institucional/politica-de-privacidade"
+  },
+  "store.custom#delivery-policy": {
+    "path": "/institucional/politica-de-entrega"
+  },
+  "store.custom#exchanges-returns": {
+    "path": "/institucional/troca-e-devolucoes"
+  },
+  "store.custom#guarantee": {
+    "path": "/institucional/garantia"
+  },
+  "store.custom#contact-us": {
+    "path": "/institucional/fale-conosco"
   }
 }

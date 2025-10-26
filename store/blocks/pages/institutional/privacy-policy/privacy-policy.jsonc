@@ -1,0 +1,20 @@
+{
+    "store.custom#privacy-policy": {
+        "blocks": [
+            "responsive-layout.mobile#banner-institucional",
+            "responsive-layout.desktop#banner-institucional",
+            "responsive-layout.mobile#privacy-policy",
+            "responsive-layout.desktop#privacy-policy"
+        ]
+    },
+    "responsive-layout.mobile#privacy-policy": {
+        "children": [
+            "flex-layout.row#main-content-mobile-privacy-policy"
+        ]
+    },
+    "responsive-layout.desktop#privacy-policy": {
+        "children": [
+            "flex-layout.row#main-content-desktop-privacy-policy"
+        ]
+    }
+}

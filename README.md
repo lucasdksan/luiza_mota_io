@@ -123,8 +123,6 @@ Start with all commands
 
 [FIGMA MY ACCOUNT](https://www.figma.com/proto/Nl9xCKtuYhszLAqUy6YNwd/Projeto-Luiza-Mota?page-id=19331%3A13695&node-id=19331-16792&p=f&viewport=137%2C303%2C0.03&t=koT1DJrFPdiXWQJV-1&scaling=scale-down&content-scaling=fixed)
 
-[FIGMA E-MAIL](https://www.figma.com/design/9E5uMzdY59QNgWxnHgmnvz/Projeto-Luiza-mota---Emails-transacionais?node-id=15486-1455&t=r4C6Wp5txYm7gVUM-1)
-
 ## OBSERVATIONS
 
 **If your change doesn't start propagating to Workspace or Production, delete the css folder and run the build command again.**

@@ -1,0 +1,42 @@
+{
+    "flex-layout.row#main-content-desktop-exchanges-returns": {
+        "title": "Conteúdo principal desktop",
+        "props": {
+            "blockClass": "main-content-desktop"
+        },
+        "children": [
+            "two7-institutional-breadcrumb",
+            "flex-layout.row#main-content-desktop-body-exchanges-returns"
+        ]
+    },
+    "flex-layout.row#main-content-desktop-body-exchanges-returns": {
+        "title": "Corpo do conteúdo principal desktop",
+        "props": {
+            "blockClass": [
+                "main-content-desktop-body",
+                "main-content-desktop-body-exchanges-returns"
+            ]
+        },
+        "children": [
+            "two7-institutional-navigation",
+            "flex-layout.col#main-content-desktop-body-column-exchanges-returns"
+        ]
+    },
+    "flex-layout.col#main-content-desktop-body-column-exchanges-returns": {
+        "title": "Coluna do corpo do conteúdo principal desktop",
+        "props": {
+            "blockClass": [
+                "main-content-desktop-body-column",
+                "main-content-desktop-body-column-exchanges-returns"
+            ]
+        },
+        "children": [
+            "rich-text#exchanges-returns-title",
+            "flex-layout.col#exchanges-returns-information-container-1",
+            "flex-layout.col#exchanges-returns-information-container-2",
+            "flex-layout.col#exchanges-returns-information-container-3",
+            "flex-layout.col#exchanges-returns-information-container-4",
+            "flex-layout.col#exchanges-returns-information-container-5"
+        ]
+    }
+}

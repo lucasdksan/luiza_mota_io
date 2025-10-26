@@ -1,0 +1,13 @@
+{
+    "flex-layout.row#main-content-mobile-contact-us": {
+        "title": "Conteúdo principal mobile",
+        "props": {
+            "blockClass": "main-content-mobile-default"
+        },
+        "children": [
+            "two7-institutional-breadcrumb",
+            "rich-text#contact-us-title",
+            "two7-contact-us-form"
+        ]
+    }
+}

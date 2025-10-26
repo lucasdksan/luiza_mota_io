@@ -1,0 +1,235 @@
+{
+    "flex-layout.col#payment-method-information-container-1": {
+        "title": "Container da informação 1",
+        "props": {
+            "blockClass": [
+                "payment-method-information-container",
+                "payment-method-information-container-1"
+            ]
+        },
+        "children": [
+            "rich-text#payment-method-information-title-1",
+            "flex-layout.row#payment-method-information-description-1"
+        ]
+    },
+    "flex-layout.col#payment-method-information-container-2": {
+        "title": "Container da informação 2",
+        "props": {
+            "blockClass": [
+                "payment-method-information-container",
+                "payment-method-information-container-2"
+            ]
+        },
+        "children": [
+            "rich-text#payment-method-information-title-2",
+            "flex-layout.row#payment-method-information-description-2"
+        ]
+    },
+    "flex-layout.col#payment-method-information-container-3": {
+        "title": "Container da informação 3",
+        "props": {
+            "blockClass": [
+                "payment-method-information-container",
+                "payment-method-information-container-3"
+            ]
+        },
+        "children": [
+            "rich-text#payment-method-information-title-3",
+            "rich-text#payment-method-information-description-3"
+        ]
+    },
+    "flex-layout.col#payment-method-information-container-4": {
+        "title": "Container da informação 4",
+        "props": {
+            "blockClass": [
+                "payment-method-information-container",
+                "payment-method-information-container-4"
+            ]
+        },
+        "children": [
+            "rich-text#payment-method-information-title-4",
+            "rich-text#payment-method-information-description-4"
+        ]
+    },
+    "flex-layout.col#payment-method-information-container-5": {
+        "title": "Container da informação 5",
+        "props": {
+            "blockClass": [
+                "payment-method-information-container",
+                "payment-method-information-container-5"
+            ]
+        },
+        "children": [
+            "rich-text#payment-method-information-title-5",
+            "rich-text#payment-method-information-description-5"
+        ]
+    },
+    "rich-text#payment-method-information-title-1": {
+        "title": "Título da informação 1",
+        "props": {
+            "blockClass": [
+                "payment-method-information-title"
+            ],
+            "text": "**Pagamento à vista**"
+        }
+    },
+    "flex-layout.row#payment-method-information-description-1": {
+        "title": "Descrição da informação 1",
+        "props": {
+            "blockClass": "payment-method-information-description-1"
+        },
+        "children": [
+            "rich-text#payment-method-information-description-1-1",
+            "rich-text#payment-method-information-description-1-2",
+            "rich-text#payment-method-information-description-1-3",
+            "rich-text#payment-method-information-description-1-4"
+        ]
+    },
+    "rich-text#payment-method-information-description-1-1": {
+        "title": "Descrição da informação 1",
+        "props": {
+            "blockClass": [
+                "payment-method-information-description"
+            ],
+            "text": "Boleto bancário"
+        }
+    },
+    "rich-text#payment-method-information-description-1-2": {
+        "title": "Descrição da informação 1",
+        "props": {
+            "blockClass": [
+                "payment-method-information-description"
+            ],
+            "text": "Transferência bancária"
+        }
+    },
+    "rich-text#payment-method-information-description-1-3": {
+        "title": "Descrição da informação 1",
+        "props": {
+            "blockClass": [
+                "payment-method-information-description"
+            ],
+            "text": "Depósito bancário"
+        }
+    },
+    "rich-text#payment-method-information-description-1-4": {
+        "title": "Descrição da informação 1",
+        "props": {
+            "blockClass": [
+                "payment-method-information-description"
+            ],
+            "text": "Cartão de crédito"
+        }
+    },
+
+    "rich-text#payment-method-information-title-2": {
+        "title": "Título da informação 2",
+        "props": {
+            "blockClass": [
+                "payment-method-information-title"
+            ],
+            "text": "**Pagamento Parcelado**"
+        }
+    },
+    "flex-layout.row#payment-method-information-description-2": {
+        "title": "Descrição da informação 2",
+        "props": {
+            "blockClass": "payment-method-information-description-2"
+        },
+        "children": [
+            "rich-text#payment-method-information-description-2-1",
+            "rich-text#payment-method-information-description-2-2",
+            "rich-text#payment-method-information-description-2-3"
+        ]
+    },
+    "rich-text#payment-method-information-description-2-1": {
+        "title": "Descrição da informação 2",
+        "props": {
+            "blockClass": [
+                "payment-method-information-description",
+                "payment-method-information-description-2"
+            ],
+            "text": "**Boleto:** O banco pode enviar a confirmação do recebimento em até 3(três) dias úteis;"
+        }
+    },
+    "rich-text#payment-method-information-description-2-2": {
+        "title": "Descrição da informação 2",
+        "props": {
+            "blockClass": [
+                "payment-method-information-description",
+                "payment-method-information-description-2"
+            ],
+            "text": "**Cartão de crédito:** A aprovação do pagamento pela administradora pode ocorrer em até 2(dois) dias corridos;"
+        }
+    },
+    "rich-text#payment-method-information-description-2-3": {
+        "title": "Descrição da informação 2",
+        "props": {
+            "blockClass": [
+                "payment-method-information-description",
+                "payment-method-information-description-2"
+            ],
+            "text": "**Transferência:** o banco pode confirmar o pagamento em até 24 horas;"
+        }
+    },
+
+    "rich-text#payment-method-information-title-3": {
+        "title": "Título da informação 3",
+        "props": {
+            "blockClass": [
+                "payment-method-information-title"
+            ],
+            "text": "**Prazo para aprovação do pedido**"
+        }
+    },
+    "rich-text#payment-method-information-description-3": {
+        "title": "Descrição da informação 3",
+        "props": {
+            "blockClass": [
+                "payment-method-information-description",
+                "payment-method-information-description-3"
+            ],
+            "text": "Cartão de crédito 5 vezes sem Juros e em até 10 vezes (verifique a aplicação de juros no parcelamento a partir da 6 parcela) \n O pedido estará sujeito à aprovação da administradora de cartão de crédito. Para ampliar ainda mais a sua segurança, as informações contidas em seu cadastro são passíveis de confirmação, que poderá ser solicitada pelo Rei das Joias por e-mail."
+        }
+    },
+
+    "rich-text#payment-method-information-title-4": {
+        "title": "Título da informação 4",
+        "props": {
+            "blockClass": [
+                "payment-method-information-title"
+            ],
+            "text": "**Vales ou cupons de desconto**"
+        }
+    },
+    "rich-text#payment-method-information-description-4": {
+        "title": "Descrição da informação 4",
+        "props": {
+            "blockClass": [
+                "payment-method-information-description",
+                "payment-method-information-description-4"
+            ],
+            "text": "Se o valor do seu vale for menor que o da compra, você poderá pagar a diferença via cartão de crédito ou boleto bancário. Não há possibilidade de finalizar a compra se o valor do vale for maior que o valor da compra. Após a confirmação do pagamento, o prazo para emissão da Nota Fiscal é de até 48 horas."
+        }
+    },
+
+    "rich-text#payment-method-information-title-5": {
+        "title": "Título da informação 5",
+        "props": {
+            "blockClass": [
+                "payment-method-information-title"
+            ],
+            "text": "**Pagamento em duplicidade**"
+        }
+    },
+    "rich-text#payment-method-information-description-5": {
+        "title": "Descrição da informação 5",
+        "props": {
+            "blockClass": [
+                "payment-method-information-description",
+                "payment-method-information-description-5"
+            ],
+            "text": "Se, por um erro sistêmico, seu pedido foi cobrado em duplicidade, por favor, encaminhe uma cópia da fatura do seu cartão com os dados do pedido ou entre em contato com nosso setor de atendimento ao cliente pelo e-mail: **[atendimento02@reidasjoias.com.br](mailto:atendimento02@reidasjoias.com.br)**"
+        }
+    }
+}

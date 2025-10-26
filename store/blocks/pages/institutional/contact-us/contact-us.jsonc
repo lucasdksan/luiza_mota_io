@@ -1,0 +1,20 @@
+{
+    "store.custom#contact-us": {
+        "blocks": [
+            "responsive-layout.mobile#banner-institucional",
+            "responsive-layout.desktop#banner-institucional",
+            "responsive-layout.mobile#contact-us",
+            "responsive-layout.desktop#contact-us"
+        ]
+    },
+    "responsive-layout.mobile#contact-us": {
+        "children": [
+            "flex-layout.row#main-content-mobile-contact-us"
+        ]
+    },
+    "responsive-layout.desktop#contact-us": {
+        "children": [
+            "flex-layout.row#main-content-desktop-contact-us"
+        ]
+    }
+}

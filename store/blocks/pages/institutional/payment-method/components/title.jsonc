@@ -1,0 +1,23 @@
+{
+    "rich-text#the-brand-title-payment-method": {
+        "title": "Título do conteúdo principal",
+        "props": {
+            "blockClass": [
+                "payment-method-title",
+                "institutional-title",
+                "title-blank"
+            ],
+            "text": "Formas de pagamento"
+        }
+    },
+    "rich-text#payment-method-description-payment-method": {
+        "title": "Descrição do conteúdo principal",
+        "props": {
+            "blockClass": [
+                "payment-method-description",
+                "institutional-description"
+            ],
+            "text": "Você pode pagar seu pedido das seguintes maneiras:"
+        }
+    }
+}

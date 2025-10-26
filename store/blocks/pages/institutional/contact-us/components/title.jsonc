@@ -1,0 +1,13 @@
+{
+    "rich-text#contact-us-title": {
+        "title": "Título do conteúdo principal",
+        "props": {
+            "blockClass": [
+                "contact-us-title",
+                "institutional-title",
+                "title-blank"
+            ],
+            "text": "Fale conosco"
+        }
+    }
+}

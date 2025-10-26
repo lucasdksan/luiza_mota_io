@@ -1,0 +1,15 @@
+@use "../../../../../settings/index" as *;
+
+.flexRowContent--payment-method-information-description-1,
+.flexRowContent--payment-method-information-description-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+}
+
+
+.flexCol--payment-method-information-container {
+    gap: 8px;
+}

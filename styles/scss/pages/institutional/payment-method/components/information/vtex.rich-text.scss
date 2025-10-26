@@ -1,0 +1,46 @@
+@use "../../../../../settings/index" as *;
+
+
+.container--payment-method-information-title {
+    width: 100%;
+}
+
+.paragraph--payment-method-information-title {
+    margin: 0px !important;
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    color: $color-primary;
+}
+
+.paragraph--payment-method-information-description {
+    margin: 0px !important;
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: $color-gray-300;
+
+    @include desktop {
+        font-size: 16px !important;
+    }
+}
+
+.paragraph--payment-method-information-description-2 {
+    .strong--payment-method-information-description {
+        color: $color-primary !important;
+    }
+}
+
+.link--payment-method-information-description-5 {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: $color-primary;
+    text-decoration: none !important;
+}

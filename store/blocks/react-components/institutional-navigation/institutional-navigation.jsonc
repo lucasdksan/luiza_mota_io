@@ -1,0 +1,51 @@
+{
+    "two7-institutional-navigation": {
+        "title": "Navegação Institucional",
+        "props": {
+            "VtexFlexLayout": "flex-layout.row#institutional-navigation",
+            "items": [
+                {
+                    "text": "A marca",
+                    "link": "/institucional/amarca" ,
+                    "id": "idthe-brand"
+                },
+                {
+                    "text": "Fale conosco",
+                    "link": "/institucional/fale-conosco",
+                    "id": "idcontact-us"
+                },
+                {
+                    "text": "Formas de pagamento",
+                    "link": "/institucional/formas-de-pagamento",
+                    "id": "idpayment-method"
+                },
+                {
+                    "text": "Política de privacidade",
+                    "link": "/institucional/politica-de-privacidade",
+                    "id": "idprivacy-policy"
+                },
+                {
+                    "text": "Política de entrega",
+                    "link": "/institucional/politica-de-entrega",
+                    "id": "iddelivery-policy"
+                },
+                {
+                    "text": "Trocas e devoluções",
+                    "link": "/institucional/troca-e-devolucoes",
+                    "id": "idexchanges-returns"
+                },
+                {
+                    "text": "Garantia",
+                    "link": "/institucional/garantia",
+                    "id": "idguarantee"
+                }
+            ]
+        }
+    },
+    "flex-layout.row#institutional-navigation": {
+        "title": "Container da navegação institucional",
+        "props": {
+            "blockClass": "institutional-navigation"
+        }
+    }
+}

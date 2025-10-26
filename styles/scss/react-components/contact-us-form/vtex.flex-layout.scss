@@ -1,0 +1,237 @@
+@use "../../settings/index" as *;
+
+.flexRow--contact-us-form {
+    width: 100%;
+    height: auto;
+
+    .flexRowContent--contact-us-form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        :global(.vtex-contact-us-form--contact-us-form-description) {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        :global(.vtex-contact-us-form--text) {
+            font-family: $font-poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            color: $color-gray-300;
+
+            @include desktop {
+                font-size: 20px !important;
+            }
+        }
+
+        :global(.vtex-contact-us-form--list) {
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        :global(.vtex-contact-us-form--list-item-title) {
+            font-family: $font-poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 150%;
+            color: $color-primary;
+            margin-right: 4px;
+
+            @include desktop {
+                font-size: 16px !important;
+            }
+        }
+
+        :global(.vtex-contact-us-form--list-item-text) {
+            font-family: $font-poppins;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 150%;
+            color: $color-gray-300;
+            
+            @include desktop {
+                font-size: 16px !important;
+            }
+        }
+
+        :global(.vtex-contact-us-form--list-item-text--strong) {
+            font-family: $font-poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 150%;
+            color: $color-gray-300;
+
+            @include desktop {
+                font-size: 16px !important;
+            }
+        }
+
+        :global(.vtex-contact-us-form--form) {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+            height: auto;
+
+            @include desktop {
+                gap: 30px;
+            }
+        }
+
+        :global(.vtex-contact-us-form--form-row) {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+            height: auto;
+
+            @include desktop {
+                flex-direction: row;
+                gap: 30px;
+            }
+        }
+
+        :global(.vtex-contact-us-form--form-label) {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+            height: auto;
+        }
+
+        :global(.vtex-contact-us-form--form-label-text) {
+            font-family: $font-poppins;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: $color-gray-400;
+        }
+
+        :global(.vtex-contact-us-form--form-input) {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 12px 20px;
+            height: 42px;
+            background: $color-white;
+            border: 1px solid $color-gray-350;
+            border-radius: 8px;
+
+            font-family: $font-poppins;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 150%;
+            color: $color-gray-300;
+        }
+
+        :global(.vtex-contact-us-form--form-textarea) {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 12px 20px;
+            height: 42px;
+            background: $color-white;
+            border: 1px solid $color-gray-350;
+            border-radius: 8px;
+            min-height: 190px;
+
+            font-family: $font-poppins;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 150%;
+            color: $color-gray-300;
+        }
+
+        :global(.vtex-contact-us-form--form-button) {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 20px;
+            gap: 10px;
+            width: 100%;
+            max-width: 200px;
+            height: 37px;
+            background: $color-primary;
+            border-radius: 8px;
+            outline: none;
+            border: none;
+            cursor: pointer;
+
+            font-family: $font-poppins;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 140%;
+            text-align: center;
+            color: $color-white;
+            transition: background 0.2s ease;
+            
+            @include desktop {
+                &:hover {
+                    transition: background 0.2s ease;
+                    background: $color-clean-brown !important;
+                }
+            }
+        }
+
+        :global(.vtex-contact-us-form--success-message-title){
+            font-family: $font-poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 140%;
+            color: $color-primary;
+        
+            @include desktop {
+                font-size: 24px !important;
+            }
+        }
+
+        :global(.vtex-contact-us-form--success-message-description) {
+            margin: 0px;
+            font-family: $font-poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 140%;
+            color: $color-gray-300;
+
+            @include desktop {
+                font-size: 16px !important;
+            }
+        }
+    }
+}
