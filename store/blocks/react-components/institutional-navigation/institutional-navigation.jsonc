@@ -28,6 +28,11 @@
                     "text": "Política de entrega",
                     "link": "/institucional/politica-de-entrega",
                     "id": "iddelivery-policy"
+                },
+                {
+                    "text": "Trocas e devoluções",
+                    "link": "/institucional/troca-e-devolucoes",
+                    "id": "idexchanges-returns"
                 }
             ]
         }

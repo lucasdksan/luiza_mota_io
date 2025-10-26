@@ -16,5 +16,8 @@
   },
   "store.custom#delivery-policy": {
     "path": "/institucional/politica-de-entrega"
+  },
+  "store.custom#exchanges-returns": {
+    "path": "/institucional/troca-e-devolucoes"
   }
 }

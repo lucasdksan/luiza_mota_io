@@ -1,11 +1,11 @@
 @use "../../../../../settings/index" as *;
 
 
-.container--delivery-policy-information-title {
+.container--exchanges-returns-information-title {
     width: 100%;
 }
 
-.paragraph--delivery-policy-information-title {
+.paragraph--exchanges-returns-information-title {
     margin: 0px !important;
     font-family: $font-poppins;
     font-style: normal;
@@ -15,7 +15,7 @@
     color: $color-primary;
 }
 
-.paragraph--delivery-policy-information-description {
+.paragraph--exchanges-returns-information-description {
     margin: 0px !important;
     font-family: $font-poppins;
     font-style: normal;
@@ -29,13 +29,14 @@
     }
 }
 
-.paragraph--delivery-policy-information-description-2 {
-    .strong--delivery-policy-information-description {
+.paragraph--exchanges-returns-information-description-2 {
+    .strong--exchanges-returns-information-description {
         color: $color-primary !important;
     }
 }
 
-.link--delivery-policy-information-description-3 {
+.link--exchanges-returns-information-description-3,
+.link--exchanges-returns-information-description-5 {
     font-family: $font-poppins;
     font-style: normal;
     font-weight: 600;
@@ -45,13 +46,29 @@
     text-decoration: none !important;
 }
 
-.list--delivery-policy-information-description-4 {
+.list--exchanges-returns-information-description {
+    padding: 0px !important;
+    margin: 10px 0px 0px 0px;
+    list-style: none;
+}
+
+.list--exchanges-returns-information-description-4 {
     padding: 0px !important;
     margin: 5px 0px 0px 0px;
     list-style: none;
 }
 
-.listItem--delivery-policy-information-description-4 {
+.listItem--exchanges-returns-information-description {
+    margin: 0px !important;
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: $color-gray-300;
+}
+
+.listItem--exchanges-returns-information-description-4 {
     margin: 0px !important;
     font-family: $font-poppins;
     font-style: normal;
@@ -70,4 +87,8 @@
         font-family: $font-poppins;
         font-style: normal;
     }
+}
+
+.strong--exchanges-returns-information-description {
+    color: $color-primary !important;
 }

@@ -1,0 +1,165 @@
+{
+    "flex-layout.col#exchanges-returns-information-container-1": {
+        "title": "Container da informação 1",
+        "props": {
+            "blockClass": [
+                "exchanges-returns-information-container",
+                "exchanges-returns-information-container-1"
+            ]
+        },
+        "children": [
+            "rich-text#exchanges-returns-information-title-1",
+            "rich-text#exchanges-returns-information-description-1"
+        ]
+    },
+    "flex-layout.col#exchanges-returns-information-container-2": {
+        "title": "Container da informação 2",
+        "props": {
+            "blockClass": [
+                "exchanges-returns-information-container",
+                "exchanges-returns-information-container-2"
+            ]
+        },
+        "children": [
+            "rich-text#exchanges-returns-information-title-2",
+            "rich-text#exchanges-returns-information-description-2"
+        ]
+    },
+    "flex-layout.col#exchanges-returns-information-container-3": {
+        "title": "Container da informação 3",
+        "props": {
+            "blockClass": [
+                "exchanges-returns-information-container",
+                "exchanges-returns-information-container-3"
+            ]
+        },
+        "children": [
+            "rich-text#exchanges-returns-information-title-3",
+            "rich-text#exchanges-returns-information-description-3"
+        ]
+    },
+    "flex-layout.col#exchanges-returns-information-container-4": {
+        "title": "Container da informação 4",
+        "props": {
+            "blockClass": [
+                "exchanges-returns-information-container",
+                "exchanges-returns-information-container-4"
+            ]
+        },
+        "children": [
+            "rich-text#exchanges-returns-information-title-4",
+            "rich-text#exchanges-returns-information-description-4"
+        ]
+    },
+    "flex-layout.col#exchanges-returns-information-container-5": {
+        "title": "Container da informação 5",
+        "props": {
+            "blockClass": [
+                "exchanges-returns-information-container",
+                "exchanges-returns-information-container-5"
+            ]
+        },
+        "children": [
+            "rich-text#exchanges-returns-information-title-5",
+            "rich-text#exchanges-returns-information-description-5"
+        ]
+    },
+    "rich-text#exchanges-returns-information-title-1": {
+        "title": "Título da informação 1",
+        "props": {
+            "blockClass": [
+                "exchanges-returns-information-title"
+            ],
+            "text": "**Devolução de produto com defeito ou por insatisfação**"
+        }
+    },
+    "rich-text#exchanges-returns-information-description-1": {
+        "title": "Descrição da informação 1",
+        "props": {
+            "blockClass": [
+                "exchanges-returns-information-description"
+            ],
+            "text": "Até 07 dias corridos a contar da data de recebimento do produto ou se você não estiver satisfeito (a) com a compra, comunique nosso setor de atendimento ao cliente e solicite a troca pelo whatsapp: (62) 98249-0378. \n Durante o prazo de garantia legal, os produtos com defeito poderão ser devolvidos ao Rei das Joias, preferencialmente, na embalagem original. É indispensável que estejam acompanhados do DANFE (Documento Auxiliar da Nota Fiscal Eletrônica). \n Caso a devolução seja por motivo de insatisfação, o cliente terá direito a fazer a troca apenas uma vez por pedido. \n \n  - **Atenção:** O Rei das Joias isenta-se da obrigação de atender às solicitações de troca ou cancelamento de qualquer produto devolvido sem comunicação ao atendimento ao cliente, com ausência de partes do produto, ou sempre em que se identifique o mau uso."
+        }
+    },
+
+    "rich-text#exchanges-returns-information-title-2": {
+        "title": "Título da informação 2",
+        "props": {
+            "blockClass": [
+                "exchanges-returns-information-title"
+            ],
+            "text": "**Ressarcimento de valores de pedidos cancelados**"
+        }
+    },
+    "rich-text#exchanges-returns-information-description-2": {
+        "title": "Descrição da informação 2",
+        "props": {
+            "blockClass": [
+                "exchanges-returns-information-description",
+                "exchanges-returns-information-description-2"
+            ],
+            "text": "O Rei das Joias.com fará a restituição total dos valores pagos utilizando a mesma forma de pagamento escolhida no processo de compra: \n - Em compras com cartão de crédito a administradora do cartão será notificada e o estorno ocorrerá na fatura seguinte ou na posterior, de uma só vez, seja qual for o número de parcelas utilizado na compra. O prazo de ressarcimento depende da administradora do cartão. \n - Em compras pagas com boleto bancário ou débito em conta, a restituição será efetuada por meio de depósito bancário, em até 30 (trinta) dias corridos, somente na conta-corrente do(a) comprador(a), que deve ser individual. É necessário que o CPF do titular da conta-corrente seja o mesmo que consta no pedido (CPF do cliente). Caso o cliente não tenha conta corrente em banco, deverá informar no e-mail de solicitação de ressarcimento o nome do titular da conta na qual o valor poderá ser depositado, autorizando assim a transação. \n - Em compras pagas com boleto bancário ou débito em conta, a restituição será efetuada por meio de depósito bancário, em até 30 (trinta) dias corridos, somente na conta-corrente do(a) comprador(a), que deve ser individual. É necessário que o CPF do titular da conta-corrente seja o mesmo que consta no pedido (CPF do cliente). Caso o cliente não tenha conta corrente em banco, deverá informar no e-mail de solicitação de ressarcimento o nome do titular da conta na qual o valor poderá ser depositado, autorizando assim a transação."
+        }
+    },
+
+    "rich-text#exchanges-returns-information-title-3": {
+        "title": "Título da informação 3",
+        "props": {
+            "blockClass": [
+                "exchanges-returns-information-title"
+            ],
+            "text": "**IMPORTANTE:**"
+        }
+    },
+    "rich-text#exchanges-returns-information-description-3": {
+        "title": "Descrição da informação 3",
+        "props": {
+            "blockClass": [
+                "exchanges-returns-information-description",
+                "exchanges-returns-information-description-3"
+            ],
+            "text": "Em caso de devolução, a restituição dos valores será processada somente após o recebimento e análise do(s) produto(s) no Centro de Distribuição do Rei das Joias. O Rei das Joias isenta-se da obrigação de cancelar qualquer produto que não preencha os requisitos da Política de Trocas e Devoluções."
+        }
+    },
+
+    "rich-text#exchanges-returns-information-title-4": {
+        "title": "Título da informação 4",
+        "props": {
+            "blockClass": [
+                "exchanges-returns-information-title"
+            ],
+            "text": "**Devolução feita pelos correios**"
+        }
+    },
+    "rich-text#exchanges-returns-information-description-4": {
+        "title": "Descrição da informação 4",
+        "props": {
+            "blockClass": [
+                "exchanges-returns-information-description",
+                "exchanges-returns-information-description-4"
+            ],
+            "text": "Se o produto, junto com a embalagem na qual foi entregue, pesar menos de 15Kg e suas dimensões não ultrapassarem 105cm de altura, 105cm de largura e 105cm de comprimento, a devolução pode ser feita por postagem. \n Nossos operadores enviarão, por e-mail, o código de postagem que deve ser apresentado nas agências dos Correios. Esse processo é gratuito.  \n Para postar o produto siga as instruções: \n - Acondicione o produto em sua embalagem original ou similar; \n - Devolva todos os itens referentes ao produto como: certificados de garantia, caixa de embalagem, etiquetas que acompanham o produto; \n - Junte a segunda via do DANFE (Documento Auxiliar da Nota Fiscal Eletrônica) recebida no ato da entrega. É imprescindível que ele seja enviado para que o produto seja identificado. \n - Relate, no verso do DANFE, o motivo da devolução. \n Todas as instruções serão fornecidas pelo setor de atendimento ao cliente."
+        }
+    },
+
+    "rich-text#exchanges-returns-information-title-5": {
+        "title": "Título da informação 5",
+        "props": {
+            "blockClass": [
+                "exchanges-returns-information-title"
+            ],
+            "text": "**Política de troca**"
+        }
+    },
+    "rich-text#exchanges-returns-information-description-5": {
+        "title": "Descrição da informação 5",
+        "props": {
+            "blockClass": [
+                "exchanges-returns-information-description",
+                "exchanges-returns-information-description-5"
+            ],
+        "text": "O prazo de troca e devolução de produtos é de 7 (sete) dias, desde que as peças não tenham sido usadas e/ou danificadas. \n A troca será efetuada mediante a apresentação da peça com a etiqueta de código de barras e do certificado de garantia da marca Rei das Joias \n **Enviar uma mensagem em nosso whatsapp : (62) 98249-0378**. \n A política de troca dos clientes em atacado tem regras diferentes das compras no varejo, entre em contato com nossa central de atendimento e se informe sobre as particularidades das trocas e devoluções em atacado no [(62) 98249-0378](https://wa.me/5562982490378)."
+        }
+    }
+}

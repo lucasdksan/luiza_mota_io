@@ -23,6 +23,10 @@
     font-size: 14px;
     line-height: 150%;
     color: $color-gray-300;
+
+    @include desktop {
+        font-size: 16px !important;
+    }
 }
 
 .paragraph--privacy-policy-information-description-2 {
