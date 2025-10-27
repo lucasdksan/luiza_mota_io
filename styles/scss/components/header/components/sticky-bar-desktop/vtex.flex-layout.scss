@@ -19,6 +19,15 @@
     }
 }
 
+.flexRowContent--header-desktop-container {
+    display: flex;
+    flex-direction: column;
+
+    .stretchChildrenWidth {
+        width: 100% !important;
+    }
+}
+
 .flexRow--header-desktop-wrapper {
     width: 100%;
     height: auto;

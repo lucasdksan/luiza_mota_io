@@ -15,8 +15,8 @@
             "blockClass": "header-desktop-container"
         },
         "children": [
-            "flex-layout.row#header-desktop-wrapper"
-            // "two7-menu-dropdown"
+            "flex-layout.row#header-desktop-wrapper",
+            "two7-menu-dropdown"
         ]
     },
     "flex-layout.row#header-desktop-wrapper": {
