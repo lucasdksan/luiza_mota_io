@@ -8,6 +8,10 @@
   gap: 8px;
   margin-bottom: 14px;
   box-sizing: border-box;
+  
+  @include desktop {
+    gap: 10px;
+  }
 }
 
 :global(.vtex-coupon-minicart-form--text-p) {
@@ -17,11 +21,19 @@
   color: $color-coupon-minicart-text;
   margin: 0;
   white-space: nowrap;
+
+  @include desktop {
+    text-transform: capitalize !important;
+  }
 }
 
 :global(.vtex-coupon-minicart-form--input-content) {
   width: 100%;
   display: flex;
+
+  @include desktop {
+    justify-content: flex-end !important;
+  }
 }
 
 :global(.vtex-coupon-minicart-form--input) {
@@ -38,6 +50,10 @@
   color: $color-coupon-minicart-input-value;
 
   box-sizing: border-box;
+
+  @include desktop {
+    max-width: 185px !important;
+  }
 }
 
 :global(.vtex-coupon-minicart-form--send-btn),
@@ -56,11 +72,25 @@
   letter-spacing: 0.04em;
   cursor: pointer;
   box-sizing: border-box;
+  
+  @include desktop {
+    font-size: 12px !important;
+  }
 }
 
 :global(.vtex-coupon-minicart-form--send-btn) {
   background-color: transparent;
   color: $color-primary;
+  transition: background 0.2s ease;
+  
+  @include desktop {
+    &:hover {
+      transition: background 0.2s ease;
+      cursor: pointer;
+      background: $color-primary !important;
+      color: $color-white !important;
+    }
+  }
 }
 
 :global(.vtex-coupon-minicart-form--clean-btn) {

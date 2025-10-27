@@ -202,6 +202,11 @@
                 text-align: center;
                 color: $color-white;
                 text-transform: capitalize;
+
+                @include desktop {
+                    font-size: 14px !important;
+                    letter-spacing: 0.04em !important;
+                }
             }
         }
     }

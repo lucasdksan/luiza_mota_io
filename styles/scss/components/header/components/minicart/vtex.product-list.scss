@@ -23,6 +23,10 @@
     font-size: 12px;
     line-height: 150%;
     color: $color-minicart-price-product;
+
+    @include desktop {
+        font-weight: 700 !important; 
+    }
 }
 
 .quantitySelectorWrapper--minicart-product-list-item-content {
@@ -100,5 +104,25 @@
     
     .deleteIcon--minicart-product-list-item {
         display: none !important;
+    }
+}
+
+.productPriceContainer--minicart-product-list-item-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    
+    .productPriceCurrency--minicart-product-list-item-content {
+        margin: 0px !important;
+
+        .currencyContainer--minicart-product-list-item-content {
+            font-family: $font-poppins;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 150%;
+            color: $color-gray-750;
+        }
     }
 }

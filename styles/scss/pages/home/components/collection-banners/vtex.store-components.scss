@@ -1,0 +1,26 @@
+@use "../../../../settings/index" as *;
+
+.imageElement--banner-collection-desktop {
+    @include desktop {
+        height: 100% !important;
+    }
+}
+
+.imageElementLink--banner-collection-desktop {
+    position: relative;
+    
+    @include desktop {
+        &:hover {
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: 10;
+                background: linear-gradient(182.42deg, #FFD1E3 15.93%, #FF78B0 85.2%);
+                opacity: 0.3;
+                border-radius: 16px;
+            }
+        }
+    }
+}

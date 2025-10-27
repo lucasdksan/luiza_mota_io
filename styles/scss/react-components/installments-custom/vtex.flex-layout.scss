@@ -1,0 +1,17 @@
+@use "../../settings/index" as *;
+
+.flexRow--installments-custom {
+    width: 100%;
+
+    .flexRowContent--installments-custom {
+        :global(.vtex-installments-custom--text) {
+            font-family: $font-poppins;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 150%;
+            color: $color-gray-400;
+            margin: 0px !important;
+        }
+    }
+}

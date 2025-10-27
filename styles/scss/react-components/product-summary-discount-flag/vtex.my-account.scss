@@ -10,10 +10,19 @@
     position: absolute;
     width: 42px;
     height: 42px;
+    z-index: 5;
+    top: 22px;
+    left: 22px;
+    z-index: 101 !important;
 
     background: $color-discount-flag;
     border: 1px solid $color-primary;
     border-radius: 100%;
+
+    @include desktop {
+        top: 16px;
+        left: 16px;
+    }
 }
 
 :global(.vtex-product-summary-discount-flag--value) {

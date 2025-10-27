@@ -3,6 +3,7 @@
 .flexRow--shelf-default-footer {
     width: 100%;
     margin-top: 8px;
+    padding: 0px 16px 16px 16px;
 
     .flexRowContent--shelf-default-footer {
         display: flex;
@@ -12,5 +13,19 @@
             padding: 0px !important;
             width: auto !important;
         }
+
+        .flexRowContent {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.flexRowContent--shelf-default-top {
+    display: flex;
+    flex-direction: column !important;
+
+    .stretchChildrenWidth {
+        width: auto !important;
     }
 }

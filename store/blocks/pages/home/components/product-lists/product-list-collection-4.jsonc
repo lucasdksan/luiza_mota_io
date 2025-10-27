@@ -47,9 +47,9 @@
         "title": "Lista de produtos mobile",
         "props": {
             "orderBy": "OrderByNameASC",
-            "maxItems": 46,
+            "maxItems": 8,
             "hideUnavailableItems": false,
-            "collection": "138",
+            "collection": "585",
             "blockClass": [
                 "list-products-list-context"
             ]
@@ -65,9 +65,9 @@
         "title": "Lista de produtos desktop",
         "props": {
             "orderBy": "OrderByNameASC",
-            "maxItems": 16,
+            "maxItems": 8, 
             "hideUnavailableItems": false,
-            "collection": "138",
+            "collection": "585",
             "blockClass": [
                 "list-products-list-context",
                 "list-products-list-context--desktop"

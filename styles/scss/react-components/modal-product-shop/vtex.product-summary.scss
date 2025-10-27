@@ -1,0 +1,56 @@
+@use "../../settings/index" as *;
+.SKUSelectorContainer--modal-product-shop-sku-selector {
+    margin-bottom: 18px;
+
+    .skuSelectorContainer--modal-product-shop-sku-selector {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    
+    .skuSelectorItem--modal-product-shop-sku-selector {
+        margin: 0px !important;
+        
+        .skuSelectorInternalBox--modal-product-shop-sku-selector {
+            border: 1px solid $color-gray-400 !important;
+            border-radius: 8px !important;
+            padding: 6px 20px;
+
+            .valueWrapper--modal-product-shop-sku-selector {
+                padding: 0px !important;
+                font-family: $font-poppins;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 140%;
+                text-align: center;
+                letter-spacing: 0.04em;
+                color: $color-gray-500;
+            }
+        }
+    
+        &.skuSelectorItem--modal-product-shop-sku-selector--selected {
+            .skuSelectorInternalBox--modal-product-shop-sku-selector {
+                border: 1px solid $color-primary !important;
+
+                .valueWrapper--modal-product-shop-sku-selector {
+                    color: $color-primary !important;
+                }
+            }
+        }
+    }
+
+    .frameAround--modal-product-shop-sku-selector {
+        display: none !important;
+    }
+
+    .skuSelectorItemImage--modal-product-shop-sku-selector {
+        .skuSelectorInternalBox--modal-product-shop-sku-selector {
+            padding: 0px !important;
+        }
+    }
+}

@@ -4,6 +4,10 @@
     width: 100%;
     height: auto;
     margin-bottom: 14px;
+
+    @include desktop {
+        margin-bottom: 20px !important;
+    }
 }
 
 .flexRowContent--minicart-free-shipping {

@@ -16,7 +16,7 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    z-index: 1002;
+    z-index: 1010;
     width: 100%;
     transform: translate(-50%, -50%);
     padding: 20px 20px 32px;
@@ -29,7 +29,7 @@
     background-color: $color-white;
 
     @include desktop {
-        max-width: 43%;
+        max-width: 48%;
         padding: 32px 56px !important;
     }
 }
@@ -53,8 +53,17 @@
 
     @include desktop {
         display: grid;
-        grid-template-columns: 43% 1fr;
+        grid-template-columns: 42% 1fr;
         gap: 16px;
+        width: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+
+        & > * {
+            max-width: 100%;
+            min-width: 0;   
+            box-sizing: border-box;
+        }
     }
 }
 
@@ -99,7 +108,7 @@
     font-size: 18px;
     line-height: 26px;
     color: $color-title-modal-shop;
-} 
+}
 
 :global(.vtex-modal-product-shop--product-shop-action) {
     display: flex;
@@ -163,4 +172,27 @@
     font-size: 14px;
     line-height: 130%;
     color: $color-instalment-modal;
+}
+
+:global(.vtex-modal-product-shop--last-line) {
+    margin-top: 8px;
+    padding: 0px;
+
+    @include desktop {
+        max-height: 280px;
+        padding-right: 0px !important;
+    }
+
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
 }

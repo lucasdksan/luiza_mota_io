@@ -64,5 +64,8 @@
     },
     "two7-contact-us-form": {
         "component": "ContactUsForm"
+    },
+    "two7-installments-custom": {
+        "component": "InstallmentsCustom"
     }
 }

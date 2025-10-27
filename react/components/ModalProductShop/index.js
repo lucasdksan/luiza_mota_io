@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { useProduct } from "vtex.product-context";
 import { classGenerator } from "../../utils/classGenerator";
@@ -14,13 +14,24 @@ function ModalProductShop({
     const [isOpen, setIsOpen] = useState(false);
     const productResponse = useProduct();
     const { selectedItem, product } = productResponse;
-    const maxInstallmentsOption = pickMaxInstallmentsOption(selectedItem.sellers[0].commertialOffer.Installments)
-
-    console.log("productResponse: ", productResponse);
+    const maxInstallmentsOption = pickMaxInstallmentsOption(selectedItem.sellers[0].commertialOffer.Installments);
 
     const toggleMenu = () => {
         setIsOpen((value) => !value);
     }
+
+    useEffect(() => {
+        const handleClick = (e) => {
+            const target = e.target.closest("a");
+
+            if (target && document.querySelector(".vtex-modal-product-shop--modal")) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+        };
+        document.addEventListener("click", handleClick, true);
+        return () => document.removeEventListener("click", handleClick, true);
+    }, []);
 
     return (
         <>
@@ -48,12 +59,20 @@ function ModalProductShop({
                 createPortal(<>
                     <div
                         className={classGenerator("vtex-modal-product-shop", "overlay")}
-                        onClick={toggleMenu}
+                        onClick={(e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            toggleMenu();
+                        }}
                     />
-                    <div className={classGenerator("vtex-modal-product-shop", "modal")}>
+                    <div onClick={(e) => e.stopPropagation()} className={classGenerator("vtex-modal-product-shop", "modal")}>
                         <button
                             className={classGenerator("vtex-modal-product-shop", "close-btn")}
-                            onClick={toggleMenu}
+                            onClick={(e) => {
+                                e.preventDefault();
+                                e.stopPropagation();
+                                toggleMenu();
+                            }}
                             aria-label="Fechar modal"
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
@@ -73,7 +92,7 @@ function ModalProductShop({
                                     </div>
                                     <div className={classGenerator("vtex-modal-product-shop", "product-price-area")}>
                                         <span className={classGenerator("vtex-modal-product-shop", "product-price")}>{formatCurrency(selectedItem.sellers[0].commertialOffer.Price)}</span>
-                                        <span className={classGenerator("vtex-modal-product-shop", "product-installments")}>{ maxInstallmentsOption ? `Ou ${maxInstallmentsOption.NumberOfInstallments}x de ${formatCurrency(maxInstallmentsOption.Value)} sem juros` : `Ou de 1x de ${formatCurrency(selectedItem.sellers[0].commertialOffer.Price)}`}</span>
+                                        <span className={classGenerator("vtex-modal-product-shop", "product-installments")}>{maxInstallmentsOption ? `Ou ${maxInstallmentsOption.NumberOfInstallments}x de ${formatCurrency(maxInstallmentsOption.Value)} sem juros` : `Ou de 1x de ${formatCurrency(selectedItem.sellers[0].commertialOffer.Price)}`}</span>
                                     </div>
                                     <a href={product.link} className={classGenerator("vtex-modal-product-shop", "redirect")}>Saiba  mais</a>
                                 </div>

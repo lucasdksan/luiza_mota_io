@@ -1,0 +1,47 @@
+@use "../../settings/index" as *;
+
+:global(.vtex-product-summary-2-x-skuSelectorContainer--modal-product-shop-sku-selector) {
+
+    .skuSelectorSubcontainer,
+    .skuSelectorNameContainer,
+    .skuSelectorOptionsList {
+        margin: 0px !important;
+    }
+
+    .skuSelectorSubcontainer {
+        width: 100%;
+        overflow-x: scroll;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            height: 0;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: transparent;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: transparent;
+        }
+    }
+
+    .skuSelectorTextContainer {
+        margin-bottom: 6px !important;
+    }
+
+    .skuSelectorName {
+        font-family: $font-poppins;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: $color-gray-400;
+        text-transform: capitalize !important;
+    }
+
+    .skuSelectorOptionsList {
+        gap: 8px;
+        flex-wrap: nowrap;
+    }
+}

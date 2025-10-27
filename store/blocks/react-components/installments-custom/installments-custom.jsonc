@@ -1,0 +1,14 @@
+{
+    "two7-installments-custom": {
+        "title": "Parcelamento customizado",
+        "props": {
+            "VtexFlexLayout": "flex-layout.row#installments-custom"
+        }
+    },
+    "flex-layout.row#installments-custom": {
+        "title": "Container do parcelamento customizado",
+        "props": {
+            "blockClass": "installments-custom"
+        }
+    }
+}

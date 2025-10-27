@@ -2,7 +2,7 @@
 
 .nameContainer--shelf-product-default--name {
     margin-top: 10px;
-    padding: 0px !important;
+    padding: 0px 16px!important;
     align-items: flex-start;
     justify-content: flex-start;
 }
@@ -41,23 +41,64 @@
 
 .sellingPriceContainer--shelf-product-default--price {
     padding: 0px;
-}
-
-.currencyContainer--shelf-product-default--price {
-    font-family: $font-poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 150%;
-    color: $color-shelf-default-selling-price;
+    text-align: left;
 }
 
 .sellingPrice--shelf-product-default--price {
     padding: 0px !important;
+
+    .currencyContainer--shelf-product-default--price {
+        font-family: $font-poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 150%;
+        color: $color-shelf-default-selling-price;
+    }
 }
+
+
+.listPriceContainer--shelf-product-default--price {
+    padding: 0px !important;
+
+    
+    .listPrice--shelf-product-default--price {
+        padding: 0px !important;
+
+        .currencyContainer--shelf-product-default--price {
+            font-family: $font-poppins;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            text-decoration-line: line-through;
+            color: $color-gray-300;
+        }
+    }
+}
+
+.productPriceClass--shelf-product-default--price {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+
+.sellingPriceLabel--shelf-product-default--price,
+.listPriceLabel--shelf-product-default--price {
+    display: none !important;
+} 
 
 .element--shelf-product-default {
     padding: 0px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    height: 100% !important;
+    flex: 1;
 }
 
 
@@ -66,7 +107,32 @@
     background: $color-white;
     border: 1px solid $color-shelf-default-border-element;
     border-radius: 16px;
-    padding: 16px;
     height: auto !important;
     min-height: 360px;
+
+    @include desktop {
+        min-height: 410px !important;
+        max-width: none !important;
+
+        &:hover {
+            cursor: pointer;
+            border: 1px solid $color-primary;
+
+            
+            .image--shelf-product-default--image--hover {
+                display: inline !important;
+                z-index: 100 !important;
+            }
+        }
+    }
+}
+
+.installments--shelf-product-default {
+    text-align: left;
+}
+
+.clearLink--shelf-product-default {
+    height: 100% !important;
+    display: flex;
+    flex: 1;
 }
