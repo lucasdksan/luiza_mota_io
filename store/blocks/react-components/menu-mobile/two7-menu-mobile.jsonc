@@ -4,89 +4,59 @@
             "VtexFlexLayoutContentBTN": "flex-layout.row#container-menu-mobile-btn",
             "menuItems": [
                 {
-                    "category_name": "Novidades",
+                    "category_name": "Brincos",
                     "sub_category": [],
                     "see_all": "/novidades"
                 },
                 {
-                    "category_name": "Roupas",
-                    "sub_category": [
-                        {
-                            "name": "Vestidos",
-                            "link": "/roupas/vestidos"
-                        },
-                        {
-                            "name": "Blusas",
-                            "link": "/roupas/blusas"
-                        },
-                        {
-                            "name": "Calças",
-                            "link": "/roupas/calcas"
-                        },
-                        {
-                            "name": "Saias",
-                            "link": "/roupas/saias"
-                        },
-                        {
-                            "name": "Casacos",
-                            "link": "/roupas/casacos"
-                        }
-                    ],
-                    "see_all": "/roupas"
+                    "category_name": "Anéis",
+                    "sub_category": [],
+                    "see_all": "/aneis"
                 },
                 {
-                    "category_name": "ACESSÓRIOS",
-                    "sub_category": [
-                        {
-                            "name": "Bolsas",
-                            "link": "/acessorios/bolsas"
-                        },
-                        {
-                            "name": "Cintos",
-                            "link": "/acessorios/cintos"
-                        },
-                        {
-                            "name": "Joias",
-                            "link": "/acessorios/joias"
-                        }
-                    ],
-                    "see_all": "/acessorios"
+                    "category_name": "Colares",
+                    "sub_category": [],
+                    "see_all": "/colares"
                 },
                 {
-                    "category_name": "A MARCA",
-                    "sub_category": [
-                        {
-                            "name": "Sobre nós",
-                            "link": "/a-marca/nossa-historia"
-                        },
-                        {
-                            "name": "Valores",
-                            "link": "/a-marca/valores"
-                        },
-                        {
-                            "name": "Sustentabilidade",
-                            "link": "/a-marca/sustentabilidade"
-                        }
-                    ],
-                    "see_all": "/a-marca"
+                    "category_name": "Berloques",
+                    "sub_category": [],
+                    "see_all": "/berloques"
                 },
                 {
-                    "category_name": "Campanhas",
-                    "sub_category": [
-                        {
-                            "name": "Promoções",
-                            "link": "/campanhas/promocoes"
-                        },
-                        {
-                            "name": "Outlet",
-                            "link": "/campanhas/outlet"
-                        },
-                        {
-                            "name": "Última Chance",
-                            "link": "/campanhas/ultima-chance"
-                        }
-                    ],
-                    "see_all": "/sale"
+                    "category_name": "Pulseiras",
+                    "sub_category": [],
+                    "see_all": "/pulseiras"
+                },
+                {
+                    "category_name": "Conjunto",
+                    "sub_category": [],
+                    "see_all": "/conjuntos"
+                },
+                {
+                    "category_name": "Tornozeleira",
+                    "sub_category": [],
+                    "see_all": "/tornozeleiras"
+                },
+                {
+                    "category_name": "Masculino",
+                    "sub_category": [],
+                    "see_all": "/masculino"
+                },
+                {
+                    "category_name": "Relógios",
+                    "sub_category": [],
+                    "see_all": "/relogios"
+                },
+                {
+                    "category_name": "Fornitura",
+                    "sub_category": [],
+                    "see_all": "/fornitura"
+                },
+                {
+                    "category_name": "Brasil Off",
+                    "sub_category": [],
+                    "see_all": "/brasil-off"
                 }
             ],
             "myWishListLink": "/myaccount"
