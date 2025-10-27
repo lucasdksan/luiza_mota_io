@@ -230,3 +230,9 @@
         max-width: 455px !important;
     }
 }
+
+.minicartSideBarContentWrapper--minicart-sidebar {
+    @media (max-width: 768px) {
+        height: calc(100vh - 73px) !important;
+    }
+}

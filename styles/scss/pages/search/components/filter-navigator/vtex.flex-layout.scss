@@ -1,0 +1,16 @@
+@use "../../../../settings/index" as *;
+
+.flexRow--search-page-filter-bar-mobile {
+    width: 100%;
+    height: auto;
+    padding: 0px 20px;
+    margin-bottom: 3px;
+}
+
+.flexRowContent--search-page-filter-bar-mobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}

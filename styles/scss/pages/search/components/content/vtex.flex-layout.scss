@@ -1,0 +1,18 @@
+@use "../../../../settings/index" as *;
+
+.flexRow--search-page-container-flex {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.flexRowContent--search-page-container-flex {
+    width: 100%;
+    height: auto;
+
+    .stretchChildrenWidth {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}

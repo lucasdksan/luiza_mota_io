@@ -1,0 +1,20 @@
+@use "../../../../settings/index" as *;
+
+.gallery--two-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+    column-gap: 10px;
+}
+
+
+.galleryItem--two-columns {
+    padding: 0px !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    height: auto !important;
+
+    :global(.vtex-product-summary-2-x-container--shelf-product-default) {
+        min-height: 314px !important;
+    }
+}

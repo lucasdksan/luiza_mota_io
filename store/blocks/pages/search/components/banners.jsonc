@@ -1,0 +1,16 @@
+{
+    "image#banner-mobile": {
+        "title": "Banner Mobile",
+        "props": {
+        "src": "assets/banners/department-banner-mobile.png",
+        "blockClass": "search-banner-mobile"
+        }
+    },
+    "image#banner-desktop": {
+        "title": "Banner Desktop",
+        "props": {
+            "src": "assets/banners/department-banner-desktop.png",
+            "blockClass": "search-banner-desktop"
+        }
+    }
+}

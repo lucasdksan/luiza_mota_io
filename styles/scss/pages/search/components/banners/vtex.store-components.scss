@@ -1,0 +1,8 @@
+@use "../../../../settings/index" as *;
+
+.imageElement--search-banner-mobile {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}

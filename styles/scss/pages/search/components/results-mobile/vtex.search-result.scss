@@ -1,0 +1,43 @@
+@use "../../../../settings/index" as *;
+
+.searchResultContainer {
+    width: 100%;
+    padding: 0px !important;
+}
+
+.container--layout {
+    width: 100%;
+    height: auto;
+}
+
+.buttonShowMore {
+    :global(.vtex-button) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 11px 30px;
+        gap: 10px;
+        max-height: 42px;
+        background: $color-white;
+        border: 1.2px solid $color-brown;
+        border-radius: 8px;
+
+        &::before {
+            content: "Ver mais produtos";
+            font-family: $font-poppins;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 140%;
+            text-align: center;
+            letter-spacing: 0.04em;
+            color: $color-primary;
+        }
+
+        :global(.vtex-button__label) {
+            font-size: 0px !important;
+            display: none !important;
+        }
+    }
+}
