@@ -1,0 +1,24 @@
+{
+    "store.search": {
+        "title": "Store Search Category",
+        "props": {
+            "context": {
+                "hideUnavailableItems": true,
+                "maxItemsPerPage": 48,
+                "skusFilter": "ALL_AVAILABLE",
+                "orderByField": "OrderByReleaseDateDESC"
+            }
+        },
+        "blocks": [
+            "search-result-layout"
+        ]
+    },
+    "search-result-layout": {
+        "blocks": [
+            "search-not-found-layout"
+        ],
+        "props": {
+            "preventRouteChange": true
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "two7-not-found-card": {
+        "title": "Card de not found",
+        "props": {
+            "VtexFlexLayout": "flex-layout.row#not-found-card",
+            "checkList": [
+                {
+                    "title": "Verifique os termos digitados."
+                },
+                {
+                    "title": "Tente utilizar uma única palavra."
+                },
+                {
+                    "title": "Utilize termos genéricos na busca."
+                },
+                {
+                    "title": "Procure utilizar sinônimos ao termo desejado."
+                },
+                {
+                    "title": "Caso ainda não encontre no site o que procura, ou tenha alguma dúvida.entre em contato pelo número: (62) 98249-0378ou mande um e-mail para: lojavirtual@reidasjoias.com.br"
+                }
+            ],
+            "titleRedCard": "Confira algumas dicas para realizar sua busca:"
+        }
+    },
+    "flex-layout.row#not-found-card": {
+        "title": "Container do card de not found",
+        "props": {
+            "blockClass": "not-found-card"
+        }
+    }
+}
