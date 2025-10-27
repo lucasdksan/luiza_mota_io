@@ -1,0 +1,69 @@
+@use "../../settings/index" as *;
+
+.flexRowContent--not-found-card {
+    @include desktop {
+        max-width: 700px !important;
+    }
+
+    :global(.vtex-not-found-card--container) {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 32px 20px;
+        background: $color-secondary;
+        border-radius: 32px;
+
+        @include desktop {
+            padding: 55px 60px !important;
+        }
+    }
+
+    :global(.vtex-not-found-card--title) {
+        margin: 0px;
+        font-family: $font-poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 130%;
+        color: $color-gray-500;
+
+        @include desktop {
+            font-size: 28px !important;
+        }
+    }
+
+    :global(.vtex-not-found-card--list) {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    :global(.vtex-not-found-card--item) {
+        display: flex;
+        align-items: flex-start;
+        gap: 5px;
+        justify-content: center;
+    }
+
+    :global(.vtex-not-found-card--item-text) {
+        font-family: $font-poppins;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: $color-gray-400;
+    }
+
+    :global(.vtex-not-found-card--item-icon) {
+        min-width: 13px;
+        min-height: 13px;
+        margin-top: 4px;
+    }
+}
