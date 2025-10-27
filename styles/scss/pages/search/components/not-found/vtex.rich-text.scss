@@ -1,0 +1,12 @@
+@use "../../../../settings/index" as *;
+
+.container--not-found-heading {
+    align-items: center;
+    justify-content: center;
+}
+
+.paragraph--not-found-heading {
+    margin: 0px;
+    
+    @include titleHomePage;
+}

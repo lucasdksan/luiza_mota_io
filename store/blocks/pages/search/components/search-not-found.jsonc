@@ -1,7 +1,8 @@
 {
     "search-not-found-layout": {
         "children": [
-            "flex-layout.row#search-not-found"
+            "flex-layout.row#search-not-found",
+            "flex-layout.row#not-found-collection"
         ]
     },
     "flex-layout.row#search-not-found": {
