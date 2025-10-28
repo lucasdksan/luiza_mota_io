@@ -10,7 +10,7 @@ function LogoCustom({
 
     return (
         <VtexFlexLayout>
-            <a href="/" title="Damyller" itemProp="url"  className={classGenerator("vtex-logo-custom", "link")}>
+            <a href="/" title="Luiza Mota" itemProp="url"  className={classGenerator("vtex-logo-custom", "link")}>
                 {isMobile ? (
                     <svg className={classGenerator("vtex-logo-custom", "mobile")} xmlns="http://www.w3.org/2000/svg" width="164" height="35" viewBox="0 0 164 35" fill="none">
                         <g clip-path="url(#clip0_20032_4095)">
