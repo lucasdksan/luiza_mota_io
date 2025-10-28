@@ -11,7 +11,7 @@ function TotalProductsCustom({
 
     return(
         <VtexFlexLayout>
-            <span className={classGenerator("vtex-total-products-custom", "text")}>Produtos encontrados: {searchQuery.recordsFiltered}</span>
+            <span className={classGenerator("vtex-total-products-custom", "text")}>Produtos encontrados: {searchQuery.recordsFiltered} Resultado(s)</span>
         </VtexFlexLayout>
     );
 }
