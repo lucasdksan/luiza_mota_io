@@ -70,5 +70,8 @@
     },
     "two7-not-found-card": {
         "component": "NotFoundCard"
+    },
+    "two7-total-products-custom": {
+        "component": "TotalProductsCustom"
     }
 }
