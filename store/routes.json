@@ -25,5 +25,8 @@
   },
   "store.custom#contact-us": {
     "path": "/institucional/fale-conosco"
+  },
+  "store.custom#catalog":{
+    "path": "/catalogo"
   }
 }

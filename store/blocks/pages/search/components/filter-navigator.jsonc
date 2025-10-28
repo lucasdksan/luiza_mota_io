@@ -1,0 +1,71 @@
+{
+    "order-by.v2#filter-navigator": {
+        "title": "Ordenador de busca",
+        "props": {
+            "blockClass": "filter-navigator"
+        }
+    },
+    "filter-navigator.v3#filter-navigator-default": {
+        "title": "Filtro Default",
+        "props": {
+            "layout": "responsive",
+            "closeOnOutsideClick": true,
+            "navigationTypeOnMobile": "collapsible",
+            "drawerDirectionMobile": "drawerRight",
+            "showClearByFilter": false,
+            "showClearAllFiltersOnDesktop": true,
+            "initiallyCollapsed": false,
+            "categoryFiltersMode": "default",
+            "maxItemsCategory": 500,
+            "maxItemsDepartment": 500,
+            "openFiltersMode": "one",
+            "scrollToTop": "smooth",
+            "updateOnFilterSelectionOnMobile": true,
+            "showQuantityBadgeOnMobile": false,
+            "facetOrdering": [],
+            "hiddenFacets": {
+                "brands": true,
+                "specificationFilters": {
+                    "hiddenFilters": []
+                }
+            },
+            "blockClass": [
+                "search-page-filter-bar-default"
+            ]
+        }
+    },
+    "flex-layout.row#search-page-filter-bar-mobile": {
+        "title": "Filtro Mobile",
+        "props": {
+            "blockClass": "search-page-filter-bar-mobile"
+        },
+        "children": [
+            "filter-navigator.v3#filter-navigator-default",
+            "order-by.v2#filter-navigator"
+        ]
+    },
+    "order-by.v2#filter-navigator-total-products": {
+        "title": "Total de produtos",
+        "props": {
+            "blockClass": "filter-navigator-total-products"
+        }
+    },
+    "flex-layout.row#filter-navigator-total-products-container": {
+        "title": "Container do total de produtos",
+        "props": {
+            "blockClass": "filter-navigator-total-products-container"
+        },
+        "children": [
+            "two7-total-products-custom",
+            "order-by.v2#filter-navigator-total-products"
+        ]
+    },
+    "filter-navigator.v3#filter-navigator-total-products-desktop": {
+        "title": "Filtro Total de Produtos Desktop",
+		"blocks": ["sidebar-close-button"],
+		"props": {
+			"truncateFilters": false,
+			"initiallyCollapsed": false
+		}
+	}
+}

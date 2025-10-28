@@ -1,0 +1,65 @@
+@use "../../../../settings/index" as *;
+
+.flexRow--search-not-found {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+
+    @include desktop {
+        padding: 60px 80px !important;
+        background: $color-background-secondary-opacity;
+    }
+
+    :global(.vtex-store-components-3-x-container) {
+        padding: 0px !important;
+
+        @include desktop {
+            @include container-fluid;
+        }
+    }
+}
+
+.flexRowContent--search-not-found {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+
+    @include desktop {
+        flex-direction: row !important;
+    
+        .stretchChildrenWidth {
+            width: auto !important;
+        }
+    }
+}
+
+.flexColChild--section-title-container--not-found {
+    padding: 0px !important;
+}
+
+.flexCol--section-title-container--not-found {
+    gap: 16px;
+}
+
+.flexRow--not-found-collection {
+    padding: 0px 0px 0px 20px;
+    margin-bottom: 46px;
+
+    :global(.vtex-store-components-3-x-container) {
+        padding: 0px;
+    }
+
+    @include desktop {
+        padding: 20px 80px !important;
+        margin: 0px !important;
+        width: 100%;
+
+        :global(.vtex-store-components-3-x-container) {
+            padding: 0px !important;
+
+            @include container-fluid;
+        }
+    }
+}

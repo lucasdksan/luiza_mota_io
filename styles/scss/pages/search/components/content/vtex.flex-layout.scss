@@ -1,0 +1,42 @@
+@use "../../../../settings/index" as *;
+
+.flexRow--search-page-container-flex {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.flexRowContent--search-page-container-flex {
+    width: 100%;
+    height: auto;
+
+    .stretchChildrenWidth {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+.flexRow--search-page-container-flex-desktop {
+    width: 100%;
+    padding: 20px 80px;
+    margin-bottom: 40px;
+
+    :global(.vtex-store-components-3-x-container) {
+        padding: 0px !important;
+        margin: 0px !important;
+
+        @include container-fluid;
+    }
+}
+
+.flexRowContent--search-page-container-flex-desktop {
+    display: grid;
+    grid-template-columns: 16% 1fr;
+    gap: 80px;
+    
+    .stretchChildrenWidth {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}

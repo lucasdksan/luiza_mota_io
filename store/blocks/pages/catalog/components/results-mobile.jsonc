@@ -1,0 +1,34 @@
+{
+  "search-result-layout.mobile#catalog-page-mobile": {
+    "title": "Catalogo Mobile",
+    "props": {
+      "pagination": "show-more",
+      "defaultGalleryLayout": "two-columns",
+      "mobileLayout": "two-columns",
+      "facetOrdering": [],
+      "hiddenFacets": {
+        "brands": true,
+        "specificationFilters": {
+          "hiddenFilters": []
+        }
+      }
+    },
+    "children": [
+      "flex-layout.row#search-page-container-mobile-catalog"
+    ]
+  },
+  "flex-layout.row#search-page-container-mobile-catalog": {
+    "title": "Container da busca mobile",
+    "props": {
+      "blockClass": "search-page-container-mobile"
+    },
+    "children": [
+      "image#banner-mobile",
+      "flex-layout.row#search-page-breadcrumb",
+      "flex-layout.row#search-page-filter-bar-mobile",
+      "search-fetch-previous",
+      "flex-layout.row#search-page-container-flex",
+      "search-fetch-more"
+    ]
+  }
+}

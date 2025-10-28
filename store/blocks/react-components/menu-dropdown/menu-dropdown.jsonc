@@ -5,94 +5,114 @@
             "VtexFlexLayout": "flex-layout.row#menu-dropdown-container",
             "menuItems": [
                 {
-                    "id": "roupas",
-                    "label": "ROUPAS",
+                    "id": "brincos",
+                    "label": "brincos",
                     "categories": [
                         {
-                            "title": "Parte de cima",
-                            "title_link": "/roupas",
+                            "title": "Material",
+                            "title_link": "/brincos",
                             "items": [
                                 {
-                                    "name": "Blusas e Coletes",
-                                    "link": "/roupas/blusas-coletes"
+                                    "name": "Semi Joia",
+                                    "link": "/brincos/semi-joia"
                                 },
                                 {
-                                    "name": "Tops",
-                                    "link": "/roupas/tops"
-                                },
-                                {
-                                    "name": "Camisas",
-                                    "link": "/roupas/camisas"
-                                },
-                                {
-                                    "name": "Overtops",
-                                    "link": "/roupas/overtops"
+                                    "name": "Prata",
+                                    "link": "/brincos/prata"
                                 }
                             ],
                             "actionButton": {
-                                "text": "VER TUDO",
-                                "url": "/roupas"
+                                "text": "Ver todos",
+                                "url": "/brincos"
                             }
                         },
                         {
-                            "title": "Parte de baixo",
-                            "title_link": "/roupas",
+                            "title": "Estilo",
+                            "title_link": "/brincos",
                             "items": [
                                 {
-                                    "name": "Calças",
+                                    "name": "Liso",
                                     "link": "/roupas/calcas"
                                 },
                                 {
-                                    "name": "Shorts",
+                                    "name": "Ponto de Luz",
                                     "link": "/roupas/shorts"
                                 },
                                 {
-                                    "name": "Saias",
+                                    "name": "Cravejado",
+                                    "link": "/roupas/saias"
+                                },
+                                {
+                                    "name": "Coração",
+                                    "link": "/roupas/saias"
+                                },
+                                {
+                                    "name": "Geométrico",
+                                    "link": "/roupas/saias"
+                                },
+                                {
+                                    "name": "Geométrico",
                                     "link": "/roupas/saias"
                                 }
                             ],
                             "actionButton": {
-                                "text": "VER TUDO",
+                                "text": "Ver todos",
                                 "url": "/roupas"
                             }
                         },
                         {
-                            "title": "Peças Únicas",
+                            "title": "Gênero",
                             "title_link": "/roupas",
                             "items": [
                                 {
-                                    "name": "Vestidos",
+                                    "name": "Feminino",
                                     "link": "/roupas/vestidos"
                                 },
                                 {
-                                    "name": "Macacões Macaquinhos",
+                                    "name": "Masculino",
+                                    "link": "/roupas/macacao-macaquinho"
+                                },
+                                {
+                                    "name": "Unissex",
                                     "link": "/roupas/macacao-macaquinho"
                                 }
                             ],
                             "actionButton": {
-                                "text": "VER TUDO",
+                                "text": "Ver todos",
                                 "url": "/roupas"
                             }
                         },
                         {
-                            "title": "Shop By",
+                            "title": "Faixa de Preço",
                             "title_link": "/roupas",
                             "items": [
                                 {
-                                    "name": "Alfaiataria",
+                                    "name": "De R$1,00 a R$20,00",
                                     "link": "/roupas/alfaiataria"
                                 },
                                 {
-                                    "name": "Linho",
+                                    "name": "De R$20,00 a R$40,00",
                                     "link": "/roupas/linho"
                                 },
                                 {
-                                    "name": "Estampas",
-                                    "link": "/roupas/estampas"
+                                    "name": "De R$40,00 a R$60,00",
+                                    "link": "/roupas/linho"
                                 },
                                 {
-                                    "name": "Bordados",
-                                    "link": "/roupas/bordados"
+                                    "name": "De R$60,00 a R$80,00",
+                                    "link": "/roupas/linho"
+                                },
+                                {
+                                    "name": "De R$80,00 a R$120,00",
+                                    "link": "/roupas/linho"
+                                },
+                                {
+                                    "name": "De R$120,00 a R$140,00",
+                                    "link": "/roupas/linho"
+                                },
+                                {
+                                    "name": "Acima de R$ 140,00",
+                                    "link": "/roupas/linho"
                                 }
                             ],
                             "actionButton": {
@@ -109,90 +129,70 @@
                     ]
                 },
                 {
-                    "id": "acessorios",
-                    "label": "ACESSÓRIOS",
-                    "categories": [
-                        {
-                            "title": "Acessórios",
-                            "title_link": "/acessorios",
-                            "items": [
-                                {
-                                    "name": "Cintos",
-                                    "link": "/acessorios/cintos"
-                                },
-                                {
-                                    "name": "Colares",
-                                    "link": "/acessorios/colares"
-                                },
-                                {
-                                    "name": "Lenços",
-                                    "link": "/acessorios/lencos"
-                                }
-                            ],
-                            "actionButton": {
-                                "text": "VER TUDO",
-                                "url": "/acessorios"
-                            }
-                        }
-                    ],
-                    "bannerImages": [
-                        {
-                            "src": "https://artybrand.vtexassets.com/assets/vtex.file-manager-graphql/images/de04d621-9154-403c-bf27-cd83cac5d34e___d4aac9102898c0a52a60436748e12bd7.jpg",
-                            "alt": "Banner acessórios"
-                        }
-                    ]
+                    "id": "aneis",
+                    "label": "Anéis",
+                    "categories": [],
+                    "bannerImages": []
                 },
                 {
-                    "id": "marca",
-                    "label": "A MARCA",
-                    "categories": [
-                        {
-                            "title": "Sobre a Marca",
-                            "title_link": "/campanha",
-                            "items": [
-                                {
-                                    "name": "Sobre nós",
-                                    "link": "/campanha"
-                                }
-                            ],
-                            "actionButton": {
-                                "text": "VER TUDO",
-                                "url": "/campanha"
-                            }
-                        }
-                    ],
-                    "bannerImages": [
-                        {
-                            "src": "https://artybrand.vtexassets.com/assets/vtex.file-manager-graphql/images/e3143114-773a-4a03-8ce1-87097c292944___6e58275269ee6bacb32087c21b5907cf.jpg",
-                            "alt": "Banner marca"
-                        }
-                    ]
+                    "id": "colares",
+                    "label": "Colares",
+                    "categories": [],
+                    "bannerImages": []
                 },
                 {
-                    "id": "campanhas",
-                    "label": "CAMPANHAS",
-                    "categories": [
-                        {
-                            "title": "Ofertas",
-                            "title_link": "/campanhas-arty",
-                            "items": [
-                                {
-                                    "name": "Summer 26",
-                                    "link": "/campanhas-arty"
-                                }
-                            ],
-                            "actionButton": {
-                                "text": "VER TUDO",
-                                "url": "/campanhas-arty"
-                            }
-                        }
-                    ],
-                    "bannerImages": [
-                        {
-                            "src": "https://artybrand.vtexassets.com/assets/vtex.file-manager-graphql/images/fb6a54de-e93a-4a12-8b75-b30089aefe67___5cf23a2201f848616f68c5a78026e1f3.jpg",
-                            "alt": "Banner campanhas"
-                        }
-                    ]
+                    "id": "berloques",
+                    "label": "Berloques",
+                    "categories": [],
+                    "bannerImages": []
+                },
+                {
+                    "id": "pulseiras",
+                    "label": "Pulseiras",
+                    "categories": [],
+                    "bannerImages": []
+                },
+                {
+                    "id": "conjuntos",
+                    "label": "Conjuntos",
+                    "categories": [],
+                    "bannerImages": []
+                },
+                {
+                    "id": "tornozeleiras",
+                    "label": "Tornozeleiras",
+                    "categories": [],
+                    "bannerImages": []
+                },
+                {
+                    "id": "masculino",
+                    "label": "Masculino",
+                    "categories": [],
+                    "bannerImages": []
+                },
+                {
+                    "id": "feminino",
+                    "label": "Feminino",
+                    "categories": [],
+                    "bannerImages": []
+                },
+                {
+                    "id": "relogios",
+                    "label": "Relógios",
+                    "categories": [],
+                    "bannerImages": []
+                },
+                {
+                    "id": "fornitura",
+                    "label": "Fornitura",
+                    "categories": [],
+                    "bannerImages": []
+                },
+                {
+                    "id": "brasil-off",
+                    "label": "Brasil Off",
+                    "categories": [],
+                    "bannerImages": []
                 }
             ]
         }

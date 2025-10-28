@@ -1,0 +1,42 @@
+{
+    "flex-layout.row#search-page-breadcrumb": {
+        "title": "Breadcrumb",
+        "props": {
+            "fullWidth": true,
+            "preserveLayoutOnMobile": true,
+            "blockClass": [
+                "search-page-breadcrumb"
+            ]
+        },
+        "children": [
+            "breadcrumb.search"
+        ]
+    },
+    "breadcrumb.search": {
+        "title": "Breadcrumb Search",
+        "props": {
+            "showOnMobile": true,
+            "blockClass": "search-page-breadcrumb"
+        }
+    },
+    "flex-layout.row#product-breadcrumb": {
+        "title": "Breadcrumb Product",
+        "props": {
+            "fullWidth": true,
+            "preserveLayoutOnMobile": true,
+            "blockClass": [
+                "product-breadcrumb"
+            ]
+        },
+        "children": [
+            "breadcrumb#product"
+        ]
+    },
+    "breadcrumb#product": {
+        "title": "Breadcrumb Product",
+        "props": {
+            "showOnMobile": true,
+            "blockClass": "breadcrumb-product"
+        }
+    }
+}

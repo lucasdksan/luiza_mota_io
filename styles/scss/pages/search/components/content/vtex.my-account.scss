@@ -1,0 +1,18 @@
+:global(.vtex-search-result-3-x-galleryItem--two-columns) {
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+        &:first-child {
+            :global(.vtex-flex-layout-0-x-flexRowContent) {
+                align-items: flex-start !important;
+            }
+        }
+
+        :global(.vtex-flex-layout-0-x-flexRow--modal-product-shop-btn-container) {
+            :global(.vtex-flex-layout-0-x-flexRowContent--modal-product-shop-btn-container) {
+                :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+                    align-items: center !important;
+                    justify-content: flex-end !important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "two7-total-products-custom": {
+        "title": "Total de produtos customizado",
+        "props": {
+            "VtexFlexLayout": "flex-layout.row#total-products-custom"
+        }
+    },
+    "flex-layout.row#total-products-custom": {
+        "title": "Container do total de produtos customizado",
+        "props": {
+            "blockClass": "total-products-custom"
+        }
+    }
+}

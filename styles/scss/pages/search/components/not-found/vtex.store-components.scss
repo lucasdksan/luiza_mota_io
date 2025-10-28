@@ -1,0 +1,8 @@
+@use "../../../../settings/index" as *;
+
+.imageElement--search-not-found-image {
+    @include desktop {
+        min-width: 485px !important;
+        height: auto;
+    }
+}

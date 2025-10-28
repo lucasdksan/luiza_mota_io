@@ -1,0 +1,61 @@
+@use "../../settings/index" as *;
+
+.container {
+    padding: 0px;
+
+    .arrow:last-child {
+        .link {
+            color: $color-primary;
+        }
+    }
+}
+
+.link {
+    padding: 0px;
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+
+    .arrow {
+        padding: 0px;
+
+        .caretIcon {
+            margin: 0px 10px;
+        }
+    }
+    line-height: 150%;
+    color: $color-gray-300;
+}
+
+.arrow {
+    padding: 0px;
+
+    .caretIcon {
+        margin: 0px 10px;
+    }
+}
+
+.homeLink {
+    &::before {
+        content: "home";
+        font-family: $font-poppins;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: $color-gray-300;
+    }
+
+    .homeIcon {
+        display: none !important;
+    }
+}
+
+.container {
+    .arrow:last-child {
+        .link {
+            color: $color-primary;
+        }
+    }
+}

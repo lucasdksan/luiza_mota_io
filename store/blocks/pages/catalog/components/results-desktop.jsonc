@@ -1,0 +1,30 @@
+{
+  "search-result-layout.desktop#catalog-page-desktop": {
+    "title": "Catalogo Desktop",
+    "props": {
+      "pagination": "show-more",
+      "defaultGalleryLayout": "four-columns",
+      "facetOrdering": [
+        {
+          "key": "size",
+          "orderBy": "name",
+          "order": "ASC"
+        }
+      ],
+      "hiddenFacets": {
+        "brands": true,
+        "specificationFilters": {
+          "hiddenFilters": []
+        }
+      }
+    },
+    "children": [
+      "image#banner-desktop",
+      "flex-layout.row#search-page-breadcrumb",
+      "flex-layout.row#filter-navigator-total-products-container",
+      "search-fetch-previous",
+      "flex-layout.row#search-page-container-flex-desktop",
+      "search-fetch-more"
+    ]
+  }
+}

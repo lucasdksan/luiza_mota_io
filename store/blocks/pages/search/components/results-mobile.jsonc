@@ -1,0 +1,40 @@
+{
+    "search-result-layout.mobile#search-page-mobile": {
+        "title": "Busca Mobile",
+        "props": {
+            "pagination": "show-more",
+            "defaultGalleryLayout": "two-columns",
+            "mobileLayout": "two-columns",
+            "facetOrdering": [
+                {
+                    "key": "size",
+                    "orderBy": "name",
+                    "order": "ASC"
+                }
+            ],
+            "hiddenFacets": {
+                "brands": true,
+                "specificationFilters": {
+                    "hiddenFilters": []
+                }
+            }
+        },
+        "children": [
+            "flex-layout.row#search-page-container-mobile"
+        ]
+    },
+    "flex-layout.row#search-page-container-mobile": {
+        "title": "Container da busca mobile",
+        "props": {
+            "blockClass": "search-page-container-mobile"
+        },
+        "children": [
+            "image#banner-mobile",
+            "flex-layout.row#search-page-breadcrumb",
+            "flex-layout.row#search-page-filter-bar-mobile",
+            "search-fetch-previous",
+            "flex-layout.row#search-page-container-flex",
+            "search-fetch-more"
+        ]
+    }
+}

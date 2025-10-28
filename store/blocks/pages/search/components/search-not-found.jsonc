@@ -1,0 +1,26 @@
+{
+    "search-not-found-layout": {
+        "children": [
+            "flex-layout.row#search-not-found",
+            "flex-layout.row#not-found-collection"
+        ]
+    },
+    "flex-layout.row#search-not-found": {
+        "title": "Container do not found",
+        "props": {
+            "blockClass": "search-not-found"
+        },
+        "children": [
+            "image#search-not-found-image",
+            "two7-not-found-card"
+        ]
+    },
+    "image#search-not-found-image": {
+        "title": "Imagem do not found",
+        "props": {
+            "src": "assets/images/404.png",
+            "blockClass": "search-not-found-image",
+            "alt": "Imagem do not found"
+        }
+    }
+}

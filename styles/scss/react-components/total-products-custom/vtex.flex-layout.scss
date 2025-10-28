@@ -1,0 +1,12 @@
+@use "../../settings/index" as *;
+
+.flexRow--total-products-custom {
+    :global(.vtex-total-products-custom--text) {
+        font-family: $font-poppins;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: $color-gray-300;
+    }
+}

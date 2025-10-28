@@ -78,6 +78,19 @@
     font-size: 16px;
     line-height: 150%;
     color: $color-gray-300;
+    transition: all 0.2s ease;
+
+    &::hover {
+        border: 1px solid $color-primary;
+        color: $color-primary;
+        transition: all 0.2s ease;
+    }
+
+    &::focus {
+        border: 1px solid $color-primary;
+        color: $color-primary;
+        transition: all 0.2s ease;
+    }
 }
 
 @mixin titleHomePage {
