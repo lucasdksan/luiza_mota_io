@@ -10,6 +10,18 @@
             "search-content#search-page-content"
         ]
     },
+    "flex-layout.row#search-page-container-flex-desktop": {
+        "title": "Container da Página de Resultados Desktop",
+        "props": {
+            "blockClass": [
+                "search-page-container-flex-desktop"
+            ]
+        },
+        "children": [
+            "filter-navigator.v3#filter-navigator-total-products-desktop",
+            "search-content#search-page-content"
+        ]
+    },
     "search-content#search-page-content": {
         "blocks": [
             "gallery#search-page-content",

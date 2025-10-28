@@ -43,5 +43,29 @@
             "filter-navigator.v3#filter-navigator-default",
             "order-by.v2#filter-navigator"
         ]
-    }
+    },
+    "order-by.v2#filter-navigator-total-products": {
+        "title": "Total de produtos",
+        "props": {
+            "blockClass": "filter-navigator-total-products"
+        }
+    },
+    "flex-layout.row#filter-navigator-total-products-container": {
+        "title": "Container do total de produtos",
+        "props": {
+            "blockClass": "filter-navigator-total-products-container"
+        },
+        "children": [
+            "two7-total-products-custom",
+            "order-by.v2#filter-navigator-total-products"
+        ]
+    },
+    "filter-navigator.v3#filter-navigator-total-products-desktop": {
+        "title": "Filtro Total de Produtos Desktop",
+		"blocks": ["sidebar-close-button"],
+		"props": {
+			"truncateFilters": true,
+			"initiallyCollapsed": false
+		}
+	}
 }

@@ -15,6 +15,7 @@
     },
     "search-result-layout": {
         "blocks": [
+            "search-result-layout.desktop#search-page-desktop",
             "search-result-layout.mobile#search-page-mobile",
             "search-not-found-layout"
         ],
