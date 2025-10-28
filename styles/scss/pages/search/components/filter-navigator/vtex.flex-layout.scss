@@ -14,3 +14,23 @@
     justify-content: space-between;
     gap: 10px;
 }
+
+.flexRow--filter-navigator-total-products-container {
+    width: 100%;
+    padding: 34px 80px;
+
+    :global(.vtex-store-components-3-x-container) {
+        padding: 0px !important;
+        margin: 0px !important;
+
+        @include container-fluid;
+    }
+}
+
+.flexRowContent--filter-navigator-total-products-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
