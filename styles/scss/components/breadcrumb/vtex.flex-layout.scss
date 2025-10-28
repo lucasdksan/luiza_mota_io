@@ -5,4 +5,15 @@
     height: auto;
     margin-top: 40px;
     padding: 20px;
+
+    @include desktop {
+        margin-top: 0px;
+        margin-bottom: 39px;
+        padding: 20px 80px;
+        border-bottom: 1px solid $color-gray-700;
+
+        .flexRowContent--search-page-breadcrumb {
+            @include container-fluid;
+        }
+    }
 }
