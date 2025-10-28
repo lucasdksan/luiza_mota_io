@@ -82,7 +82,7 @@
 
             .orderByText--filter-navigator {
                 display: none;
-            }            
+            }
         }
 
         .filterPopupArrowIcon--filter-navigator {
@@ -114,8 +114,6 @@
 }
 
 .sidebar {
-    // padding: 20px 23px;
-
     .accordionFilter {
         padding: 20px 23px !important;
 
@@ -261,7 +259,7 @@
         }
     }
 
-    
+
     .accordionFilterOpen--search-page-filter-bar-default {
         padding: 0px !important;
         display: flex;
@@ -278,7 +276,7 @@
                 gap: 8px;
                 align-items: center;
 
-                
+
 
                 :global(.vtex-checkbox__label) {
                     font-family: $font-poppins;
@@ -287,6 +285,257 @@
                     font-size: 14px;
                     line-height: 150%;
                     color: $color-gray-300;
+                }
+            }
+        }
+    }
+}
+
+.orderByDropdown--filter-navigator-total-products {
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    &::before {
+        content: "Ordenar";
+        font-family: $font-poppins;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: $color-gray-300;
+    }
+
+    .orderByButton--filter-navigator-total-products {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        max-height: 51px;
+        background: $color-white;
+        border: 1px solid $color-gray-375;
+        border-radius: 8px;
+
+        .filterPopupTitle--filter-navigator-total-products {
+            font-family: $font-poppins;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: $color-gray-300;
+
+            .orderByText--filter-navigator-total-products {
+                display: none;
+            }
+
+            .filterPopupArrowIcon--filter-navigator-total-products {
+                padding: 0px !important;
+            }
+        }
+
+        .caretIcon--filter-navigator-total-products {
+            color: $color-primary;
+        }
+    }
+
+    .orderByOptionsContainer {
+        top: 50px !important;
+        padding: 20px;
+        overflow: hidden;
+
+        .orderByOptionItem--filter-navigator-total-products {
+            font-family: $font-lato;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 130%;
+            color: $color-gray-400;
+            padding: 0px !important;
+            background: transparent !important;
+            margin-bottom: 16px !important;
+        }
+    }
+}
+
+.filters--layout {
+    @include desktop {
+        display: flex !important;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        .filtersWrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .filter__container--title {
+                border: none !important;
+
+                .filterMessage {
+                    font-family: $font-poppins;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 130%;
+                    display: flex;
+                    align-items: center;
+                    text-transform: capitalize;
+                    color: $color-gray-800;
+                    text-shadow: 0px 4px 24px rgba(26, 26, 26, 0.15);
+                    margin: 0px !important;
+                }
+            }
+
+            .filter__container--selectedFilters {
+                border: none !important;
+
+                .filterSelected {
+                    padding: 0px !important;
+                    margin-bottom: 20px;
+
+                    .filterTitleSpan {
+                        font-family: $font-poppins;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 130%;
+                        color: $color-primary;
+                        text-transform: capitalize;
+                    }
+                }
+
+                .filterTemplateOverflow {
+                    padding: 0px !important;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    align-items: flex-start;
+
+                    .filterItem--selected {
+                        :global(.vtex-checkbox__line-container) {
+                            align-items: center;
+
+                            :global(.vtex-checkbox__label) {
+                                font-family: $font-lato;
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 150%;
+                                color: $color-primary;
+                                margin-left: 8px !important;
+                            }
+
+                            :global(.vtex-checkbox__container) {
+                                margin: 0px;
+                                padding: 0px;
+
+                                :global(.vtex-checkbox__inner-container) {
+                                    border: 1px solid $color-primary;
+                                    background-color: transparent;
+                                }
+
+                                :global(.vtex-checkbox__box-wrapper) {
+                                    :global(.vtex__icon-check) {
+                                        color: $color-primary;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .filter__container {
+                border: none !important;
+
+                .filterAvailable {
+                    padding: 10px 0px !important;
+                    border-bottom: 1px solid $color-gray-900;
+
+                    .filterTitle {
+                        .filterTitleSpan {
+                            font-family: $font-poppins;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 150%;
+                            color: $color-gray-400;
+                        }
+                    }
+                }
+
+                .filterTemplateOverflow {
+                    padding: 0px !important;
+
+                    .filterContent {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        margin-top: 16px;
+
+
+                        .filterItem {
+                            :global(.vtex-checkbox__line-container) {
+                                align-items: center;
+
+                                &:hover {
+                                    :global(.vtex-checkbox__container) {
+                                        :global(.vtex-checkbox__inner-container) {
+                                            border: 1px solid $color-primary !important;
+                                        }
+                                    }
+    
+                                    :global(.vtex-checkbox__label) {
+                                        color: $color-primary !important;
+                                    }
+                                }
+
+                                :global(.vtex-checkbox__container) {
+                                    margin-right: 8px !important;
+
+                                    :global(.vtex-checkbox__inner-container) {
+                                        margin: 0px !important;
+                                        border: 1px solid $color-gray-750;
+                                        border-radius: 2px;
+                                        background: transparent
+                                    }
+                                }
+
+                                :global(.vtex-checkbox__label) {
+                                    font-family: $font-poppins;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 150%;
+                                    color: $color-gray-300;
+                                }
+                            }
+                        }
+
+                        .filterItem--selected {
+                            :global(.vtex-checkbox__line-container) {
+                                :global(.vtex-checkbox__container) {
+                                    :global(.vtex-checkbox__inner-container) {
+                                        border: 1px solid $color-primary !important;
+                                    }
+
+                                    :global(.vtex-checkbox__box-wrapper) {
+                                        :global(.vtex__icon-check) {
+                                            color: $color-primary !important;
+                                        }
+                                    }
+                                }
+
+                                :global(.vtex-checkbox__label) {
+                                    color: $color-primary !important;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

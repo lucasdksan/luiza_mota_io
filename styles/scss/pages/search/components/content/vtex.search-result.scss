@@ -7,7 +7,6 @@
     column-gap: 10px;
 }
 
-
 .galleryItem--two-columns {
     padding: 0px !important;
     width: 100% !important;
@@ -22,4 +21,18 @@
         display: flex;
         flex-direction: column !important;
     }
+}
+
+.gallery--four-columns {
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 32px;
+    min-width: 100%;
+    margin-top: 2px;
+}
+
+.galleryItem--four-columns {
+    max-width: 100% !important;
+    padding: 0px !important;
 }

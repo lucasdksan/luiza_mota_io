@@ -1,0 +1,21 @@
+@use "../../settings/index" as *;
+
+:global(.vtex-product-summary-2-x-imageWrapper--shelf-product-default--image) {
+    @include desktop {
+        :global(.vtex-store-components-3-x-discountContainer ) {
+            width: 100%;
+            height: auto !important;
+
+            :global(.vtex-product-summary-2-x-imageContainer--shelf-product-default--image) {
+                width: 100%;
+                height: auto !important;
+
+                :global(.vtex-product-summary-2-x-image--shelf-product-default--image) {
+                    max-height: none !important;
+                    width: 100% !important;
+                    height: auto !important;
+                }
+            }
+        }
+    }
+}
