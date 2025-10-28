@@ -3,6 +3,11 @@
 .searchResultContainer {
     width: 100%;
     padding: 0px !important;
+    
+    @include desktop {
+        margin: 0px;
+        min-width: 100%;
+    }
 }
 
 .container--layout {
