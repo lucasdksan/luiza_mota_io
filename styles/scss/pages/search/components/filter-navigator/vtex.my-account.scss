@@ -1,0 +1,11 @@
+@use "../../../../settings/index" as *; 
+
+:global(.vtex-search-result-3-x-accordionFilter) {
+    :global(.ReactCollapse--collapse) {
+        :global(.ReactCollapse--content) {
+            & > div:first-child {
+                padding: 0 !important;
+            }
+        }
+    }
+}

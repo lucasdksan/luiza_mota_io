@@ -1,0 +1,294 @@
+@use "../../../../settings/index" as *;
+
+.filtersWrapperMobile--search-page-filter-bar-default {
+    height: auto !important;
+
+    .filterPopupButton {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 11px 30px;
+        gap: 6px;
+        max-height: 42px;
+        background: #FFFFFF;
+        border: 1px solid $color-gray-750;
+        border-radius: 8px;
+        width: 100%;
+        margin: 0px;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTUgMTBIMTVNMTAgNVYxNSIgc3Ryb2tlPSIjODU4NTg4IiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .filterPopupTitle--search-page-filter-bar-default {
+            font-family: $font-poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 140%;
+            text-align: center;
+            letter-spacing: 0.04em;
+            text-transform: capitalize;
+            color: $color-gray-750;
+            margin: 0px !important;
+        }
+
+        .filterPopupArrowIcon--search-page-filter-bar-default {
+            display: none !important;
+        }
+    }
+}
+
+.orderByDropdown--filter-navigator {
+    height: auto !important;
+
+    .orderByButton--filter-navigator {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 11px 30px;
+        gap: 6px;
+        max-height: 42px;
+        background: #FFFFFF;
+        border: 1px solid $color-gray-750;
+        border-radius: 8px;
+        width: 100%;
+        margin: 0px;
+
+        .filterPopupTitle--filter-navigator {
+            font-size: 0px;
+
+            &::before {
+                content: "ordenar";
+                font-family: $font-poppins;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 140%;
+                text-align: center;
+                letter-spacing: 0.04em;
+                text-transform: capitalize;
+                color: $color-gray-750;
+            }
+
+            .orderByText--filter-navigator {
+                display: none;
+            }            
+        }
+
+        .filterPopupArrowIcon--filter-navigator {
+            padding: 0px !important;
+        }
+    }
+
+    .orderByOptionsContainer {
+        top: 50px !important;
+        margin: 0px !important;
+        padding: 14px 20px !important;
+        overflow: hidden;
+
+        .orderByOptionItem--filter-navigator {
+            padding: 0px !important;
+            width: 100%;
+            min-width: auto !important;
+
+            font-family: $font-poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 150%;
+            text-transform: capitalize;
+            color: $color-gray-800;
+            margin: 7px 0px;
+        }
+    }
+}
+
+.sidebar {
+    // padding: 20px 23px;
+
+    .accordionFilter {
+        padding: 20px 23px !important;
+
+        .filterAccordionBreadcrumbs {
+            padding: 0px !important;
+            border: none !important;
+            height: auto !important;
+            margin-bottom: 20px;
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            gap: 20px;
+
+            &::before {
+                content: "filtrar por:";
+                font-family: $font-lato;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 150%;
+                color: $color-primary;
+            }
+
+            .filterBreadcrumbsContent--search-page-filter-bar-default {
+                padding: 0px !important;
+
+                .filterBreadcrumbsText--search-page-filter-bar-default {
+                    font-family: $font-poppins;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 130%;
+                    display: flex;
+                    align-items: center;
+                    text-transform: capitalize;
+                    color: $color-gray-800;
+                    text-shadow: 0px 4px 24px rgba(26, 26, 26, 0.15);
+                }
+            }
+        }
+
+        .accordionFilterContainer--search-page-filter-bar-default {
+            padding: 0px !important;
+            margin-bottom: 16px;
+
+            .filterAccordionItemBox--search-page-filter-bar-default {
+                padding: 0px !important;
+                min-height: auto !important;
+                border-bottom: 1px solid $color-gray-900 !important;
+
+                .accordionFilterContent--search-page-filter-bar-default {
+                    padding: 10px 0px !important;
+
+                    .accordionFilterItemTitle--search-page-filter-bar-default {
+                        font-family: $font-poppins;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 150%;
+                        color: $color-gray-300;
+                    }
+                }
+            }
+        }
+    }
+
+    .filterButtonsBox {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 10px;
+        padding: 20px !important;
+
+        .filterClearButtonWrapper--search-page-filter-bar-default {
+            padding: 0px !important;
+            width: 100%;
+
+            :global(.vtex-button) {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 11px 30px;
+                gap: 10px;
+                width: 100%;
+                max-height: 42px;
+                background: $color-white;
+                border: 1.2px solid $color-primary;
+                border-radius: 8px;
+
+                &::before {
+                    content: "limpar filtro";
+                    font-family: $font-poppins;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 140%;
+                    text-align: center;
+                    text-transform: capitalize;
+                    letter-spacing: 0.04em;
+                    color: $color-primary;
+                }
+
+                :global(.vtex-button__label) {
+                    display: none !important;
+                }
+            }
+        }
+
+        .filterApplyButtonWrapper--search-page-filter-bar-default {
+            padding: 0px !important;
+            width: 100% !important;
+
+            :global(.vtex-button) {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 11px 30px;
+                gap: 10px;
+                width: 100%;
+                max-height: 42px;
+                background: $color-primary;
+                border-radius: 8px;
+
+                &::before {
+                    content: "Ver resultados";
+                    font-family: $font-poppins;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 140%;
+                    text-align: center;
+                    letter-spacing: 0.04em;
+                    color: $color-white;
+                    text-transform: capitalize;
+                }
+
+                :global(.vtex-button__label) {
+                    display: none !important;
+                }
+            }
+        }
+    }
+
+    
+    .accordionFilterOpen--search-page-filter-bar-default {
+        padding: 0px !important;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .filterAccordionItemBox {
+            width: 100%;
+            padding: 0px !important;
+            border: none !important;
+            min-height: auto !important;
+
+            :global(.vtex-checkbox__line-container) {
+                gap: 8px;
+                align-items: center;
+
+                
+
+                :global(.vtex-checkbox__label) {
+                    font-family: $font-poppins;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 150%;
+                    color: $color-gray-300;
+                }
+            }
+        }
+    }
+}
