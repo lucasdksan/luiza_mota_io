@@ -18,7 +18,7 @@ function LoginDesktop({
     return (
         <>
             <VtexFlexLayoutContentBTN>
-                {/* {!isAuthenticated ? ( */}
+                {!isAuthenticated ? (
                     <button onClick={() => setIsOpenModal(true)} className={classGenerator("vtex-login-desktop", "login-button")}>
                         <UserIcon />
                         <span className={classGenerator("vtex-login-desktop", "login-button-text")}>
@@ -26,8 +26,8 @@ function LoginDesktop({
                             <strong>Cadastra-se</strong>
                         </span>
                     </button>
-                {/* ) : (
-                    <a className={classGenerator("vtex-login-desktop", "login-link")} href="/myaccount">
+                ) : (
+                    <a className={classGenerator("vtex-login-desktop", "login-link")} href="/account">
                         <UserIcon />
                         <span className={classGenerator("vtex-login-desktop", "login-button-text")}>
                             Bem vindo!
@@ -35,7 +35,7 @@ function LoginDesktop({
                             <strong>{nameExibition}</strong>
                         </span>
                     </a>
-                )} */}
+                )}
             </VtexFlexLayoutContentBTN>
             {(isOpenModal) && (
                 <LoginModal

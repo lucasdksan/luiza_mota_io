@@ -21,7 +21,7 @@ function LoginButton({
                     <span className={classGenerator("vtex-menu-mobile", "login-button-text")}>Entrar/Cadastrar</span>
                 </button>
             ) : (
-                <a className={classGenerator("vtex-menu-mobile", "login-link")} href="/myaccount">Olá, {nameExibition}</a>
+                <a className={classGenerator("vtex-menu-mobile", "login-link")} href="/account">Olá, {nameExibition}</a>
             )}
         </div>
     );
