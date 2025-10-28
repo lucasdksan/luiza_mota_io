@@ -64,7 +64,7 @@
         "title": "Filtro Total de Produtos Desktop",
 		"blocks": ["sidebar-close-button"],
 		"props": {
-			"truncateFilters": true,
+			"truncateFilters": false,
 			"initiallyCollapsed": false
 		}
 	}
