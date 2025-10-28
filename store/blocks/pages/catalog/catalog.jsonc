@@ -1,0 +1,27 @@
+{
+    "store.custom#catalog": {
+        "props": {
+            "context": {
+                "hideUnavailableItems": false,
+                "maxItemsPerPage": 24
+            }
+        },
+        "blocks": [
+            "search-result-layout.customQuery#catalog"
+        ]
+    },
+    "search-result-layout.customQuery#catalog": {
+        "blocks": [
+            "search-result-layout.desktop#catalog-page-desktop",
+            "search-result-layout.mobile#catalog-page-mobile",
+            "search-not-found-layout"
+        ],
+        "props": {
+            "querySchema": {
+                "skusFilter": "ALL",
+                "simulationBehavior": "default"
+            },
+            "preventRouteChange": true
+        }
+    }
+}
