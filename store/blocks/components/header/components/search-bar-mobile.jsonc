@@ -5,7 +5,7 @@
         ],
         "props": {
             "openAutocompleteOnFocus": true,
-            "autoFocus": true,
+            "autoFocus": false,
             "placeholder": "Digite sua busca",
             "blockClass": "search-bar-mobile"
         }
@@ -16,7 +16,7 @@
 			"product-summary.shelf#autocomplete"
 		],
 		"props": {
-			"maxSuggestedProducts": 2   
+			"maxSuggestedProducts": 8   
 		}
 	},
     "product-summary.shelf#autocomplete": {
