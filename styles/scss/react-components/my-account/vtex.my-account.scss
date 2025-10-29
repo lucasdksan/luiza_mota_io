@@ -1,0 +1,239 @@
+@use "../../settings/index" as *;
+
+/* :global(.vtex-render__container-id-my-account)::before {
+  content: '';
+  background-image: url('/assets/banners/banner-my-account-mobile.png') no-repeat center;
+  background-size: cover;
+  display: block;
+  width: 100%;
+  height: 10rem;
+} */
+
+:global(.vtex-my-account-1-x-userInfo) {
+  display: flex;
+  align-items: center;
+  margin: 1.25rem 0;
+}
+:global(.vtex-my-account-1-x-userImage) {
+  width: 2.5rem;
+  height: 3rem;
+}
+
+:global(.vtex-my-account-1-x-userImage) svg {
+   display: none;
+}
+
+:global(.vtex-my-account-1-x-userImage)::before {
+  content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDQiIGhlaWdodD0iNDQiIHZpZXdCb3g9IjAgMCA0NCA0NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQ0IiBoZWlnaHQ9IjQ0IiByeD0iMjIiIGZpbGw9IiNGRjc4QjAiLz4KPHBhdGggZD0iTTI2IDE3QzI2IDE5LjIwOTEgMjQuMjA5MSAyMSAyMiAyMUMxOS43OTA5IDIxIDE4IDE5LjIwOTEgMTggMTdDMTggMTQuNzkwOSAxOS43OTA5IDEzIDIyIDEzQzI0LjIwOTEgMTMgMjYgMTQuNzkwOSAyNiAxN1oiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggZD0iTTIyIDI0QzE4LjEzNCAyNCAxNSAyNy4xMzQgMTUgMzFIMjlDMjkgMjcuMTM0IDI1Ljg2NiAyNCAyMiAyNFoiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==);
+  width: 44px;
+  height: 44px;
+}
+
+
+:global(.vtex-my-account-1-x-userGreeting) {
+  font-family: $font-poppins;
+  font-size: 14px;
+  font-weight: 700;
+  color: $color-accent;
+}
+
+:global(.vtex-my-account-1-x-menu) {
+  padding: 0 2rem;
+}
+
+:global(.vtex-render__container-id-my-profile-link),
+:global(.vtex-render__container-id-my-addresses-link),
+:global(.vtex-render__container-id-my-orders-link),
+:global(.vtex-render__container-id-my-cards-link),
+:global(.vtex-render__container-id-my-account-link.authentication),
+:global(.vtex-my-account-1-x-menuLink) {
+  border-bottom: 1px solid $color-text-muted;
+  font-family: $font-poppins;
+  font-weight: 500;
+  font-size: 14px;
+  color: $color-text-muted;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 1rem;
+}
+
+:global(.vtex-render__container-id-my-profile-link)::after,
+:global(.vtex-render__container-id-my-addresses-link)::after,
+:global(.vtex-render__container-id-my-orders-link)::after,
+:global(.vtex-render__container-id-my-cards-link)::after,
+:global(.vtex-render__container-id-my-account-link.authentication)::after {
+  content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNyIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDcgMTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wLjc1IDAuNzVMNS43NSA1Ljc1TDAuNzUgMTAuNzUiIHN0cm9rZT0iIzg1ODU4OCIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K);
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+:global(.vtex-render__container-id-my-profile-link) a,
+:global(.vtex-render__container-id-my-addresses-link) a,
+:global(.vtex-render__container-id-my-orders-link) a,
+:global(.vtex-render__container-id-my-cards-link) a,
+:global(.vtex-render__container-id-my-account-link.authentication) a {
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+  color: $color-text-muted;
+}
+
+:global(.vtex-my-account-1-x-menuLink):last-child {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 1.5rem;
+}
+
+:global(.vtex-my-account-1-x-menuLink):last-child::after {
+  content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNyIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDcgMTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wLjc1IDAuNzVMNS43NSA1Ljc1TDAuNzUgMTAuNzUiIHN0cm9rZT0iIzg1ODU4OCIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K);
+  padding-top: 0.5rem;
+}
+
+/* DADOS PESSOAIS */
+:global(.vtex-my-account-1-x-profile__header)
+:global(.vtex-pageHeader__title),
+:global(.vtex-my-account-1-x-profileEdit__header)
+:global(.vtex-pageHeader__title){
+   font-family: $font-poppins;
+   font-weight: 500;
+   font-size: 20px;
+   color: $color-accent;
+   border-bottom: 1px solid $color-slider-dots;
+   padding-bottom: 1.25rem;
+}
+
+:global(.vtex-my-account-1-x-profileBoxContainer)
+:global(.vtex-my-account-1-x-boxContainer),
+:global(.vtex-my-account-1-x-newsletterBoxContainer)
+:global(.vtex-my-account-1-x-boxContainer),
+:global(.vtex-my-account-1-x-profileFormBoxContainer)
+:global(.vtex-my-account-1-x-boxContainer) {
+  border: 1px solid $color-slider-dots;
+  border-radius: 8px;
+}
+
+:global(.vtex-profile-form-3-x-profileSummary),
+:global(.vtex-my-account-1-x-boxContainerBody),
+:global(.vtex-profile-form-3-x-profileContainer){
+  font-family: $font-poppins;
+  font-size: 14px;
+  color: $color-text-secondary;
+}
+
+:global(.vtex-profile-form-3-x-profileSummary)
+:global(.vtex-my-account-1-x-nameContainer),
+:global(.vtex-profile-form-3-x-profileSummary)
+:global(.vtex-my-account-1-x-genderContainer),
+:global(.vtex-profile-form-3-x-profileSummary)
+:global(.vtex-my-account-1-x-phoneNumberContainer) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 13px;
+}
+
+:global(.vtex-profile-form-3-x-profileSummary)
+:global(.vtex-my-account-1-x-dataEntryChildren) {
+ font-family: $font-poppins;
+ font-size: 12px;
+ color: $color-text-muted;
+}
+
+:global(.vtex-profile-form-3-x-profileSummary)
+:global(.vtex-my-account-1-x-documentsSubContainer)
+:global(.vtex-my-account-1-x-dataEntryLabel) {
+  text-transform: math-auto;
+}
+
+:global(.vtex-my-account-1-x-profileBoxContainer)
+:global(.vtex-my-account-1-x-boxContainerFooter)
+:global(.vtex-button) {
+  background-color: $color-accent;
+  border-radius: 8px;
+  color: $color-access-code-option-btn-text;
+  font-family: $font-poppins;
+  font-weight: 700;
+  font-size: 0;
+  padding: 0.625rem 1.25rem;
+  text-transform: math-auto;
+}
+
+:global(.vtex-my-account-1-x-profileBoxContainer)
+:global(.vtex-my-account-1-x-boxContainerFooter)
+:global(.vtex-button)::before {
+  content: 'Editar dados pessoais';
+  font-size: 12px;
+}
+
+:global(.vtex-my-account-1-x-newsletterBoxContainer)
+:global(.vtex-my-account-1-x-boxContainerBody)
+:global(.vtex-my-account-1-x-newsletterContainerTitle) {
+  color: $color-accent;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 0.625rem;
+}
+
+:global(.vtex-my-account-1-x-newsletterBoxContainer)
+:global(.vtex-my-account-1-x-boxContainerBody)
+:global(.vtex-my-account-1-x-newsletterContainerMessage) {
+  color: $color-text-muted;
+  font-size: 12px;
+  font-family: $font-lato;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+
+:global(.vtex-my-account-1-x-newsletterBoxContainer)
+:global(.vtex-my-account-1-x-boxContainerBody)
+:global(.vtex-my-account-1-x-passwordBox)
+:global(.vtex-checkbox__label) {
+  color: $color-accent;
+  font-size: 12px;
+  font-family: $font-poppins;
+  font-weight: 400;
+  margin-top: 0.188rem;
+}
+
+:global(.vtex-my-account-1-x-newsletterBoxContainer)
+:global(.vtex-my-account-1-x-boxContainerBody)
+:global(.vtex-my-account-1-x-passwordBox)
+:global(.vtex-checkbox__input) {
+  top: 2px;
+}
+
+:global(.vtex-my-account-1-x-newsletterBoxContainer)
+:global(.vtex-my-account-1-x-boxContainerBody)
+:global(.vtex-my-account-1-x-passwordBox)
+:global(.vtex-checkbox__box-wrapper) {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid $color-accent;
+  border-radius: 2px;
+  margin-right: 0.5rem;
+  position: relative;
+  background-color: $color-white;
+}
+
+
+:global(.vtex-my-account-1-x-newsletterBoxContainer)
+:global(.vtex-my-account-1-x-boxContainerBody)
+:global(.vtex-my-account-1-x-passwordBox)
+:global(.vtex-checkbox__box-wrapper)
+:global(.vtex-checkbox__box.c-on-action-primary) {
+  color: $color-accent;
+}
+
+/* DADOS PESSOAIS EDITAR */
+:global(.vtex-profile-form-3-x-profileContainer) {
+   font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
