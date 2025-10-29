@@ -1,0 +1,23 @@
+{
+    "search-bar#search-bar-desktop": {
+        "blocks": [
+            "autocomplete-result-list.v2#autocomplete-desktop"
+        ],
+        "props": {
+            "openAutocompleteOnFocus": true,
+            "autoFocus": false,
+            "placeholder": "Digite sua busca",
+            "blockClass": "search-bar-desktop"
+        }
+    },
+    "autocomplete-result-list.v2#autocomplete-desktop": {
+        "title": "Resultado da busca",
+		"blocks": [
+			"product-summary.shelf#shelf-product-default"
+		],
+		"props": {
+            "HorizontalProductSummary": "product-summary.shelf#shelf-product-default",
+			"maxSuggestedProducts": 4   
+		}
+	}
+}

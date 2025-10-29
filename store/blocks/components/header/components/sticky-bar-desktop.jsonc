@@ -35,6 +35,7 @@
             "blockClass": "right-side-header-desktop"
         },
         "children": [
+            "search-bar#search-bar-desktop",
             "flex-layout.row#redirect-action-btns-desktop"
         ]
     },
