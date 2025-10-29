@@ -108,7 +108,7 @@
     border: 1px solid $color-shelf-default-border-element;
     border-radius: 16px;
     height: auto !important;
-    min-height: 360px;
+    min-height: 391px;
 
     @include desktop {
         min-height: 410px !important;
@@ -124,6 +124,10 @@
                 z-index: 100 !important;
             }
         }
+    }
+
+    @include desktopXXXLarge {
+        min-height: 450px !important;
     }
 }
 
