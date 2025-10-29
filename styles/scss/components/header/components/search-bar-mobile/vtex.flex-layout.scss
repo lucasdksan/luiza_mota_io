@@ -1,0 +1,33 @@
+@use "../../../../settings/index" as *;
+
+
+.flexRow--autocomplete-mobile--container-info {
+    .flexRowContent--autocomplete-mobile--container-info {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+
+        .stretchChildrenWidth {
+            align-items: flex-start;
+            padding: 0px !important;
+            justify-content: flex-start;
+        }
+    }
+}
+
+.flexRowContent--product-price-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .stretchChildrenWidth {
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: auto !important;
+        padding: 0px !important;
+
+        &:last-child {
+            width: 100% !important;
+        }
+    }
+}

@@ -7,6 +7,42 @@
     }
 }
 
+@mixin tablet {
+    @media (min-width: 768px) and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin desktopLarge {
+    @media (min-width: 1024px) and (max-width: 1280px) {
+        @content;
+    }
+}
+
+@mixin desktopXLarge {
+    @media (min-width: 1280px) and (max-width: 1536px) {
+        @content;
+    }
+}
+
+@mixin desktopXXLarge {
+    @media (min-width: 1536px) and (max-width: 1890px) {
+        @content;
+    }
+}
+
+@mixin desktopXXXLarge {
+    @media (min-width: 1890px) and (max-width: 2560px) {
+        @content;
+    }
+}
+
 @mixin overlay {
     background-color: $color-gray-600;
     opacity: 0.7 !important;

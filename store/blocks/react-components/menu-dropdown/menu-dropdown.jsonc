@@ -7,7 +7,30 @@
                 {
                     "id": "brincos",
                     "label": "brincos",
+                    "emphasis": false,
                     "categories": [
+                        {
+                            "title": "Lorem ipsum",
+                            "title_link": "/brincos",
+                            "items": [
+                                {
+                                    "name": "Aliança",
+                                    "link": "/brincos/aliança"
+                                },
+                                {
+                                    "name": "Coleção Anéis",
+                                    "link": "/brincos/coleção-anéis"
+                                },
+                                {
+                                    "name": "Falange",	
+                                    "link": "/brincos/falange"
+                                }
+                            ],
+                            "actionButton": {
+                                "text": "Ver todos",
+                                "url": "/brincos"
+                            }
+                        },
                         {
                             "title": "Material",
                             "title_link": "/brincos",
@@ -40,6 +63,18 @@
                                 },
                                 {
                                     "name": "Cravejado",
+                                    "link": "/roupas/saias"
+                                },
+                                {
+                                    "name": "Coração",
+                                    "link": "/roupas/saias"
+                                },
+                                {
+                                    "name": "Geométrico",
+                                    "link": "/roupas/saias"
+                                },
+                                {
+                                    "name": "Geométrico",
                                     "link": "/roupas/saias"
                                 },
                                 {
@@ -116,14 +151,14 @@
                                 }
                             ],
                             "actionButton": {
-                                "text": "VER TUDO",
+                                "text": "Ver todos",
                                 "url": "/roupas"
                             }
                         }
                     ],
                     "bannerImages": [
                         {
-                            "src": "https://artybrand.vtexassets.com/assets/vtex.file-manager-graphql/images/3cc447c5-d2dc-46fe-be44-6ec9ffd07c05___06ff5c883e51ecf24a1ffb001dc295c3.jpg",
+                            "src": "assets/banners/banner-menu-desktop.png",
                             "alt": "Banner promocional 1"
                         }
                     ]
@@ -131,66 +166,63 @@
                 {
                     "id": "aneis",
                     "label": "Anéis",
+                    "emphasis": false,
                     "categories": [],
                     "bannerImages": []
                 },
                 {
                     "id": "colares",
                     "label": "Colares",
+                    "emphasis": false,
                     "categories": [],
                     "bannerImages": []
                 },
                 {
                     "id": "berloques",
                     "label": "Berloques",
+                    "emphasis": false,
                     "categories": [],
                     "bannerImages": []
                 },
                 {
                     "id": "pulseiras",
                     "label": "Pulseiras",
+                    "emphasis": false,
                     "categories": [],
                     "bannerImages": []
                 },
                 {
                     "id": "conjuntos",
                     "label": "Conjuntos",
+                    "emphasis": false,
                     "categories": [],
                     "bannerImages": []
                 },
                 {
                     "id": "tornozeleiras",
                     "label": "Tornozeleiras",
-                    "categories": [],
-                    "bannerImages": []
-                },
-                {
-                    "id": "masculino",
-                    "label": "Masculino",
-                    "categories": [],
-                    "bannerImages": []
-                },
-                {
-                    "id": "feminino",
-                    "label": "Feminino",
+                    "emphasis": false,
                     "categories": [],
                     "bannerImages": []
                 },
                 {
                     "id": "relogios",
                     "label": "Relógios",
+                    "emphasis": false,
                     "categories": [],
                     "bannerImages": []
                 },
                 {
                     "id": "fornitura",
                     "label": "Fornitura",
+                    "emphasis": false,
                     "categories": [],
                     "bannerImages": []
                 },
                 {
                     "id": "brasil-off",
                     "label": "Brasil Off",
+                    "emphasis": true,
                     "categories": [],
                     "bannerImages": []
                 }
@@ -200,10 +232,7 @@
     "flex-layout.row#menu-dropdown-container": {
         "title": "Container do Menu Dropdown",
         "props": {
-            "blockClass": "menu-dropdown-container",
-            "fullWidth": true,
-            "preventHorizontalStretch": true,
-            "horizontalAlign": "center"
+            "blockClass": "menu-dropdown-container"
         }
     }
 }

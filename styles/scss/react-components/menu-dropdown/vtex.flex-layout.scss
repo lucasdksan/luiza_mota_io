@@ -1,46 +1,54 @@
 @use "../../settings/index" as *;
 
 .flexRow--menu-dropdown-container {
+  width: 100%;
+  padding: 18px 160px;
+
   :global(.vtex-menu-dropdown--container) {
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
-    z-index: 10;
+
+    @include container-fluid;
   }
 
   :global(.vtex-menu-dropdown--header) {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 28px;
-    height: 50px;
+    justify-content: space-around;
+    gap: 50px;
     width: 100%;
-    max-width: 992px;
-    margin: 0 auto;
+    margin: 0px;
     list-style: none;
     padding: 0px !important;
   }
 
   :global(.vtex-menu-dropdown--menu-item) {
-   
-    font-size: 14px;
+    font-family: $font-poppins;
+    font-style: normal;
     font-weight: 400;
-    line-height: 18px;
-   
+    font-size: 14px;
+    line-height: 150%;
+    color: $color-gray-400;
+
     text-transform: uppercase;
     cursor: pointer;
-    padding: 16px 8px;
     transition: all 0.3s ease;
     position: relative;
+    padding: 0px !important;
+    text-wrap: nowrap;
+
+    &:global(.vtex-menu-dropdown--menu-item-emphasis) {
+      color: $color-primary !important;
+    }
 
     &:hover {
-     
+      color: $color-primary;
     }
   }
 
   :global(.vtex-menu-dropdown--menu-item-active) {
-   
-    
+    color: $color-primary;
+
     &::after {
       content: '';
       position: absolute;
@@ -48,7 +56,7 @@
       left: 0;
       right: 0;
       height: 2px;
-     
+
     }
   }
 
@@ -57,94 +65,110 @@
     top: 100%;
     left: 0;
     right: 0;
-   
-    padding: 32px 64px;
+    background-color: $color-white;
+    z-index: 9999 !important;
+
+    padding: 30px 150px 10px 150px;
     display: flex;
     gap: 28px;
     align-items: flex-start;
-    justify-content: center;
-    z-index: 1000;
-    min-height: 338px;
-   
+    justify-content: space-between;
+    min-height: 100%;
+    max-height: 300px;
     animation: fadeInDown 0.3s ease;
-    /* Garantir que não há gaps entre o header e o dropdown */
     margin-top: -1px;
-    /* Transição suave para melhor UX */
     transition: opacity 0.2s ease, transform 0.2s ease;
   }
 
   :global(.vtex-menu-dropdown--category-section) {
-    width: 210px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 13px;
+    min-width: 134px;
+    max-height: 200px;
   }
 
   :global(.vtex-menu-dropdown--category-title) {
-   
-    font-size: 14px;
+    font-family: $font-poppins;
+    font-style: normal;
     font-weight: 500;
-    line-height: 18px;
-   
-    text-transform: uppercase;
-    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: $color-primary;
+
+    &:first-child {
+      margin-bottom: 0px !important;
+    }
   }
 
   :global(.vtex-menu-dropdown--category-list) {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
+    overflow-y: auto;
+
+    scrollbar-width: thin;
+    scrollbar-color: $color-primary $color-gray-700;
+
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $color-gray-700;
+      border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $color-primary;
+      border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: $color-primary;
+    }
+
+    &::-webkit-scrollbar-button {
+      display: none;
+      height: 0;
+      width: 0;
+    }
   }
 
+
   :global(.vtex-menu-dropdown--category-item) {
-   
-    font-size: 14px;
+    font-family: $font-poppins;
+    font-style: normal;
     font-weight: 400;
-    line-height: 18px;
-   
+    font-size: 12px;
+    line-height: 150%;
+    color: $color-gray-300;
+
     cursor: pointer;
     transition: color 0.3s ease;
     text-decoration: none;
     display: block;
 
     &:hover {
-     
+      color: $color-primary;
     }
   }
 
   :global(.vtex-menu-dropdown--action-button) {
-   
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 400;
     font-size: 12px;
-    font-weight: 500;
-    line-height: 18px;
-   
-    text-decoration: none;
-    text-transform: uppercase;
+    line-height: 150%;
+    text-decoration-line: underline;
+    color: $color-gray-300;
     cursor: pointer;
     transition: color 0.3s ease;
-    margin-top: 8px;
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-
-    &::after {
-      content: "";
-      display: block;
-      width: 16px;
-      height: 16px;
-      background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyLjM3NSA0VjEwLjVDMTIuMzc1IDEwLjU5OTUgMTIuMzM1NSAxMC42OTQ4IDEyLjI2NTIgMTAuNzY1MkMxMi4xOTQ5IDEwLjgzNTUgMTIuMDk5NSAxMC44NzUgMTIgMTAuODc1QzExLjkwMDYgMTAuODc1IDExLjgwNTIgMTAuODM1NSAxMS43MzQ5IDEwLjc2NTJDMTEuNjY0NiAxMC42OTQ4IDExLjYyNSAxMC41OTk1IDExLjYyNSAxMC41VjQuOTA1TDQuMjY1MDUgMTIuMjY1QzQuMTkzOTYgMTIuMzMxMiA0LjA5OTkzIDEyLjM2NzMgNC4wMDI3OCAxMi4zNjU2QzMuOTA1NjMgMTIuMzYzOSAzLjgxMjk0IDEyLjMyNDUgMy43NDQyMyAxMi4yNTU4QzMuNjc1NTMgMTIuMTg3MSAzLjYzNjE3IDEyLjA5NDQgMy42MzQ0NiAxMS45OTczQzMuNjMyNzQgMTEuOTAwMSAzLjY2ODgxIDExLjgwNjEgMy43MzUwNSAxMS43MzVMMTEuMDk1IDQuMzc1SDUuNTAwMDVDNS40MDA1OSA0LjM3NSA1LjMwNTIxIDQuMzM1NDkgNS4yMzQ4OCA0LjI2NTE2QzUuMTY0NTUgNC4xOTQ4NCA1LjEyNTA1IDQuMDk5NDYgNS4xMjUwNSA0QzUuMTI1MDUgMy45MDA1NCA1LjE2NDU1IDMuODA1MTYgNS4yMzQ4OCAzLjczNDgzQzUuMzA1MjEgMy42NjQ1MSA1LjQwMDU5IDMuNjI1IDUuNTAwMDUgMy42MjVIMTJDMTIuMDk5NSAzLjYyNSAxMi4xOTQ5IDMuNjY0NTEgMTIuMjY1MiAzLjczNDgzQzEyLjMzNTUgMy44MDUxNiAxMi4zNzUgMy45MDA1NCAxMi4zNzUgNFoiIGZpbGw9IiM1QzVDNUMiLz4KPC9zdmc+Cg==");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-      transition: transform 0.3s ease;
-    }
 
     &:hover {
-     
-      
-      &::after {
-        transform: translateX(2px);
-      }
+      color: $color-primary;
     }
   }
 
@@ -155,8 +179,7 @@
   }
 
   :global(.vtex-menu-dropdown--banner-image) {
-    width: 206px;
-    height: 274px;
+    max-width: 500px;
     overflow: hidden;
     border-radius: 0;
   }

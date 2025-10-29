@@ -1,0 +1,234 @@
+@use "../../../../settings/index" as *;
+
+.biggy-autocomplete {
+    position: fixed;
+    left: 50%;
+    transform: translate3d(-50%, 5px, 0px);
+    max-width: 1280px;
+    padding: 14px 20px;
+    max-height: 620px !important;
+    overflow: hidden;
+
+    .history-and-top-wrapper {
+        padding: 0px !important;
+
+        .itemListTitle {
+            margin: 0px 0px 20px 0px;
+            padding: 0px !important;
+            font-family: $font-lato;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: $color-primary;
+        }
+
+        .itemListList {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+
+            .itemListItem {
+                width: 100%;
+                height: auto;
+
+                .itemListLink {
+                    display: flex;
+                    width: 100%;
+                    height: auto;
+                    align-items: center;
+                    justify-content: flex-start;
+                    padding: 0px !important;
+
+                    .itemListPrefix {
+                        font-family: $font-lato;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 150%;
+                        color: $color-gray-500;
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        padding: 5px;
+                        gap: 10px;
+                        width: 24px;
+                        height: 24px;
+                        border: 1px solid $color-gray-500;
+                        border-radius: 210px;
+                    }
+
+                    .itemListLinkTitle {
+                        font-family: $font-poppins;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 150%;
+                        color: $color-gray-500;
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+    }
+
+    .itemList--suggestion {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 20px;
+
+        .itemListTitle {
+            font-size: 0px !important;
+            margin: 0px !important;
+            padding: 0px !important;
+
+            &::before {
+                content: "Sugestões de produtos";
+                font-family: $font-poppins;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+                color: $color-gray-400;
+                margin: 0px;
+                padding: 0px !important;
+                text-transform: capitalize !important;
+            }
+        }
+
+        .itemListList {
+            .itemListItem {
+                .itemListLink {
+                    padding: 0px !important;
+
+                    .itemListLinkTitle {
+                        font-family: $font-lato;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 150%;
+                        color: $color-gray-300;
+                    }
+                }
+
+                .itemListSubItem {
+                    display: none !important;
+                }
+            }
+        }
+    }
+
+    .tileList {
+        border: none !important;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar-track {
+            background: #F7F7F8;
+            border-radius: 3px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #FF78B0;
+            border-radius: 3px;
+            border: 1px solid #F7F7F8;
+        }
+
+        &::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        scrollbar-width: thin;
+        scrollbar-color: #FF78B0 #F7F7F8;
+
+        .tileListTitle {
+            display: none !important;
+        }
+
+        .tileListList {
+            margin: 0px !important;
+            border: none !important;
+            gap: 20px;
+        }
+
+        .tileListFooter {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+
+            .tileListSeeMore {
+                font-size: 0px !important;
+                text-decoration: none !important;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 8px 20px;
+                gap: 10px;
+                max-height: 38px;
+                border: 1px solid $color-primary;
+                border-radius: 8px;
+
+                &::before {
+                    content: "ver mais produtos";
+                    font-family: $font-poppins;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 150%;
+                    text-align: center;
+                    color: $color-primary;
+                }
+            }
+        }
+
+        .tileListItem {
+            .element {
+                .imageContainer {
+                    width: 60px;
+                    height: 60px;
+
+                    .image {
+                        width: 100%;
+                        height: auto;
+                        object-fit: cover;
+                        display: block;
+                    }
+                }
+
+                .information {
+                    .productNameContainer {
+                        .productBrand {
+                            font-family: $font-lato;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 150%;
+                            color: $color-gray-400;
+                        }
+                    }
+
+                    .priceContainer {
+                        .sellingPriceValue {
+                            font-family: $font-lato;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 150%;
+                            color: $color-gray-400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
