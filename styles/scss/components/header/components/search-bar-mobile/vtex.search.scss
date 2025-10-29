@@ -5,10 +5,11 @@
     left: 50%;
     transform: translate3d(-50%, 0px, 0px);
     max-width: 1280px;
-    padding: 0px !important;
+    padding: 14px 20px;
+    max-height: 620px !important;
 
     .history-and-top-wrapper {
-        padding: 14px 20px;
+        padding: 0px !important;
 
         .itemListTitle {
             margin: 0px 0px 20px 0px;
@@ -26,11 +27,11 @@
             flex-direction: column;
             align-items: flex-start;
             gap: 20px;
-            
+
             .itemListItem {
                 width: 100%;
                 height: auto;
-    
+
                 .itemListLink {
                     display: flex;
                     width: 100%;
@@ -51,7 +52,7 @@
                         align-items: center;
                         justify-content: center;
 
-                        padding: 10px;
+                        padding: 5px;
                         gap: 10px;
                         width: 24px;
                         height: 24px;
@@ -70,6 +71,74 @@
                     }
                 }
             }
+        }
+    }
+
+    .itemList--suggestion {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 20px;
+
+        .itemListTitle {
+            font-size: 0px !important;
+            margin: 0px !important;
+            padding: 0px !important;
+
+            &::before {
+                content: "Sugestões de produtos";
+                font-family: $font-poppins;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+                color: $color-gray-400;
+                margin: 0px;
+                padding: 0px !important;
+                text-transform: capitalize !important;
+            }
+        }
+
+        .itemListList {
+            .itemListItem {
+                .itemListLink {
+                    padding: 0px !important;
+
+                    .itemListLinkTitle {
+                        font-family: $font-lato;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 150%;
+                        color: $color-gray-300;
+                    }
+                }
+
+                .itemListSubItem {
+                    display: none !important;
+                }
+            }
+        }
+    }
+
+    .tileList {
+        .tileListTitle {
+            display: none !important;
+        }
+
+        .tileListList {
+            margin: 0px !important;
+            border: none !important;
+        }
+
+        .tileListFooter {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            width: 100%;
+            height: auto;
         }
     }
 }
