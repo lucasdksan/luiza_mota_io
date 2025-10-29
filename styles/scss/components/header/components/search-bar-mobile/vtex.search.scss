@@ -1,0 +1,75 @@
+@use "../../../../settings/index" as *;
+
+.biggy-autocomplete {
+    position: fixed;
+    left: 50%;
+    transform: translate3d(-50%, 0px, 0px);
+    max-width: 1280px;
+    padding: 0px !important;
+
+    .history-and-top-wrapper {
+        padding: 14px 20px;
+
+        .itemListTitle {
+            margin: 0px 0px 20px 0px;
+            padding: 0px !important;
+            font-family: $font-lato;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: $color-primary;
+        }
+
+        .itemListList {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            
+            .itemListItem {
+                width: 100%;
+                height: auto;
+    
+                .itemListLink {
+                    display: flex;
+                    width: 100%;
+                    height: auto;
+                    align-items: center;
+                    justify-content: flex-start;
+                    padding: 0px !important;
+
+                    .itemListPrefix {
+                        font-family: $font-lato;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 150%;
+                        color: $color-gray-500;
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        padding: 10px;
+                        gap: 10px;
+                        width: 24px;
+                        height: 24px;
+                        border: 1px solid $color-gray-500;
+                        border-radius: 210px;
+                    }
+
+                    .itemListLinkTitle {
+                        font-family: $font-poppins;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 150%;
+                        color: $color-gray-500;
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
