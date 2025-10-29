@@ -151,7 +151,7 @@
                                 }
                             ],
                             "actionButton": {
-                                "text": "VER TUDO",
+                                "text": "Ver todos",
                                 "url": "/roupas"
                             }
                         }
@@ -201,20 +201,6 @@
                 {
                     "id": "tornozeleiras",
                     "label": "Tornozeleiras",
-                    "emphasis": false,
-                    "categories": [],
-                    "bannerImages": []
-                },
-                {
-                    "id": "masculino",
-                    "label": "Masculino",
-                    "emphasis": false,
-                    "categories": [],
-                    "bannerImages": []
-                },
-                {
-                    "id": "feminino",
-                    "label": "Feminino",
                     "emphasis": false,
                     "categories": [],
                     "bannerImages": []
