@@ -16,6 +16,7 @@
 			"product-summary.shelf#autocomplete"
 		],
 		"props": {
+            "HorizontalProductSummary": "product-summary.shelf#autocomplete",
 			"maxSuggestedProducts": 8   
 		}
 	},
