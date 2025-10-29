@@ -3,10 +3,11 @@
 .biggy-autocomplete {
     position: fixed;
     left: 50%;
-    transform: translate3d(-50%, 0px, 0px);
+    transform: translate3d(-50%, 5px, 0px);
     max-width: 1280px;
     padding: 14px 20px;
     max-height: 620px !important;
+    overflow: hidden;
 
     .history-and-top-wrapper {
         padding: 0px !important;
@@ -124,6 +125,27 @@
     }
 
     .tileList {
+        border: none !important;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar-track {
+            background: #F7F7F8;
+            border-radius: 3px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #FF78B0;
+            border-radius: 3px;
+            border: 1px solid #F7F7F8;
+        }
+
+        &::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        scrollbar-width: thin;
+        scrollbar-color: #FF78B0 #F7F7F8;
+
         .tileListTitle {
             display: none !important;
         }
@@ -131,6 +153,7 @@
         .tileListList {
             margin: 0px !important;
             border: none !important;
+            gap: 20px;
         }
 
         .tileListFooter {
@@ -139,6 +162,73 @@
             align-items: flex-start;
             width: 100%;
             height: auto;
+            margin-top: 20px;
+
+            .tileListSeeMore {
+                font-size: 0px !important;
+                text-decoration: none !important;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 8px 20px;
+                gap: 10px;
+                max-height: 38px;
+                border: 1px solid $color-primary;
+                border-radius: 8px;
+
+                &::before {
+                    content: "ver mais produtos";
+                    font-family: $font-poppins;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 150%;
+                    text-align: center;
+                    color: $color-primary;
+                }
+            }
+        }
+
+        .tileListItem {
+            .element {
+                .imageContainer {
+                    width: 60px;
+                    height: 60px;
+
+                    .image {
+                        width: 100%;
+                        height: auto;
+                        object-fit: cover;
+                        display: block;
+                    }
+                }
+
+                .information {
+                    .productNameContainer {
+                        .productBrand {
+                            font-family: $font-lato;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 150%;
+                            color: $color-gray-400;
+                        }
+                    }
+
+                    .priceContainer {
+                        .sellingPriceValue {
+                            font-family: $font-lato;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 150%;
+                            color: $color-gray-400;
+                        }
+                    }
+                }
+            }
         }
     }
 }
