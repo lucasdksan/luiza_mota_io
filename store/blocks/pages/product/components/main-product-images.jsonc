@@ -1,0 +1,14 @@
+{
+  "product-images#main-product-images-mobile": {
+    "title": "Imagens do produto Mobile",
+    "props": {
+      "aspectRatio": {
+        "desktop": "auto",
+        "phone": "auto"
+      },
+      "blockClass": "main-product-images-mobile",
+      "showNavigationArrows": false,
+      "showPaginationDots": true
+    }
+  }
+}
