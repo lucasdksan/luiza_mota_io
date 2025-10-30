@@ -1,0 +1,83 @@
+{
+    "flex-layout.row#product-shelf-list": {
+        "title": "Container da Seção de Produtos Coleção not found",
+        "props": {
+            "blockClass": [
+                "product-shelf-list"
+            ],
+            "rowGap": 4,
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "flex-layout.col#section-title-container-product-shelf-list"
+        ]
+    },
+    "flex-layout.col#section-title-container-product-shelf-list": {
+        "title": "Área principal da coleção not found",
+        "props": {
+            "blockClass": [
+                "section-title-container--product-shelf-list"
+            ],
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "rich-text#product-shelf-list-heading",
+            "responsive-layout.mobile#product-shelf-list-mobile",
+            "responsive-layout.desktop#product-shelf-list-desktop"
+        ]
+    },
+    "rich-text#product-shelf-list-heading": {
+        "title": "Título Principal da Seção not found",
+        "props": {
+            "blockClass": "product-shelf-list-heading",
+            "text": "Mais produtos para você"
+        }
+    },
+    "responsive-layout.mobile#product-shelf-list-mobile": {
+        "children": [
+            "list-context.product-list#product-shelf-list-list-context-mobile"
+        ]
+    },
+    "responsive-layout.desktop#product-shelf-list-desktop": {
+        "children": [
+            "list-context.product-list#product-shelf-list-list-context-desktop"
+        ]
+    },
+    "list-context.product-list#product-shelf-list-list-context-mobile": {
+        "title": "Lista de produtos mobile",
+        "props": {
+            "orderBy": "OrderByNameASC",
+            "maxItems": 8,
+            "hideUnavailableItems": false,
+            "collection": "591",
+            "blockClass": [
+                "product-shelf-list-list-context"
+            ]
+        },
+        "blocks": [
+            "product-summary.shelf#shelf-product-default"
+        ],
+        "children": [
+            "slider-layout#slider-product-shelf-list-mobile"
+        ]
+    },
+    "list-context.product-list#product-shelf-list-list-context-desktop": {
+        "title": "Lista de produtos desktop",
+        "props": {
+            "orderBy": "OrderByNameASC",
+            "maxItems": 8,
+            "hideUnavailableItems": false,
+            "collection": "591",
+            "blockClass": [
+                "product-shelf-list-list-context",
+                "product-shelf-list-list-context--desktop"
+            ]
+        },
+        "blocks": [
+            "product-summary.shelf#shelf-product-default"
+        ],
+        "children": [
+            "slider-layout#slider-product-shelf-list-desktop"
+        ]
+    }
+}

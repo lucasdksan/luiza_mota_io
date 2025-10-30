@@ -73,5 +73,17 @@
     },
     "two7-total-products-custom": {
         "component": "TotalProductsCustom"
+    },
+    "two7-product-name-pdp-seo": {
+        "component": "ProductNamePdpSeo"
+    },
+    "two7-shipping-simulator-custom": {
+        "component": "ShippingSimulatorCustom"
+    },
+    "two7-share-social-media": {
+        "component": "ShareSocialMedia"
+    },
+    "two7-product-definitions": {
+        "component": "ProductDefinitions"
     }
 }

@@ -6,7 +6,7 @@ export function BannerImage({ src, alt }) {
 
     return (
         <div className={imageClass}>
-            <img src={src} alt={alt} />
+            <img className={classGenerator("vtex-menu-dropdown", "banner-image-img")} src={src} alt={alt} />
         </div>
     );
 }

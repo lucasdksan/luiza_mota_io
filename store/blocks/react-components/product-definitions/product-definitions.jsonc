@@ -1,0 +1,14 @@
+{
+    "two7-product-definitions": {
+        "title": "Definições do produto",
+        "props": {
+            "VtexFlexLayout": "flex-layout.row#product-definitions"
+        }
+    },
+    "flex-layout.row#product-definitions": {
+        "title": "Flex layout das definições do produto",
+        "props": {
+            "blockClass": "product-definitions"
+        }
+    }
+}

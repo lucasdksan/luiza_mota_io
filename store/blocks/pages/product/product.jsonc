@@ -1,0 +1,21 @@
+{
+    "store.product": {
+        "children": [
+            "responsive-layout.desktop#pdp-desktop",
+            "responsive-layout.mobile#pdp-mobile"
+        ]
+    },
+    "responsive-layout.desktop#pdp-desktop": {
+        "children": [
+            "flex-layout.row#product-breadcrumb",
+            "flex-layout.row#pdp-main-content-desktop",
+            "two7-product-definitions",
+            "flex-layout.row#product-shelf-list"
+        ]
+    },
+    "responsive-layout.mobile#pdp-mobile": {
+        "children": [
+            "flex-layout.row#pdp-main-content-mobile"
+        ]
+    }
+}

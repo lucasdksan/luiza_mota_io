@@ -13,6 +13,7 @@ export function MenuHeader({ menuItems, activeItem, onMouseEnter }) {
                     item={item}
                     isActive={activeItem === item.id}
                     onMouseEnter={onMouseEnter}
+                    emphasis={item.emphasis}
                 />
             ))}
         </ul>

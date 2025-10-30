@@ -20,6 +20,12 @@ export const schema = {
                         description: "Texto exibido no menu principal",
                         type: "string"
                     },
+                    emphasis: {
+                        title: "Texto em destaque",
+                        description: "Texto em destaque do item",
+                        type: "boolean",
+                        default: false
+                    },
                     categories: {
                         title: "Categorias",
                         description: "Lista de categorias do submenu",

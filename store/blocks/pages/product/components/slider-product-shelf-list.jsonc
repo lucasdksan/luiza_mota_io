@@ -1,0 +1,42 @@
+{
+    "slider-layout#slider-product-shelf-list-mobile": {
+        "title": "Slider de produtos mobile",
+        "props": {
+            "itemsPerPage": {
+                "desktop": 5,
+                "tablet": 3,
+                "phone": 1
+            },
+            "infinite": true,
+            "fullWidth": true,
+            "centerMode": "to-the-left",
+            "showNavigationArrows": "desktopOnly",
+            "showPaginationDots": "always",
+            "centerModeSlidesGap": 12,
+            "blockClass": [
+                "slider-product-shelf-list",
+                "slider-product-shelf-list-mobile"
+            ]
+        }
+    },
+    "slider-layout#slider-product-shelf-list-desktop": {
+        "title": "Slider de produtos desktop",
+        "props": {
+            "itemsPerPage": {
+                "desktop": 5,
+                "tablet": 3,
+                "phone": 1
+            },
+            "infinite": true,
+            "fullWidth": true,
+            "centerMode": "disabled",
+            "showNavigationArrows": "desktopOnly",
+            "showPaginationDots": "never",
+            "centerModeSlidesGap": 32,
+            "blockClass": [
+                "slider-product-shelf-list",
+                "slider-product-shelf-list-mobile"
+            ]
+        }
+    }
+}

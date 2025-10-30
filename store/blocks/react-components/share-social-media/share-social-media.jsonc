@@ -1,0 +1,35 @@
+{
+    "two7-share-social-media": {
+        "props": {
+            "VtexFlexLayout": "flex-layout.row#share-social-media",
+            "socialMediaList": [
+                {
+                    "name": "Instagram",
+                    "icon": "assets/icons/instagram.svg",
+                    "link": "https://www.instagram.com/"
+                },
+                {
+                    "name": "Twitter",
+                    "icon": "assets/icons/twitter.svg",
+                    "link": "https://www.twitter.com/"
+                },
+                {
+                    "name": "Facebook",
+                    "icon": "assets/icons/facebook.svg",
+                    "link": "https://www.facebook.com/"
+                },
+                {
+                    "name": "Whatsapp",
+                    "icon": "assets/icons/whatsapp.svg",
+                    "link": "https://www.whatsapp.com/"
+                }
+            ]
+        }
+    },
+    "flex-layout.row#share-social-media": {
+        "title": "Flex layout do compartilhamento de redes sociais",
+        "props": {
+            "blockClass": "share-social-media"
+        }
+    }
+}

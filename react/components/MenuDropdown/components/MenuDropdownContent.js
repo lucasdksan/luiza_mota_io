@@ -12,6 +12,8 @@ export function MenuDropdownContent({ activeItem, menuItems }) {
 
     if (!currentItem) return null;
 
+    if(currentItem.categories.length === 0) return null;
+
     return (
         <div className={contentClass}>
             {currentItem.categories.map((category, index) => (

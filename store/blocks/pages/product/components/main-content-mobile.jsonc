@@ -1,0 +1,18 @@
+{
+    "flex-layout.row#pdp-main-content-mobile": {
+        "title": "Conteúdo principal mobile",
+        "props": {
+            "fullWidth": true,
+            "blockClass": [
+                "pdp-main-content-mobile"
+            ]
+        },
+        "children": [
+            "flex-layout.row#product-breadcrumb",
+            "product-images#main-product-images-mobile",
+            "flex-layout.row#product-info-mobile",
+            "flex-layout.row#product-shelf-list",
+            "two7-product-definitions"
+        ]
+    }    
+}

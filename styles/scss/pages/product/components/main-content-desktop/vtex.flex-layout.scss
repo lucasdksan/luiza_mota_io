@@ -1,0 +1,21 @@
+@use '../../../../settings/index' as *;
+
+.flexRow--pdp-main-content-desktop {
+    padding: 0px 80px;
+}
+
+.flexRowContent--pdp-main-content-desktop {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+
+    @include desktop {
+        padding-bottom: 0px;
+
+        .stretchChildrenWidth {
+            justify-content: flex-start;
+        }
+        
+        @include container-fluid;
+    }
+}

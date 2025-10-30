@@ -1,0 +1,111 @@
+@use "../../../../settings/index" as *;
+
+@include desktop {
+    .biggy-autocomplete {
+        left: 0% !important;
+        transform: translate3d(0%, 75px, 0px) !important;
+        max-width: 100% !important;
+        padding: 20px 60px !important;
+        max-height: 650px !important;
+        gap: 20px;
+
+        &.biggy-js-container--hidden {
+            display: none !important;
+        }
+
+        .history-and-top-wrapper {
+            .itemListTitle {
+                font-size: 20px;
+                line-height: 130%;
+            }
+
+            .itemListList {
+                .itemListItem {
+                    &:hover {
+                        background-color: transparent !important;
+                    }
+
+                    .itemListLink {
+                        .itemListLinkTitle {
+                            font-size: 14px;
+                        }
+
+                        &:hover {
+                            background-color: transparent !important;
+
+                            .itemListPrefix {
+                                background-color: transparent !important;
+                                border-color: $color-primary;
+                                color: $color-primary;
+                            }
+
+                            .itemListLinkTitle {
+                                background-color: transparent !important;
+                                color: $color-primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .itemList--suggestion {
+            max-width: 270px !important;
+            gap: 14px;
+            margin-bottom: 0px;
+
+            .itemListTitle {
+                &::before {
+                    font-size: 20px !important;
+                    line-height: 130% !important;
+                    color: $color-primary !important;
+                }
+            }
+        }
+
+        .tileList {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            overflow-y: auto !important;
+
+            &::before {
+                content: "Mais vendidos";
+                font-family: $font-poppins;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 130%;
+                color: $color-primary;
+                text-align: left;
+                width: 100%;
+            }
+
+            .tileListList {    
+                .tileListItem {
+                    max-width: 385px;
+                }
+            }
+
+            .tileListFooter {
+                align-items: center;
+                justify-content: center;
+                margin-top: 0px;
+
+                .tileListSeeMore {
+                    &::before {
+                        font-weight: 700;
+                    }
+
+                    &:hover {
+                        background: $color-primary;
+
+                        &::before {
+                            color: $color-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
