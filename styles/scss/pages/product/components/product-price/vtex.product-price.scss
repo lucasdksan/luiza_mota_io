@@ -19,6 +19,10 @@
     line-height: 150%;
     color: $color-gray-550;
     margin-bottom: 8px;
+
+    @include desktop {
+        font-size: 20px !important;
+    }
 }
 
 .installments--pdp-main-info-price,
@@ -32,6 +36,7 @@
     line-height: 16px;
     letter-spacing: 0.02em;
     color: $color-gray-400;
+    text-wrap: nowrap;
 }
 
 .installmentsTotalValue--pdp-main-info-price,

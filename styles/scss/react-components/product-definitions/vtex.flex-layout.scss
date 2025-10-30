@@ -4,6 +4,20 @@
     padding: 20px;
     width: 100%;
     height: auto;
+
+    @include desktop {
+        padding: 60px 80px !important;
+        width: 100%;
+        height: auto;
+    }
+
+    :global(.vtex-store-components-3-x-container) {
+        padding: 0px !important;
+
+        @include desktop {
+            @include container-fluid;
+        }
+    }
 }
 
 .flexRowContent--product-definitions {
@@ -16,6 +30,10 @@
             display: flex;
             overflow-y: auto;
             gap: 8px;
+
+            @include desktop {
+                gap: 18px;
+            }
 
             :global(.vtex-product-definitions--tab) {
                 padding: 10px 20px !important;

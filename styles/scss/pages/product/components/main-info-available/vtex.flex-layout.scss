@@ -12,6 +12,12 @@
         grid-template-columns: auto 1fr;
         gap: 20px;
 
+        @include desktop {
+            .stretchChildrenWidth {
+                width: auto !important;
+            }
+        }
+
         :global(.vtex-button) {
             display: flex;
             flex-direction: row;
@@ -22,6 +28,14 @@
             max-height: 42px;
             background: $color-primary;
             border-radius: 8px;
+            transition: background 0.2s ease;
+
+            &:hover {
+                cursor: pointer;
+                background: $color-secondary!important;
+                transition: background 0.2s ease;
+                border: 1px solid $color-secondary !important;
+            }
 
             :global(.vtex-button__label) {
                 font-family: $font-poppins;
@@ -52,6 +66,11 @@
         gap: 20px;
         border: 1.2px solid $color-gray-750;
         border-radius: 16px;
+
+        @include desktop {
+            gap: 6px;
+            padding: 50px 40px !important;
+        }
 
         &::before {
             content: "Produto indisponível";

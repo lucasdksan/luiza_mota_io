@@ -26,6 +26,13 @@
     }
     line-height: 150%;
     color: $color-gray-300;
+
+    @include desktop {
+        &:hover {
+            color: $color-primary;
+            transition: color 0.2s ease;
+        }
+    }
 }
 
 .arrow {
@@ -45,6 +52,14 @@
         font-size: 14px;
         line-height: 150%;
         color: $color-gray-300;
+    }
+
+    @include desktop {
+        &:hover { 
+            &::before {
+                color: $color-primary;
+            }
+        }
     }
 
     .homeIcon {

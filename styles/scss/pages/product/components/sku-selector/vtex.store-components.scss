@@ -48,6 +48,27 @@
                         border-radius: 8px !important;
                         padding: 6px 20px;
 
+                        @include desktop {
+                            &:hover {
+                                border: 1px solid $color-primary !important;
+                                background: $color-primary !important;
+                                transition: background 0.2s ease;
+                                cursor: pointer;
+
+                                .valueWrapper--pdp-main-info {
+                                    transition: color 0.2s ease;
+                                    color: $color-white !important;
+                                    transition: background 0.2s ease;
+                                    cursor: pointer;
+                                }
+                            }
+
+                            &:active {
+                                background: $color-clean-brown !important;
+                                border: 1px solid $color-clean-brown !important;
+                            }
+                        }
+
                         .valueWrapper--pdp-main-info {
                             padding: 0px !important;
                             font-family: $font-poppins;
@@ -67,6 +88,17 @@
 
                             .valueWrapper--pdp-main-info {
                                 color: $color-primary !important;
+                            }
+
+                            @include desktop {
+                                &:hover {
+                                    border: 1px solid $color-primary !important;
+                                    background: $color-primary !important;
+    
+                                    .valueWrapper--pdp-main-info {
+                                        color: $color-white !important;
+                                    }
+                                }
                             }
                         }
                     }
@@ -94,6 +126,17 @@
                             .valueWrapper--pdp-main-info {
                                 color: $color-gray-750 !important;
                             }
+
+                            @include desktop {
+                                &:hover {
+                                    border: 1px solid $color-primary !important;
+                                    background: $color-primary !important;
+    
+                                    .valueWrapper--pdp-main-info {
+                                        color: $color-white !important;
+                                    }
+                                }
+                            }
                         }
 
                         .diagonalCross--pdp-main-info {
@@ -119,6 +162,16 @@
 
                     .skuSelectorInternalBox--pdp-main-info {
                         padding: 0px !important;
+                    }
+                }
+
+                .seeMoreButton {
+                    :global(.vtex-button) {
+                        background-color: transparent !important;
+
+                        &:hover {
+                            background-color: transparent !important;
+                        }
                     }
                 }
             }

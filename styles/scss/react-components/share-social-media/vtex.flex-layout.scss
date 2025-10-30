@@ -38,6 +38,15 @@
                 height: 40px;
                 background: $color-primary;
                 border-radius: 90px;
+
+                @include desktop {
+                    transition: background 0.2s ease;                  
+                    
+                    &:hover {
+                        background: $color-secondary !important;
+                        transition: background 0.2s ease;
+                    }
+                }
             }
         }
     }

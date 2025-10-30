@@ -14,6 +14,10 @@
         border: 1px solid $color-gray-750;
         border-radius: 8px;
 
+        @include desktop {
+            padding: 30px 50px;
+        }
+
         &::before {
             content: "Calcular frete";
             font-family: $font-poppins;
@@ -23,9 +27,13 @@
             line-height: 150%;
             color: $color-gray-400;
         }
-        
+
         :global(.vtex-address-form__postalCode) {
             padding: 0px 0px 10px 0px !important;
+
+            @include desktop {
+                padding: 0px !important;
+            }
 
             :global(.vtex-input) {
                 :global(.vtex-input__label) {
@@ -44,8 +52,18 @@
             text-transform: uppercase;
             padding: 0px !important;
             margin-top: 16px;
+            transition: color 0.2s ease;
 
-            :global(.vtex__icon-external-link  ) {
+            @include desktop {
+                margin-top: 0px !important;
+
+                &:hover {
+                    color: $color-secondary !important;
+                    transition: color 0.2s ease;
+                }
+            }
+
+            :global(.vtex__icon-external-link) {
                 display: none !important;
             }
         }
@@ -83,12 +101,16 @@
                     width: 100%;
                     padding: 10px 16px;
 
-                    &:nth-child(odd) {
-                        background: #F7F7F8;
+                    @include desktop {
+                        padding: 10px 20px !important;
                     }
-                    
-                    &:nth-child(even) {
+
+                    &:nth-child(odd) {
                         background: transparent;
+                    }
+
+                    &:nth-child(even) {
+                        background: #F7F7F8;
                     }
 
                     :global(.vtex-shipping-simulator-custom--shipping-result-title-row) {
@@ -100,9 +122,7 @@
                         color: $color-gray-400;
                     }
 
-                    :global(.vtex-shipping-simulator-custom--shipping-result-estimate) {
-
-                    }
+                    :global(.vtex-shipping-simulator-custom--shipping-result-estimate) {}
 
                     :global(.vtex-shipping-simulator-custom--shipping-result-price) {
                         font-family: $font-poppins;
@@ -161,7 +181,15 @@
                         color: $color-text-primary;
                         text-transform: capitalize !important;
                     }
-                } 
+                }
+            }
+
+            @include desktop {
+                :global(.vtex-store-components-3-x-shippingContainer) {
+                    display: grid;
+                    grid-template-columns: 300px auto;
+                    gap: 10px;
+                }
             }
         }
     }
