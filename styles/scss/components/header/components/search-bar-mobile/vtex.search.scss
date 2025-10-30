@@ -158,6 +158,10 @@
             margin: 0px !important;
             border: none !important;
             gap: 20px;
+
+            .tileListItem {
+                max-width: 385px;
+            }
         }
 
         .tileListFooter {
