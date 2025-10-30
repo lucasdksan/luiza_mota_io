@@ -9,7 +9,7 @@
                 }
             ],
             "Then": "flex-layout.row#pdp-main-info-not-available",
-            "Else": "flex-layout.row#pdp-main-info-buy"
+            "Else": "flex-layout.col#pdp-main-info-buy-col"
         }
     },
     "flex-layout.row#pdp-main-info-not-available": {
@@ -23,6 +23,18 @@
         },
         "children": [
             "availability-subscriber#pdp-main-info-buy"
+        ]
+    },
+    "flex-layout.col#pdp-main-info-buy-col": {
+        "title": "Frete",
+        "props": {
+            "blockClass": [
+                "pdp-main-info-shipping"
+            ]
+        },
+        "children": [
+            "flex-layout.row#pdp-main-info-buy",
+            "two7-shipping-simulator-custom"
         ]
     },
     "flex-layout.row#pdp-main-info-buy": {

@@ -14,7 +14,6 @@
             "flex-layout.row#product-price",
             "sku-selector#product-page",
             "condition-layout.product#pdp-main-info-available",
-            "two7-shipping-simulator-custom",
             "two7-share-social-media"
         ]
     }
