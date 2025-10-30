@@ -1,19 +1,16 @@
 @use "../../settings/index" as *;
 
-/* :global(.vtex-render__container-id-my-account)::before {
-  content: '';
-  background-image: url('/assets/banners/banner-my-account-mobile.png') no-repeat center;
-  background-size: cover;
-  display: block;
-  width: 100%;
-  height: 10rem;
-} */
-
 :global(.vtex-my-account-1-x-userInfo) {
   display: flex;
   align-items: center;
   margin: 1.25rem 0;
 }
+
+:global(.vtex-my-account-1-x-userInfo) > div:last-child {
+  display: flex;
+  align-items: center;
+}
+
 :global(.vtex-my-account-1-x-userImage) {
   width: 2.5rem;
   height: 3rem;
@@ -29,12 +26,16 @@
   height: 44px;
 }
 
-
-:global(.vtex-my-account-1-x-userGreeting) {
+:global(.vtex-my-account-1-x-userGreeting),
+:global(.vtex-my-account-1-x-userName) {
   font-family: $font-poppins;
   font-size: 14px;
   font-weight: 700;
   color: $color-accent;
+}
+
+:global(.vtex-my-account-1-x-userGreeting) {
+  margin-bottom: 0;
 }
 
 :global(.vtex-my-account-1-x-menu) {
@@ -110,6 +111,10 @@
 :global(.vtex-account__cards-list__header)
 :global(.vtex-pageHeader__title),
 :global(.vtex-account__create-card__header)
+:global(.vtex-pageHeader__title),
+:global(.vtex-account__orders-list__header)
+:global(.vtex-pageHeader__title),
+:global(.vtex-account__order-details__header)
 :global(.vtex-pageHeader__title) {
    font-family: $font-poppins;
    font-weight: 500;
@@ -225,7 +230,6 @@
   font-weight: 700;
   font-size: 0;
   padding: 0.625rem;
-  /* padding: 0.625rem 1.25rem; */
   text-transform: inherit;
 }
 
@@ -316,6 +320,12 @@
 :global(.vtex-button) svg,
 :global(.vtex-account__create-card__header)
 :global(.vtex-pageHeader__container)
+:global(.vtex-button) svg,
+:global(.vtex-account__orders-list__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button) svg,
+:global(.vtex-account__order-details__header)
+:global(.vtex-pageHeader__container)
 :global(.vtex-button) svg {
   display: none;
 }
@@ -337,6 +347,12 @@
 :global(.vtex-button) div::before,
 :global(.vtex-account__create-card__header)
 :global(.vtex-pageHeader__container)
+:global(.vtex-button) div::before,
+:global(.vtex-account__orders-list__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button) div::before,
+:global(.vtex-account__order-details__header)
+:global(.vtex-pageHeader__container)
 :global(.vtex-button) div::before {
   content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMSAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAuNzUgNC43NUgxMC4wODMzTTAuNzUgNC43NUw0Ljc1IDAuNzVNMC43NSA0Ljc1TDQuNzUgOC43NSIgc3Ryb2tlPSIjRkY3OEIwIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=);
 }
@@ -357,6 +373,12 @@
 :global(.vtex-pageHeader__container)
 :global(.vtex-button) span,
 :global(.vtex-account__create-card__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button) span,
+:global(.vtex-account__orders-list__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button) span,
+:global(.vtex-account__order-details__header)
 :global(.vtex-pageHeader__container)
 :global(.vtex-button) span {
   font-size: 0;
@@ -397,6 +419,18 @@
 :global(.vtex-button):focus,
 :global(.vtex-account__create-card__header)
 :global(.vtex-pageHeader__container)
+:global(.vtex-button):hover,
+:global(.vtex-account__orders-list__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button):focus,
+:global(.vtex-account__orders-list__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button):hover,
+:global(.vtex-account__order-details__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button):focus,
+:global(.vtex-account__order-details__header)
+:global(.vtex-pageHeader__container)
 :global(.vtex-button):hover {
   outline: none;
   background-color: transparent;
@@ -419,7 +453,13 @@
 :global(.vtex-button) span::before,
 :global(.vtex-account__create-card__header)
 :global(.vtex-pageHeader__container)
-:global(.vtex-button) span::before{
+:global(.vtex-button) span::before,
+:global(.vtex-account__orders-list__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button) span::before,
+:global(.vtex-account__order-details__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button) span::before {
   content: 'VOLTAR';
   font-size: 12px;
   color: $color-accent;
@@ -434,6 +474,10 @@
 :global(.vtex-account__cards-list__header)
 :global(.vtex-pageHeader-link__container),
 :global(.vtex-account__create-card__header)
+:global(.vtex-pageHeader-link__container),
+:global(.vtex-account__orders-list__header)
+:global(.vtex-pageHeader-link__container),
+:global(.vtex-account__order-details__header)
 :global(.vtex-pageHeader-link__container) {
   margin-bottom: 1.063rem;
 }
@@ -647,12 +691,6 @@
   margin-top: 1.25rem;
 }
 
-/* :global(.vtex-my-account-1-x-addressList) {
-  border-radius: 10px;
-  background-color: $color-clean-pink;
-  padding: 1.25rem;
-} */
-
 :global(.vtex-my-account-1-x-addressList) > div > div > span {
   font-family: $font-poppins;
   font-size: 0;
@@ -765,7 +803,8 @@
   padding: 1.25rem;
 }
 
-:global(.vtex-account__cards-list) > div > div > span > span {
+:global(.vtex-account__cards-list) > div > div > span > span,
+:global(.vtex-account__orders-list) > div > div > div > span > span  {
   font-family: $font-montserrat;
   font-size: 0;
   color: $color-accent;
@@ -781,6 +820,225 @@
 :global(.vtex-account__create-card__header)
 :global(.vtex-pageHeader__title)::before {
   content: 'Cartões';
+  font-size: 20px;
+}
+
+/* PEDIDO */
+:global(.vtex-account__orders-list)
+:global(.vtex-my-orders-app-3-x-orderCard)
+:global(.vtex-my-orders-app-3-x-orderHeader) {
+  border-bottom: 1px solid transparent;
+}
+
+:global(.vtex-account__orders-list)
+:global(.vtex-my-orders-app-3-x-orderCard) {
+  margin-top: 0;
+}
+
+:global(.vtex-account__orders-list)
+:global(.vtex-my-orders-app-3-x-orderCard)
+:global(.vtex-my-orders-app-3-x-orderHeader .bg-danger),
+:global(.vtex-account__order-details .bg-danger) {
+  border-radius: 0;
+}
+
+:global(.vtex-account__orders-list)
+:global(.vtex-my-orders-app-3-x-orderCard)
+:global(.vtex-my-orders-app-3-x-orderHeader .c-on-danger),
+:global(.vtex-account__order-details .c-on-base .c-on-danger) {
+  font-family: $font-barlow;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 10%;
+  color: $color-white-100;
+  text-transform: lowercase;
+}
+
+
+:global(.vtex-account__orders-list)
+:global(.vtex-my-orders-app-3-x-orderCard)
+:global(.vtex-my-orders-app-3-x-orderHeaderLabel),
+:global(.vtex-account__orders-list)
+:global(.vtex-my-orders-app-3-x-orderCard)
+:global(.vtex-my-orders-app-3-x-orderHeaderValue),
+:global(.vtex-account__orders-list)
+:global(.vtex-my-orders-app-3-x-orderCard)
+:global(.vtex-my-orders-app-3-x-orderId),
+:global(.vtex-account__orders-list)
+:global(.vtex-my-orders-app-3-x-orderCard)
+:global(.vtex-my-orders-app-3-x-orderProduct)
+:global(.vtex-my-orders-app-3-x-orderProductShipping),
+:global(.vtex-account__order-details .c-on-base > span),
+:global(.vtex-account__order-details)
+:global(.vtex_my-orders-packages_packages_outer_container)
+:global(.vtex_my-orders-packages_package_product_unit_price),
+:global(.vtex-account__order-details)
+:global(.vtex_my-orders-packages_packages_outer_container)
+:global(.vtex_my-orders-packages_package_product_quantity),
+:global(.vtex-account__order-details)
+:global(.vtex_my-orders-packages_packages_outer_container)
+:global(.vtex_my-orders-packages_package_product_price) {
+  font-family: $font-lato;
+  font-size: 12px;
+  font-weight: 700;
+  color: $color-gray-300;
+  text-transform: inherit;
+}
+
+:global(.vtex-account__orders-list)
+:global(.vtex-my-orders-app-3-x-orderCard)
+:global(.vtex-my-orders-app-3-x-orderHeaderValue) {
+   font-size: 14px;
+   font-weight: 400;
+   margin-top: 1.5rem;
+}
+
+:global(.vtex-account__orders-list)
+:global(.vtex-my-orders-app-3-x-orderCard)
+:global(.vtex-my-orders-app-3-x-orderProduct)
+:global(.vtex-my-orders-app-3-x-orderProductName),
+:global(.vtex-account__orders-list)
+:global(.vtex-my-orders-app-3-x-orderCard)
+:global(.vtex-my-orders-app-3-x-orderProduct)
+:global(.vtex-my-orders-app-3-x-orderProductQuantityValue),
+:global(.vtex-account__order-details)
+:global(.vtex_my-orders-packages_packages_outer_container)
+:global(.vtex_my-orders-packages_package_product_name) {
+  color: $color-accent;
+  font-family: $font-roboto;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+:global(.vtex-account__orders-list)
+:global(.vtex-my-orders-app-3-x-orderCard)
+:global(.vtex-my-orders-app-3-x-orderProduct)
+:global(.vtex-my-orders-app-3-x-orderProductShipping) {
+  font-family: $font-roboto;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+:global(.vtex-account__orders-list)
+:global(.vtex-my-orders-app-3-x-orderCard)
+:global(.vtex-my-orders-app-3-x-orderProduct)
+:global(.vtex-my-orders-app-3-x-orderProductQuantityValue) {
+  font-weight: 400;
+}
+
+:global(.vtex-account__orders-list)
+:global(.vtex-my-orders-app-3-x-orderCard)
+:global(.vtex-my-orders-app-3-x-reorderBtn),
+:global(.vtex-account__order-details .list > li:first-child ) {
+  display: none;
+}
+
+:global(.vtex-account__orders-list)
+:global(.vtex-my-orders-app-3-x-orderCard)
+:global(.vtex-my-orders-app-3-x-detailsBtn) {
+  background-color: $color-white;
+  color: $color-accent;
+  border: 1px solid $color-accent;
+  border-radius: 8px;
+  font-family: $font-poppins;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: lowercase;
+}
+
+:global(.vtex-account__order-details > div > section > article) {
+  border-bottom: 1px solid $color-slider-dots;
+}
+
+:global(.vtex-account__order-details > div > section > article > section) {
+  border-color: transparent;
+}
+
+:global(.vtex-account__order-details > div > section > article > section h3) {
+  color: $color-accent;
+  font-family: $font-lato;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: inherit;
+  letter-spacing: 0;
+}
+
+:global(.vtex-account__order-details > div > section > article > section div > span),
+:global(.vtex-account__order-details)
+:global(.vtex-my-orders-app-3-x-transactionLine div)  {
+  font-family: $font-lato;
+  font-size: 14px;
+  font-weight: 400;
+  color: $color-gray-300;
+}
+
+:global(.vtex-account__order-details)
+:global(.vtex_my-orders-packages_remaining_container)
+:global(.vtex_my-orders-packages_remaining_header.remaining-items-header .remaining-items__title > div p) {
+  font-family: $font-lato;
+  font-size: 14px;
+  font-weight: bold;
+  color: $color-gray-800;
+}
+
+:global(.vtex-account__order-details > div > section > article > section div > strong) {
+  display: none;
+}
+
+:global(.vtex-account__order-details > div > section > article:last-child section div) {
+  font-family: $font-lato;
+  font-weight: 400;
+  font-size: 14px;
+  color: $color-gray-400;
+}
+
+:global(.vtex-account__order-details > div > section > article:last-child section div:last-child div) {
+ color: $color-accent;
+ font-weight: 700;
+}
+
+:global(.vtex-account__order-details > div > section > article:last-child section div hr) {
+  border-color: transparent;
+}
+
+:global(.vtex-account__order-details)
+:global(.vtex_my-orders-packages_packages_outer_container)
+:global(.vtex_my-orders-packages_packages_outer_container_title) {
+  font-family: $font-poppins;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: $color-accent;
+}
+
+:global(.vtex-account__order-details)
+:global(.vtex_my-orders-packages_packages_outer_container)
+:global(.vtex_my-orders-packages_package_product_unit_price),
+:global(.vtex-account__order-details)
+:global(.vtex_my-orders-packages_packages_outer_container)
+:global(.vtex_my-orders-packages_package_product_quantity),
+:global(.vtex-account__order-details)
+:global(.vtex_my-orders-packages_packages_outer_container)
+:global(.vtex_my-orders-packages_package_product_price) {
+  font-weight: 400;
+}
+
+:global(.vtex-account__order-details)
+:global(.vtex_my-orders-packages_packages_outer_container)
+:global(.vtex_my-orders-packages_remaining_container details > div > div:last-child div:last-child) {
+ margin-top: 0;
+}
+
+:global(.vtex-account__order-details)
+:global(.vtex_my-orders-packages_packages_outer_container)
+:global(.vtex_my-orders-packages_package_summary div) {
+  font-family: $font-lato;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: $color-gray-400;
+}
+
+:global(.vtex-account__orders-list) > div > div >  div > span > span::before {
+  content: "Você não possui nenhum pedido!" ;
   font-size: 20px;
 }
 
