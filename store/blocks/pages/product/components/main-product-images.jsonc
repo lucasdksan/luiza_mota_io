@@ -10,5 +10,27 @@
       "showNavigationArrows": false,
       "showPaginationDots": true
     }
+  },
+  "product-images#main-product-images-desktop": {
+    "title": "Imagens do produto Desktop",
+    "props": {
+      "aspectRatio": {
+        "desktop": "auto",
+        "phone": "auto"
+      },
+      "blockClass": "main-product-images-desktop",
+      "showNavigationArrows": true,
+      "showPaginationDots": false,
+      "thumbnailVisibility": "visible"
+    }
+  },
+  "flex-layout.col#main-product-images-desktop": {
+    "title": "Coluna de imagens do produto Desktop",
+    "props": {
+      "blockClass": "main-product-images-desktop"
+    },
+    "children": [
+      "product-images#main-product-images-desktop"
+    ]
   }
 }
