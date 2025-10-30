@@ -1,0 +1,21 @@
+{
+    "flex-layout.row#product-info-mobile": {
+        "title": "Conteúdo da informação do produto",
+        "props": {
+            "fullWidth": true,
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true,
+            "blockClass": [
+                "product-info-mobile"
+            ]
+        },
+        "children": [
+            "two7-product-name-pdp-seo",
+            "flex-layout.row#product-price",
+            "sku-selector#product-page",
+            "condition-layout.product#pdp-main-info-available",
+            "two7-shipping-simulator-custom",
+            "two7-share-social-media"
+        ]
+    }
+}
