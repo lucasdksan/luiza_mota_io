@@ -1,0 +1,58 @@
+@use "../../settings/index" as *;
+
+.flexRow--product-definitions {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.flexRowContent--product-definitions {
+    :global(.vtex-product-definitions--container) {
+        overflow: hidden;
+        
+        :global(.vtex-product-definitions--tabs) {
+            margin-bottom: 16px;
+            width: 100%;
+            display: flex;
+            overflow-y: auto;
+            gap: 8px;
+
+            :global(.vtex-product-definitions--tab) {
+                padding: 10px 20px !important;
+                font-family: $font-poppins;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                text-align: center;
+                letter-spacing: 0.02em;
+                color: $color-gray-400;
+                border-bottom: 1px solid transparent;
+                text-wrap: nowrap;
+                
+                @include defaultBtns;
+
+                &:global(.vtex-product-definitions--tab--active) {
+                    color: $color-primary !important;
+                    border-bottom: 1px solid $color-primary !important;
+                }
+            }   
+        }
+
+        :global(.vtex-product-definitions--content-description) {
+            font-family: $font-poppins;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 160%;
+            letter-spacing: 0.04em;
+            color: $color-gray-400;
+
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+    }
+}
