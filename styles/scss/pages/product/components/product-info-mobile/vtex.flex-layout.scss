@@ -1,0 +1,13 @@
+@use "../../../../settings/index" as *;
+
+.flexRow--product-info-mobile {
+    padding: 0px 20px;
+    margin-bottom: 60px;
+
+    .flexRowContent--product-info-mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+}

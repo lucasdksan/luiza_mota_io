@@ -1,0 +1,78 @@
+{
+    "condition-layout.product#pdp-main-info-available": {
+        "title": "Disponibilidade de produto",
+        "props": {
+            "conditions": [
+                {
+                    "subject": "isProductAvailable",
+                    "toBe": false
+                }
+            ],
+            "Then": "flex-layout.row#pdp-main-info-not-available",
+            "Else": "flex-layout.col#pdp-main-info-buy-col"
+        }
+    },
+    "flex-layout.row#pdp-main-info-not-available": {
+        "title": "Indisponível",
+        "props": {
+            "fullWidth": true,
+            "preserveLayoutOnMobile": true,
+            "blockClass": [
+                "pdp-main-info-not-available"
+            ]
+        },
+        "children": [
+            "availability-subscriber#pdp-main-info-buy"
+        ]
+    },
+    "flex-layout.col#pdp-main-info-buy-col": {
+        "title": "Frete",
+        "props": {
+            "blockClass": [
+                "pdp-main-info-shipping"
+            ]
+        },
+        "children": [
+            "flex-layout.row#pdp-main-info-buy",
+            "two7-shipping-simulator-custom"
+        ]
+    },
+    "flex-layout.row#pdp-main-info-buy": {
+        "title": "Disponível",
+        "props": {
+            "fullWidth": true,
+            "blockClass": [
+                "pdp-main-info-buy"
+            ]
+        },
+        "children": [
+            "product-quantity#pdp-main-info-buy",
+            "add-to-cart-button#pdp-main-info-buy"
+        ]
+    },
+    "product-quantity#pdp-main-info-buy": {
+        "title": "Quantidade do produto",
+        "props": {
+        "showLabel": false,
+        "blockClass": "pdp-main-info-buy"
+        }
+    },
+    "add-to-cart-button#pdp-main-info-buy": {
+        "title": "Adicionar ao carrinho",
+        "props": {
+            "text": "Adicionar a sacola",
+            "isOneClickBuy": false,
+            "blockClass": [
+                "pdp-main-info-buy"
+            ]
+        }
+    },
+    "availability-subscriber#pdp-main-info-buy": {
+        "title": "Assinatura de disponibilidade",
+        "props": {
+            "blockClass": [
+                "pdp-main-info-buy"
+            ]
+        }
+    }
+}

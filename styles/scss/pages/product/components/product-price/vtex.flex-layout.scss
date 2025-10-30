@@ -1,0 +1,18 @@
+@use "../../../../settings/index" as *;
+
+.flexRow--product-price {
+    width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $color-gray-900;
+
+    .flexRowContent--product-price {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        height: auto;
+    }
+}

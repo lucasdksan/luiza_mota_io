@@ -1,0 +1,41 @@
+{
+    "flex-layout.row#product-price": {
+        "title": "Preço do produto",
+        "props": {
+          
+            "blockClass": [
+                "product-price"
+            ]
+        },
+        "children": [
+            "product-list-price#info-price",
+            "product-selling-price#info-price",
+            "product-installments#info-price"
+        ]
+    },
+    "product-list-price#info-price": {
+      "title": "Preço listado",
+      "props": {
+        "blockClass": [
+          "pdp-main-info-price"
+        ]
+      }
+    },
+    "product-selling-price#info-price": {
+      "title": "Preço de venda",
+      "props": {
+        "blockClass": [
+          "pdp-main-info-price"
+        ]
+      }
+    },
+    "product-installments#info-price": {
+      "title": "Parcelamento",
+      "props": {
+        "message": "Ou {installmentsTotalValue} em {installmentsNumber}x de {installmentValue}",
+        "blockClass": [
+          "pdp-main-info-price"
+        ]
+      }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "flex-layout.col#product-info-desktop": {
+        "title": "Coluna de informações do produto Desktop",
+        "props": {
+            "blockClass": "product-info-desktop"
+        },
+        "children": [
+            "two7-product-name-pdp-seo",
+            "flex-layout.row#product-price",
+            "sku-selector#product-page",
+            "condition-layout.product#pdp-main-info-available",
+            "two7-share-social-media"
+        ]
+    }
+}

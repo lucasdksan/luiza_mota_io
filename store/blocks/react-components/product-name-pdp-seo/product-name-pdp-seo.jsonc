@@ -1,0 +1,15 @@
+{
+    "two7-product-name-pdp-seo": {
+        "title": "Nome do produto PDP SEO",
+        "props": {
+            "VtexFlexLayout": "flex-layout.row#product-name-pdp-seo"
+        }
+    },
+    "flex-layout.row#product-name-pdp-seo": {
+        "title": "Flex layout do nome do produto",
+        "props": {
+            "blockClass": "product-name-pdp-seo",
+            "fullWidth": true
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "flex-layout.row#pdp-main-content-desktop": {
+        "title": "Conteúdo principal desktop",
+        "props": {
+            "fullWidth": true,
+            "blockClass": [
+                "pdp-main-content-desktop"
+            ]
+        },
+        "children": [
+            "flex-layout.col#main-product-images-desktop",
+            "flex-layout.col#product-info-desktop"
+        ]
+    }   
+}

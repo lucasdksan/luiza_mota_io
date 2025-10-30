@@ -17,3 +17,24 @@
         }
     }
 }
+
+.flexRow--product-breadcrumb {
+    width: 100%;
+    height: auto;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+
+    .flexRowContent--product-breadcrumb {
+        overflow: hidden;
+    }
+
+    @include desktop {
+        margin-top: 0px;
+        padding: 20px 80px;
+
+        .flexRowContent--product-breadcrumb {
+            @include container-fluid;
+        }
+    }
+}

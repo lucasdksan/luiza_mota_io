@@ -1,0 +1,18 @@
+{
+    "sku-selector#product-page": {
+        "title": "Seleção de variação",
+        "props": {
+            "imageWidth": 42,
+            "imageHeight": 64,
+            "showValueForVariation": "image",
+            "disableUnavailableSelectOptions": true,
+            "initialSelection": "image",
+            "showVariationsLabels": "variation",
+            "thumbnailImage": "principal",
+            "visibility": "always",
+            "blockClass": [
+                "pdp-main-info"
+            ]
+        }
+    }
+}

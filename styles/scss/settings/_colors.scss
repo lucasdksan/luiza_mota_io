@@ -1,5 +1,6 @@
 $color-primary: #FF78B0;
 $color-secondary: #F9B9DA;
+$color-primary-hover: #FF91E94D;
 
 $color-white: #FFFFFF;
 $color-brown: #CA9A8E;
@@ -12,11 +13,13 @@ $color-gray-350: #A4A4A5;
 $color-gray-375: #C5C6CB;
 $color-gray-400: #484849;
 $color-gray-500: #282828;
+$color-gray-550: #353535;
 $color-gray-600: #1B1C17;
 $color-gray-700: #DFDFE4;
 $color-gray-750: #B8B8BC;
 $color-gray-800: #646363;
 $color-gray-900: #D7D7DA;
+$color-gray-1000: #9B9595;
 
 $color-text-primary: $color-gray-500;
 $color-text-secondary: $color-gray-400;
@@ -71,5 +74,9 @@ $color-background-primary: $color-white;
 $color-text-on-dark: $color-white;
 $color-earth: #4E483B;
 $color-background-secondary-opacity: #F9B9DA1A;
+$color-primary-900: #000000;
+$color-primary-alpha-10: rgba(0, 0, 0, 0.1);
+$color-primary-alpha-50: rgba(0, 0, 0, 0.5);
+$color-primary-alpha-80: rgba(0, 0, 0, 0.8);
 
 $color-header-menu-mobile:#F7F7F8;

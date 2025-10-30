@@ -1,0 +1,21 @@
+{
+    "two7-shipping-simulator-custom": {
+        "props": {
+            "VtexShippingSimulator": "shipping-simulator#default",
+            "VtexFlexLayout": "flex-layout.row#shipping-simulator-custom-container"
+        }
+    },
+    "flex-layout.row#shipping-simulator-custom-container": {
+        "title": "Container do simulador de frete",
+        "props": {
+            "blockClass": "shipping-simulator-custom-container"
+        }
+    },
+    "shipping-simulator#default": {
+        "title": "Simulador FRETE",
+        "props": {
+            "pricingMode": "grouped",
+            "blockClass": "shipping-simulator"
+        }
+    }
+}
