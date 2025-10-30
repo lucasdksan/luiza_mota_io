@@ -1,0 +1,102 @@
+@use "../../../../settings/index" as *;
+
+.subscriberContainer {
+    .title {
+        font-size: 0px !important;
+        margin-bottom: 20px !important;
+
+        &::before {
+            content: "Produto indisponívePara ser avisado da disponibilidade desse produto, basta preencher os campos abaixo:";
+            font-family: $font-poppins;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: $color-gray-400;
+        }
+    }
+
+    .subscribeLabel {
+        display: none !important;
+    }
+
+    .form {
+        margin: 0px !important;
+
+        .content {
+            margin: 0px !important;
+            
+            .input {
+                margin: 0px 0px 10px 0px !important;
+            }
+
+            :global(.vtex-input) {
+                :global(.vtex-input-prefix__group) {
+                    height: auto !important;
+                    margin: 0px !important;
+                    padding: 0px !important;
+                    border: none !important;
+                    outline: none !important;
+
+                    :global(.vtex-styleguide-9-x-input) {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        padding: 12px 20px;
+                        width: 100%;
+                        min-height: 45px;
+                        max-height: 45px;
+                        background: $color-white;
+                        border: 1px solid $color-gray-700;
+                        border-radius: 8px;
+
+                        font-family: $font-poppins;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 150%;
+                        color: $color-gray-300;
+                    }
+                }
+            }
+        }
+
+        .submit {
+            align-items: center !important;
+            justify-content: center !important;
+
+            :global(.vtex-button) {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 11px 30px;
+                gap: 10px;
+                min-height: 42px;
+                max-height: 42px;
+                background: $color-primary;
+                border-radius: 8px;
+                width: 100%;
+                border: none !important;
+                outline: none !important;
+                cursor: pointer;
+
+                &::before {
+                    content: "Avise-me";
+                    font-family: $font-poppins;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 140%;
+                    text-align: center;
+                    letter-spacing: 0.04em;
+                    color: $color-white;
+                }
+
+                :global(.vtex-button__label) {
+                    display: none !important;
+                }
+            }
+        }
+    }
+}
