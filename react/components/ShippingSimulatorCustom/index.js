@@ -1,6 +1,7 @@
 import { useCallback, useRef, useEffect, useState } from "react";
 import { classGenerator } from "../../utils/classGenerator";
 import { getShippingData } from "./getShippingData";
+import { searchElementDom } from "../../utils/searchElementDom";
 
 function ShippingSimulatorCustom({
     VtexShippingSimulator,
@@ -19,6 +20,29 @@ function ShippingSimulatorCustom({
     }, [containerRef]);
 
     useEffect(fetchData, [fetchData]);
+
+    useEffect(() => {
+        searchElementDom({
+            elementSelector: ".vtex-address-form__postalCode-forgottenURL",
+            elementContainer: containerRef.current,
+            callback: (forgottenLink) => {
+                const shippingContainer = containerRef.current.querySelector(
+                    ".vtex-store-components-3-x-shippingContainer"
+                );
+                const vtexButton = shippingContainer.querySelector(
+                    ".vtex-button"
+                );
+
+                console.log({
+                    shippingContainer, vtexButton, forgottenLink
+                });
+
+                if (shippingContainer && vtexButton && forgottenLink) {                    console.log('entrou');
+                    vtexButton.insertAdjacentElement("afterend", forgottenLink);
+                }
+            },
+        });
+    }, [containerRef]);
 
     return (
         <VtexFlexLayout>
