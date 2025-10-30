@@ -9,6 +9,10 @@
     max-height: 620px !important;
     overflow: hidden;
 
+    &.biggy-js-container--hidden {
+        display: none !important;
+    }
+
     .history-and-top-wrapper {
         padding: 0px !important;
 

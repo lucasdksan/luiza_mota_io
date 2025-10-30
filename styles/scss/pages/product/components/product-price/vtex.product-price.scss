@@ -1,0 +1,41 @@
+@use "../../../../settings/index" as *;
+
+.listPrice--pdp-main-info-price {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: $color-gray-1000;
+    margin-bottom: 2px;
+}
+
+
+.sellingPrice--pdp-main-info-price {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: $color-gray-550;
+    margin-bottom: 8px;
+}
+
+.installments--pdp-main-info-price,
+.installmentsTotalValue--pdp-main-info-price,
+.installmentValue--pdp-main-info-price,
+.installmentsNumber--pdp-main-info-price  {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: $color-gray-400;
+}
+
+.installmentsTotalValue--pdp-main-info-price,
+.installmentValue--pdp-main-info-price,
+.installmentsNumber--pdp-main-info-price  {
+    font-weight: 600;
+}

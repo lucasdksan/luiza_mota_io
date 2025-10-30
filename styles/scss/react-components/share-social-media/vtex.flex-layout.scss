@@ -1,0 +1,44 @@
+@use "../../settings/index" as *;
+
+.flexRow--share-social-media {
+    width: 100%;
+    height: auto;
+    margin-top: 16px;
+
+    .flexRowContent--share-social-media {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        gap: 20px;
+
+        :global(.vtex-share-social-media--title-text) {
+            font-family: $font-poppins;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: $color-gray-400;
+        }
+
+        :global(.vtex-share-social-media--social-media-list) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+
+            :global(.vtex-share-social-media--social-media-item) {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                gap: 10px;
+                width: 40px;
+                height: 40px;
+                background: $color-primary;
+                border-radius: 90px;
+            }
+        }
+    }
+}

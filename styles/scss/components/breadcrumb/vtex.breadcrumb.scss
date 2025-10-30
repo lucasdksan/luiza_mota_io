@@ -59,3 +59,32 @@
         }
     }
 }
+
+.container--breadcrumb-product {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+
+    .term {
+        flex: 1;
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+
+        &:last-child {
+            color: $color-primary;
+        }
+    }
+
+    .link {
+        flex-shrink: 0;
+    }
+
+    .termArrow {
+        flex-shrink: 0;
+    }
+}

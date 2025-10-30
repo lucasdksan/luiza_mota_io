@@ -1,0 +1,40 @@
+@use "../../../../settings/index" as *;
+
+.flexRow--pdp-main-info-buy {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+    padding-top: 30px;
+    border-top: 1px solid $color-gray-900;
+
+    .flexRowContent--pdp-main-info-buy {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 20px;
+
+        :global(.vtex-button) {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 11px 30px;
+            gap: 10px;
+            max-height: 42px;
+            background: $color-primary;
+            border-radius: 8px;
+
+            :global(.vtex-button__label) {
+                font-family: $font-poppins;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 140%;
+                letter-spacing: 0.04em;
+                color: $color-white;
+                padding: 0px;
+                margin: 0px;
+                text-transform: lowercase !important;
+            }
+        }
+    }
+}

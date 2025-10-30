@@ -1,0 +1,12 @@
+@use "../../../../settings/index" as *;
+
+.container--product-shelf-list-heading {
+    align-items: center;
+    justify-content: center;
+}
+
+.paragraph--product-shelf-list-heading {
+    margin: 0px;
+    
+    @include titleHomePage;
+}

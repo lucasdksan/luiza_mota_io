@@ -1,0 +1,23 @@
+@use "../../settings/index" as *;
+
+.flexRow--product-name-pdp-seo {
+    width: 100%;
+    height: auto;
+    margin: 20px 0px;
+
+    :global(.vtex-ProductNamePdpSeo--container) {
+        width: 100%;
+        height: auto;
+
+        :global(.vtex-ProductNamePdpSeo--name) {
+            margin: 0px !important;
+            font-family: $font-poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 130%;
+            letter-spacing: 0.04em;
+            color: $color-gray-500;
+        }
+    }
+}
