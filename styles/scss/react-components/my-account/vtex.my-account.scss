@@ -91,9 +91,26 @@
 
 /* DADOS PESSOAIS */
 :global(.vtex-my-account-1-x-profile__header)
+:global(.vtex-pageHeader-link__container)
+:global(.vtex-button) {
+  display: none;
+}
+
+/* titulo */
+:global(.vtex-my-account-1-x-profile__header)
 :global(.vtex-pageHeader__title),
 :global(.vtex-my-account-1-x-profileEdit__header)
-:global(.vtex-pageHeader__title){
+:global(.vtex-pageHeader__title),
+:global(.vtex-my-account-1-x-addressList__header)
+:global(.vtex-pageHeader__title),
+:global(.vtex-my-account-1-x-addressCreate__header)
+:global(.vtex-pageHeader__title),
+:global(.vtex-my-account-1-x-addressEdit__header)
+:global(.vtex-pageHeader__title),
+:global(.vtex-account__cards-list__header)
+:global(.vtex-pageHeader__title),
+:global(.vtex-account__create-card__header)
+:global(.vtex-pageHeader__title) {
    font-family: $font-poppins;
    font-weight: 500;
    font-size: 20px;
@@ -102,19 +119,43 @@
    padding-bottom: 1.25rem;
 }
 
+
+
+/* border */
 :global(.vtex-my-account-1-x-profileBoxContainer)
 :global(.vtex-my-account-1-x-boxContainer),
 :global(.vtex-my-account-1-x-newsletterBoxContainer)
 :global(.vtex-my-account-1-x-boxContainer),
 :global(.vtex-my-account-1-x-profileFormBoxContainer)
-:global(.vtex-my-account-1-x-boxContainer) {
+:global(.vtex-my-account-1-x-boxContainer),
+:global(.vtex-my-account-1-x-profileFormBoxContainer)
+:global(.vtex-input-prefix__group) input,
+:global(.vtex-my-account-1-x-profileFormBoxContainer)
+:global(.vtex-dropdown) label > div,
+:global(.vtex-my-account-1-x-addressCreate)
+:global(.vtex-my-account-1-x-boxContainer)
+:global(.vtex-my-account-1-x-boxContainerBody)
+:global(.vtex-address-form__postalCode)
+:global(.vtex-input-prefix__group) {
   border: 1px solid $color-slider-dots;
   border-radius: 8px;
 }
 
+/* label input */
 :global(.vtex-profile-form-3-x-profileSummary),
 :global(.vtex-my-account-1-x-boxContainerBody),
-:global(.vtex-profile-form-3-x-profileContainer){
+:global(.vtex-profile-form-3-x-profileContainer)
+:global(.vtex-input__label),
+:global(.vtex-my-account-1-x-profileFormBoxContainer)
+:global(.vtex-dropdown) label > span,
+:global(.vtex-my-account-1-x-addressCreate)
+:global(.vtex-dropdown) label > span,
+:global(.vtex-my-account-1-x-addressCreate)
+:global(.vtex-input__label),
+:global(.vtex-my-account-1-x-addressEdit)
+:global(.vtex-input__label),
+:global(.vtex-my-account-1-x-addressEdit)
+:global(.vtex-dropdown) label > span {
   font-family: $font-poppins;
   font-size: 14px;
   color: $color-text-secondary;
@@ -131,9 +172,26 @@
   grid-gap: 13px;
 }
 
+/* placeholders */
 :global(.vtex-profile-form-3-x-profileSummary)
-:global(.vtex-my-account-1-x-dataEntryChildren) {
- font-family: $font-poppins;
+:global(.vtex-my-account-1-x-dataEntryChildren),
+:global(.vtex-profile-form-3-x-profileContainer)
+:global(.vtex-input-prefix__group) input,
+:global(.vtex-my-account-1-x-profileFormBoxContainer)
+:global(.vtex-dropdown) label select option,
+:global(.vtex-my-account-1-x-profileFormBoxContainer)
+:global(.vtex-dropdown__caption),
+:global(.vtex-my-account-1-x-addressCreate)
+:global(.vtex-dropdown__caption),
+:global(.vtex-my-account-1-x-addressCreate)
+:global(.vtex-dropdown) label select option,
+:global(.vtex-my-account-1-x-addressCreate)
+:global(.vtex-input-prefix__group) input,
+:global(.vtex-my-account-1-x-addressEdit)
+:global(.vtex-input-prefix__group) input,
+:global(.vtex-my-account-1-x-addressEdit)
+:global(.vtex-dropdown__caption) {
+ font-family: $font-lato;
  font-size: 12px;
  color: $color-text-muted;
 }
@@ -141,11 +199,24 @@
 :global(.vtex-profile-form-3-x-profileSummary)
 :global(.vtex-my-account-1-x-documentsSubContainer)
 :global(.vtex-my-account-1-x-dataEntryLabel) {
-  text-transform: math-auto;
+  text-transform: inherit;
 }
 
+/* Buttons fundo rosa */
 :global(.vtex-my-account-1-x-profileBoxContainer)
 :global(.vtex-my-account-1-x-boxContainerFooter)
+:global(.vtex-button),
+:global(.vtex-my-account-1-x-addressList__header)
+:global(.vtex-pageHeader__children)
+:global(.vtex-button),
+:global(.vtex-my-account-1-x-addressCreate)
+:global(.vtex-my-account-1-x-boxContainerBody)
+:global(.vtex-button),
+:global(.vtex-my-account-1-x-addressEdit)
+:global(.vtex-my-account-1-x-boxContainerBody)
+:global(.vtex-button),
+:global(.vtex-account__cards-list__header)
+:global(.vtex-pageHeader__children)
 :global(.vtex-button) {
   background-color: $color-accent;
   border-radius: 8px;
@@ -153,8 +224,9 @@
   font-family: $font-poppins;
   font-weight: 700;
   font-size: 0;
-  padding: 0.625rem 1.25rem;
-  text-transform: math-auto;
+  padding: 0.625rem;
+  /* padding: 0.625rem 1.25rem; */
+  text-transform: inherit;
 }
 
 :global(.vtex-my-account-1-x-profileBoxContainer)
@@ -225,9 +297,494 @@
 }
 
 /* DADOS PESSOAIS EDITAR */
-:global(.vtex-profile-form-3-x-profileContainer) {
+
+/* Link botão voltar */
+:global(.vtex-my-account-1-x-profileEdit__header)
+:global(.vtex-pageHeader-link__container)
+:global(.vtex-button) svg,
+:global(.vtex-my-account-1-x-addressList__header)
+:global(.vtex-pageHeader-link__container)
+:global(.vtex-button) svg,
+:global(.vtex-my-account-1-x-addressCreate__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button) svg,
+:global(.vtex-my-account-1-x-addressEdit__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button) svg,
+:global(.vtex-account__cards-list__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button) svg,
+:global(.vtex-account__create-card__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button) svg {
+  display: none;
+}
+
+:global(.vtex-my-account-1-x-profileEdit__header)
+:global(.vtex-pageHeader-link__container)
+:global(.vtex-button) div::before,
+:global(.vtex-my-account-1-x-addressList__header)
+:global(.vtex-pageHeader-link__container)
+:global(.vtex-button) div::before,
+:global(.vtex-my-account-1-x-addressCreate__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button) div::before,
+:global(.vtex-my-account-1-x-addressEdit__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button) div::before,
+:global(.vtex-account__cards-list__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button) div::before,
+:global(.vtex-account__create-card__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button) div::before {
+  content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMSAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAuNzUgNC43NUgxMC4wODMzTTAuNzUgNC43NUw0Ljc1IDAuNzVNMC43NSA0Ljc1TDQuNzUgOC43NSIgc3Ryb2tlPSIjRkY3OEIwIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=);
+}
+
+:global(.vtex-my-account-1-x-profileEdit__header)
+:global(.vtex-pageHeader-link__container)
+:global(.vtex-button) span,
+:global(.vtex-my-account-1-x-addressList__header)
+:global(.vtex-pageHeader-link__container)
+:global(.vtex-button) span,
+:global(.vtex-my-account-1-x-addressCreate__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button) span,
+:global(.vtex-my-account-1-x-addressEdit__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button) span,
+:global(.vtex-account__cards-list__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button) span,
+:global(.vtex-account__create-card__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button) span {
+  font-size: 0;
+}
+
+:global(.vtex-my-account-1-x-profileEdit__header)
+:global(.vtex-pageHeader-link__container)
+:global(.vtex-button):focus,
+:global(.vtex-my-account-1-x-profileEdit__header)
+:global(.vtex-pageHeader-link__container)
+:global(.vtex-button):hover,
+:global(.vtex-my-account-1-x-addressList__header)
+:global(.vtex-pageHeader-link__container)
+:global(.vtex-button):focus,
+:global(.vtex-my-account-1-x-addressList__header)
+:global(.vtex-pageHeader-link__container)
+:global(.vtex-button):hover,
+:global(.vtex-my-account-1-x-addressCreate__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button):focus,
+:global(.vtex-my-account-1-x-addressCreate__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button):hover,
+:global(.vtex-my-account-1-x-addressEdit__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button):focus,
+:global(.vtex-my-account-1-x-addressEdit__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button):hover,
+:global(.vtex-account__cards-list__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button):focus,
+:global(.vtex-account__cards-list__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button):hover,
+:global(.vtex-account__create-card__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button):focus,
+:global(.vtex-account__create-card__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button):hover {
+  outline: none;
+  background-color: transparent;
+}
+
+:global(.vtex-my-account-1-x-profileEdit__header)
+:global(.vtex-pageHeader-link__container)
+:global(.vtex-button) span::before,
+:global(.vtex-my-account-1-x-addressList__header)
+:global(.vtex-pageHeader-link__container)
+:global(.vtex-button) span::before,
+:global(.vtex-my-account-1-x-addressCreate__header)
+:global(.vtex-pageHeader-link__container)
+:global(.vtex-button) span::before,
+:global(.vtex-my-account-1-x-addressEdit__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button) span::before,
+:global(.vtex-account__cards-list__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button) span::before,
+:global(.vtex-account__create-card__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-button) span::before{
+  content: 'VOLTAR';
+  font-size: 12px;
+  color: $color-accent;
+  font-weight: 700;
+  font-family: $font-poppins;
+}
+
+:global(.vtex-my-account-1-x-profileEdit__header)
+:global(.vtex-pageHeader-link__container),
+:global(.vtex-my-account-1-x-addressList__header)
+:global(.vtex-pageHeader-link__container),
+:global(.vtex-account__cards-list__header)
+:global(.vtex-pageHeader-link__container),
+:global(.vtex-account__create-card__header)
+:global(.vtex-pageHeader-link__container) {
+  margin-bottom: 1.063rem;
+}
+
+:global(.vtex-profile-form-3-x-profileContainer)
+:global(.vtex-input__label),
+:global(.vtex-my-account-1-x-profileFormBoxContainer)
+:global(.vtex-dropdown) label > span {
    font-size: 12px;
 }
+
+:global(.vtex-my-account-1-x-profileFormBoxContainer)
+:global(.vtex-dropdown__caption) {
+  color: inherit;
+  font-size: 0;
+}
+
+:global(.vtex-my-account-1-x-profileFormBoxContainer)
+:global(.vtex-dropdown__caption)::before {
+  content: 'selecione';
+  font-size: 12px;
+}
+
+:global(.vtex-my-account-1-x-profileFormBoxContainer)
+:global(.vtex-dropdown__arrow) svg,
+:global(.vtex-my-account-1-x-addressCreate)
+:global(.vtex-dropdown__arrow) svg,
+:global(.vtex-my-account-1-x-addressEdit)
+:global(.vtex-dropdown__arrow) svg {
+  display: none;
+}
+
+:global(.vtex-my-account-1-x-profileFormBoxContainer)
+:global(.vtex-dropdown__arrow)::after,
+:global(.vtex-my-account-1-x-addressCreate)
+:global(.vtex-dropdown__arrow)::after,
+:global(.vtex-my-account-1-x-addressEdit)
+:global(.vtex-dropdown__arrow)::after {
+  content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNiIgdmlld0JveD0iMCAwIDEwIDYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wLjc1IDAuNzVMNC43NSA0Ljc1TDguNzUgMC43NSIgc3Ryb2tlPSIjRkY3OEIwIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=);
+}
+
+/* inputs and select */
+:global(.vtex-my-account-1-x-profileFormBoxContainer)
+:global(.vtex-input-prefix__group) input,
+:global(.vtex-my-account-1-x-profileFormBoxContainer)
+:global(.vtex-dropdown) :global(.vtex-dropdown__button),
+:global(.vtex-my-account-1-x-addressCreate)
+:global(.vtex-dropdown) :global(.vtex-dropdown__button),
+:global(.vtex-my-account-1-x-addressEdit)
+:global(.vtex-dropdown) :global(.vtex-dropdown__button) {
+  padding: 0.75rem 1rem;
+}
+
+:global(.vtex-my-account-1-x-profileFormBoxContainer)
+:global(.vtex-profile-form-3-x-profileContainer)
+:global(.vtex-profile-form-3-x-toggleBusinessButtonWrapper)
+:global(.vtex-button),
+:global(.vtex-my-account-1-x-profileFormBoxContainer)
+:global(.vtex-profile-form-3-x-profileContainer)
+:global(.vtex-button),
+:global(.vtex-my-account-1-x-addressEdit)
+:global(.vtex-my-account-1-x-boxContainerBody)
+:global(.vtex-button):last-child  {
+  background-color: $color-white;
+  border: 1px solid $color-accent;
+  color: $color-accent;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: $font-poppins;
+  text-transform: lowercase;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+}
+
+:global(.vtex-my-account-1-x-profileFormBoxContainer)
+:global(.vtex-profile-form-3-x-profileContainer)
+:global(.vtex-button),
+:global(.vtex-my-account-1-x-addressEdit)
+ :global(.vtex-my-account-1-x-boxContainerBody)
+ :global(.vtex-button) {
+  background-color: $color-accent;
+  color: $color-white;
+  font-size: 12px;
+  text-transform: inherit;
+  padding: 0.65rem 1rem;
+}
+
+:global(.vtex-my-account-1-x-profileFormBoxContainer)
+:global(.vtex-profile-form-3-x-profileContainer)
+:global(.vtex-profile-form-3-x-toggleBusinessButtonWrapper) {
+  margin-bottom: 1rem;
+}
+
+:global(.vtex-my-account-1-x-profileFormBoxContainer)
+:global(.vtex-profile-form-3-x-profileContainer)
+:global(.vtex-profile-form-3-x-toggleBusinessButtonWrapper)
+:global(.vtex-button) {
+  font-size: 0;
+}
+
+:global(.vtex-my-account-1-x-profileFormBoxContainer)
+:global(.vtex-profile-form-3-x-profileContainer)
+:global(.vtex-profile-form-3-x-toggleBusinessButtonWrapper)
+:global(.vtex-button)::before {
+  content: 'incluir dados de pessoa jurídica';
+  font-size: 14px;
+}
+
+/* ENDEREÇO */
+:global(.vtex-my-account-1-x-addressList__header)
+:global(.vtex-pageHeader__title),
+:global(.vtex-my-account-1-x-addressCreate__header)
+:global(.vtex-pageHeader__title),
+:global(.vtex-my-account-1-x-addressEdit__header)
+:global(.vtex-pageHeader__title),
+:global(.vtex-account__create-card__header)
+:global(.vtex-pageHeader__title) {
+  font-size: 0;
+}
+
+:global(.vtex-my-account-1-x-addressList__header)
+:global(.vtex-pageHeader__title)::before,
+:global(.vtex-my-account-1-x-addressCreate__header)
+:global(.vtex-pageHeader__title)::before,
+:global(.vtex-my-account-1-x-addressEdit__header)
+:global(.vtex-pageHeader__title)::before {
+  content: 'Endereço';
+  font-size: 20px;
+}
+
+:global(.vtex-my-account-1-x-addressList__header)
+:global(.vtex-pageHeader__children)
+:global(.vtex-button),
+:global(.vtex-account__cards-list__header)
+:global(.vtex-pageHeader__children)
+:global(.vtex-button) {
+  font-size: 12px;
+  border: none
+}
+
+
+:global(.vtex-my-account-1-x-addressList__header)
+:global(.vtex-pageHeader__title),
+:global(.vtex-account__cards-list__header)
+:global(.vtex-pageHeader__title) {
+  border-bottom: none;
+}
+
+:global(.vtex-my-account-1-x-addressList__header)
+:global(.vtex-pageHeader__container) > div:last-child,
+:global(.vtex-account__cards-list__header)
+:global(.vtex-pageHeader__container) > div:last-child {
+  border-bottom: 1px solid $color-slider-dots;
+}
+
+:global(.vtex-my-account-1-x-addressList__header)
+:global(.vtex-pageHeader__container) div:last-child div:last-child,
+:global(.vtex-account__cards-list__header)
+:global(.vtex-pageHeader__container) div:last-child div:last-child {
+  width: unset;
+}
+
+:global(.vtex-my-account-1-x-addressList__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-pageHeader__children),
+:global(.vtex-account__cards-list__header)
+:global(.vtex-pageHeader__container)
+:global(.vtex-pageHeader__children) {
+  margin-top: -7px;
+}
+
+:global(.vtex-my-account-1-x-addressList)
+:global(.vtex-my-account-1-x-addressBox)
+:global(.vtex-my-account-1-x-boxContainer) {
+  border-radius: 10px;
+  width: unset;
+  height: unset;
+  padding: 1.25rem;
+  background-color: $color-white;
+}
+
+:global(.vtex-my-account-1-x-addressList)
+:global(.vtex-my-account-1-x-addressBox)
+:global(.vtex-my-account-1-x-boxContainer)
+:global(.vtex-my-account-1-x-boxContainerBody) {
+  background-color: $color-gray-125;
+  border-radius: 4px;
+}
+
+:global(.vtex-my-account-1-x-addressList)
+:global(.vtex-my-account-1-x-addressBox)
+:global(.vtex-my-account-1-x-boxContainer)
+:global(.vtex-my-account-1-x-boxContainerBody) span {
+  font-family: $font-poppins;
+  font-size: 14px;
+  color: $color-gray-400;
+}
+
+:global(.vtex-my-account-1-x-addressList)
+:global(.vtex-my-account-1-x-addressBox)
+:global(.vtex-my-account-1-x-boxContainer)
+:global(.vtex-my-account-1-x-boxContainerFooter)
+:global(.vtex-button) {
+  background-color: $color-secondary;
+  border-radius: 8px;
+  color: $color-gray-500;
+  font-family: $font-poppins;
+  font-weight: 700;
+  text-transform: initial;
+  padding: 0.5rem;
+  margin-top: 1.25rem;
+}
+
+/* :global(.vtex-my-account-1-x-addressList) {
+  border-radius: 10px;
+  background-color: $color-clean-pink;
+  padding: 1.25rem;
+} */
+
+:global(.vtex-my-account-1-x-addressList) > div > div > span {
+  font-family: $font-poppins;
+  font-size: 0;
+  color: $color-gray-500;
+  font-weight: 500;
+}
+
+:global(.vtex-my-account-1-x-addressList) > div > div > span::before {
+  content: "Você não possui nenhum endereço cadastrado!" ;
+  font-size: 20px;
+}
+
+/* ADICIONAR ENDEREÇO */
+
+/* border sem radius */
+:global(.vtex-my-account-1-x-addressCreate)
+:global(.vtex-my-account-1-x-boxContainer),
+:global(.vtex-my-account-1-x-addressCreate)
+:global(.vtex-my-account-1-x-boxContainer)
+:global(.vtex-my-account-1-x-boxContainerBody)
+:global(.vtex-address-form-4-x-container.vtex-dropdown__container),
+:global(.vtex-my-account-1-x-addressCreate)
+:global(.vtex-my-account-1-x-boxContainer)
+:global(.vtex-my-account-1-x-boxContainerBody)
+:global(.vtex-input-prefix__group),
+:global(.vtex-my-account-1-x-addressEdit)
+:global(.vtex-my-account-1-x-boxContainer),
+:global(.vtex-my-account-1-x-addressEdit)
+:global(.vtex-my-account-1-x-boxContainer)
+:global(.vtex-my-account-1-x-boxContainerBody)
+:global(.vtex-input-prefix__group),
+:global(.vtex-my-account-1-x-addressEdit)
+:global(.vtex-my-account-1-x-boxContainer)
+:global(.vtex-my-account-1-x-boxContainerBody)
+:global(.vtex-address-form-4-x-container.vtex-dropdown__container) {
+  border: 1px solid $color-slider-dots;
+  border-radius: 0;
+}
+
+:global(.vtex-my-account-1-x-addressCreate)
+:global(.vtex-my-account-1-x-boxContainer)
+:global(.vtex-my-account-1-x-boxContainerBody) {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+:global(.vtex-my-account-1-x-addressCreate)
+:global(.vtex-address-form__postalCode-forgottenURL) a,
+:global(.vtex-my-account-1-x-addressEdit)
+:global(.vtex-address-form__postalCode-forgottenURL) a {
+  color: $color-accent;
+  font-family: $font-lato;
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+:global(.vtex-my-account-1-x-addressCreate)
+:global(.vtex-address-form__postalCode-forgottenURL) a span,
+:global(.vtex-my-account-1-x-addressEdit)
+:global(.vtex-address-form__postalCode-forgottenURL) a span {
+  display: none;
+}
+
+:global(.vtex-my-account-1-x-addressCreate)
+:global(.vtex-my-account-1-x-boxContainerBody)
+:global(.vtex-button) {
+  background-color: $color-gray-700;
+  color: $color-gray-300;
+  border-radius: 0;
+  font-size: 14px;
+  border: 1px solid $color-gray-700;
+  font-family: $font-lato;
+}
+
+/* :global(.vtex-my-account-1-x-addressCreate)
+:global(.vtex-my-account-1-x-boxContainerBody) div:nth-child(2) .address-summary.address-summary-BRA {
+  background-color: $color-gray-125;
+  padding: 0.875rem 0.625rem;
+}
+ */
+
+ /* EDITAR ENDEREÇO */
+ :global(.vtex-my-account-1-x-addressEdit)
+ :global(.vtex-my-account-1-x-boxContainerBody)
+ :global(.vtex-button) {
+   border-radius: 0;
+   border: none;
+ }
+
+ :global(.vtex-my-account-1-x-addressEdit)
+ :global(.vtex-my-account-1-x-boxContainerBody)
+ :global(.vtex-button):last-child {
+   border-radius: 0;
+   font-size: 0;
+ }
+
+ :global(.vtex-my-account-1-x-addressEdit)
+ :global(.vtex-my-account-1-x-boxContainerBody)
+ :global(.vtex-button):last-child::before {
+   content: 'Remover';
+   font-size: 12px;
+   text-transform: capitalize;
+ }
+
+ /* CARTÃO */
+:global(.vtex-account__cards-list) > div {
+  background-color: $color-clean-brown-rgb;
+  border-radius: 10px;
+  padding: 1.25rem;
+}
+
+:global(.vtex-account__cards-list) > div > div > span > span {
+  font-family: $font-montserrat;
+  font-size: 0;
+  color: $color-accent;
+  font-weight: 500;
+}
+
+:global(.vtex-account__cards-list) > div > div > span > span::before {
+  content: "Você não possui nenhum cartão cadastrado!" ;
+  font-size: 20px;
+}
+
+/* NOVO CARTÃO */
+:global(.vtex-account__create-card__header)
+:global(.vtex-pageHeader__title)::before {
+  content: 'Cartões';
+  font-size: 20px;
+}
+
+
 
 
 

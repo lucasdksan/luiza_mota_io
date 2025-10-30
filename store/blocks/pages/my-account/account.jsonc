@@ -1,0 +1,39 @@
+{
+    "store.account": {
+        "blocks": [
+            "list-context.image-list#my-account",
+            "my-account"
+        ],
+        "parent": {
+            "challenge": "challenge.profile"
+        }
+    },
+    "list-context.image-list#my-account": {
+        "children": [
+            "slider-layout#my-account-images"
+        ],
+        "props": {
+            "preload": true,
+            "height": 440,
+            "images": [
+                {
+                    "loading": "eager",
+                     "mobileImage": "assets/banners/banner-my-account-mobile.png",
+                     "image": "assets/banners/banner-my-account-desktop.png",
+                    "description": "something something"
+                }
+            ]
+
+        }
+    },
+    "slider-layout#my-account-images": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "infinite": true
+        }
+    }
+}
