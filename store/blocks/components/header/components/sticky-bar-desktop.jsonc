@@ -58,7 +58,7 @@
         "title": "Link de conta do header",
         "props": {
             "label": "Meus Favoritos",
-            "href": "/my-wishlist",
+            "href": "/account#/wishlist",
             "blockClass": "my-wishlist-desktop-link"
         },
         "children": [
