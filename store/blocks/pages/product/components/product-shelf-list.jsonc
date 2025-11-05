@@ -49,7 +49,7 @@
             "orderBy": "OrderByNameASC",
             "maxItems": 8,
             "hideUnavailableItems": false,
-            "collection": "591",
+            "collection": "138",
             "blockClass": [
                 "product-shelf-list-list-context"
             ]
@@ -67,7 +67,7 @@
             "orderBy": "OrderByNameASC",
             "maxItems": 8,
             "hideUnavailableItems": false,
-            "collection": "591",
+            "collection": "138",
             "blockClass": [
                 "product-shelf-list-list-context",
                 "product-shelf-list-list-context--desktop"
