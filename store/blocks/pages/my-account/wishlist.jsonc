@@ -51,7 +51,7 @@
             "product-summary.shelf#shelf-product-default"
         ],
         "children": [
-            "slider-layout#wishlist"
+            "list-context-renderer#wishlist-content"
         ],
         "props": {
             "showViewEmptyList": true,
@@ -76,19 +76,14 @@
             "blockClass": "wishlist-empty-list-description"
         }
     },
-    "slider-layout#wishlist": {
-        "title": "Slider de produtos",
+    "list-context-renderer#wishlist-content": {
+        "title": "Conteúdo da lista de desejos",
         "props": {
-            "itemsPerPage": {
-                "desktop": 5,
-                "tablet": 3,
-                "phone": 1
-            },
-            "showNavigationArrows": "desktopOnly",
-            "showPaginationDots": "always",
-            "infinite": false,
-            "fullWidth": true,
-            "blockClass": "shelf"
+            "blockClass": [
+                "wish-list-content"
+            ],
+            "listElement": "div",
+            "itemElement": "div"
         }
     }
 }
