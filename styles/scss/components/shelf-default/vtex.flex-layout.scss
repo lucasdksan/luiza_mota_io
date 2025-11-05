@@ -25,6 +25,7 @@
 .flexRowContent--shelf-default-top {
     display: flex;
     flex-direction: column !important;
+    position: relative;
 
     .stretchChildrenWidth {
         width: auto !important;
