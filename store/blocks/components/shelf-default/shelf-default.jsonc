@@ -20,7 +20,8 @@
         },
         "children": [
             "product-summary-image#shelf-product-default",
-            "product-summary-name#shelf-product-default"
+            "product-summary-name#shelf-product-default",
+            "add-to-list-btn"
         ]
     },
     "product-summary-image#shelf-product-default": {
