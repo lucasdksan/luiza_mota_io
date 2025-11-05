@@ -78,5 +78,8 @@
     "vtex.order-items": "0.x",
     "vtex.store-newsletter": "1.x"
   },
+  "peerDependencies": {
+    "vtex.wish-list": "1.x"
+  },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
