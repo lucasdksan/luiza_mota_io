@@ -5,8 +5,7 @@
             "VtexFlexLayout": "flex-layout.row#promotional-tip-bar-container",
             "VtexSliderLayout": "slider-layout#promotional-tip-bar-slider",
             "texts": [
-                "até zerar o relógio de 16h às 20h",
-                "<strong>60% OFF <span>|</span> na coleção</strong>"
+                "até zerar o relógio de 16h às 20h"
             ]
         }
     },
