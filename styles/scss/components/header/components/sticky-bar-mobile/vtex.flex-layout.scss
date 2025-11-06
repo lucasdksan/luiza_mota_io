@@ -34,3 +34,20 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.flexRow--right-side-header-mobile {
+    .flexRowContent--right-side-header-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        :global(.vtex-search-custom-mobile--container) {
+            position: absolute;
+            left: 0px;
+            bottom: -45px;
+            background: $color-white;
+            padding: 0px 20px 10px 20px;
+        }
+    }
+}
+

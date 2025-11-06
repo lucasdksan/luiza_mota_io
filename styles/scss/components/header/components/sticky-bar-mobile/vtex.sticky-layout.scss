@@ -1,0 +1,31 @@
+.wrapper--header-mobile {
+    :global(.vtex-flex-layout-0-x-flexRow--search-bar-mobile),
+    :global(.vtex-search-custom-mobile--container) {
+        display: none;
+        visibility: hidden;
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRowContent--right-side-header-mobile) {
+        gap: 0px;
+    }
+}
+
+.wrapper--header-mobile--stuck {
+    :global(.vtex-flex-layout-0-x-flexRow--search-bar-mobile),
+    :global(.vtex-search-custom-mobile--container) {
+        display: flex;
+        visibility: visible;
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRowContent--right-side-header-mobile) {
+        gap: 24px;
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRow--header-sticky-bar-mobile-second-line) {
+        display: none !important;
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRowContent--header-sticky-bar-mobile) {
+        gap: 0px !important;
+    }
+}

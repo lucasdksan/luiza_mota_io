@@ -31,4 +31,10 @@
         color: $color-white;
         text-wrap: nowrap;
     }
+
+    :global(.vtex-promotional-tip-bar--content-value) {
+        @include mobile {
+            text-align: center;
+        }
+    }
 }

@@ -1,0 +1,8 @@
+@use "../../settings/index" as *;
+
+.flexRowContent--right-side-header-mobile {
+    :global(.vtex-search-custom-mobile--button) {
+        
+        @include defaultBtns;
+    }
+}
