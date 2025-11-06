@@ -18,12 +18,11 @@
             "images": [
                 {
                     "loading": "eager",
-                     "mobileImage": "assets/banners/banner-my-account-mobile.png",
-                     "image": "assets/banners/banner-my-account-desktop.png",
+                    "mobileImage": "assets/banners/banner-my-account-mobile.png",
+                    "image": "assets/banners/banner-my-account-desktop.png",
                     "description": "something something"
                 }
             ]
-
         }
     },
     "slider-layout#my-account-images": {

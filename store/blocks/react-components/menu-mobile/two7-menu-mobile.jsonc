@@ -59,7 +59,7 @@
                     "see_all": "/brasil-off"
                 }
             ],
-            "myWishListLink": "/myaccount"
+            "myWishListLink": "/account#/wishlist"
         }
     },
     "flex-layout.row#container-menu-mobile-btn": {

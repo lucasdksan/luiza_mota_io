@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { useProduct } from "vtex.product-context";
+import { usePixelEventCallback } from "vtex.pixel-manager";
 import { classGenerator } from "../../utils/classGenerator";
 import { pickMaxInstallmentsOption } from "../../utils/pickInstallments";
 import { formatCurrency } from "../../utils/formatCurrency";
@@ -19,6 +20,13 @@ function ModalProductShop({
     const toggleMenu = () => {
         setIsOpen((value) => !value);
     }
+
+    usePixelEventCallback({
+        handler: () => {
+            setIsOpen(false);
+        },
+        eventName: "addToCart",
+    });
 
     useEffect(() => {
         const handleClick = (e) => {

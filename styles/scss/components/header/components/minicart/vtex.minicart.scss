@@ -74,6 +74,7 @@
 .drawerContent--minicart-sidebar {
     display: flex;
     flex-direction: column;
+    overflow-y: visible;
     gap: 20px;
 }
 
@@ -97,7 +98,7 @@
         width: 100%;
         height: 1px;
         display: block;
-        border-top: 1px solid $color-minicart-checkout-button;
+        border-top: 1px solid $color-primary;
     }
 
     &::after {
@@ -138,6 +139,7 @@
 
 .minicartTitle--minicart-sidebar {
     display: none !important;
+    visibility: hidden;
 }
 
 .minicartEmptyStateContainer--minicart-empty-state {
@@ -174,7 +176,7 @@
     width: 100%;
     height: auto;
     width: 100%;
-    border-top: 1px solid $color-minicart-checkout-button;
+    border-top: 1px solid $color-minicart-checkout-button !important;
 
     :global(.vtex-button) {
         display: flex;
@@ -220,7 +222,7 @@
 .minicartProductListContainer--minicart-product-list {
     padding: 0px 32px;
     height: 100% !important;
-    max-height: 430px;
+    // max-height: 430px;
     overflow-y: auto;
 }
 
@@ -235,4 +237,15 @@
     @media (max-width: 768px) {
         height: calc(100vh - 73px) !important;
     }
+}
+
+.overlay--minicart-sidebar--visible {
+    background-color: $color-gray-600;
+    opacity: 0.7 !important;
+}
+
+
+.minicartContentContainer--minicart-sidebar {
+    display: grid !important;
+    grid-auto-rows: calc(100% - 320px) auto !important;
 }

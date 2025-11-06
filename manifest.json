@@ -1,5 +1,5 @@
 {
-  "vendor": "reidasjoias",
+  "vendor": "two7partnerbr",
   "name": "store-theme",
   "version": "1.0.0",
   "builders": {
@@ -42,6 +42,7 @@
     "vtex.my-account": "1.x",
     "vtex.flex-layout": "0.x",
     "vtex.rich-text": "0.x",
+    "vtex.pixel-manager": "1.x",
     "vtex.store-drawer": "0.x",
     "vtex.locale-switcher": "0.x",
     "vtex.product-quantity": "1.x",
@@ -77,6 +78,9 @@
     "vtex.css-handles": "1.x",
     "vtex.order-items": "0.x",
     "vtex.store-newsletter": "1.x"
+  },
+  "peerDependencies": {
+    "vtex.wish-list": "1.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

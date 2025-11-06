@@ -1,14 +1,13 @@
 {
-    // "sticky-layout#header-desktop": {
-    //     "title": "Sticky layout do header desktop",
-    //     "props": {
-    //         "blockClass": "header-desktop"
-    //     },
-    //     "children": [
-    //         "flex-layout.row#header-desktop-wrapper",
-    //         "two7-menu-dropdown"
-    //     ]
-    // },
+    "sticky-layout#header-desktop": {
+        "title": "Sticky layout do header desktop",
+        "props": {
+            "blockClass": "header-desktop"
+        },
+        "children": [
+            "flex-layout.row#header-desktop-container"
+        ]
+    },
     "flex-layout.row#header-desktop-container": {
         "title": "Container do header desktop",
         "props": {
@@ -58,7 +57,7 @@
         "title": "Link de conta do header",
         "props": {
             "label": "Meus Favoritos",
-            "href": "/my-wishlist",
+            "href": "/account#/wishlist",
             "blockClass": "my-wishlist-desktop-link"
         },
         "children": [

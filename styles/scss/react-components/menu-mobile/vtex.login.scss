@@ -242,6 +242,9 @@
                         width: 122px;
                         height: 42px;
 
+                        &:hover {
+                            background-color: transparent;
+                        }
 
                         &::before {
                             content: "";
@@ -370,6 +373,9 @@
                         width: 122px;
                         height: 42px;
 
+                        &:hover {
+                            background-color: transparent;
+                        }
 
                         &::before {
                             content: "";
@@ -498,6 +504,9 @@
                         width: 122px;
                         height: 42px;
 
+                        &:hover {
+                            background-color: transparent;
+                        }
 
                         &::before {
                             content: "";

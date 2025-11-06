@@ -1,0 +1,89 @@
+{
+    "my-account-link.wishlist-link": {
+        "props": {
+            "label": "Wishlist"
+        }
+    },
+    "my-account-page.wishlist-page": {
+        "props": {
+            "title": "Wishlist"
+        },
+        "children": [
+            "list-context.wishlist"
+        ]
+    },
+    "store.wishlist": {
+        "blocks": [
+            "flex-layout.row#top",
+            "list-context.wishlist"
+        ]
+    },
+    "flex-layout.row#top": {
+        "title": "Top da lista de desejos",
+        "props": {
+            "blockClass": "top-wishlist"
+        },
+        "children": [
+            "flex-layout.col#title"
+        ]
+    },
+    "flex-layout.col#title": {
+        "title": "Título da lista de desejos",
+        "children": [
+            "rich-text#title"
+        ],
+        "props": {
+            "blockClass": "title-wishlist",
+            "preventVerticalStretch": true
+        }
+    },
+    "rich-text#title": {
+        "title": "Título da lista de desejos",
+        "props": {
+            "text": "### Wishlist",
+            "blockClass": "title-wishlist"
+        }
+    },
+    "list-context.wishlist": {
+        "title": "Lista de desejos",
+        "blocks": [
+            "wishlist-empty-list",
+            "product-summary.shelf#shelf-product-default"
+        ],
+        "children": [
+            "list-context-renderer#wishlist-content"
+        ],
+        "props": {
+            "showViewEmptyList": true,
+            "blockClass": "wishlist-list-context"
+        }
+    },
+    "wishlist-empty-list": {
+        "title": "Lista de desejos vazia",
+        "children": [
+            "rich-text#description"
+        ],
+        "props": {
+            "blockClass": "wishlist-empty-list"
+        }
+    },
+    "rich-text#description": {
+        "title": "Descrição da lista de desejos vazia",
+        "props": {
+            "text": "### Sua lista de desejos está vazia :(",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "wishlist-empty-list-description"
+        }
+    },
+    "list-context-renderer#wishlist-content": {
+        "title": "Conteúdo da lista de desejos",
+        "props": {
+            "blockClass": [
+                "wish-list-content"
+            ],
+            "listElement": "div",
+            "itemElement": "div"
+        }
+    }
+}
