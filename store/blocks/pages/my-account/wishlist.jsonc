@@ -70,7 +70,7 @@
     "rich-text#description": {
         "title": "Descrição da lista de desejos vazia",
         "props": {
-            "text": "### Sua lista de desejos está vazia",
+            "text": "### Sua lista de desejos está vazia :(",
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
             "blockClass": "wishlist-empty-list-description"
