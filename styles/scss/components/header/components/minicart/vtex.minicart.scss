@@ -74,6 +74,7 @@
 .drawerContent--minicart-sidebar {
     display: flex;
     flex-direction: column;
+    overflow-y: visible;
     gap: 20px;
 }
 
@@ -138,6 +139,7 @@
 
 .minicartTitle--minicart-sidebar {
     display: none !important;
+    visibility: hidden;
 }
 
 .minicartEmptyStateContainer--minicart-empty-state {
@@ -220,7 +222,7 @@
 .minicartProductListContainer--minicart-product-list {
     padding: 0px 32px;
     height: 100% !important;
-    max-height: 430px;
+    // max-height: 430px;
     overflow-y: auto;
 }
 
@@ -240,4 +242,10 @@
 .overlay--minicart-sidebar--visible {
     background-color: $color-gray-600;
     opacity: 0.7 !important;
+}
+
+
+.minicartContentContainer--minicart-sidebar {
+    display: grid !important;
+    grid-auto-rows: calc(100% - 320px) auto !important;
 }
