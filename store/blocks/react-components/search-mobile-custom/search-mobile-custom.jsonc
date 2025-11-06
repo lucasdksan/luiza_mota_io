@@ -1,0 +1,14 @@
+{
+    "two7-search-mobile-custom": {
+        "props": {
+            "VtexFlexLayout": "flex-layout.row#search-bar-mobile",
+            "VtexSearchBar": "search-bar#search-bar-mobile"
+        }
+    },
+    "flex-layout.row#search-bar-mobile": {
+        "title": "Flex layout do search bar mobile",
+        "props": {
+            "blockClass": "search-bar-mobile"
+        }
+    }
+}

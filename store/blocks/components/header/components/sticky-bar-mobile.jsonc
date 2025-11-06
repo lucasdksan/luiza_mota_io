@@ -1,4 +1,13 @@
 {
+    "sticky-layout#header-mobile": {
+        "title": "Sticky layout do header mobile",
+        "props": {
+            "blockClass": "header-mobile"
+        },
+        "children": [
+            "flex-layout.row#header-sticky-bar-mobile"
+        ]
+    },
     "flex-layout.row#header-sticky-bar-mobile": {
         "title": "Barra de sticky mobile",
         "props": {
@@ -27,6 +36,16 @@
         "children": [
             "two7-menu-mobile",
             "two7-logo-custom",
+            "flex-layout.row#right-side-header-mobile"
+        ]
+    },
+    "flex-layout.row#right-side-header-mobile": {
+        "title": "Lado direito do header mobile",
+        "props": {
+            "blockClass": "right-side-header-mobile"
+        },
+        "children": [
+            "two7-search-mobile-custom",
             "minicart.v2"
         ]
     },
