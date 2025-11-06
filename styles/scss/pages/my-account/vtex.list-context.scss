@@ -1,0 +1,45 @@
+@use "../../settings/index" as *;
+
+.list--wish-list-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 10px;
+    align-items: stretch;
+    width: 100%;
+
+    @include desktop {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px 32px;
+    }
+}
+
+.item--wish-list-content {
+    @include mobile {
+        :global(.vtex-product-summary-2-x-container--shelf-product-default) {
+            min-height: 330px !important;
+        }
+
+        :global(.vtex-flex-layout-0-x-flexRowContent--shelf-default-footer) {
+            flex-direction: column !important;
+        }
+
+        :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+            :global(.vtex-flex-layout-0-x-flexRow--modal-product-shop-btn-container) {
+                :global(.vtex-flex-layout-0-x-flexRowContent--modal-product-shop-btn-container) {
+                    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+                        align-items: center !important;
+                        justify-content: flex-end !important;
+                    }
+                }
+            }
+        }
+
+        :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+            &:first-child {
+                :global(.vtex-flex-layout-0-x-flexRowContent) {
+                    align-items: flex-start !important;
+                }
+            }
+        }
+    }
+}
