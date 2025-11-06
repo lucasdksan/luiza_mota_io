@@ -39,6 +39,7 @@
         justify-content: space-between;
 
         @include desktop {
+            gap: 80px;
             @include container-fluid;
         }
     }
@@ -49,9 +50,9 @@
     height: auto;
 
     .flexRowContent--right-side-header-desktop {
-        display: flex;
+        display: grid;
         align-items: center;
-        justify-content: center;
+        grid-template-columns: 1fr auto;
         gap: 80px;
     }
 }

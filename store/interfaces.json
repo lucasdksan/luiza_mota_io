@@ -85,5 +85,8 @@
     },
     "two7-product-definitions": {
         "component": "ProductDefinitions"
+    },
+    "two7-search-mobile-custom": {
+        "component": "SearchMobileCustom"
     }
 }

@@ -21,4 +21,20 @@
     
         @include defaultBtns;
     }
+
+    :global(.vtex-promotional-tip-bar--value) {
+        font-family: $font-poppins;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: $color-white;
+        text-wrap: nowrap;
+    }
+
+    :global(.vtex-promotional-tip-bar--content-value) {
+        @include mobile {
+            text-align: center;
+        }
+    }
 }

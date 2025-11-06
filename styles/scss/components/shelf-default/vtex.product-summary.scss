@@ -45,6 +45,7 @@
 }
 
 .sellingPrice--shelf-product-default--price {
+    display: flex;
     padding: 0px !important;
 
     .currencyContainer--shelf-product-default--price {
@@ -99,6 +100,7 @@
     flex-direction: column;
     height: 100% !important;
     flex: 1;
+    position: relative;
 }
 
 

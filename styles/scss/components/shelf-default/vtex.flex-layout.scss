@@ -8,6 +8,7 @@
     .flexRowContent--shelf-default-footer {
         display: flex;
         justify-content: space-between;
+        min-height: 40px;
 
         .stretchChildrenWidth {
             padding: 0px !important;
@@ -24,6 +25,7 @@
 .flexRowContent--shelf-default-top {
     display: flex;
     flex-direction: column !important;
+    position: relative;
 
     .stretchChildrenWidth {
         width: auto !important;
