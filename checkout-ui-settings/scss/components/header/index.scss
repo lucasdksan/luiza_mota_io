@@ -1,1 +1,143 @@
 @use "../../settings/index" as *;
+
+.vtex-checkout-header {
+    background-color: transparent;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    @include container-fluid;
+
+    .vtex-checkout-header__white-area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        padding: 14px 20px;
+        background-color: $color-bg-primary;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04);
+
+        @include desktop {
+            padding: 18px 80px;
+        }
+
+        .vtex-checkout-header__logo {
+            max-width: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include desktop  {
+                max-width: 205px;
+            }
+        }
+
+        .vtex-checkout-header__safe-shop {
+            max-width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include desktop  {
+                max-width: 145px;
+            }
+        }
+    }
+
+    .vtex-checkout-header__mobile-navigation {
+        display: flex;
+        padding: 0px 20px;
+        margin-top: 22px;
+
+        @include desktop {
+            display: none;
+            visibility: hidden;
+        }
+
+        .vtex-checkout-header__mobile-navigation--elements {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+
+            .vtex-checkout-header__mobile-navigation--element {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 4px;
+
+                .vtex-checkout-header__mobile-navigation--text {
+                    font-family: $font-poppins;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 140%;
+                    color: $color-secondary-dark;
+                }
+
+                .vtex-checkout-header__mobile-navigation--icon {
+                    .vtex-checkout-header__check-icon {
+                        display: none;
+                    }
+                }
+
+                &.vtex-checkout-header__mobile-navigation--element-active {
+                    .vtex-checkout-header__mobile-navigation--text {
+                        color: $color-primary;
+                        font-weight: 600 !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .vtex-checkout-header__header-navigation {
+        display: none;
+        max-width: 470px;
+        width: 100%;
+
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .vtex-checkout-header__header-navigation--elements {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+
+            .vtex-checkout-header__header-navigation--element {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 4px;
+
+                .vtex-checkout-header__header-navigation--text {
+                    font-family: $font-poppins;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 140%;
+                    color: $color-secondary-dark;
+                }
+
+                .vtex-checkout-header__header-navigation--icon {
+                    .vtex-checkout-header__check-icon {
+                        display: none;
+                    }
+                }
+
+                &.vtex-checkout-header__header-navigation--element-active {
+                    .vtex-checkout-header__header-navigation--text {
+                        color: $color-primary;
+                        font-weight: 600 !important;
+                    }
+                }
+            }
+        }
+    }
+}
