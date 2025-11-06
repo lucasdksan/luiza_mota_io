@@ -51,6 +51,7 @@
 
     .flexRowContent--right-side-header-desktop {
         display: grid;
+        align-items: center;
         grid-template-columns: 1fr auto;
         gap: 80px;
     }
