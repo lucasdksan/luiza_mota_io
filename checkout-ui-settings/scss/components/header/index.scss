@@ -5,7 +5,27 @@
     box-sizing: border-box;
     overflow: hidden;
 
-    @include container-fluid;
+    @include desktop {
+        background-color: $color-bg-primary;
+    }
+
+    .vtex-checkout-header__container {
+        width: 100%;
+        height: auto;
+
+        span.vtex-checkout-header__header-navigation--separator {
+            display: flex;
+            width: 100%;
+            height: 1px;
+            border-bottom: 1px solid $color-border-primary;
+
+            &#vtex-checkout-header__header-navigation--separator-1 {
+                border-bottom: 1px solid $color-primary;
+            }
+        }
+    
+        @include container-fluid;
+    }
 
     .vtex-checkout-header__white-area {
         display: flex;
@@ -77,6 +97,9 @@
                 }
 
                 .vtex-checkout-header__mobile-navigation--icon {
+                    height: 24px;
+                    width: 24px;
+                    
                     .vtex-checkout-header__check-icon {
                         display: none;
                     }
@@ -96,6 +119,7 @@
         display: none;
         max-width: 470px;
         width: 100%;
+        gap: 10px;
 
         @include desktop {
             display: flex;
@@ -108,6 +132,7 @@
             justify-content: space-between;
             flex-direction: row;
             align-items: center;
+            gap: 10px;
 
             .vtex-checkout-header__header-navigation--element {
                 display: flex;
@@ -115,6 +140,7 @@
                 align-items: center;
                 justify-content: center;
                 gap: 4px;
+                position: relative;
 
                 .vtex-checkout-header__header-navigation--text {
                     font-family: $font-poppins;
