@@ -6,3 +6,19 @@
     box-sizing: border-box;
     background-color: $color-bg-secondary;
 }
+
+div.container.container-main {
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0px 20px !important;
+
+    @include desktop {
+        padding: 0px 80px !important;
+    }
+
+    @include container-fluid;
+}
+
+h1#cart-title {
+    display: none !important;
+}
