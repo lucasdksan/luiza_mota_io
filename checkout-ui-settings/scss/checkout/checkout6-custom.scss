@@ -1,19 +1,9 @@
 @use "../settings/reset" as *;
-@use "../components/header/index" as *;
-
-/* Content copied from "checkout5-custom.css" at 2019-03-01T05:12:59.334Z */
-
-/* /files/checkout5-custom.css */
-
-/* Displays the option to enter a foreign document */
-.document-box { display: block; }
-
-/* Displays the option to enter an international phone */
-.phone-box { display: block; }
-
-.btn-place-order-wrapper {
-    #cart-to-orderform {
-        background-color: black;
-        background-image: none;
-    }
-}
+@use "../components/mini-cart/index" as *;
+@use "../components/header/index" as *; 
+@use "../components/footer/index" as *;
+@use "../components/cart/index" as *;
+@use "../components/email/index" as *;	
+@use "../components/profile/index" as *;
+@use "../components/shipping/index" as *;
+@use "../components/payment/index" as *;
