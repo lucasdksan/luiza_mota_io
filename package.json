@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:scss--checkout": "yarn sass --watch --quiet --no-source-map --style=compressed checkout/scss:checkout/css",
+    "build:scss--checkout": "yarn sass --watch --quiet --no-source-map --style=compressed checkout-ui-settings/scss/checkout:checkout-ui-settings/checkout-ui-custom",
     "build:prefix--checkout": "postcss checkout/css/**/*.css --use autoprefixer -r --no-map",
     "build:scss--store": "node ./custom-builder.js --origin:./styles/scss --target:./styles/css --ignore:./styles/scss/settings"
   },

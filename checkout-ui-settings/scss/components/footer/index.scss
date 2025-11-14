@@ -1,0 +1,167 @@
+@use "../../settings/index" as *;
+
+.vtex-checkout-footer {
+    background-color: transparent;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: $color-secondary-dark;
+
+    @include desktop {
+        background-color: $color-secondary-dark;
+    }
+
+    .vtex-checkout-footer__container {
+        width: 100%;
+        height: auto;
+    
+        @include container-fluid;
+    }
+
+    .vtex-checkout-footer__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        padding: 30px 20px;
+
+        @include desktop {
+            padding: 30px 80px;
+        }
+        
+        .vtex-checkout-footer__informations-area {
+            width: 100%;
+
+            @include desktop {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+
+            .vtex-checkout-footer__payment-methods-area {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 20px;
+                margin-bottom: 40px;
+
+                @include desktop {
+                    margin-bottom: 0px;
+                }
+
+                .vtex-checkout-footer__payment-methods-title {
+                    font-family: $font-poppins;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 140%;
+                    color: $color-bg-primary;
+
+                    @include desktop {
+                        font-weight: 600;
+                    }
+                }
+
+                .vtex-checkout-footer__payment-methods-icons-area {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    gap: 16px;
+                }
+            }
+
+            .vtex-checkout-footer__security-area {
+                display: flex;
+                width: 100%;
+                gap: 20px;
+                align-items: center;
+                justify-content: flex-start;
+                margin-bottom: 40px;
+
+                @include desktop {
+                    flex-direction: column;
+                    width: auto !important;
+                    margin-bottom: 0px;
+                }
+
+                .vtex-checkout-footer__security-title {
+                    font-family: $font-poppins;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 140%;
+                    color: $color-bg-primary;
+
+                    @include desktop {
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .vtex-checkout-footer__development-area {
+                display: flex;
+                width: 100%;
+                gap: 20px;
+                align-items: center;
+                justify-content: flex-start;
+
+                @include desktop {
+                    flex-direction: column;
+                    width: auto !important;
+                    margin-bottom: 0px;
+                }
+
+                .vtex-checkout-footer__development-title {
+                    font-family: $font-poppins;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 140%;
+                    color: $color-bg-primary;
+                
+                    @include desktop {
+                        display: none;
+                    }
+                }
+
+                .vtex-checkout-footer__development-icon {
+                    @include desktop {
+                        display: none;
+                        visibility: hidden;
+                    }
+                }
+                .vtex-checkout-footer__development-icon--desktop {
+                   display: none;
+                   visibility: hidden;
+
+                    @include desktop {
+                        display: block;
+                        visibility: visible;
+                    }
+                }
+
+            }
+        }
+
+        .vtex-checkout-footer__description-area {
+            width: 100%;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid $color-bg-primary;
+
+            @include desktop {
+                margin-top: 35px;
+            }
+            
+            .vtex-checkout-footer__description {
+                font-family: $font-montserrat;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 140%;
+                color: $color-bg-primary;
+            }
+        }
+    }
+}

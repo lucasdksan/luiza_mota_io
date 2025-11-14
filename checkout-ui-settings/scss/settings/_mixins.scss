@@ -1,0 +1,145 @@
+@use "./colors" as *;
+@use "./fonts" as *;
+
+@mixin desktop {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: 768px) and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin desktopLarge {
+    @media (min-width: 1024px) and (max-width: 1280px) {
+        @content;
+    }
+}
+
+@mixin desktopXLarge {
+    @media (min-width: 1280px) and (max-width: 1536px) {
+        @content;
+    }
+}
+
+@mixin desktopXXLarge {
+    @media (min-width: 1536px) and (max-width: 1890px) {
+        @content;
+    }
+}
+
+@mixin desktopXXXLarge {
+    @media (min-width: 1890px) and (max-width: 2560px) {
+        @content;
+    }
+}
+
+@mixin overlay {
+    background-color: $color-gray-600;
+    opacity: 0.7 !important;
+}
+
+@mixin defaultBtns {
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+    padding: 0px;
+    margin: 0px;
+    outline: none;
+    cursor: pointer;
+}
+
+@mixin loginInputGroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 20px;
+    height: 42px;
+    background: transparent;
+    border: 1px solid #DFDFE4;
+    border-radius: 8px;
+}
+
+@mixin loginInputGroupText {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: $color-gray-300;
+}
+
+@mixin loginInput {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 20px;
+    height: 42px;
+    background: transparent;
+    border: 1px solid #DFDFE4;
+    border-radius: 8px;
+
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: $color-gray-300;
+}
+
+@mixin newsletterInput {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 9px 20px;
+    width: 100%;
+    min-height: 42px;
+
+    background: $color-white;
+    border: 1px solid $color-border-input-newsletter;
+    border-radius: 8px;
+
+    font-family: $font-lato;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $color-gray-300;
+    transition: all 0.2s ease;
+
+    &::hover {
+        border: 1px solid $color-primary;
+        color: $color-primary;
+        transition: all 0.2s ease;
+    }
+
+    &::focus {
+        border: 1px solid $color-primary;
+        color: $color-primary;
+        transition: all 0.2s ease;
+    }
+}
+
+@mixin titleHomePage {
+    font-family: $font-poppins;
+    font-style: normal;
+    text-align: center;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: 1px;
+    color: $color-text-primary;
+
+    @media (min-width: 768px) {
+        font-size: 32px !important;  
+    }
+}

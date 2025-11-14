@@ -1,0 +1,351 @@
+@use "../../settings/index" as *;
+
+body.body-order-form {
+    padding: 0px !important;
+    margin: 0px !important;
+
+    .cart-template.mini-cart {
+        padding: 30px 16px;
+        width: 100%;
+        height: auto;
+        background: $color-bg-primary;
+        border: 1px solid $color-border-primary;
+        border-radius: 10px;
+        // min-height: 430px;
+        // max-height: 535px;
+
+        @include desktop {
+            margin: 0px !important;
+            padding: 20px 40px;
+            min-height: 460px;
+        }
+
+        .cart-fixed.cart-fixed-transition {
+            height: auto !important;
+            
+            @include desktop {
+                position: relative !important;
+                width: 100%;
+            }
+            
+            h2 {
+                font-family: $font-poppins;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                color: $color-secondary-dark;
+                margin-bottom: 20px;
+
+                @include desktop {
+                    text-align: start;
+                    background-color: transparent;
+                    border: none;
+                    padding: 0px !important;
+                }
+            }
+
+            .summary-cart-template-holder {
+                scrollbar-color: $color-primary $color-border-primary;
+
+                &::-webkit-scrollbar {
+                    width: 3px;
+                }
+
+                &::-webkit-scrollbar-track {
+                    background: $color-border-primary;
+                    border-radius: 4px;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background: $color-primary;
+                    border-radius: 4px;
+                }
+
+                &::-webkit-scrollbar-thumb:hover {
+                    background: $color-primary;
+                }
+
+                &::-webkit-scrollbar-button {
+                    display: none;
+                    height: 0;
+                    width: 0;
+                }
+
+                div.cart {
+                    margin: 0px !important;
+
+                    .cart-items {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        max-height: 220px;
+
+                        &::before,
+                        &::after {
+                            content: "";
+                            display: none;
+                            visibility: hidden;
+                        }
+
+                        li.hproduct.item {
+                            border: none !important;
+                            padding: 0px !important;
+                            margin: 0px !important;
+
+                            gap: 10px;
+
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            a.url {
+                                min-width: 70px;
+                                max-width: 70px;
+                                max-height: 70px;
+                                min-height: 70px;
+                                margin: 0px 0px 0px 0px !important;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+
+                            .product-name {
+                                font-family: $font-poppins;
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 12px;
+                                line-height: 140%;
+                                color: $color-text-gray;
+                                max-width: 180px;
+                            }
+
+                            .description {
+                                margin: 0px !important;
+
+                                .shipping-date {
+                                    display: none !important;
+                                    visibility: hidden;
+                                }
+
+                                .price {
+                                    margin: 0px !important;
+
+                                    font-family: $font-poppins;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    line-height: 120%;
+                                    color: $color-text-gray;
+                                }
+                            }
+
+                            .quantity.badge {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                align-items: center;
+                                padding: 0px;
+                                background: $color-primary;
+                                border-radius: 90px;
+
+                                font-family: $font-poppins;
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 14px;
+                                line-height: 140%;
+                                text-align: center;
+                                color: $color-bg-primary;
+
+                                width: 20px;
+                                height: 20px;
+
+                                border: none !important;
+                                outline: none !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .summary-template-holder {
+                border: none !important;
+                
+                @include desktop {
+                    height: 100%;
+                    background: transparent;
+                    display: flex;
+                }
+
+                .row-fluid.summary {
+                    &::before,
+                    &::after {
+                        content: "";
+                        display: none;
+                        visibility: hidden;
+                    }
+
+                    .summary-totalizers.cart-totalizers {
+                        margin: 10px 0px 20px 0px !important;
+
+                        .accordion-group {
+                            margin: 0px;
+
+                            .accordion-body.in {
+                                .table {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 13px;
+                                    border-collapse: separate !important;
+                                    border-spacing: 0px 10px;
+
+                                    tbody {
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 13px;
+                                        width: 100%;
+                                        border: none !important;
+                                        
+                                        tr {
+                                            display: flex;
+                                            flex-direction: row;
+                                            justify-content: space-between;
+                                            width: 100%;
+                                            padding: 0px !important;
+                                        }
+
+                                        td {
+                                            &.info {
+                                                font-family: $font-poppins;
+                                                font-style: normal;
+                                                font-weight: 500;
+                                                font-size: 14px;
+                                                line-height: 140%;
+                                                color: $color-text-tertiary;
+                                                padding: 0px !important;
+                                                text-align: left;
+                                            }
+                                        
+                                            &.monetary {
+                                                font-family: $font-poppins;
+                                                font-style: normal;
+                                                font-weight: 400;
+                                                font-size: 14px;
+                                                line-height: 140%;
+                                                text-align: right;
+                                                color: $color-text-tertiary;
+                                                padding: 0px !important;
+                                            }
+                                        }
+                                    }
+
+                                    tfoot {
+                                        border-top: 1px solid $color-border-primary;
+                                        display: flex;
+                                        flex-direction: column;
+                                        padding-top: 13px;
+                                        width: 100%;
+                                        
+                                        tr {
+                                            display: flex;
+                                            flex-direction: row;
+                                            justify-content: space-between;
+                                            width: 100%;
+                                            padding: 0px !important;
+                                        }
+
+                                        td {
+                                            padding: 0px !important;
+
+                                            &.info {
+                                                font-family: $font-montserrat;
+                                                font-style: normal;
+                                                font-weight: 700;
+                                                font-size: 14px;
+                                                line-height: 140%;
+                                                color: $color-text-tertiary;
+                                                text-align: left;
+                                            }
+
+                                            &.monetary {
+                                                font-family: $font-montserrat;
+                                                font-style: normal;
+                                                font-weight: 700;
+                                                font-size: 14px;
+                                                line-height: 140%;
+                                                text-align: right;
+                                                color: $color-text-tertiary;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .payment-confirmation-wrap {
+                border: none !important;
+                padding: 0px !important;
+                margin: 0px !important;
+
+                .note.summary-note {
+                    display: none;
+                    visibility: hidden;
+                }
+
+                .payment-submit-wrap {
+                    margin: 20px 0px 0px 0px !important;
+                    height: 42px;
+
+                    button {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 11px 30px;
+                        gap: 10px;
+
+                        width: 100%;
+                        max-height: 42px;
+                        background: $color-primary;
+                        border-radius: 8px;
+                        box-shadow: none;
+                        outline: none;
+                        border: none;
+
+                        .icon-lock {
+                            display: none !important;
+                            visibility: hidden;
+                        }
+
+                        span {
+                            font-family: $font-poppins;
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 140%;
+                            text-align: center;
+                            letter-spacing: 0.04em;
+                            color: $color-bg-primary;
+                        }
+                    }
+                }
+            }
+
+            p#go-to-cart-button {
+                display: none;
+                visibility: hidden;
+            }
+
+
+        }
+    }
+}
